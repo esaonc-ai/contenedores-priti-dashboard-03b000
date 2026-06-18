@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contenedores Priti en Yarda</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background:#0f172a; color:#e2e8f0; min-height:100vh; }
+.header { background:#1e293b; border-bottom:2px solid #f59e0b; padding:16px 24px; display:flex; justify-content:space-between; align-items:center; }
+.header h1 { font-size:1.4rem; color:#f59e0b; }
+.header .badge { background:#f59e0b; color:#0f172a; padding:4px 12px; border-radius:20px; font-weight:700; font-size:0.85rem; }
+.message-bar { background:#1e293b; padding:10px 24px; font-size:0.85rem; color:#94a3b8; border-bottom:1px solid #334155; }
+.stats { display:flex; gap:16px; padding:16px 24px; flex-wrap:wrap; }
+.stat-card { background:#1e293b; border:1px solid #334155; border-radius:8px; padding:12px 20px; min-width:140px; }
+.stat-card .value { font-size:1.8rem; font-weight:700; }
+.stat-card .label { font-size:0.75rem; color:#94a3b8; text-transform:uppercase; letter-spacing:0.5px; }
+.stat-card.yard .value { color:#ef4444; }
+.stat-card.rn .value { color:#f59e0b; }
+.stat-card.out .value { color:#22c55e; }
+.stat-card.noshow .value { color:#a855f7; }
+.table-wrap { padding:0 24px 24px; overflow-x:auto; }
+table { width:100%; border-collapse:collapse; font-size:0.85rem; }
+th { background:#1e293b; padding:10px 12px; text-align:left; font-weight:600; color:#f59e0b; border-bottom:2px solid #334155; position:sticky; top:0; }
+td { padding:8px 12px; border-bottom:1px solid #1e293b; }
+tr:hover { background:#1e293b; }
+tr.in-yard { background:#3b1c1c; }
+tr.in-yard:hover { background:#4a2424; }
+.tag { display:inline-block; padding:2px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; }
+.tag-yard { background:#dc2626; color:#fff; }
+.tag-out { background:#166534; color:#86efac; }
+.tag-norn { background:#92400e; color:#fde68a; }
+.tag-future { background:#312e81; color:#a5b4fc; }
+.tag-noshow { background:#4c1d95; color:#c4b5fd; }
+.footer { padding:16px 24px; font-size:0.75rem; color:#64748b; border-top:1px solid #1e293b; }
+@media (max-width:768px) { .stats { flex-direction:column; } .stat-card { min-width:auto; } }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>📦 Contenedores Priti en Yarda</h1>
+  <span class="badge" id="totalBadge">--</span>
+</div>
+<div class="message-bar" id="messageBar">Cargando...</div>
+<div class="stats" id="statsRow"></div>
+<div class="table-wrap">
+  <table>
+    <thead><tr>
+      <th>Container</th><th>Cita</th><th>Entry</th><th>Status</th><th>Receipt</th><th>Nota</th>
+    </tr></thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+<div class="footer">Contenedores Priti · Gurunanda · Solo lectura · LT / LT_F1</div>
+<script>
+fetch('./container-feed.json?'+Date.now())
+  .then(r=>r.json())
+  .then(d=>{
+    document.getElementById('messageBar').textContent = d.message;
+    const rows = d.rows;
+    document.getElementById('totalBadge').textContent = rows.length + ' contenedores';
+    
+    const inYard = rows.filter(r=>r.inYard).length;
+    const sinRN = rows.filter(r=>r.inYard && !r.receipt).length;
+    const yaSalieron = rows.filter(r=>!r.inYard && r.entry!=='No existe').length;
+    const sinRastro = rows.filter(r=>r.entry==='No existe' && !r.appointmentTime.includes('futura')).length;
+    const futuras = rows.filter(r=>r.entry==='No existe' && r.appointmentTime.includes('futura')).length;
+    
+    document.getElementById('statsRow').innerHTML = 
+      `<div class="stat-card yard"><div class="value">${inYard}</div><div class="label">En Yarda</div></div>
+       <div class="stat-card rn"><div class="value">${sinRN}</div><div class="label">Sin RN en Yarda</div></div>
+       <div class="stat-card noshow"><div class="value">${sinRastro}</div><div class="label">Cita Pasada Sin Rastro</div></div>
+       <div class="stat-card out"><div class="value">${yaSalieron}</div><div class="label">Ya Salieron</div></div>
+       <div class="stat-card" style="border-color:#6366f1"><div class="value" style="color:#818cf8">${futuras}</div><div class="label">Citas Futuras</div></div>`;
+    
+    document.getElementById('tableBody').innerHTML = rows.map(r=>{
+      let rowClass = r.inYard ? 'in-yard' : '';
+      let tag = '';
+      if (r.inYard) tag = '<span class="tag tag-yard">EN YARDA</span>';
+      else if (r.entry==='No existe') tag = r.note.includes('futura') ? '<span class="tag tag-future">FUTURA</span>' : '<span class="tag tag-noshow">SIN RASTRO</span>';
+      else tag = '<span class="tag tag-out">SALIÓ</span>';
+      
+      let rnTag = '';
+      if (r.receipt) rnTag = '<span class="tag tag-out" style="margin-left:4px">✓RN</span>';
+      else if (r.inYard) rnTag = '<span class="tag tag-norn" style="margin-left:4px">⚠ SIN RN</span>';
+      
+      return `<tr class="${rowClass}">
+        <td><strong>${r.container}</strong></td>
+        <td>${r.appointmentTime}</td>
+        <td>${r.entry}${rnTag}</td>
+        <td>${r.status} ${tag}</td>
+        <td>${r.receipt||'—'}</td>
+        <td style="max-width:300px">${r.note}</td>
+      </tr>`;
+    }).join('');
+  })
+  .catch(e=>{ document.getElementById('messageBar').textContent='Error al cargar datos: '+e.message; });
+</script>
+</body>
+</html>
