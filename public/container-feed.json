@@ -1,332 +1,373 @@
 {
-  "message": "Última revisión: 2026-06-18 6:44 PM America/Los_Angeles — YMS + WMS verificados",
-  "timestamp": "2026-06-18T18:44:00-07:00",
+  "message": "Última revisión: 2026-06-19 12:30 PM America/Los_Angeles — YMS + WMS verificados (solo lectura). Browser automation Outlook en curso.",
+  "timestamp": "2026-06-19T12:30:00-07:00",
   "summary": {
-    "totalMonitoreados": 32,
-    "enYarda": 4,
-    "preEntry": 10,
-    "excluidosRNClosed": 18
+    "totalMonitoreados": 27,
+    "enYardaVerde": 2,
+    "enYardaRojo": 1,
+    "enYardaAmarillo": 1,
+    "preEntry": 6,
+    "excluidosRNClosed": 17
   },
+  "alertasRolas": [
+    "⚠️ YMMU6698133 — ETs contradictorios: ET-1109857 DOCK_CHECKED_IN DOCK59, pero ET-1110787 muestra PICK_UP empty/chassis GATE_CHECK_OUT 06/18 21:06. RN-5008112 sigue IN_PROGRESS.",
+    "⚠️ CAAU7646394 STUCK — 17 días en GATE_CHECKED_IN (desde 06/02) en DOCK15. RN-5007922 FORCE_CLOSED. Posible contenedor abandonado.",
+    "⚠️ EITU8172519 — GATE_CHECKED_IN DOCK140 pero RN-5008258 no está vinculado en inboundReceiptIds del ET-1110876.",
+    "⚠️ MATU4542915 — RN-5008260 IN_PROGRESS desde hoy 06/19 15:08 UTC pero NO tiene entry ticket en YMS. Posible check-in pendiente.",
+    "⚠️ CAIU9721329 — cita pasada 06/18 1AM, RN-5008176 IMPORTED. Más de 35h sin rastro YMS."
+  ],
   "rows": [
     {
       "container": "YMMU6698133",
       "appointmentTime": "06/16 9:00AM–11:00AM",
       "inYard": true,
+      "color": "green",
       "entry": "ET-1109857",
       "status": "DOCK_CHECKED_IN",
       "receipt": "RN-5008112",
       "receiptStatus": "IN_PROGRESS",
-      "note": "¡EN YARDA! DOCK59. QX LOGISTIX. Cita pasada, recibo en progreso."
+      "note": "🟢 EN YARDA — DOCK59, QX LOGISTIX, GURUNANDA. Recibo en progreso desde 06/17 22:41. ⚠️ ET-1110787 muestra pickup empty/chassis y GATE_CHECK_OUT 06/18 21:06 — posible movimiento de chasis vacío, el contenedor sigue en proceso."
     },
     {
-      "container": "XYLU8127277",
-      "appointmentTime": "06/17 1:00AM–3:00AM",
+      "container": "MATU4542915",
+      "appointmentTime": "Sin cita",
       "inYard": true,
-      "entry": "ET-1110586",
-      "status": "DOCK_CHECKED_IN",
-      "receipt": "RN-5008137",
+      "color": "green",
+      "entry": "",
+      "status": "IN_YARD_SIN_ET",
+      "receipt": "RN-5008260",
       "receiptStatus": "IN_PROGRESS",
-      "note": "¡EN YARDA! DOCK64. RN asignado hoy (antes estaba en DOCK135 sin RN). Daniela Gonzalez recibiendo."
+      "note": "🟢 EN YARDA — RN-5008260 IN_PROGRESS desde 06/19 08:08 PDT. Black Seed Oil. ⚠️ SIN entry ticket en YMS — posible que el check-in de gate esté pendiente. Creación receipt: aismael."
     },
     {
-      "container": "OOCU6324970",
-      "appointmentTime": "06/17 12:30AM–2:30AM",
+      "container": "EITU8172519",
+      "appointmentTime": "06/18 12:30AM–2:30AM",
       "inYard": true,
-      "entry": "ET-1110589",
-      "status": "WINDOW_CHECKED_IN",
-      "receipt": "RN-5008135",
+      "color": "yellow",
+      "entry": "ET-1110876",
+      "status": "GATE_CHECKED_IN",
+      "receipt": "RN-5008258",
       "receiptStatus": "IMPORTED",
-      "note": "¡EN YARDA! DOCK60. Llegó 06/18, aún en ventana de check-in."
+      "note": "🟡 EN YARDA — DOCK140, QX LOGISTIX. Great Value Aircare. RN-5008258 existe IMPORTED pero NO vinculado en inboundReceiptIds del ET. Cita original pasada."
     },
     {
-      "container": "TLLU3336504",
-      "appointmentTime": "06/18 9:00AM–11:00AM",
+      "container": "CAAU7646394",
+      "appointmentTime": "06/02 — Sin cita clara",
       "inYard": true,
-      "entry": "ET-1110587",
-      "status": "WINDOW_CHECKED_IN",
-      "receipt": "RN-5008177",
-      "receiptStatus": "IMPORTED",
-      "note": "¡EN YARDA! DOCK59. Llegó hoy 06/18, recibido en DOCK29 por QX LOGISTIX."
+      "color": "red",
+      "entry": "ET-1102537",
+      "status": "GATE_CHECKED_IN",
+      "receipt": "RN-5007922",
+      "receiptStatus": "FORCE_CLOSED",
+      "note": "🔴 ALERTA — STUCK 17 DÍAS en DOCK15. GATE_CHECKED_IN desde 06/02. RN-5007922 FORCE_CLOSED desde 06/04. Carrier 'v'. Único container con DO (26FD3192D). Posible contenedor abandonado o ET nunca cerrado."
     },
     {
       "container": "KOCU4689466",
       "appointmentTime": "06/20 7:00AM–9:00AM",
       "inYard": false,
-      "entry": "ET-1110420",
+      "color": "normal",
+      "entry": "",
       "status": "PRE_ENTRY",
       "receipt": "RN-5008265",
       "receiptStatus": "IMPORTED",
-      "note": "Pre-entry 06/18. Cita 06/20. Will Call. 21 pallets GN Butter On Gums."
+      "note": "Cita mañana 06/20. Will Call. 21 pallets GN Butter On Gums. Sin ET aún. ET-1110420 ya no existe en YMS."
     },
     {
       "container": "HMMU6422718",
       "appointmentTime": "06/20 8:00PM–10:00PM",
       "inYard": false,
-      "entry": "ET-1110417",
+      "color": "normal",
+      "entry": "",
       "status": "PRE_ENTRY",
       "receipt": "RN-5008264",
       "receiptStatus": "IMPORTED",
-      "note": "Pre-entry 06/18. Cita 06/20. Will Call. 21 pallets GN Expandable Floss + Toothbrush."
+      "note": "Cita mañana 06/20. 21 pallets GN Expandable Floss + Toothbrush. Sin ET aún."
     },
     {
       "container": "CAAU9247201",
       "appointmentTime": "06/19 1:00PM–3:00PM",
       "inYard": false,
-      "entry": "ET-1108987",
+      "color": "normal",
+      "entry": "",
       "status": "PRE_ENTRY",
       "receipt": "RN-5008178",
       "receiptStatus": "IMPORTED",
-      "note": "Pre-entry 06/16. Cita 06/19. Will Call. 20 pallets GN Dual Thread Floss + Floss Picks."
-    },
-    {
-      "container": "CAIU9721329",
-      "appointmentTime": "06/18 1:00AM–3:00AM",
-      "inYard": false,
-      "entry": "ET-1108975",
-      "status": "PRE_ENTRY",
-      "receipt": "RN-5008176",
-      "receiptStatus": "IMPORTED",
-      "note": "Pre-entry 06/16. Cita pasada, sin check-in. Will Call. GN Electric Toothbrush."
+      "note": "Cita HOY 06/19 1PM. 20 pallets GN Dual Thread Floss + Floss Picks. Sin ET aún — posible llegada inminente."
     },
     {
       "container": "OOCU9426488",
       "appointmentTime": "06/19 11:00PM–1:00AM",
       "inYard": false,
-      "entry": "ET-1108899",
+      "color": "normal",
+      "entry": "",
       "status": "PRE_ENTRY",
       "receipt": "RN-5008133",
       "receiptStatus": "IMPORTED",
-      "note": "Pre-entry 06/16. Cita 06/19. Will Call. GN Tongue Scrapers + Botellas."
+      "note": "Cita HOY 06/19 11PM. GN Tongue Scrapers + Botellas. Sin ET aún."
     },
     {
-      "container": "EITU8172519",
-      "appointmentTime": "06/18 12:30AM–2:30AM",
+      "container": "CAIU9721329",
+      "appointmentTime": "06/18 1:00AM–3:00AM",
       "inYard": false,
-      "entry": "ET-1109931",
+      "color": "normal",
+      "entry": "",
       "status": "PRE_ENTRY",
-      "receipt": "RN-5008258",
+      "receipt": "RN-5008176",
       "receiptStatus": "IMPORTED",
-      "note": "Pre-entry 06/17. Cita pasada, sin check-in. Will Call. Great Value Aircare."
-    },
-    {
-      "container": "OOCU8494560",
-      "appointmentTime": "06/18 8:00PM–10:00PM",
-      "inYard": false,
-      "entry": "ET-1108964",
-      "status": "PRE_ENTRY",
-      "receipt": "RN-5008153",
-      "receiptStatus": "IMPORTED",
-      "note": "Pre-entry 06/16. Cita de hoy (futura). Will Call. GN Ready To Go Brushes."
-    },
-    {
-      "container": "SEGU2947142",
-      "appointmentTime": "06/18 9:00PM–11:00PM",
-      "inYard": false,
-      "entry": "ET-1108965",
-      "status": "PRE_ENTRY",
-      "receipt": "RN-5008154",
-      "receiptStatus": "IMPORTED",
-      "note": "Pre-entry 06/16. Cita de hoy (futura). Will Call. GutCleanse + Equate Vapor Inhaler."
+      "note": "⚠️ Cita pasada 06/18 1AM. RN-5008176 sigue IMPORTED. GN Electric Toothbrush. Más de 35h sin rastro YMS."
     },
     {
       "container": "CORR06192026UNIS",
       "appointmentTime": "06/19 1:00PM–3:00PM",
       "inYard": false,
-      "entry": "ET-1110599",
+      "color": "normal",
+      "entry": "",
       "status": "PRE_ENTRY",
       "receipt": "RN-5008268",
       "receiptStatus": "IMPORTED",
-      "note": "Pre-entry 06/18. Cita 06/19. Will Call. PO#8283. GN Neem Toothpaste."
+      "note": "Cita HOY 06/19. PO#8283 GN Neem Toothpaste. No es container estándar — posible carga consolidada. 2 RNs (RN-187205 + RN-187202). Seal 6833970/6833969."
     },
     {
-      "container": "MATU4542915",
-      "appointmentTime": "Sin cita",
+      "container": "XYLU8127277",
+      "appointmentTime": "06/17 1:00AM–3:00AM",
       "inYard": false,
-      "entry": "",
-      "status": "",
-      "receipt": "RN-5008260",
+      "color": "excluded",
+      "entry": "ET-1110586",
+      "status": "DOCK_CHECKED_OUT",
+      "receipt": "RN-5008137",
+      "receiptStatus": "CLOSED",
+      "note": "EXCLUIDO — RN CLOSED. Salió 06/18 20:47. Daniela Gonzalez."
+    },
+    {
+      "container": "OOCU6324970",
+      "appointmentTime": "06/17 12:30AM–2:30AM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1110589",
+      "status": "DOCK_CHECKED_OUT",
+      "receipt": "RN-5008135",
+      "receiptStatus": "CLOSED",
+      "note": "EXCLUIDO — RN CLOSED. Salió 06/18 21:43. QX LOGISTIX."
+    },
+    {
+      "container": "TLLU3336504",
+      "appointmentTime": "06/18 9:00AM–11:00AM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1110587",
+      "status": "DOCK_CHECKED_OUT",
+      "receipt": "RN-5008177",
+      "receiptStatus": "CLOSED",
+      "note": "EXCLUIDO — RN CLOSED. Salió 06/18 23:01. QX LOGISTIX."
+    },
+    {
+      "container": "SEGU2947142",
+      "appointmentTime": "06/18 9:00PM–11:00PM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1108965",
+      "status": "GATE_CHECK_OUT",
+      "receipt": "RN-5008154",
       "receiptStatus": "IMPORTED",
-      "note": "Tiene RN-5008260 sin entry ticket ni cita en YMS. Black Seed Oil."
+      "note": "EXCLUIDO — GATE_CHECK_OUT 06/19 02:16. Salió sin haber sido recibido (RN seguía IMPORTED). GutCleanse + Equate Vapor Inhaler."
     },
     {
-      "container": "CAAU7646394",
-      "appointmentTime": "",
+      "container": "OOCU8494560",
+      "appointmentTime": "06/18 8:00PM–10:00PM",
       "inYard": false,
-      "entry": "",
-      "status": "",
-      "receipt": "RN-5007922",
-      "receiptStatus": "FORCE_CLOSED",
-      "note": "EXCLUIDO — RN FORCE_CLOSED. Único con DO (26FD3192D)"
-    },
-    {
-      "container": "BEAU5564510",
-      "appointmentTime": "06/10 8:00PM–10:00PM",
-      "inYard": false,
-      "entry": "ET-1109139",
+      "color": "excluded",
+      "entry": "ET-1108964",
       "status": "GATE_CHECK_OUT",
-      "receipt": "RN-5007986",
-      "receiptStatus": "CLOSED",
-      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/16"
-    },
-    {
-      "container": "SAPU5033873",
-      "appointmentTime": "06/08 8:00PM–10:00PM",
-      "inYard": false,
-      "entry": "ET-1105597",
-      "status": "GATE_CHECK_OUT",
-      "receipt": "RN-5007910",
-      "receiptStatus": "CLOSED",
-      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/10"
-    },
-    {
-      "container": "SAPU5033847",
-      "appointmentTime": "06/09 12:00PM–2:00PM",
-      "inYard": false,
-      "entry": "ET-1106154",
-      "status": "GATE_CHECK_OUT",
-      "receipt": "RN-5007983",
-      "receiptStatus": "CLOSED",
-      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/11"
-    },
-    {
-      "container": "SAPU5033826",
-      "appointmentTime": "06/09 12:00PM–2:00PM",
-      "inYard": false,
-      "entry": "ET-1108161",
-      "status": "GATE_CHECK_OUT",
-      "receipt": "RN-5007984",
-      "receiptStatus": "CLOSED",
-      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/15"
-    },
-    {
-      "container": "TIIU4584294",
-      "appointmentTime": "06/10 8:00AM–10:00AM",
-      "inYard": false,
-      "entry": "ET-1106440",
-      "status": "GATE_CHECK_OUT",
-      "receipt": "RN-5007985",
-      "receiptStatus": "CLOSED",
-      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/11"
-    },
-    {
-      "container": "CSNU8173743",
-      "appointmentTime": "06/10 9:00PM–11:00PM",
-      "inYard": false,
-      "entry": "ET-1107107",
-      "status": "NEED_WINDOW_CHECK_IN",
-      "receipt": "RN-5007987",
-      "receiptStatus": "CLOSED",
-      "note": "EXCLUIDO — RN CLOSED. No completó check-in"
-    },
-    {
-      "container": "CSNU7660618",
-      "appointmentTime": "06/09 8:00AM–10:00AM",
-      "inYard": false,
-      "entry": "ET-1106731",
-      "status": "GATE_CHECK_OUT",
-      "receipt": "RN-5007949",
-      "receiptStatus": "CLOSED",
-      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/10"
-    },
-    {
-      "container": "SEGU4597362",
-      "appointmentTime": "06/09 10:00AM–12:00PM",
-      "inYard": false,
-      "entry": "ET-1105664",
-      "status": "GATE_CHECK_OUT",
-      "receipt": "RN-5007976",
-      "receiptStatus": "CLOSED",
-      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/09"
-    },
-    {
-      "container": "FFAU2698547",
-      "appointmentTime": "06/09 8:00PM–10:00PM",
-      "inYard": false,
-      "entry": "ET-1106616",
-      "status": "DOCK_CHECKED_OUT",
-      "receipt": "RN-5007974",
-      "receiptStatus": "FORCE_CLOSED",
-      "note": "EXCLUIDO — RN FORCE_CLOSED. Dock out 06/11"
-    },
-    {
-      "container": "TEMU6486981",
-      "appointmentTime": "06/11 8:00PM–10:00PM",
-      "inYard": false,
-      "entry": "ET-1107623",
-      "status": "DOCK_CHECKED_OUT",
-      "receipt": "RN-5007989",
-      "receiptStatus": "FORCE_CLOSED",
-      "note": "EXCLUIDO — RN FORCE_CLOSED. Dock out 06/15"
-    },
-    {
-      "container": "FSCU8910027",
-      "appointmentTime": "06/11 8:00PM–10:00PM",
-      "inYard": false,
-      "entry": "ET-1107604",
-      "status": "DOCK_CHECKED_OUT",
-      "receipt": "RN-5007988",
-      "receiptStatus": "CLOSED",
-      "note": "EXCLUIDO — RN CLOSED. Dock out 06/12"
-    },
-    {
-      "container": "FFAU3255097",
-      "appointmentTime": "06/11 8:00PM–10:00PM",
-      "inYard": false,
-      "entry": "ET-1107601",
-      "status": "DOCK_CHECKED_OUT",
-      "receipt": "RN-5007993",
-      "receiptStatus": "FORCE_CLOSED",
-      "note": "EXCLUIDO — RN FORCE_CLOSED. Dock out 06/12"
-    },
-    {
-      "container": "EITU9563246",
-      "appointmentTime": "06/03 5:30PM–7:30PM",
-      "inYard": false,
-      "entry": "ET-1104692",
-      "status": "GATE_CHECK_OUT",
-      "receipt": "RN-5007923",
-      "receiptStatus": "FORCE_CLOSED",
-      "note": "EXCLUIDO — RN FORCE_CLOSED. Salió 06/05"
-    },
-    {
-      "container": "CSNU7820233",
-      "appointmentTime": "06/16 12:30PM–2:30PM",
-      "inYard": false,
-      "entry": "ET-1109286",
-      "status": "GATE_CHECK_OUT",
-      "receipt": "RN-5008119",
-      "receiptStatus": "CLOSED",
-      "note": "EXCLUIDO — RN CLOSED. Recogido vacío en ET-1110071"
-    },
-    {
-      "container": "SAPU5033831",
-      "appointmentTime": "06/03 8:00PM–10:00PM",
-      "inYard": false,
-      "entry": "ET-1105501",
-      "status": "GATE_CHECK_OUT",
-      "receipt": "RN-5007909",
-      "receiptStatus": "CLOSED",
-      "note": "EXCLUIDO — RN CLOSED. Salió 06/08"
-    },
-    {
-      "container": "MATU2540390",
-      "appointmentTime": "06/04 3:00PM–5:00PM",
-      "inYard": false,
-      "entry": "ET-1105493",
-      "status": "GATE_CHECK_OUT",
-      "receipt": "RN-5007942",
-      "receiptStatus": "CLOSED",
-      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/08"
+      "receipt": "RN-5008153",
+      "receiptStatus": "IMPORTED",
+      "note": "EXCLUIDO — GATE_CHECK_OUT 06/18 21:06 DOCK126. TAKEYA USA (no Gurunanda). GN Ready To Go Brushes."
     },
     {
       "container": "MATU2647964",
       "appointmentTime": "06/15",
       "inYard": false,
+      "color": "excluded",
       "entry": "ET-1110244",
       "status": "GATE_CHECK_OUT",
-      "receipt": "",
-      "receiptStatus": "",
-      "note": "EXCLUIDO — Recogido vacío 06/18 por QX LOGISTIX (ET-1110244)"
+      "receipt": "RN-5008052",
+      "receiptStatus": "CLOSED",
+      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/18 QX LOGISTIX."
+    },
+    {
+      "container": "BEAU5564510",
+      "appointmentTime": "06/10 8:00PM–10:00PM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1109139",
+      "status": "GATE_CHECK_OUT",
+      "receipt": "RN-5007986",
+      "receiptStatus": "CLOSED",
+      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/16."
+    },
+    {
+      "container": "SAPU5033873",
+      "appointmentTime": "06/08 8:00PM–10:00PM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1105597",
+      "status": "GATE_CHECK_OUT",
+      "receipt": "RN-5007910",
+      "receiptStatus": "CLOSED",
+      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/10."
+    },
+    {
+      "container": "SAPU5033847",
+      "appointmentTime": "06/09 12:00PM–2:00PM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1106154",
+      "status": "GATE_CHECK_OUT",
+      "receipt": "RN-5007983",
+      "receiptStatus": "CLOSED",
+      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/11."
+    },
+    {
+      "container": "SAPU5033826",
+      "appointmentTime": "06/09 12:00PM–2:00PM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1108161",
+      "status": "GATE_CHECK_OUT",
+      "receipt": "RN-5007984",
+      "receiptStatus": "CLOSED",
+      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/15."
+    },
+    {
+      "container": "TIIU4584294",
+      "appointmentTime": "06/10 8:00AM–10:00AM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1106440",
+      "status": "GATE_CHECK_OUT",
+      "receipt": "RN-5007985",
+      "receiptStatus": "CLOSED",
+      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/11."
+    },
+    {
+      "container": "CSNU8173743",
+      "appointmentTime": "06/10 9:00PM–11:00PM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1107107",
+      "status": "NEED_WINDOW_CHECK_IN",
+      "receipt": "RN-5007987",
+      "receiptStatus": "CLOSED",
+      "note": "EXCLUIDO — RN CLOSED. No completó check-in."
+    },
+    {
+      "container": "CSNU7660618",
+      "appointmentTime": "06/09 8:00AM–10:00AM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1106731",
+      "status": "GATE_CHECK_OUT",
+      "receipt": "RN-5007949",
+      "receiptStatus": "CLOSED",
+      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/10."
+    },
+    {
+      "container": "SEGU4597362",
+      "appointmentTime": "06/09 10:00AM–12:00PM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1105664",
+      "status": "GATE_CHECK_OUT",
+      "receipt": "RN-5007976",
+      "receiptStatus": "CLOSED",
+      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/09."
+    },
+    {
+      "container": "FFAU2698547",
+      "appointmentTime": "06/09 8:00PM–10:00PM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1106616",
+      "status": "DOCK_CHECKED_OUT",
+      "receipt": "RN-5007974",
+      "receiptStatus": "FORCE_CLOSED",
+      "note": "EXCLUIDO — RN FORCE_CLOSED. Dock out 06/11."
+    },
+    {
+      "container": "TEMU6486981",
+      "appointmentTime": "06/11 8:00PM–10:00PM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1107623",
+      "status": "DOCK_CHECKED_OUT",
+      "receipt": "RN-5007989",
+      "receiptStatus": "FORCE_CLOSED",
+      "note": "EXCLUIDO — RN FORCE_CLOSED. Dock out 06/15."
+    },
+    {
+      "container": "FSCU8910027",
+      "appointmentTime": "06/11 8:00PM–10:00PM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1107604",
+      "status": "DOCK_CHECKED_OUT",
+      "receipt": "RN-5007988",
+      "receiptStatus": "CLOSED",
+      "note": "EXCLUIDO — RN CLOSED. Dock out 06/12."
+    },
+    {
+      "container": "FFAU3255097",
+      "appointmentTime": "06/11 8:00PM–10:00PM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1107601",
+      "status": "DOCK_CHECKED_OUT",
+      "receipt": "RN-5007993",
+      "receiptStatus": "FORCE_CLOSED",
+      "note": "EXCLUIDO — RN FORCE_CLOSED. Dock out 06/12."
+    },
+    {
+      "container": "EITU9563246",
+      "appointmentTime": "06/03 5:30PM–7:30PM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1104692",
+      "status": "GATE_CHECK_OUT",
+      "receipt": "RN-5007923",
+      "receiptStatus": "FORCE_CLOSED",
+      "note": "EXCLUIDO — RN FORCE_CLOSED. Salió 06/05."
+    },
+    {
+      "container": "CSNU7820233",
+      "appointmentTime": "06/16 12:30PM–2:30PM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1109286",
+      "status": "GATE_CHECK_OUT",
+      "receipt": "RN-5008119",
+      "receiptStatus": "CLOSED",
+      "note": "EXCLUIDO — RN CLOSED. Recogido vacío en ET-1110071."
+    },
+    {
+      "container": "SAPU5033831",
+      "appointmentTime": "06/03 8:00PM–10:00PM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1105501",
+      "status": "GATE_CHECK_OUT",
+      "receipt": "RN-5007909",
+      "receiptStatus": "CLOSED",
+      "note": "EXCLUIDO — RN CLOSED. Salió 06/08."
+    },
+    {
+      "container": "MATU2540390",
+      "appointmentTime": "06/04 3:00PM–5:00PM",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1105493",
+      "status": "GATE_CHECK_OUT",
+      "receipt": "RN-5007942",
+      "receiptStatus": "CLOSED",
+      "note": "EXCLUIDO — RN CLOSED. Recogido vacío 06/08."
     }
   ]
 }
