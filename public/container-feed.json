@@ -1,33 +1,24 @@
 {
-  "message": "Última revisión: 2026-06-19 12:30 PM America/Los_Angeles — YMS + WMS verificados (solo lectura). Browser automation Outlook en curso.",
-  "timestamp": "2026-06-19T12:30:00-07:00",
+  "message": "Última revisión: 2026-06-19 1:04 PM America/Los_Angeles — YMS + WMS verificados (solo lectura). 5 contenedores nuevos Jun 22 agregados. Browser automation Outlook en curso.",
+  "timestamp": "2026-06-19T13:04:00-07:00",
   "summary": {
-    "totalMonitoreados": 27,
-    "enYardaVerde": 2,
+    "totalMonitoreados": 32,
+    "enYardaVerde": 1,
     "enYardaRojo": 1,
-    "enYardaAmarillo": 1,
-    "preEntry": 6,
-    "excluidosRNClosed": 17
+    "enYardaAmarillo": 0,
+    "preEntry": 11,
+    "excluidosRNClosed": 19
   },
   "alertasRolas": [
-    "⚠️ YMMU6698133 — ETs contradictorios: ET-1109857 DOCK_CHECKED_IN DOCK59, pero ET-1110787 muestra PICK_UP empty/chassis GATE_CHECK_OUT 06/18 21:06. RN-5008112 sigue IN_PROGRESS.",
-    "⚠️ CAAU7646394 STUCK — 17 días en GATE_CHECKED_IN (desde 06/02) en DOCK15. RN-5007922 FORCE_CLOSED. Posible contenedor abandonado.",
-    "⚠️ EITU8172519 — GATE_CHECKED_IN DOCK140 pero RN-5008258 no está vinculado en inboundReceiptIds del ET-1110876.",
-    "⚠️ MATU4542915 — RN-5008260 IN_PROGRESS desde hoy 06/19 15:08 UTC pero NO tiene entry ticket en YMS. Posible check-in pendiente.",
-    "⚠️ CAIU9721329 — cita pasada 06/18 1AM, RN-5008176 IMPORTED. Más de 35h sin rastro YMS."
+    "⚠️ EITU8172519 — GATE_CHECKED_IN DOCK140 con inboundReceiptIds VACÍO. RN-5008258 (IMPORTED) NO vinculado en el ET. ¿Error de gate check-in?",
+    "⚠️ MATU4542915 — RN-5008260 IN_PROGRESS (recibiendo activamente desde hoy 15:08 UTC) pero SIN cita (appointmentTime null) y SIN entry ticket en YMS. Estado atípico.",
+    "⚠️ CAAU7646394 — ET-1102537 fantasma: 17 días stale en GATE_CHECKED_IN. Container realmente salió 05-Jun vía ET-1104652. RN-5007922 FORCE_CLOSED. → EXCLUIDO.",
+    "⚠️ SEGU2947142 — Ya salió (GATE_CHECK_OUT 06/19 02:16) pero RN-5008154 quedó IMPORTED sin cerrar.",
+    "⚠️ CAIU9721329 — RN-5008176 appointmentTime cambió a 06/23 10AM (antes era cita pasada 06/18). Reprogramación confirmada por WMS.",
+    "⚠️ RN-187157/CHAPIN06172026-12/U83042 — RN IMPORTED con cita HOY 1PM pero SIN appointment en YMS y SIN entry ticket. Trailer no registrado como equipment. Posible carga suelta.",
+    "🆕 5 contenedores nuevos agregados: CSNU8075984, CSGU6625300, MATU2690410, TGBU9265460, CSNU8449451 — todos con RN IMPORTED y appointment YMS para Jun 22."
   ],
   "rows": [
-    {
-      "container": "YMMU6698133",
-      "appointmentTime": "06/16 9:00AM–11:00AM",
-      "inYard": true,
-      "color": "green",
-      "entry": "ET-1109857",
-      "status": "DOCK_CHECKED_IN",
-      "receipt": "RN-5008112",
-      "receiptStatus": "IN_PROGRESS",
-      "note": "🟢 EN YARDA — DOCK59, QX LOGISTIX, GURUNANDA. Recibo en progreso desde 06/17 22:41. ⚠️ ET-1110787 muestra pickup empty/chassis y GATE_CHECK_OUT 06/18 21:06 — posible movimiento de chasis vacío, el contenedor sigue en proceso."
-    },
     {
       "container": "MATU4542915",
       "appointmentTime": "Sin cita",
@@ -37,51 +28,18 @@
       "status": "IN_YARD_SIN_ET",
       "receipt": "RN-5008260",
       "receiptStatus": "IN_PROGRESS",
-      "note": "🟢 EN YARDA — RN-5008260 IN_PROGRESS desde 06/19 08:08 PDT. Black Seed Oil. ⚠️ SIN entry ticket en YMS — posible que el check-in de gate esté pendiente. Creación receipt: aismael."
+      "note": "🟢 EN YARDA — RN-5008260 IN_PROGRESS desde 06/19 15:08 UTC. Black Seed Oil. ⚠️ SIN cita formal (appointmentTime null) y SIN entry ticket en YMS. Recibiendo activamente. Creado por aismael."
     },
     {
       "container": "EITU8172519",
       "appointmentTime": "06/18 12:30AM–2:30AM",
       "inYard": true,
-      "color": "yellow",
+      "color": "red",
       "entry": "ET-1110876",
       "status": "GATE_CHECKED_IN",
       "receipt": "RN-5008258",
       "receiptStatus": "IMPORTED",
-      "note": "🟡 EN YARDA — DOCK140, QX LOGISTIX. Great Value Aircare. RN-5008258 existe IMPORTED pero NO vinculado en inboundReceiptIds del ET. Cita original pasada."
-    },
-    {
-      "container": "CAAU7646394",
-      "appointmentTime": "06/02 — Sin cita clara",
-      "inYard": true,
-      "color": "red",
-      "entry": "ET-1102537",
-      "status": "GATE_CHECKED_IN",
-      "receipt": "RN-5007922",
-      "receiptStatus": "FORCE_CLOSED",
-      "note": "🔴 ALERTA — STUCK 17 DÍAS en DOCK15. GATE_CHECKED_IN desde 06/02. RN-5007922 FORCE_CLOSED desde 06/04. Carrier 'v'. Único container con DO (26FD3192D). Posible contenedor abandonado o ET nunca cerrado."
-    },
-    {
-      "container": "KOCU4689466",
-      "appointmentTime": "06/20 7:00AM–9:00AM",
-      "inYard": false,
-      "color": "normal",
-      "entry": "",
-      "status": "PRE_ENTRY",
-      "receipt": "RN-5008265",
-      "receiptStatus": "IMPORTED",
-      "note": "Cita mañana 06/20. Will Call. 21 pallets GN Butter On Gums. Sin ET aún. ET-1110420 ya no existe en YMS."
-    },
-    {
-      "container": "HMMU6422718",
-      "appointmentTime": "06/20 8:00PM–10:00PM",
-      "inYard": false,
-      "color": "normal",
-      "entry": "",
-      "status": "PRE_ENTRY",
-      "receipt": "RN-5008264",
-      "receiptStatus": "IMPORTED",
-      "note": "Cita mañana 06/20. 21 pallets GN Expandable Floss + Toothbrush. Sin ET aún."
+      "note": "🔴 EN YARDA SIN RN VINCULADO — DOCK140, QX LOGISTIX, driver Carlos Garay. Check-in 06/19 00:21. inboundReceiptIds VACÍO. RN-5008258 (IMPORTED, 40 pallets) existe pero NO fue vinculado en gate check-in. Great Value Aircare. Sello 0345."
     },
     {
       "container": "CAAU9247201",
@@ -92,7 +50,18 @@
       "status": "PRE_ENTRY",
       "receipt": "RN-5008178",
       "receiptStatus": "IMPORTED",
-      "note": "Cita HOY 06/19 1PM. 20 pallets GN Dual Thread Floss + Floss Picks. Sin ET aún — posible llegada inminente."
+      "note": "Cita HOY 06/19 1PM. 20 pallets GN Dual Thread Floss + Floss Picks. Sin ET aún — posible llegada inminente. WMS confirma appointment 20:00 UTC = 1PM PT."
+    },
+    {
+      "container": "CORR06192026UNIS",
+      "appointmentTime": "06/19 8:00PM",
+      "inYard": false,
+      "color": "normal",
+      "entry": "",
+      "status": "PRE_ENTRY",
+      "receipt": "RN-5008268",
+      "receiptStatus": "IMPORTED",
+      "note": "Cita HOY 06/19 8PM. PO#8283 GN Neem Toothpaste. Carga consolidada. 2 RNs adicionales (RN-187205 + RN-187202). Seal 6833970/6833969. WMS: appointment 20:00 UTC."
     },
     {
       "container": "OOCU9426488",
@@ -103,73 +72,128 @@
       "status": "PRE_ENTRY",
       "receipt": "RN-5008133",
       "receiptStatus": "IMPORTED",
-      "note": "Cita HOY 06/19 11PM. GN Tongue Scrapers + Botellas. Sin ET aún."
+      "note": "Cita HOY 06/19 11PM. GN Tongue Scrapers + Botellas. Sin ET aún. WMS confirma appointment Jun 20 06:00 UTC = Jun 19 11PM PT."
+    },
+    {
+      "container": "KOCU4689466",
+      "appointmentTime": "06/20 7:00AM–9:00AM",
+      "inYard": false,
+      "color": "normal",
+      "entry": "",
+      "status": "PRE_ENTRY",
+      "receipt": "RN-5008265",
+      "receiptStatus": "IMPORTED",
+      "note": "Cita mañana 06/20. Will Call. 21 pallets GN Butter On Gums. Sin ET aún. WMS confirma appointment Jun 20 14:00 UTC = 7AM PT."
+    },
+    {
+      "container": "HMMU6422718",
+      "appointmentTime": "06/20 8:00PM–10:00PM",
+      "inYard": false,
+      "color": "normal",
+      "entry": "",
+      "status": "PRE_ENTRY",
+      "receipt": "RN-5008264",
+      "receiptStatus": "IMPORTED",
+      "note": "Cita mañana 06/20. 21 pallets GN Expandable Floss + Toothbrush. Sin ET aún. WMS confirma appointment Jun 21 03:00 UTC = Jun 20 8PM PT."
     },
     {
       "container": "CAIU9721329",
-      "appointmentTime": "06/18 1:00AM–3:00AM",
+      "appointmentTime": "06/23 10:00AM",
       "inYard": false,
       "color": "normal",
       "entry": "",
       "status": "PRE_ENTRY",
       "receipt": "RN-5008176",
       "receiptStatus": "IMPORTED",
-      "note": "⚠️ Cita pasada 06/18 1AM. RN-5008176 sigue IMPORTED. GN Electric Toothbrush. Más de 35h sin rastro YMS."
+      "note": "🔄 REPROGRAMADO — RN confirma nueva cita 06/23 10AM (antes 06/18 1AM). GN Electric Toothbrush. Sin ET."
     },
     {
-      "container": "CORR06192026UNIS",
-      "appointmentTime": "06/19 1:00PM–3:00PM",
+      "container": "CSNU8075984",
+      "appointmentTime": "06/22 8:00AM",
       "inYard": false,
       "color": "normal",
       "entry": "",
       "status": "PRE_ENTRY",
-      "receipt": "RN-5008268",
+      "receipt": "RN-5008284",
       "receiptStatus": "IMPORTED",
-      "note": "Cita HOY 06/19. PO#8283 GN Neem Toothpaste. No es container estándar — posible carga consolidada. 2 RNs (RN-187205 + RN-187202). Seal 6833970/6833969."
+      "note": "🆕 NUEVO — Agregado 06/19. Cita Jun 22 8AM. Appt APPT-6031603 creado hoy por aismael. Carrier ORG-825. Drop Off Delivery. Sin ET aún."
     },
     {
-      "container": "XYLU8127277",
-      "appointmentTime": "06/17 1:00AM–3:00AM",
+      "container": "CSGU6625300",
+      "appointmentTime": "06/22 8:30AM",
       "inYard": false,
-      "color": "excluded",
-      "entry": "ET-1110586",
-      "status": "DOCK_CHECKED_OUT",
-      "receipt": "RN-5008137",
-      "receiptStatus": "CLOSED",
-      "note": "EXCLUIDO — RN CLOSED. Salió 06/18 20:47. Daniela Gonzalez."
+      "color": "normal",
+      "entry": "",
+      "status": "PRE_ENTRY",
+      "receipt": "RN-5008285",
+      "receiptStatus": "IMPORTED",
+      "note": "🆕 NUEVO — Agregado 06/19. Cita Jun 22 8:30AM. Appt APPT-6031604 creado hoy por aismael. Carrier ORG-825. Drop Off Delivery. Sin ET aún."
     },
     {
-      "container": "OOCU6324970",
-      "appointmentTime": "06/17 12:30AM–2:30AM",
+      "container": "MATU2690410",
+      "appointmentTime": "06/22 10:00AM",
       "inYard": false,
-      "color": "excluded",
-      "entry": "ET-1110589",
-      "status": "DOCK_CHECKED_OUT",
-      "receipt": "RN-5008135",
-      "receiptStatus": "CLOSED",
-      "note": "EXCLUIDO — RN CLOSED. Salió 06/18 21:43. QX LOGISTIX."
+      "color": "normal",
+      "entry": "",
+      "status": "PRE_ENTRY",
+      "receipt": "RN-5008286",
+      "receiptStatus": "IMPORTED",
+      "note": "🆕 NUEVO — Agregado 06/19. Cita Jun 22 10AM. Appt APPT-6031605 creado hoy por aismael. Carrier ORG-825. Drop Off Delivery. Sin ET aún."
     },
     {
-      "container": "TLLU3336504",
-      "appointmentTime": "06/18 9:00AM–11:00AM",
+      "container": "TGBU9265460",
+      "appointmentTime": "06/22 8:00PM",
+      "inYard": false,
+      "color": "normal",
+      "entry": "",
+      "status": "PRE_ENTRY",
+      "receipt": "RN-5008287",
+      "receiptStatus": "IMPORTED",
+      "note": "🆕 NUEVO — Agregado 06/19. Cita Jun 22 8PM. Appt APPT-6031606 creado hoy por aismael. Carrier ORG-825. Drop Off Delivery. Sin ET aún."
+    },
+    {
+      "container": "CSNU8449451",
+      "appointmentTime": "06/22 8:30PM",
+      "inYard": false,
+      "color": "normal",
+      "entry": "",
+      "status": "PRE_ENTRY",
+      "receipt": "RN-5008288",
+      "receiptStatus": "IMPORTED",
+      "note": "🆕 NUEVO — Agregado 06/19. Cita Jun 22 8:30PM. Appt APPT-6031607 creado hoy por aismael. Carrier ORG-825. Drop Off Delivery. Sin ET aún."
+    },
+    {
+      "container": "YMMU6698133",
+      "appointmentTime": "06/16 9:00AM–11:00AM",
       "inYard": false,
       "color": "excluded",
-      "entry": "ET-1110587",
-      "status": "DOCK_CHECKED_OUT",
-      "receipt": "RN-5008177",
-      "receiptStatus": "CLOSED",
-      "note": "EXCLUIDO — RN CLOSED. Salió 06/18 23:01. QX LOGISTIX."
+      "entry": "ET-1109857 → ET-1110787",
+      "status": "GATE_CHECK_OUT",
+      "receipt": "RN-5008112",
+      "receiptStatus": "FORCE_CLOSED",
+      "note": "EXCLUIDO — RN FORCE_CLOSED hoy 19:31. Container salió 06/18 21:06 vía ET-1110787 (pickup empty por Miguel Purvis). ET-1109857 (DOCK_CHECKED_IN DOCK59) quedó abierto/stale. QX LOGISTIX."
+    },
+    {
+      "container": "CAAU7646394",
+      "appointmentTime": "06/02 — Sin cita clara",
+      "inYard": false,
+      "color": "excluded",
+      "entry": "ET-1102537 → ET-1104652",
+      "status": "GATE_CHECK_OUT",
+      "receipt": "RN-5007922",
+      "receiptStatus": "FORCE_CLOSED",
+      "note": "EXCLUIDO — RN FORCE_CLOSED. Container salió 05-Jun vía ET-1104652 (pickup empty, jg trucking). ET-1102537 es fantasma: GATE_CHECKED_IN 17 días sin cierre. DO 26FD3192D."
     },
     {
       "container": "SEGU2947142",
       "appointmentTime": "06/18 9:00PM–11:00PM",
       "inYard": false,
       "color": "excluded",
-      "entry": "ET-1108965",
+      "entry": "ET-1110891",
       "status": "GATE_CHECK_OUT",
       "receipt": "RN-5008154",
       "receiptStatus": "IMPORTED",
-      "note": "EXCLUIDO — GATE_CHECK_OUT 06/19 02:16. Salió sin haber sido recibido (RN seguía IMPORTED). GutCleanse + Equate Vapor Inhaler."
+      "note": "EXCLUIDO — GATE_CHECK_OUT 06/19 02:16. Salió sin haber sido recibido (RN quedó IMPORTED). GutCleanse + Equate Vapor Inhaler. Pickup TEMU6486981 empty."
     },
     {
       "container": "OOCU8494560",
