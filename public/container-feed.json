@@ -1,16 +1,17 @@
 {
-  "message": "Ciclo 16:21 PDT Jun 23. Auditoría SOLO LECTURA. 5 EXCLUIDOS removidos del dashboard visible. Outlook OK (0 no leídos).",
-  "timestamp": "2026-06-23T16:21:58-07:00",
-  "lastUpdated": "2026-06-23T16:21:58-07:00",
+  "message": "Ciclo 16:29 PDT Jun 23. Auditoría SOLO LECTURA. +YMMU6698133 (YELLOW, contradicción YMS/WMS). 5 BLACK removidos. Outlook OK (0 no leídos).",
+  "timestamp": "2026-06-23T16:29:21-07:00",
+  "lastUpdated": "2026-06-23T16:29:21-07:00",
   "summary": {
-    "totalVisible": 32,
+    "totalVisible": 33,
     "green": 11,
     "red": 0,
-    "yellow": 5,
+    "yellow": 6,
     "normal": 16,
     "excluded": 45
   },
   "alertasRolas": [
+    "🔴 YMMU6698133 AGREGADO YELLOW — YMS: DOCK_CHECKED_IN DOCK59 ~145h (checkOut NULL). WMS: RN-5008112 FORCE_CLOSED Jun 19. Contradicción crítica. Verificar si contenedor sigue físicamente.",
     "🧹 LIMPIEZA: 5 filas BLACK/EXCLUIDAS removidas del dashboard visible. RNs cerrados/force_closed ya no se muestran. Summary corregido: 11G 5Y 0R 16N.",
     "✅ Auditoría Jun 23 16:20 PDT: Watchdog OK. Dashboard 200. Feed JSON válido. Asset JS sin raw. 0 correos no leídos. 42 contenedores en Outlook.",
     "✅ Outlook responde OK — 0 correos NO LEÍDOS. 24 correos, 35 contenedores extraídos.",
@@ -31,6 +32,20 @@
     "✅ CHAPIN/FUS/GN/LAC/CORR/Leafchem: contenedores no-Priti monitoreados por otros agentes."
   ],
   "rows": [
+    {
+      "container": "YMMU6698133",
+      "appointmentTime": "Jun 16 4:00PM (original) — DOCK59 ~145h / 6 días",
+      "inYard": true,
+      "color": "yellow",
+      "entry": "ET-1109857 DOCK_CHECKED_IN DOCK59 (Jun 17 15:41). checkOutEndTime NULL. QX LOGISTIX. 2 GATE_CHECK_OUT previos (Jun 17, Jun 18).",
+      "status": "🟡 CONTRADICCIÓN YMS/WMS — YMS: DOCK_CHECKED_IN DOCK59 ~145h. WMS: RN-5008112 FORCE_CLOSED (Jun 19). Sin checkOut YMS. ¿Contenedor abandonado?",
+      "receipt": "RN-5008112",
+      "receiptStatus": "FORCE_CLOSED (Jun 19, added item) — TASK-5294674 (Caren Cubides)",
+      "note": "⚠️ ALERTA: ~6 días en DOCK59 sin checkout en YMS. RN cerrado hace 4 días. Posible contenedor abandonado o checkout omitido. Requiere verificación física.",
+      "statusText": "🟡 YMS: EN YARDA DOCK59 ~145h | WMS: RN-5008112 FORCE_CLOSED. ¡Verificar!",
+      "rn": "RN-5008112",
+      "location": "DOCK59"
+    },
     {
       "container": "EITU8174300",
       "appointmentTime": "Jun 23 02:37 — entró madrugada",
