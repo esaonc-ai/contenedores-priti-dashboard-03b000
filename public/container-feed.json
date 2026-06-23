@@ -1,16 +1,18 @@
 {
-  "message": "Ciclo 16:29 PDT Jun 23. Auditoría SOLO LECTURA. +YMMU6698133 (YELLOW, contradicción YMS/WMS). 5 BLACK removidos. Outlook OK (0 no leídos).",
-  "timestamp": "2026-06-23T16:29:21-07:00",
-  "lastUpdated": "2026-06-23T16:29:21-07:00",
+  "message": "Ciclo 16:32 PDT Jun 23. Auditoría SOLO LECTURA. KOCU4689466 EXCLUIDO removido. EITU8174300 GREEN→YELLOW (doble ET DOCK53+DOCK64). +YMMU6698133 YELLOW. 0 correos no leídos.",
+  "timestamp": "2026-06-23T16:32:00-07:00",
+  "lastUpdated": "2026-06-23T16:32:00-07:00",
   "summary": {
-    "totalVisible": 33,
-    "green": 11,
+    "totalVisible": 32,
+    "green": 10,
     "red": 0,
     "yellow": 6,
     "normal": 16,
-    "excluded": 45
+    "excluded": 46
   },
   "alertasRolas": [
+    "🟡 EITU8174300: DOBLE ET ACTIVO — ET-1112430 GATE_CHECKED_IN DOCK53 (02:37) + ET-1112890 WINDOW_CHECKED_IN DOCK64 (15:45). Ambos activos mismo RN/EQP-251036. CONTRADICCIÓN. Dashboard cambia GREEN→YELLOW.",
+    "🗑️ KOCU4689466 REMOVIDO del dashboard — RN-5008265 task FORCE_CLOSED (Fatima). ~73h en yarda DOCK65. EXCLUIDO.",
     "🔴 YMMU6698133 AGREGADO YELLOW — YMS: DOCK_CHECKED_IN DOCK59 ~145h (checkOut NULL). WMS: RN-5008112 FORCE_CLOSED Jun 19. Contradicción crítica. Verificar si contenedor sigue físicamente.",
     "🧹 LIMPIEZA: 5 filas BLACK/EXCLUIDAS removidas del dashboard visible. RNs cerrados/force_closed ya no se muestran. Summary corregido: 11G 5Y 0R 16N.",
     "✅ Auditoría Jun 23 16:20 PDT: Watchdog OK. Dashboard 200. Feed JSON válido. Asset JS sin raw. 0 correos no leídos. 42 contenedores en Outlook.",
@@ -50,15 +52,15 @@
       "container": "EITU8174300",
       "appointmentTime": "Jun 23 02:37 — entró madrugada",
       "inYard": true,
-      "color": "green",
-      "entry": "ET-1112890 WINDOW_CHECKED_IN DOCK64 (Jun 23 15:45). dagonzalez manual check-in. EQP-251036.",
-      "status": "🟢 EN YARDA CON RN ACTIVO — RN-5008303 IMPORTED. DOCK64. ~10h en yarda.",
+      "color": "yellow",
+      "entry": "⚠️ DOBLE ET: ET-1112430 GATE_CHECKED_IN DOCK53 (Jun 23 02:37, QX LOGISTIX, Alberto C.) + ET-1112890 WINDOW_CHECKED_IN DOCK64 (Jun 23 15:45, dagonzalez, EQP-251036). AMBOS ACTIVOS mismo RN/EQP.",
+      "status": "🟡 CONTRADICCIÓN — DOBLE ET activo mismo RN/EQP-251036. DOCK53 y DOCK64. RN-5008303 IMPORTED.",
       "receipt": "RN-5008303",
-      "receiptStatus": "IMPORTED — sin receive task asignado",
-      "note": "🟢 EN YARDA CON RN — RN-5008303 IMPORTED. DOCK64. WINDOW_CHECKED_IN hoy 15:45 (ET-1112890, dagonzalez). Limpio: DOCK53 era referencia vieja.",
-      "statusText": "🟢 EN YARDA CON RN — RN-5008303 IMPORTED. DOCK64.",
+      "receiptStatus": "IMPORTED — sin receive task asignado. ⚠️ 2 ETs activos simultáneos.",
+      "note": "🟡 ALERTA: Doble ET activo mismo RN/EQP-251036. ET-1112430 GATE_CHECKED_IN DOCK53 (madrugada) + ET-1112890 WINDOW_CHECKED_IN DOCK64 (tarde). CONTRADICCIÓN. Requiere investigación YMS.",
+      "statusText": "🟡 DOBLE ET — RN-5008303 IMPORTED. DOCK53+DOCK64.",
       "rn": "RN-5008303",
-      "location": "DOCK64"
+      "location": "DOCK53/DOCK64 ⚠️"
     },
     {
       "container": "CSGU6625300",
@@ -185,20 +187,6 @@
       "statusText": "🟢 EN YARDA CON RN — RN-5008288. DOCK169. ~24h.",
       "rn": "RN-5008288",
       "location": "DOCK62"
-    },
-    {
-      "container": "KOCU4689466",
-      "appointmentTime": "06/20 7:00-9:00AM — en yarda ~73h",
-      "inYard": true,
-      "color": "yellow",
-      "entry": "ET-1111636 GATE_CHECKED_IN SPOT748 (Jun 20, STALE) + ET-1112226 DOCK_CHECKED_IN DOCK65 (Jun 22 23:34, activo)",
-      "status": "🟡 ALERTA — RN-5008265 EXCEPTION. ~73h en yarda. TASK-5297982 FORCE_CLOSED. RN sigue activo (no cerrado).",
-      "receipt": "RN-5008265",
-      "receiptStatus": "EXCEPTION — TASK-5297982 FORCE_CLOSED (Fatima, different lot#). RN NO cerrado.",
-      "note": "🟡 CORREGIDO: BLACK→YELLOW. RN-5008265 está EXCEPTION, no CLOSED ni FORCE_CLOSED. Debe ser AMARILLO (alerta activa). ⚠️ Doble ET.",
-      "statusText": "🟡 ALERTA — RN-5008265 EXCEPTION. DOCK65. ~73h.",
-      "rn": "RN-5008265",
-      "location": "DOCK65"
     },
     {
       "container": "U83042 (CHAPIN) — DOCK67",
