@@ -1,16 +1,18 @@
 {
-  "message": "Ciclo 11:30 PDT Jun 23. Corrección DOBLE ET: CSGU6625300 y KOCU4689466 GREEN→YELLOW (2 ETs activos simultáneos detectados por YMS-agent).",
-  "timestamp": "2026-06-23T11:30:00-07:00",
-  "lastUpdated": "2026-06-23T11:30:00-07:00",
+  "message": "Ciclo 11:40 PDT Jun 23. Correcciones: CSGU6625300+KOCU4689466 GREEN→YELLOW (DOBLE ET YMS). CSNU8449451 NORMAL→RED (ET-1112370 DOCK169 sin RN vinculado).",
+  "timestamp": "2026-06-23T11:40:00-07:00",
+  "lastUpdated": "2026-06-23T11:40:00-07:00",
   "summary": {
     "totalVisible": 35,
     "green": 6,
-    "red": 1,
+    "red": 2,
     "yellow": 8,
-    "normal": 20,
+    "normal": 19,
     "excluded": 38
   },
   "alertasRolas": [
+    "🔴 CSNU8449451: ET-1112370 GATE_CHECKED_IN DOCK169 ~15h SIN RN vinculado. RN-5008288 IMPORTED pero inboundReceiptIds VACÍO.",
+    "🟡 CSGU6625300 y KOCU4689466: DOBLE ET detectado por YMS-agent. Cambiados GREEN→YELLOW.",
     "🟡 CSGU6625300 y KOCU4689466 cambiados GREEN→YELLOW: DOBLE ET detectado por YMS-agent (2 ETs activos simultáneos cada uno, mismo RN, mismo equipo. CONTRADICCIÓN).",
     "📊 6 correcciones aplicadas: CAAU5246296, LAC062226UNIS, CSGU6625300, MATU2690410, MATU2752682, GN1110 → GREEN (en yarda con RN activo).",
     "🔄 Browser automation OUTLOOK en curso (priti-email-20260623-0949). Resultados pendientes.",
@@ -495,15 +497,15 @@
     {
       "container": "CSNU8449451",
       "appointmentTime": "06/23 3:30 AM PASADA",
-      "inYard": false,
+      "inYard": true,
       "color": "red",
-      "entry": "YMS: 0 ETs",
-      "status": "🔴 EN YARDA SIN RN — ET-1112370 GATE_CHECKED_IN DOCK169 ~16h (desde anoche 20:47). inboundReceiptIds VACÍO. RN-5008288 IMPORTED sin vincular al ET.",
+      "entry": "ET-1112370 GATE_CHECKED_IN DOCK169 (desde Jun 22 20:47, ~15h). inboundReceiptIds VACÍO. QX LOGISTIX.",
+      "status": "🔴 EN YARDA SIN RN — ET-1112370 GATE_CHECKED_IN DOCK169 ~15h. RN-5008288 IMPORTED pero NO vinculado al ET. Sin receive task.",
       "receipt": "RN-5008288",
-      "receiptStatus": "IMPORTED",
-      "note": "Cita pasada. Sin entrada a yarda.",
-      "statusText": "Cita Jun 23 3:30 AM (PASADA). RN-5008288 IMPORTED. Sin rastro YMS.",
-      "rn": "RN-5008288 (sin vincular en ET)",
+      "receiptStatus": "IMPORTED — NO vinculado al ET. inboundReceiptIds vacío.",
+      "note": "⚠️ ET-1112370 GATE_CHECKED_IN desde anoche 20:47 PDT. inboundReceiptIds: []. RN-5008288 IMPORTED en WMS pero no está en el ET. QX LOGISTIX, driver MARQUISE COOK. ¡URGENTE vincular RN!",
+      "statusText": "🔴 EN YARDA SIN RN — ET-1112370 DOCK169 ~15h. RN-5008288 sin vincular.",
+      "rn": "RN-5008288 (NO vinculado al ET)",
       "location": "DOCK169"
     },
     {
