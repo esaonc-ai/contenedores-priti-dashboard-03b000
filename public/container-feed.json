@@ -1,27 +1,29 @@
 {
-  "message": "Auditoría 05:44 PDT Jun 23. CSNU8075984→AMARILLO (NO-SHOW cita ayer). HMMU6422718 note actualizada (RN CLOSED hoy). EITU8172519 + OOCU9426488→EXCLUIDOS. Watchdog ✅.",
-  "timestamp": "2026-06-23T05:44:05-07:00",
-  "lastUpdated": "2026-06-23T05:44:05-07:00",
+  "message": "Auditoría 06:09 PDT Jun 23. HMMU6422718→EXCLUIDO (RN-5008264 CLOSED 06:58). SEGU2947142→AMARILLO (DOCK65 compartido, task FORCE_CLOSED). CAAU9247201→NORMAL (procesado DOCK_CHECKED_OUT). Outlook: 1 fallo (8vo consecutivo). YMS/WMS verificados.",
+  "timestamp": "2026-06-23T06:09:00-07:00",
+  "lastUpdated": "2026-06-23T06:09:00-07:00",
   "summary": {
     "totalVisible": 34,
     "green": 2,
-    "red": 1,
+    "red": 0,
     "yellow": 9,
-    "normal": 22,
-    "excluded": 35
+    "normal": 23,
+    "excluded": 38
   },
   "alertasRolas": [
-    "🔴 HMMU6422718: DOCK119 ~57h sin RN activo (RN-5008264 CLOSED hoy). Camera OUT detectada.",
-    "🔴 EITU8172519: ET-1110876 RESIDUAL 4d en DOCK140. RN-5008258 CLOSED. ET residual sin limpiar.",
+    "🚨 ALERTA ROLAS CRÍTICA: Outlook 8 fallos consecutivos. Correos de Priti NO revisados desde ciclo Jun 22.",
+    "🔴 HMMU6422718→EXCLUIDO: RN-5008264 CLOSED por dagonzalez (06:58 PDT). ET-1111747 residual GATE_CHECKED_IN DOCK119 ~58h.",
+    "🟡 SEGU2947142→NUEVO AMARILLO: DOCK65 compartido con U83042/RN-187076. RN-5008154 IN_PROGRESS, TASK-5295135 FORCE_CLOSED (short item).",
     "🟡 U83042/CHAPIN: 2 ETs activos DOCK65+DOCK67, 2 RNs (187076 IN_PROGRESS + 187157 sin receive 4d).",
     "🟡 EITU8174300: Entró yarda 09:37 sin receive task. RN-5008303 IMPORTED.",
     "🟡 CSNU8075984: NO-SHOW cita Jun 22 15:00. RN-5008284 IMPORTED. Posible re-agendamiento.",
-    "🟡 MATU4542915: RN-5008260 FORCE_CLOSED (short items). Priti reporta contenedor NO VACÍO. Demurrage desde Jun 22.",
-    "📧 3 correos NO LEÍDOS de Priti (Jun 22 15:22, 16:21, 17:11). 13 contenedores nuevos en total.",
-    "⚠️ GN06222026UNIS-53792: ~4d en yarda DOCK5, RN-187212 NOT_CONFIRMED.",
-    "⚠️ OOCU9426488: RN-5008133 FORCE_CLOSED hoy (QTY MATCH). ET-1111535 GATE_CHECK_OUT 06/19. Ya estaba en excluidos.",
+    "🟡 GN06222026UNIS-53792: ~4d en yarda DOCK5, RN-187212 NOT_CONFIRMED.",
+    "✅ CAAU9247201: PROCESADO DOCK_CHECKED_OUT 06/22 23:45. RN-5008178 pendiente cierre formal.",
+    "✅ 53106: RN-187205 CLOSED (Jun 23 02:25). EXCLUIDO.",
+    "✅ OOCU9426488: RN-5008133 FORCE_CLOSED (QTY MATCH). EXCLUIDO.",
+    "📧 3 correos NO LEÍDOS de Priti (Jun 22 15:22, 16:21, 17:11). 13 contenedores nuevos.",
     "⚠️ YMS keyword search sigue devolviendo 0 resultados (bug conocido).",
-    "✅ Watchdog 05:42 PDT: Dashboard HTTP 200, feed HTTP 200 (34 rows visibles, JSON válido), JS /assets/index-CSX5q7DW.js, sin raw.githubusercontent.com."
+    "✅ Watchdog 06:00 PDT: Dashboard HTTP 200, feed HTTP 200, JS /assets/index-CSX5q7DW.js, sin raw.githubusercontent.com."
   ],
   "rows": [
     {
@@ -154,15 +156,15 @@
       "container": "CAAU9247201",
       "appointmentTime": "06/19 8:00-10:00 PM (cita pasada) — receive activo sin yarda",
       "inYard": false,
-      "color": "yellow",
+      "color": "normal",
       "entry": "YMS: sin ETs. WMS: RN-5008178 IN_PROGRESS (dagonzalez, started 06:45 PDT hoy).",
-      "status": "🟡 CONTRADICCIÓN — WMS RN-5008178 IN_PROGRESS pero YMS 0 ETs. ¿Dónde está el contenedor?",
+      "status": "✅ PROCESADO — DOCK_CHECKED_OUT Jun 22 23:45. RN-5008178 IN_PROGRESS (task cerrada, RN pendiente cierre formal).",
       "receipt": "RN-5008178",
-      "receiptStatus": "IN_PROGRESS — dagonzalez, started 06:45 PDT Jun 23",
-      "note": "⚠️ Receive activo pero contenedor no aparece en yarda YMS. Posible drop trailer directo a dock?",
-      "statusText": "🟡 CONTRADICCIÓN — WMS RN-5008178 IN_PROGRESS pero YMS 0 ETs. ¿Dónde está el cont",
+      "receiptStatus": "IN_PROGRESS — task CLOSED, RN pendiente cierre",
+      "note": "Contenedor procesado. Salió de DOCK62. RN-5008178 sigue IN_PROGRESS con TASK-5297984 CLOSED. Requiere cierre formal del RN.",
+      "statusText": "✅ PROCESADO — DOCK_CHECKED_OUT Jun 22 23:45. RN-5008178 IN_PROGRESS (task ce",
       "rn": "RN-5008178",
-      "location": "desconocida (IN_PROGRESS sin YMS)"
+      "location": "DOCK62 (salió)"
     },
     {
       "container": "CSNU8075984",
@@ -177,20 +179,6 @@
       "statusText": "🟡 CITA PASADA — NO-SHOW. Cita Jun 22 15:00. RN-5008284 IMPORTED. No entró a yarda.",
       "rn": "RN-5008284",
       "location": ""
-    },
-    {
-      "container": "HMMU6422718",
-      "appointmentTime": "06/20 8:00-10:00PM — DOCK119 ~57h sin RN",
-      "inYard": true,
-      "color": "red",
-      "entry": "ET-1111747 GATE_CHECKED_IN DOCK119 (desde Jun 20 19:36). Camera OUT detectada.",
-      "status": "🔴 EN YARDA SIN RN — GATE_CHECKED_IN DOCK119 desde Jun 20 19:36 (~57h). RN-5008264 CLOSED.",
-      "receipt": "RN-5008264",
-      "receiptStatus": "CLOSED — (dagonzalez, Jun 23). Contenedor sigue en yarda.",
-      "note": "🚨 RN-5008264 CLOSED hoy Jun 23. Contenedor sigue GATE_CHECKED_IN DOCK119 desde Jun 20 19:36 (~57h). Camera OUT detectada (lane 14), sin checkOut formal.",
-      "statusText": "🔴 EN YARDA SIN RN — GATE_CHECKED_IN DOCK119 desde Jun 20 19:36 (~57h). RN-500826",
-      "rn": "RN-5008264 (CLOSED)",
-      "location": "DOCK119"
     },
     {
       "container": "CAIU9721329",
@@ -499,6 +487,20 @@
       "statusText": "Cita Jun 23 3:00 AM (PASADA). RN-5008287 IMPORTED. Sin rastro YMS.",
       "rn": "RN-5008287",
       "location": ""
+    },
+    {
+      "container": "SEGU2947142",
+      "appointmentTime": "DOCK65 — RN-5008154 compartido con U83042",
+      "inYard": true,
+      "color": "yellow",
+      "entry": "YMS: sin ETs independientes (comparte DOCK65 con U83042/CHAPIN). WMS: RN-5008154 IN_PROGRESS.",
+      "status": "🟡 DOBLE RN EN DOCK65 — RN-5008154 (SEGU2947142) + RN-187076 (U83042) comparten DOCK65. TASK FORCE_CLOSED (short item).",
+      "receipt": "RN-5008154",
+      "receiptStatus": "IN_PROGRESS — Caren Cubides, ⚠️ TASK-5295135 FORCE_CLOSED (short item)",
+      "note": "⚠️ DOCK65 compartido. RN-187076 (U83042) activo + RN-5008154 (SEGU2947142) IN_PROGRESS con task FORCE_CLOSED. Ambos contenedores en mismo dock.",
+      "statusText": "🟡 DOBLE RN EN DOCK65 — RN-5008154 (SEGU2947142) + RN-187076 (U83042) comparten DOCK",
+      "rn": "RN-5008154",
+      "location": "DOCK65"
     }
   ]
 }
