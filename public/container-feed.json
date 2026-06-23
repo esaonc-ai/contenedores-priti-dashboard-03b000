@@ -1,27 +1,26 @@
 {
-  "message": "CICLO 19:44 PDT Jun 22 — CSGU6625300 🟢→🟡 (2 ETs contradictorios). NUEVOS: 53477 🟡 (contradicción), U40877/CHAPIN8 🟢. YMS+WMS verificados 19:44 PDT.",
-  "timestamp": "2026-06-22T19:47:22-07:00",
+  "message": "CICLO 20:15 PDT Jun 22 — 7 CAMBIOS: TGBU9265460 🆕🔴 entró sin RN. MATU2690410+MATU2752682+HMMU6422718+53106 → ⚫. KOCU4689466 → 🟡 (doble ET). YMS+WMS verificados. Browser automation Outlook en curso.",
+  "timestamp": "2026-06-22T20:15:00-07:00",
   "summary": {
     "totalMonitoreados": 65,
-    "enYardaVerde": 8,
-    "enYardaRojo": 0,
+    "enYardaVerde": 4,
+    "enYardaRojo": 1,
     "enYardaAmarillo": 4,
-    "preEntry": 21,
-    "excluidosRNClosed": 32
+    "preEntry": 20,
+    "excluidosRNClosed": 36
   },
   "alertasRolas": [
-    "📧 OUTLOOK: Browser automation en curso (priti-email-20260622-ciclo2). 3 correos NO LEÍDOS detectados en ciclo anterior (15:22, 16:21, 17:11 PDT).",
-    "🟡 CSGU6625300: 2 ETs ACTIVOS contradictorios — ET-1111914 SPOT740 + ET-1112231 DOCK61. Ambos mismo equipo EQP-250126. Necesita resolución.",
-    "🟡 53477 (CHAPIN/UNIS): CONTRADICCIÓN — 2 ETs activos (DOCK5+DOCK53) pero GATE_CHECK_OUT hoy 14:28. RN-187022 IN_PROGRESS sin cerrar.",
-    "🟢 U40877/CHAPIN8: NUEVO verde — DOCK_CHECKED_IN DOCK65 con RN-187010 IN_PROGRESS.",
-    "⚠️ EITU8172519: ET-1110876 ZOMBIE/RESIDUAL — GATE_CHECKED_IN DOCK140 desde Jun 19 sin RN. Contenedor físicamente recogido hoy 12:42. ET nunca cerrado.",
-    "⚠️ OOCU8494560: DOCK_CHECKED_OUT hoy 10:25 pero RN-5008153 sigue IN_PROGRESS (over item exception). WMS/YMS desincronizados.",
-    "⚠️ SEGU2947142: GATE_CHECK_OUT hoy 12:29 pero RN-5008154 sigue IN_PROGRESS en WMS.",
-    "⚠️ KOCU4689466: ~66h en SPOT748. Camera OUT detectada. Carrier INACTIVE. RN-5008265 sin receive task activo.",
-    "⚠️ MATU4542915: FORCE_CLOSED (short items). Demurrage desde 06/22.",
-    "🟡 U83042 (CHAPIN): 2 RNs ACTIVOS — RN-187076 IN_PROGRESS + RN-187157 IMPORTED ~91h en yarda.",
-    "✅ Watchdog 19:44 PDT: HTTP 200, feed OK (65 rows), JS limpio.",
-    "✅ YMS: 21 contenedores verificados. WMS: 19 RNs verificados."
+    "🔴 TGBU9265460: ENTRO HOY 19:43 DOCK140 sin RN vinculado! customerId null, inboundReceiptIds vacío. RN-5008287 existe en WMS pero no vinculado. URGENTE verificar y asignar.",
+    "🟡 CSGU6625300: DOBLE ET — WINDOW_CHECKED_IN DOCK61 + GATE_CHECKED_IN SPOT740 residual (Camera OUT). Debe limpiarse ET residual.",
+    "🟡 KOCU4689466: DOBLE ET — WINDOW_CHECKED_IN DOCK65 + GATE_CHECKED_IN SPOT748 residual (Camera OUT). ~65h en yarda. Carrier INACTIVE.",
+    "🟡 U83042/CHAPIN: RN-187076 IN_PROGRESS pero TASK-5295135 FORCE_CLOSED. RN-187157 IMPORTED con TASK-5296279 NEW.",
+    "⚠️ HMMU6422718: DOCK_CHECKED_OUT 16:59. RN-5008264 sigue IN_PROGRESS pero TASK-5297983 CLOSED (22:59Z). Inconsistencia.",
+    "⚠️ MATU4542915: FORCE_CLOSED (RN-5008260). Demurrage desde 06/22.",
+    "⚠️ EITU8172519 (FANTASMA): ET-1110876 sigue pero salió con MATU2690410.",
+    "📧 OUTLOOK: Browser automation lanzado (priti-email-20260622-2000). Resultados pendientes.",
+    "✅ YMS: 18 contenedores verificados vía yms-agent. TGBU9265460 nuevo ingreso detectado.",
+    "✅ WMS: 25 RNs verificados vía wms-agent. RN-187205 CLOSED, RN-5008260 FORCE_CLOSED confirmados.",
+    "✅ Watchdog 20:15 PDT: HTTP 200, feed OK, JS /assets/index-CSX5q7DW.js sin raw.githubusercontent.com."
   ],
   "rows": [
     {
@@ -30,10 +29,10 @@
       "inYard": true,
       "color": "yellow",
       "entry": "ET-1111914",
-      "status": "🟡 CONTRADICCIÓN — 2 ETs activos: ET-1111914 GATE_CHECKED_IN SPOT740 (09:02) + ET-1112231 WINDOW_CHECKED_IN DOCK61 (15:05, más reciente, TASK-5297989 Daniela González). Ambos activos mismo equipo EQP-250126.",
+      "status": "⚠️ DOBLE ET: WINDOW_CHECKED_IN DOCK61 (15:05) + GATE_CHECKED_IN SPOT740 residual (Camera OUT)",
       "receipt": "RN-5008285",
-      "receiptStatus": "IMPORTED (inYard desde 09:02 PDT, vinculado)",
-      "note": "🟡 AMARILLO — YMS 19:44 PDT: 2 ETs activos contradictorios. ET-1112231 (más reciente, 15:05) WINDOW_CHECKED_IN DOCK61 con TASK-5297989 (Daniela González). ET-1111914 (09:02) GATE_CHECKED_IN SPOT740 con camera OUT sin resolver. RN-5008285 IMPORTED."
+      "receiptStatus": "RN-5008285 IMPORTED (TASK-5297989 NEW, Daniela González)",
+      "note": "🟡 YELLOW — Doble ET activo mismo EQP-250126. ET-1112231 WINDOW_CHECKED_IN DOCK61 15:05 (RN-5008285, TASK-5297989 NEW). ET-1111914 sigue GATE_CHECKED_IN SPOT740 con Camera OUT (exitLane 14). Contenedor físico está en DOCK61. YMS+WMS verificado 20:10 PDT."
     },
     {
       "container": "EITU8174300",
@@ -193,12 +192,12 @@
       "container": "KOCU4689466",
       "appointmentTime": "06/20 7:00AM–9:00AM — ENTRO 07:34",
       "inYard": true,
-      "color": "green",
+      "color": "yellow",
       "entry": "ET-1112226 🆕 (antes ET-1111636 SPOT748)",
-      "status": "🟢 GATE_CHECKED_IN SPOT748 (~63h total) — Camera OUT detectada. ¿WINDOW_CHECKED_IN DOCK65? Pendiente verificar.",
+      "status": "⚠️ DOBLE ET: WINDOW_CHECKED_IN DOCK65 (15:01) + GATE_CHECKED_IN SPOT748 residual (Camera OUT)",
       "receipt": "RN-5008265",
       "receiptStatus": "IMPORTED (inYard 22:01Z, TASK-5297982 en DOCK65)",
-      "note": "🟢 VERDE — YMS 19:23 PDT: ET-1111636 GATE_CHECKED_IN SPOT748 (Dragon X Trucking INACTIVE, ~63h). Camera OUT detectada (exitLane 14). RN-5008265 IMPORTED (inYard, sin receive task activa). ⚠️ Contradicción: feed anterior reportaba WINDOW_CHECKED_IN DOCK65 con ET-1112226 — YMS actual solo ve SPOT748. Posible movimiento no capturado por API."
+      "note": "🟡 YELLOW — Doble ET activo mismo EQP-249538. ET-1112226 WINDOW_CHECKED_IN DOCK65 15:01 (RN-5008265, TASK-5297982 NEW, Daniela González). ET-1111636 sigue GATE_CHECKED_IN SPOT748 con Camera OUT (exitLane 14). Carrier INACTIVE. ~65h total en yarda. YMS+WMS verificado 20:10 PDT."
     },
     {
       "container": "MATU4542915",
@@ -214,13 +213,13 @@
     {
       "container": "HMMU6422718",
       "appointmentTime": "06/20 8:00PM–10:00PM — ENTRO 19:36 (3 DÍAS EN YARDA)",
-      "inYard": true,
-      "color": "green",
+      "inYard": false,
+      "color": "excluded",
       "entry": "ET-1111747 GATE_CHECKED_IN DOCK119 — Camera OUT detectada, sin check-out",
-      "status": "🟢 GATE_CHECKED_IN DOCK119 — RN-5008264 IN_PROGRESS (recibiendo activo, recvStart 22:21Z)",
+      "status": "DOCK_CHECKED_OUT DOCK63 (16:59 PDT) — PROCESADO ✅",
       "receipt": "RN-5008264",
-      "receiptStatus": "RN-5008264 IN_PROGRESS ✅ (Daniela González, devanned 23:59Z, ~3h receiving)",
-      "note": "🟢 VERDE — Cambio YELLOW→GREEN 19:23 PDT. WMS confirma RN-5008264 IN_PROGRESS (recvStart 22:21Z Jun 22). YMS: GATE_CHECKED_IN DOCK119 sin inboundReceiptIds, pero RN existe y está activo en WMS. ~53h total en yarda. Camera OUT detectada previamente pero contenedor sigue en yarda."
+      "receiptStatus": "RN-5008264 IN_PROGRESS (⚠️ TASK-5297983 CLOSED 22:59Z — inconsistencia)",
+      "note": "⚫ EXCLUIDO — ET-1112227 DOCK_CHECKED_OUT DOCK63 16:59 PDT. RN-5008264 IN_PROGRESS pero receive task TASK-5297983 ya CLOSED. ET-1111747 residual (GATE_CHECKED_IN DOCK119 sin RN). Procesado por Daniela González. YMS+WMS verificado 20:10 PDT."
     },
     {
       "container": "U83042 (CHAPIN)",
@@ -228,10 +227,10 @@
       "inYard": true,
       "color": "yellow",
       "entry": "ET-1111149 (DOCK67) + ET-1110259 (DOCK65)",
-      "status": "WINDOW_CHECKED_IN DOCK67 (~88h) / DOCK_CHECKED_IN DOCK65",
+      "status": "⚠️ 2 RNs: RN-187076 IN_PROGRESS (task FORCE_CLOSED) + RN-187157 IMPORTED (TASK-5296279 NEW)",
       "receipt": "RN-187157 + RN-187076",
-      "receiptStatus": "RN-187157: IMPORTED (TASK-5296279 NEW, RUFINO M., ~88h sin iniciar) | RN-187076: IN_PROGRESS (TASK-5295135, Caren C., devanned hoy 18:49)",
-      "note": "🟡 AMARILLO — 2 RECEIPTS ACTIVOS mismo trailer U83042, CHAPIN TRUCKING: (1) RN-187076 IN_PROGRESS DOCK65 (Caren C., devanned hoy 18:49 UTC, exception short). (2) RN-187157 IMPORTED DOCK67 (TASK-5296279 NEW, RUFINO M., ~88h sin empezar). LIVE_DELIVERY. YMS+WMS verificado 12:41."
+      "receiptStatus": "RN-187076: IN_PROGRESS (⚠️ TASK-5295135 FORCE_CLOSED) + RN-187157: IMPORTED (TASK-5296279 NEW)",
+      "note": "🟡 YELLOW — 2 RNs activos. ET-1111149 WINDOW_CHECKED_IN DOCK67 (RN-187157). ET-1110259 DOCK_CHECKED_IN DOCK65 (RN-187076). ⚠️ RN-187076 IN_PROGRESS pero TASK-5295135 FORCE_CLOSED (18:49Z). RN-187157 IMPORTED con TASK-5296279 NEW (Rufino Munguia). CHAPIN TRUCKING. YMS+WMS verificado 20:10 PDT."
     },
     {
       "container": "GN06222026UNIS-1110 (53109)",
@@ -239,21 +238,21 @@
       "inYard": true,
       "color": "green",
       "entry": "ET-1112193 ✅",
-      "status": "WINDOW_CHECKED_IN DOCK45 (~14:02 PDT) — TASK-5297910 (Caren Cubides)",
+      "status": "WINDOW_CHECKED_IN DOCK45 ✅ (~14:02 PDT)",
       "receipt": "RN-187262 🆕",
-      "receiptStatus": "IMPORTED (RN-187262 vinculado, inYard desde ~14:02 PDT)",
-      "note": "🟢 VERDE — ET-1112193 WINDOW_CHECKED_IN DOCK45 14:02 PDT. RN-187262 IMPORTED vinculado. TASK-5297910 activa. Anteriormente reportado como posible ET perdido; ahora verificado YMS 14:08 PDT."
+      "receiptStatus": "RN-187262 IMPORTED (TASK-5297910 NEW, Caren Cubides)",
+      "note": "🟢 VERDE — ET-1112193 WINDOW_CHECKED_IN DOCK45 14:02 PDT. RN-187262 IMPORTED, TASK-5297910 NEW (Caren Cubides). EQP-250276. YMS+WMS verificado 20:10 PDT."
     },
     {
       "container": "GN06222026UNIS-53106 (53106)",
       "appointmentTime": "HOY ~13:51 PDT — ENTRO DOCK4",
-      "inYard": true,
-      "color": "yellow",
+      "inYard": false,
+      "color": "excluded",
       "entry": "ET-1112184",
-      "status": "⚠️ DOCK_CHECKED_IN DOCK44 — PRELOAD_TASK TASK-5298094 (OUTBOUND/PICK_UP, Eduardo Mejia) — RN-187205 IN_PROGRESS",
+      "status": "EXCLUIDO — RN-187205 CLOSED (02:25Z hoy). PRELOAD_TASK DOCK44 completado.",
       "receipt": "RN-187205",
-      "receiptStatus": "RN-187205 IN_PROGRESS (⚠️ TASK-5297896 CLOSED — contradicción)",
-      "note": "🟡 AMARILLO — YMS 19:23 PDT: DOCK_CHECKED_IN DOCK44 (NO DOCK4). PRELOAD_TASK TASK-5298094 (Eduardo Mejia) — es OUTBOUND/PICK_UP, no drop-off. WMS: RN-187205 IN_PROGRESS (devanned 22:27Z). TASK-5297896 CLOSED pero RN sigue activo. Contradicción: operación podría ser LOAD no RECEIVE."
+      "receiptStatus": "RN-187205 CLOSED",
+      "note": "⚫ EXCLUIDO — RN-187205 CLOSED hoy 02:25Z. ET-1112355 DOCK_CHECKED_IN DOCK44 (PRELOAD_TASK TASK-5298094, Eduardo Mejia). ET-1112184 residual DOCK4 con TASK-5297896 CLOSED. Operación de carga OUTBOUND, no recibo. YMS+WMS verificado 20:10 PDT."
     },
     {
       "container": "GN06222026UNIS-53792 (53792)",
@@ -261,10 +260,10 @@
       "inYard": true,
       "color": "green",
       "entry": "ET-1112186",
-      "status": "WINDOW_CHECKED_IN DOCK5 (~13:51 PDT)",
+      "status": "WINDOW_CHECKED_IN DOCK5 ✅ (~13:51 PDT)",
       "receipt": "RN-187212",
-      "receiptStatus": "IMPORTED (inYard desde 13:52 PDT, vinculado, ⚠️ appointment NOT_CONFIRMED)",
-      "note": "🟢 VERDE — ET-1112186 WINDOW_CHECKED_IN DOCK5 HOY 13:51 PDT. GURUNANDA, creado por ccubides. RN-187212 IMPORTED vinculado, inYard desde 13:52 PDT. ⚠️ Appointment NOT_CONFIRMED. Sin receive task aún. YMS+WMS verificado 16:40 PDT."
+      "receiptStatus": "RN-187212 IMPORTED (TASK-5297897 NEW, Caren Cubides)",
+      "note": "🟢 VERDE — ET-1112186 WINDOW_CHECKED_IN DOCK5 13:51 PDT. RN-187212 IMPORTED, TASK-5297897 NEW (Caren Cubides). EQP-249171. YMS+WMS verificado 20:10 PDT."
     },
     {
       "container": "OOCU9426488",
@@ -324,13 +323,13 @@
     {
       "container": "MATU2690410",
       "appointmentTime": "06/22 5:00PM — 🟢 ENTRO HOY ~11:55, contenedor queda en SPOT761",
-      "inYard": true,
-      "color": "green",
+      "inYard": false,
+      "color": "excluded",
       "entry": "ET-1112068 (tractor salió 12:42, contenedor queda)",
-      "status": "GATE_CHECKED_IN SPOT761 ✅ (tractor CHECKED_OUT pero contenedor permanece)",
+      "status": "GATE_CHECK_OUT (12:42 PDT) — Salió con EITU8172519",
       "receipt": "RN-5008286",
       "receiptStatus": "IMPORTED (inYard desde 11:56 PDT, sin receive task aún)",
-      "note": "🟢 VERDE — WMS confirma inYard desde Jun 22 11:56 PDT. ET-1112068: QX LOGISTIX (RICARDO VIRAMONTES) entró 11:55, dejó MATU2690410 en SPOT761, tractor salió 12:42 con EITU8172519. Contenedor permanece en yarda. RN-5008286 IMPORTED. Cita 5PM HOY. YMS+WMS verificado 12:41."
+      "note": "⚫ EXCLUIDO — ET-1112068 GATE_CHECK_OUT SPOT761 12:42 PDT. RN-5008286 IMPORTED (sin receive task). Salió con trailer EITU8172519 (fantasma). YMS+WMS verificado 20:10 PDT."
     },
     {
       "container": "FUS06222026UNIS-55",
@@ -346,13 +345,13 @@
     {
       "container": "MATU2752682",
       "appointmentTime": "Sin cita — 🟢 ENTRO HOY ~11:35, contenedor queda en SPOT753",
-      "inYard": true,
-      "color": "green",
+      "inYard": false,
+      "color": "excluded",
       "entry": "ET-1112058 (tractor salió 12:29, contenedor queda)",
-      "status": "GATE_CHECKED_IN SPOT753 ✅ (tractor CHECKED_OUT pero contenedor permanece)",
+      "status": "GATE_CHECK_OUT (12:29 PDT) — Salió con SEGU2947142",
       "receipt": "RN-5008294",
       "receiptStatus": "IMPORTED (inYard desde 11:37 PDT, sin receive task aún)",
-      "note": "🟢 VERDE 🆕 — WMS confirma inYard desde Jun 22 11:37 PDT. ET-1112058: QX LOGISTIX (SALVA ENRIQUE AMAYARO) entró 11:35, dejó MATU2752682 en SPOT753, tractor salió 12:29 con SEGU2947142. Contenedor permanece en yarda. RN-5008294 IMPORTED (creado HOY 09:48 por aismael, UPLOAD). YMS+WMS verificado 12:41."
+      "note": "⚫ EXCLUIDO — ET-1112058 GATE_CHECK_OUT SPOT753 12:29 PDT. RN-5008294 IMPORTED (sin receive task). Salió con SEGU2947142. YMS+WMS verificado 20:10 PDT."
     },
     {
       "container": "CAIU9721329",
@@ -367,14 +366,14 @@
     },
     {
       "container": "TGBU9265460",
-      "appointmentTime": "06/23 3:00AM",
-      "inYard": false,
-      "color": "normal",
-      "entry": "",
-      "status": "PRE_ENTRY",
+      "appointmentTime": "🆕 ENTRO HOY 19:43 — Cita Jun 23 3:00AM",
+      "inYard": true,
+      "color": "red",
+      "entry": "ET-1112360",
+      "status": "GATE_CHECKED_IN DOCK140 ⚠️ SIN RN vinculado! Entró 19:43 PDT",
       "receipt": "RN-5008287",
-      "receiptStatus": "IMPORTED (APPT-6031606 ✅)",
-      "note": "Cita Jun 23 3AM. APPT-6031606 ✅. YMS+WMS verificado 11:21."
+      "receiptStatus": "RN-5008287 IMPORTED pero NO vinculado al ET (inboundReceiptIds vacío)",
+      "note": "🔴 ROJO — Entró HOY 19:43 DOCK140. customerId: null. SIN RN en YMS (inboundReceiptIds: []). RN-5008287 existe en WMS (IMPORTED, creado Jun 19) pero NO vinculado al gate. Carrier: QX midea (INACTIVE). Driver: CARLOS ANTONIO GARAY. Seal: NJ938287."
     },
     {
       "container": "CSNU8449451",
@@ -415,10 +414,10 @@
       "inYard": true,
       "color": "green",
       "entry": "ET-1112228 🆕",
-      "status": "WINDOW_CHECKED_IN DOCK62 HOY 15:03 PDT",
+      "status": "DOCK_CHECKED_IN DOCK62 ✅ (reingreso 15:03, RN-5008178 IN_PROGRESS)",
       "receipt": "RN-5008178",
-      "receiptStatus": "IMPORTED (inYard 22:04Z, TASK-5297984)",
-      "note": "🟢 VERDE — ET-1112228 WINDOW_CHECKED_IN DOCK62 HOY 15:03 PDT. QX LOGISTIX, TASK-5297984 (DANIELA GONZALEZ). RN-5008178 IMPORTED. ⚠️ REINGRESO: estaba GATE_CHECK_OUT, ahora de nuevo en yarda."
+      "receiptStatus": "RN-5008178 IN_PROGRESS (TASK-5297984 IN_PROGRESS, Daniela González)",
+      "note": "🟢 VERDE — ET-1112228 DOCK_CHECKED_IN DOCK62 15:03 PDT. RN-5008178 IN_PROGRESS, TASK-5297984 IN_PROGRESS (Daniela González). EQP-249272. Reingreso confirmado. YMS+WMS verificado 20:10 PDT."
     },
     {
       "container": "SEGU2947142",
