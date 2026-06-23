@@ -1,5 +1,5 @@
 {
-  "message": "Auditoría 07:45 PDT Jun 23. 9 cambios: HMMU6422718 excluido (RN CLOSED), RN-187076 FORCE_CLOSED, 53792→GREEN. Outlook: 3 no leídos (13 nuevos, ya en feed). 35 rows activos.",
+  "message": "Auditoría 07:58 PDT Jun 23. Correcciones: HMMU6422718→EXCLUIDO (RN-5008264 CLOSED), RN-187076 FORCE_CLOSED (U83042→YELLOW), 53792→GREEN (RN-187212 IN_PROGRESS). 34 rows activos.",
   "timestamp": "2026-06-23T06:45:00-07:00",
   "lastUpdated": "2026-06-23T06:45:00-07:00",
   "summary": {
@@ -38,34 +38,6 @@
       "statusText": "🟢 RECIBIENDO ACTIVAMENTE — RN-5008265 IN_PROGRESS (dagonzalez, desde 06:34 PDT h",
       "rn": "RN-5008265",
       "location": "SPOT748"
-    },
-    {
-      "container": "U83042 (CHAPIN) — DOCK65",
-      "appointmentTime": "CHAPIN — DOCK65 ~116h",
-      "inYard": true,
-      "color": "yellow",
-      "entry": "ET-1111149 WINDOW_CHECKED_IN DOCK67 (~90h) + ET-1110259 DOCK65 (RN cerrado)",
-      "status": "🟡 EN YARDA — RN-187157 DOCK67 con TASK-5296279 NEW (Rufino, ~4d). RN-187076 DOCK65 FORCE_CLOSED hoy (short item, ccubides).",
-      "receipt": "RN-187157 (IMPORTED) — RN-187076 FORCE_CLOSED Jun 23 14:39",
-      "receiptStatus": "IN_PROGRESS — Caren Cubides, ⚠️ items short",
-      "note": "⚠️ RN-187076 FORCE_CLOSED hoy 14:39 (ccubides, short item). Solo queda activo RN-187157 en DOCK67 (~4 días en yarda). Mismo equipo EQP-248165.",
-      "statusText": "🟢 RECIBIENDO ACTIVAMENTE — RN-187076 IN_PROGRESS (ccubides, desde Jun 22 18:49)",
-      "rn": "RN-187076",
-      "location": "DOCK65"
-    },
-    {
-      "container": "U83042 (CHAPIN) — DOCK67",
-      "appointmentTime": "CHAPIN — DOCK67 ~90h, 2 RNs activos",
-      "inYard": true,
-      "color": "yellow",
-      "entry": "ET-1111149 WINDOW_CHECKED_IN DOCK67 (desde Jun 19 10:25, ~90h)",
-      "status": "🟡 DOBLE RN — RN-187157 en yarda DOCK67 sin receive task (~4d). Mismo equipo DOCK65+DOCK67.",
-      "receipt": "RN-187157",
-      "receiptStatus": "IMPORTED — NEED_TO_EMAIL_CARRIER. ~4d en yarda sin receive.",
-      "note": "⚠️ Mismo equipo (EQP-248165) con 2 RNs: RN-187076 (DOCK65, activo) + RN-187157 (DOCK67, sin receive). CHAPIN TRUCKING.",
-      "statusText": "🟡 DOBLE RN — RN-187157 en yarda DOCK67 sin receive task (~4d). Mismo equipo DOCK",
-      "rn": "RN-187157",
-      "location": "DOCK67"
     },
     {
       "container": "EITU8174300",
@@ -514,6 +486,16 @@
       "statusText": "Cita Jun 23 3:00 AM (PASADA). RN-5008287 IMPORTED. Sin rastro YMS.",
       "rn": "RN-5008287",
       "location": ""
+    },
+    {
+      "container": "U83042 (CHAPIN) — DOCK67",
+      "appointmentTime": "Jun 19",
+      "inYard": true,
+      "color": "yellow",
+      "entry": "ET-1111149 WINDOW_CHECKED_IN DOCK67 (~90h). ET-1110259 DOCK65 (RN cerrado → FORCE_CLOSED).",
+      "status": "🟡 EN YARDA SIN RECEIVE TASK — RN-187157 DOCK67 con TASK-5296279 NEW (Rufino, ~4d). RN-187076 DOCK65 FORCE_CLOSED hoy 14:39 (ccubides, short item).",
+      "receipt": "RN-187157 (IMPORTED) — RN-187076 FORCE_CLOSED Jun 23 14:39",
+      "note": "⚠️ RN-187076 FORCE_CLOSED hoy 14:39 (ccubides, short item). Solo queda activo RN-187157 en DOCK67 (~4 días en yarda sin receive task). Mismo equipo EQP-248165."
     }
   ]
 }
