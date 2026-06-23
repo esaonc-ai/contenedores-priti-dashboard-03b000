@@ -1,9 +1,9 @@
 {
-  "message": "Ciclo 16:15 PDT Jun 23. Auditoría SOLO LECTURA. 7 cambios principales: CAAU5246296→GREEN, CSNU8075984→GREEN, KOCU4689466→YELLOW, MATU2690410→DOCK60, MATU2752682→DOCK66, + limpieza EITU8174300 DOCK64. 7 ETs nuevos confirmados hoy por dagonzalez (15:25-15:47). Outlook OK (0 no leídos).",
-  "timestamp": "2026-06-23T23:15:46-07:00",
-  "lastUpdated": "2026-06-23T23:15:46-07:00",
+  "message": "Ciclo 16:21 PDT Jun 23. Auditoría SOLO LECTURA. 5 EXCLUIDOS removidos del dashboard visible. Outlook OK (0 no leídos).",
+  "timestamp": "2026-06-23T16:21:58-07:00",
+  "lastUpdated": "2026-06-23T16:21:58-07:00",
   "summary": {
-    "totalVisible": 37,
+    "totalVisible": 32,
     "green": 11,
     "red": 0,
     "yellow": 5,
@@ -11,6 +11,8 @@
     "excluded": 45
   },
   "alertasRolas": [
+    "🧹 LIMPIEZA: 5 filas BLACK/EXCLUIDAS removidas del dashboard visible. RNs cerrados/force_closed ya no se muestran. Summary corregido: 11G 5Y 0R 16N.",
+    "✅ Auditoría Jun 23 16:20 PDT: Watchdog OK. Dashboard 200. Feed JSON válido. Asset JS sin raw. 0 correos no leídos. 42 contenedores en Outlook.",
     "✅ Outlook responde OK — 0 correos NO LEÍDOS. 24 correos, 35 contenedores extraídos.",
     "🟢 CAAU5246296→GREEN — YMS confirma ET-1112878 WINDOW_CHECKED_IN DOCK59 (15:37). Ya no es drop sin ET.",
     "🟢 CSNU8075984→GREEN — YMS confirma ET-1112877 WINDOW_CHECKED_IN DOCK63 (15:35). Sí está en yarda.",
@@ -86,20 +88,6 @@
       "location": "DOCK66"
     },
     {
-      "container": "GN06222026UNIS-1110 (53109)",
-      "appointmentTime": "DOCK45 ~24h — RECIBIENDO ACTIVAMENTE",
-      "inYard": true,
-      "color": "BLACK",
-      "entry": "ET-1112193 DOCK_CHECKED_IN DOCK45 (Jun 23 10:41). TOP Notch. TRAILER.",
-      "status": "⚫ EXCLUIDO — RN CLOSED",
-      "receipt": "RN-187262",
-      "receiptStatus": "IN_PROGRESS — TASK-5297910 activa (Caren Cubides, DOCK45). Único con tarea realmente activa.",
-      "note": "❌ EXCLUIDO: RN-187262 CLOSED por jlnieves a las 14:49 PDT. Anterior: green. ✅ ÚNICO RN con tarea de receive realmente activa. Caren Cubides. ~24h en yarda. ",
-      "statusText": "🟢 RECIBIENDO — RN-187262 IN_PROGRESS. Caren Cubides DOCK45.",
-      "rn": "RN-187262",
-      "location": "DOCK45"
-    },
-    {
       "container": "CAAU5246296",
       "appointmentTime": "Jun 24 04:00 AM (WMS) — LLEGÓ TEMPRANO",
       "inYard": true,
@@ -156,20 +144,6 @@
       "location": "yarda"
     },
     {
-      "container": "CHAPIN-FUS-06222026 (RN-187325)",
-      "appointmentTime": "CITA PASADA Jun 22 07:00 — SIN ENTRADA",
-      "inYard": true,
-      "color": "BLACK",
-      "entry": "WMS inYard=true desde Jun 23 19:23 UTC (12:23 PM PDT). Cita original Jun 22 07:AM (pasada).",
-      "status": "⚫ EXCLUIDO — RN FORCE_CLOSED",
-      "receipt": "RN-187325",
-      "receiptStatus": "IMPORTED — NEED_TO_EMAIL_CARRIER",
-      "note": "❌ EXCLUIDO: RN-187325 FORCE_CLOSED por ccubides a las 14:48 PDT. Anterior: green. ✅ CORREGIDO NORMAL→GREEN. WMS confirma en yarda desde 12:23 PM PDT. Cita pasada ",
-      "statusText": "🟢 EN YARDA CON RN — RN-187325. NEED_TO_EMAIL_CARRIER.",
-      "rn": "RN-187325",
-      "location": "yarda (recién ingresado)"
-    },
-    {
       "container": "GN06222026UNIS-53180 (53180)",
       "appointmentTime": "CITA PASADA Jun 22 07:00 — SIN ENTRADA",
       "inYard": false,
@@ -224,48 +198,6 @@
       "statusText": "🟡 EN YARDA SIN RECEIVE — RN-187157 ~4d en DOCK67.",
       "rn": "RN-187157",
       "location": "DOCK67"
-    },
-    {
-      "container": "CORR06232026UNIS",
-      "appointmentTime": "HOY 06/23 6:00 PM — ENTRÓ TEMPRANO 11:22 AM",
-      "inYard": true,
-      "color": "BLACK",
-      "entry": "WMS inYard=true desde Jun 23 18:22 UTC (11:22 AM PDT). Sin ET confirmado en YMS (bug keyword search).",
-      "status": "⚫ EXCLUIDO — RN CLOSED",
-      "receipt": "RN-5008302",
-      "receiptStatus": "IN_PROGRESS — TASK-5298836 CLOSED (Fatima). RN sigue abierto. ⚠️ Inconsistencia task/RN.",
-      "note": "❌ EXCLUIDO: RN-5008302 CLOSED por matmoreno a las 14:16 PDT. Anterior: yellow. ⚠️ WMS confirma RN IN_PROGRESS pero TASK-5298836 CLOSED (devanned 12:58 PM). Inc",
-      "statusText": "🟡 ALERTA — RN-5008302 IN_PROGRESS pero task CLOSED.",
-      "rn": "RN-5008302",
-      "location": "yarda (recién ingresado)"
-    },
-    {
-      "container": "GN06222026UNIS-53792 (53792)",
-      "appointmentTime": "DOCK5 — SALIÓ HOY 08:28 // RE-ENTRÓ DOCK53 11:22 PRE_LOAD",
-      "inYard": false,
-      "color": "BLACK",
-      "entry": "ET-1112186 DOCK_CHECKED_OUT DOCK5 (HOY Jun 23 08:28). ⚠️ RE-ENTRÓ: ET-1112694 DOCK_CHECKED_IN DOCK53 (HOY 11:22) PRE_LOAD OUTBOUND LOAD-5031596.",
-      "status": "⚫ EXCLUIDO — RN CLOSED",
-      "receipt": "RN-187212",
-      "receiptStatus": "IN_PROGRESS — TASK-5297897 CLOSED (Fatima, devanned Jun 23 17:34 UTC). RN sigue abierto.",
-      "note": "❌ EXCLUIDO: RN-187212 CLOSED por matmoreno a las 15:02 PDT. Anterior: yellow. ⚠️ Contenedor salió DOCK_CHECKED_OUT hoy 08:28. RN-187212 task CLOSED pero RN si",
-      "statusText": "🟡 CONTRADICCIÓN — RN-187212 IN_PROGRESS (task CLOSED). RE-ENTRÓ PRE_LOAD.",
-      "rn": "RN-187212",
-      "location": "DOCK53 (PRE_LOAD)"
-    },
-    {
-      "container": "LAC062226UNIS",
-      "appointmentTime": "HOY 06/23 5:00 PM — en yarda ~90h",
-      "inYard": true,
-      "color": "BLACK",
-      "entry": "ET-1111370 PRE_ENTRY (Jun 19). WMS inYard=true desde Jun 23 15:12 UTC (8:12 AM PDT).",
-      "status": "⚫ EXCLUIDO — RN FORCE_CLOSED",
-      "receipt": "RN-5008293",
-      "receiptStatus": "IN_PROGRESS — TASK-5298382 FORCE_CLOSED (Fatima, different lot#). DOCK2.",
-      "note": "❌ EXCLUIDO: RN-5008293 FORCE_CLOSED por ccubides a las 15:26 PDT. Anterior: yellow. ⚠️ ~90h desde PRE_ENTRY. RN sigue IN_PROGRESS pero task fue forzada. Requiere ci",
-      "statusText": "🟡 ALERTA — RN-5008293 IN_PROGRESS pero task FORCE_CLOSED.",
-      "rn": "RN-5008293",
-      "location": "DOCK2"
     },
     {
       "container": "OOCU8494560",
