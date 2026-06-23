@@ -1,12 +1,12 @@
 {
-  "message": "CICLO 20:10 PDT Jun 22 — 53180 🔴 ENTRO SIN RN. CSGU6625300 🟡 CONTRADICCIÓN DOCK61/SPOT740. HMMU6422718 🟡 YMS-WMS DISCREPANCIA. Outlook: PENDIENTE (1 fallo). YMS+WMS verificados 20:02 PDT.",
-  "timestamp": "2026-06-22T20:10:00-07:00",
+  "message": "AUDITORÍA 21:07 PDT Jun 22 — CSNU8449451 ⚪→🔴 (DOCK169 sin RN, 20:47) + GN...53180 ⚪→🔴 (DOCK158 sin RN, 15:52). YMS+WMS+Outlook verificados. Watchdog OK.",
+  "timestamp": "2026-06-22T21:07:00-07:00",
   "summary": {
     "totalMonitoreados": 65,
     "enYardaVerde": 4,
-    "enYardaRojo": 2,
+    "enYardaRojo": 3,
     "enYardaAmarillo": 3,
-    "preEntry": 21,
+    "preEntry": 20,
     "excluidosRNClosed": 35
   },
   "alertasRolas": [
@@ -376,13 +376,13 @@
     {
       "container": "CSNU8449451",
       "appointmentTime": "06/23 3:30AM",
-      "inYard": false,
-      "color": "normal",
-      "entry": "",
-      "status": "PRE_ENTRY",
+      "inYard": true,
+      "color": "red",
+      "entry": "ET-1112370 (DOCK169) — inboundReceiptIds: [] ⚠️",
+      "status": "🔴 GATE_CHECKED_IN DOCK169 (20:47 PDT) — SIN RN vinculado. QX LOGISTIX, MARQUISE COOK, EQP-250895, seal NK524049.",
       "receipt": "RN-5008288",
-      "receiptStatus": "IMPORTED (APPT-6031607 ✅)",
-      "note": "⚪ NORMAL — Cita Jun 23 3:30AM. APPT-6031607 ✅. YMS+WMS verificado 20:00 PDT."
+      "receiptStatus": "⚠️ RN-5008288 IMPORTED pero NO vinculado al ET en YMS",
+      "note": "🔴 ROJO — Entró HOY 20:47 PDT DOCK169 DROP_OFF. Sin RN en el ET. RN-5008288 existe en WMS pero no vinculado al ET. Monitorear."
     },
     {
       "container": "LAC062226UNIS",
@@ -697,11 +697,11 @@
       "appointmentTime": "PENDIENTE",
       "inYard": true,
       "color": "red",
-      "entry": "ET-1112286 🆕",
-      "status": "🔴 GATE_CHECKED_IN DOCK158 15:52 PDT — SIN inboundReceiptIds",
+      "entry": "ET-1112286 (DOCK158) — inboundReceiptIds: [] ⚠️",
+      "status": "🔴 GATE_CHECKED_IN DOCK158 (15:52 PDT) — SIN RN vinculado. TOP Notch, EQP-250725, SIZE_53.",
       "receipt": "RN-187324",
-      "receiptStatus": "IMPORTED (WMS: RN-187324 existe, NO vinculado al ET en YMS)",
-      "note": "🔴 ROJO — ET-1112286 GATE_CHECKED_IN DOCK158 15:52 PDT. TOP Notch (INACTIVE), driver \"g h\". DROP_OFF+PICK_UP_EMPTY. SIN inboundReceiptIds. RN-187324 IMPORTED en WMS pero NO vinculado en YMS. ~4h en yarda sin RN en gate. YMS+WMS verificado 20:02 PDT."
+      "receiptStatus": "⚠️ RN-187324 IMPORTED pero NO vinculado al ET en YMS",
+      "note": "🔴 ROJO — Entró HOY 15:52 PDT DOCK158. Sin RN en el ET. RN-187324 existe en WMS pero no vinculado al ET. ~5h en yarda sin RN."
     },
     {
       "container": "CHAPIN-FUS-06222026 (RN-187325)",
