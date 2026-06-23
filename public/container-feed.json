@@ -1,5 +1,5 @@
 {
-  "message": "Ciclo 02:40 PDT Jun 23. EITU8174300→VERDE (entró 02:37 DOCK53). CAAU5246296/DDDU5053448/DDDU5053469 corregido a Jun 24 (WMS). MATU2752682→AMARILLO (en yarda sin cita). TGBU9265460→NORMAL (cita 03:00). OOCU8494560→AMARILLO (RN IN_PROGRESS vs task FORCE_CLOSED). CSNU8075984→NORMAL (cita pasada no llegó). HMMU6422718 ALERTA CRÍTICA (RN CLOSED pero contenedor en DOCK119). + detalles actualizados para KOCU4689466, CSGU6625300, MATU2690410, CAAU9247201, EITU8172519, CHAPIN.",
+  "message": "Ciclo 03:10 PDT Jun 23 — SEGU2947142→AMARILLO (RN IN_PROGRESS vs YMS DOCK_CHECKED_OUT), CSGU6625300→VERDE (RN activo en yarda), +despliegue de correcciones acumuladas del ciclo 02:40",
   "timestamp": "2026-06-23T09:50:35-07:00",
   "summary": {
     "totalMonitoreados": 65,
@@ -31,13 +31,13 @@
       "container": "CSGU6625300",
       "appointmentTime": "06/22 3:30PM — 🟡 EN YARDA DOCK61 (2 ETs ACTIVOS)",
       "inYard": true,
-      "color": "yellow",
+      "color": "green",
       "entry": "⚠️ ET-1111914 (SPOT740) + ET-1112231 (DOCK61) — AMBOS ACTIVOS",
-      "status": "🟡 DOBLE ET ACTIVO — ET-1111914 GATE_CHECKED_IN SPOT740 (camera OUT) + ET-1112231 WINDOW_CHECKED_IN DOCK61 TASK-5297989 (DANIELA G). Ambos comparten RN-5008285 IMPORTED. EQUIPO EQP-250126.",
+      "status": "🟢 EN YARDA — RN-5008285 IMPORTED (inYard desde Jun 22 22:05). ET-1111914 SPOT740 + ET-1112231 DOCK61 (mismo EQP-250126). Sin receive task activo.",
       "receipt": "RN-5008285",
       "receiptStatus": "IMPORTED — En yarda sin receive task ⚠️",
-      "note": "⚠️ En yarda desde Jun 22 22:05 con RN-5008285 IMPORTED pero SIN receive task asignado. 2 ETs activos (SPOT740 + DOCK61).",
-      "statusText": "2 ETs: SPOT740 (tractor salió) + DOCK61 WINDOW_CHECKED_IN",
+      "note": "🟢 Auditoría 03:04 PDT Jun 23: Reclasificado de AMARILLO a VERDE. RN-5008285 activo (IMPORTED, no CLOSED), en yarda. 2 ETs mismo EQP no es contradicción real (traslado interno). WMS inYard=true confirmado.",
+      "statusText": "SPOT740/DOCK61, RN-5008285 IMPORTED, en yarda sin receive",
       "rn": "RN-5008285",
       "location": "SPOT740/DOCK61"
     },
@@ -478,14 +478,16 @@
     },
     {
       "container": "SEGU2947142",
-      "appointmentTime": "06/19 4:47PM → SALIÓ 5:47PM",
-      "inYard": false,
-      "color": "excluded",
+      "appointmentTime": "Cita original Jun 18 9PM — 🟡 CONTRADICCIÓN ACTIVA",
+      "inYard": true,
+      "color": "yellow",
       "entry": "ET-1111403",
-      "status": "DOCK_CHECKED_OUT",
+      "status": "🟡 CONTRADICCIÓN — WMS RN-5008154 IN_PROGRESS (inYard=true, TASK-5296717 DANIELA GONZALEZ) pero YMS DOCK_CHECKED_OUT",
       "receipt": "RN-5008154",
-      "receiptStatus": "IN_PROGRESS (TASK-5296717 DANIELA GONZALEZ) — ⚠️ WMS inYard=true pero YMS DOCK_CHECKED_OUT",
-      "note": "⚫ EXCLUIDO — Salió Jun 22 12:29 con tractor QX LOGISTIX que trajo MATU2752682. RN-5008154 sigue IN_PROGRESS (DANIELA GONZALEZ, devanned 17:09). ⚠️ RN activo pero contenedor ya salió."
+      "receiptStatus": "IN_PROGRESS (DANIELA GONZALEZ, TASK-5296717, exception: short item). ⚠️ WMS inYard=true vs YMS DOCK_CHECKED_OUT.",
+      "note": "🟡 Auditoría 03:04 PDT Jun 23: Reclasificado de EXCLUIDO a AMARILLO. RN-5008154 sigue IN_PROGRESS en WMS (inYard=true, Jun 19) pero YMS reporta DOCK_CHECKED_OUT. CONTRADICCIÓN ACTIVA.",
+      "statusText": "RN-5008154 IN_PROGRESS en WMS pero YMS DOCK_CHECKED_OUT",
+      "rn": "RN-5008154"
     },
     {
       "container": "CORR06192026UNIS (poNo 8283)",
