@@ -1,28 +1,28 @@
 {
-  "message": "Auditoría 07:58 PDT Jun 23. Correcciones: HMMU6422718→EXCLUIDO (RN-5008264 CLOSED), RN-187076 FORCE_CLOSED (U83042→YELLOW), 53792→GREEN (RN-187212 IN_PROGRESS). 34 rows activos.",
-  "timestamp": "2026-06-23T06:45:00-07:00",
-  "lastUpdated": "2026-06-23T06:45:00-07:00",
+  "message": "Auditoría 09:38 PDT Jun 23. WMS confirmado: RN-187212 IN_PROGRESS, RN-187076 FORCE_CLOSED. Dashboard: 34 rows (2🟢 0🔴 10🟡 22⚪). 34 excluidos. HMMU6422718→EXCLUIDO. U83042 unificado🟡. YMS pendiente.",
+  "timestamp": "2026-06-23T09:38:00-07:00",
+  "lastUpdated": "2026-06-23T09:38:00-07:00",
   "summary": {
-    "totalVisible": 36,
+    "totalVisible": 34,
     "green": 2,
-    "red": 1,
-    "yellow": 11,
+    "red": 0,
+    "yellow": 10,
     "normal": 22,
-    "excluded": 33
+    "excluded": 34
   },
   "alertasRolas": [
-    "🚨 CRÍTICA: Feed anterior tenía 33 EXCLUIDOS visibles — CORREGIDO en auditoría 04:50.",
-    "🔴 HMMU6422718: DOCK119 ~57h sin RN activo (RN-5008264 CLOSED). Camera OUT detectada.",
-    "🟡 U83042/CHAPIN: 2 ETs activos DOCK65+DOCK67, 2 RNs (187076 IN_PROGRESS + 187157 sin receive 4d).",
-    "🟡 EITU8174300: Entró yarda 09:37 sin receive task. RN-5008303 IMPORTED.",
+    "🔴 U83042/CHAPIN: RN-187076 FORCE_CLOSED (ccubides, short item Jun 23 14:39 UTC). Solo queda RN-187157 DOCK67 IMPORTED sin containerNo. 2 ETs activos DOCK65+DOCK67 mismo EQP-248165.",
+    "🟡 EITU8174300: Entró yarda 09:37 Jun 23 sin receive task. RN-5008303 IMPORTED. Cita era Jun 22 9PM.",
     "🟡 MATU4542915: RN-5008260 FORCE_CLOSED (short items). Priti reporta contenedor NO VACÍO. Demurrage desde Jun 22.",
-    "📧 3 correos NO LEÍDOS de Priti (Jun 22). 14 contenedores nuevos en total.",
-    "⚠️ GN06222026UNIS-53792: ~4d en yarda DOCK5, RN-187212 NOT_CONFIRMED.",
+    "🟡 CSGU6625300: 2 ETs activos simultáneos (SPOT740+DOCK61) mismo EQP-250126. RN-5008285 IMPORTED, TASK-5297989 NEW.",
+    "🟡 CSNU8075984: RN-5008284 IMPORTED pero ET ya GATE_CHECK_OUT (06/22 08:23). Contenedor salió sin cierre de RN.",
+    "🟡 OOCU8494560: RN-5008153 IN_PROGRESS (exception: over item, Caren). Contenedor ya salió 06/22 20:14.",
+    "🟡 SEGU2947142: RN-5008154 IN_PROGRESS (exception: short item, Caren). Contenedor ya salió 06/22 12:29.",
+    "🟡 CAAU9247201: RN-5008178 IN_PROGRESS (dagonzalez) pero YMS sin ETs. TASK-5297984 CLOSED. Posible drop trailer.",
+    "📧 2 correos NO LEÍDOS de Priti (Jun 22). 1 correo leído por tercero ~08:28 PDT.",
     "⚠️ YMS keyword search sigue devolviendo 0 resultados (bug conocido).",
-    "🟡 CSNU8075984: RN-5008284 IMPORTED pero ET ya GATE_CHECK_OUT (06/22). Contenedor salió sin cierre de RN.",
-    "🟡 OOCU8494560: RN-5008153 IN_PROGRESS (exception: over item). Contenedor ya salió.",
-    "🟡 SEGU2947142: RN-5008154 IN_PROGRESS (exception: short item). Contenedor ya salió.",
-    "⚠️ 7 ETs residuales abiertos en YMS (XYLU8127277, EITU8172519, CSNU7820233, YMMU6698133, DFSU7387683, SAPU5033847, TIIU4584294) — RNs ya CLOSED. Requieren force-checkout YMS."
+    "⚠️ 7 ETs residuales abiertos en YMS — RNs ya CLOSED. Requieren force-checkout por ops.",
+    "⚠️ 3 contenedores IN_PROGRESS sin receive task activa: KOCU4689466 (DOCK65), CAAU9247201 (?), 53792 (DOCK5)."
   ],
   "rows": [
     {
@@ -34,7 +34,7 @@
       "status": "🟢 RECIBIENDO ACTIVAMENTE — RN-5008265 IN_PROGRESS con TASK-5297982 IN_PROGRESS (Fatima Ponce, DOCK65)",
       "receipt": "RN-5008265",
       "receiptStatus": "IN_PROGRESS — dagonzalez, started 06:34 PDT Jun 23",
-      "note": "✅ Confirmado recibiendo en DOCK65. Fatima Ponce activa. Carrier: Dragon X Trucking (INACTIVE).",
+      "note": "✅ Confirmado recibiendo en DOCK65. Fatima Ponce/dagonzalez activa. WMS confirma RN-5008265 IN_PROGRESS. ~69h total en yarda.",
       "statusText": "🟢 RECIBIENDO ACTIVAMENTE — RN-5008265 IN_PROGRESS (dagonzalez, desde 06:34 PDT h",
       "rn": "RN-5008265",
       "location": "SPOT748"
@@ -103,8 +103,8 @@
       "entry": "WINDOW_CHECKED_IN DOCK45 (~14:02 Jun 22)",
       "status": "🟡 EN YARDA CON TASK NEW — RN-187262 IMPORTED, TASK-5297910 NEW (ccubides, DOCK45)",
       "receipt": "RN-187262",
-      "receiptStatus": "IMPORTED — NEED_TO_EMAIL_CARRIER. TASK-5297910 existe.",
-      "note": "~18h en DOCK45. Task creado por Caren pero aún no iniciado (NEW).",
+      "receiptStatus": "IMPORTED — containerNo=53109. TASK-5297910 NEW (ccubides, DOCK45)",
+      "note": "WMS confirma: IMPORTED, containerNo=53109, en yarda desde Jun 22 21:02. Cita original Jun 22 07:00 (pasada). ~17h en DOCK45.",
       "statusText": "🟡 EN YARDA CON TASK pero sin IN_PROGRESS — RN-187262, TASK-5297910 (ccubides) en",
       "rn": "RN-187262",
       "location": "DOCK45"
@@ -117,9 +117,9 @@
       "entry": "WINDOW_CHECKED_IN DOCK5 desde Jun 22 13:51",
       "status": "🟢 RECIBIENDO ACTIVAMENTE — RN-187212 IN_PROGRESS con TASK-5297897 IN_PROGRESS (ccubides, DOCK5)",
       "receipt": "RN-187212 (IN_PROGRESS)",
-      "receiptStatus": "NOT_CONFIRMED — sin receive task",
-      "note": "✅ RN-187212 IN_PROGRESS iniciado por Caren. Recibiendo en DOCK5.",
-      "statusText": "🟡 EN YARDA ~4 DÍAS SIN RECEIVE — RN-187212 NOT_CONFIRMED. WINDOW_CHECKED_IN DOCK",
+      "receiptStatus": "IN_PROGRESS — ccubides, DOCK5",
+      "note": "✅ WMS confirma RN-187212 IN_PROGRESS. Caren Cubides trabajando en DOCK5. ~4d en yarda, finalmente recibiendo.",
+      "statusText": "🟢 RECIBIENDO ACTIVAMENTE — RN-187212 IN_PROGRESS (ccubides, DOCK5)",
       "rn": "RN-187212",
       "location": "DOCK5"
     },
