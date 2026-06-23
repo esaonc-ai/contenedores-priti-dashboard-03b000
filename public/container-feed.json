@@ -1,6 +1,6 @@
 {
-  "message": "AUDITORIA 23:20 PDT Jun 22 — YMS+WMS verificados. 3🟡 doble-ET confirmados (CSGU6625300,KOCU4689466,HMMU6422718). 1🔴 MATU2690410 sin task. RN-5008264 putaway pendiente. Browser automation 2do intento en curso. Watchdog OK.",
-  "timestamp": "2026-06-22T23:20:00-07:00",
+  "message": "AUDITORIA 23:20 PDT Jun 22 — YMS+WMS verificados. MATU2690410=🔴 sin receive task. 3🟡 doble-ET (CSGU6625300,KOCU4689466,HMMU6422718). RN-5008264 putaway pendiente. 2🟢1🔴5🟡20⚪35⚫",
+  "timestamp": "2026-06-22T23:30:00-07:00",
   "summary": {
     "totalMonitoreados": 63,
     "enYardaVerde": 3,
@@ -718,5 +718,5 @@
       "note": "⚪ NORMAL — RN huérfano nuevo detectado en auditoría WMS 19:01 PDT. CHAPIN/FUS GURUNANDA."
     }
   ],
-  "lastUpdated": "2026-06-22T23:20:00-07:00"
+  "lastUpdated": "2026-06-22T23:30:00-07:00"
 }
