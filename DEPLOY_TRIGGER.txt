@@ -1,2 +1,1 @@
-1782315591 - Ciclo 08:15 PDT Jun 24 - Auditoría: 5🟢 0🔴 8🟡 21⚪ 5⚫ = 39. API YMS DEGRADADA.
-Trigger deploy Wed Jun 24 15:39:51 UTC 2026
+1782316387 - Auditoría 08:40 PDT Jun 24 — SEGU2947142 → FORCE_CLOSED → excluded. YMS API CAÍDA. 5🟢 0🔴 7🟡 21⚪ 6⚫

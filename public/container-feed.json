@@ -1,6 +1,6 @@
 {
-  "message": "Auditoría 08:15 PDT Jun 24 — 🔍 Outlook: 38 contenedores extraídos de 22 correos (0 no leídos, 0 fallos). ✅ Sin novedades estructurales. Añadidos: CSGU6625300 y MATU2752682 (citas Jun 22 sin evidencia YMS). 🔴 API YMS DEGRADADA desde ~08:23 — 4 contenedores sin verificar (DDDU5053448, DDDU5053469, DDDU5053094, MATU2752682). 5🟢 0🔴 8🟡 21⚪ 5⚫",
-  "lastUpdated": "2026-06-24T08:15:00.000000-07:00",
+  "message": "Auditoría 08:40 PDT Jun 24 — 🔍 Outlook: 38 contenedores extraídos de 22 correos (0 no leídos). 🚨 YMS API CAÍDA (3+ fallos). WMS: 14 activos, 17 excluidos, 7 sin RN. Corrección: SEGU2947142 → FORCE_CLOSED → excluded. MATU2690410/CSNU8075984/TGBU9265460 excluidos pendientes verificación YMS.",
+  "lastUpdated": "2026-06-24T08:40:00.000000-07:00",
   "rows": [
     {
       "container": "CHAPIN13 / SEGU5750901 (RN-187284)",
@@ -131,19 +131,6 @@
       "appointmentTime": "Jun 19",
       "entry": "—",
       "note": "🔴 CRÍTICO: WMS desactualizado. RN-5008153 debe cerrarse manualmente. ccubides."
-    },
-    {
-      "container": "SEGU2947142",
-      "color": "yellow",
-      "inYard": false,
-      "rn": "RN-5008154",
-      "receipt": "RN-5008154",
-      "rnStatus": "IN_PROGRESS",
-      "dock": "FUERA",
-      "status": "🟡 RN IN_PROGRESS pero YA SALIÓ — RN-5008154 activo, short item. ~72h+. Contenedor ya salió.",
-      "appointmentTime": "Jun 19",
-      "entry": "—",
-      "note": "🔴 CRÍTICO: WMS desactualizado. RN-5008154 debe cerrarse manualmente. ccubides."
     },
     {
       "container": "KOCU4689466",
@@ -445,6 +432,19 @@
       "note": "Cita vieja, NOT_CONFIRMED. Probable abandonado."
     },
     {
+      "container": "SEGU2947142",
+      "color": "excluded",
+      "inYard": false,
+      "rn": "RN-5008154",
+      "receipt": "RN-5008154 (FORCE_CLOSED)",
+      "rnStatus": "FORCE_CLOSED",
+      "dock": "FUERA",
+      "status": "⚫ EXCLUIDO — RN-5008154 FORCE_CLOSED (Jun 24 15:02 UTC / 08:02 PDT). ✅ Corrección aplicada. Contenedor ya salió.",
+      "appointmentTime": "Jun 19",
+      "entry": "—",
+      "note": "WMS confirma FORCE_CLOSED. Ya no se muestra en dashboard activo."
+    },
+    {
       "container": "MATU2690410",
       "color": "excluded",
       "inYard": false,
@@ -455,7 +455,7 @@
       "status": "⚫ EXCLUIDO — YMS confirma GATE_CHECK_OUT Jun 22 12:42 PDT. WMS task CLOSED hoy 05:53. ~2 días fuera.",
       "appointmentTime": "Jun 22",
       "entry": "ET-1112068",
-      "note": "QX LOGISTIX. Devanned y checkout completo. RN debe cerrarse."
+      "note": "QX LOGISTIX. Devanned y checkout completo. RN debe cerrarse. ⚠️ WMS paginación bug puede mostrar IN_PROGRESS falso."
     },
     {
       "container": "CSNU8075984",
