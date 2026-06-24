@@ -1,6 +1,6 @@
 {
-  "message": "Auditoría 09:04 PDT Jun 24 — 🔍 Outlook: 47 contenedores extraídos (2 no leídos). ✅ YMS parcial (API containerNo bug). ✅ WMS confirma 6 cierres + SEGU2947142 FORCE_CLOSED. HMMU6422718 salió hoy 07:18. Correcciones: SEGU2947142→excluido, KOCU4689466 PARTIAL_RECEIVED, CHAPIN14 IN_PROGRESS. 5🟢 0🔴 9🟡 17⚪ 6⚫",
-  "lastUpdated": "2026-06-24T09:04:00.000000-07:00",
+  "message": "Auditoría 09:34 PDT Jun 24 — 🔍 WMS verificó 10 contenedores: SEGU2947142 FORCE_CLOSED→excluido ✅, MATU2690410 excluido ok (salió Jun 22), OOCU8494560 amarillo ok (RN activo, salió). 5 con RN CLOSED/FORCE_CLOSED fuera del feed. Sin cambios al feed; solo redeploy.",
+  "lastUpdated": "2026-06-24T16:33:05-07:00",
   "rows": [
     {
       "container": "CHAPIN13 / SEGU5750901 (RN-187284)",
