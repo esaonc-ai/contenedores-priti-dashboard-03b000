@@ -1,6 +1,6 @@
 {
-  "message": "Ciclo 00:34 PDT Jun 24 — CORRECCIONES: RN-187262 CLOSED (53109) y RN-187205 CLOSED (53106) removidos de green→excluidos. RN-5008309→TGBU2472228, RN-5008310→DFSU7374979 confirmados WMS. CHAPIN14/FUS0622-55→green (WMS confirma en yarda recibiendo). CAAU5246296→green (WMS IN_PROGRESS recibiendo). HMMU6422718→red (77h DOCK119 sin RN activo). KOCU4689466→yellow (RN EXCEPTION + doble ET). Outlook: browser automation en curso.",
-  "timestamp": "2026-06-24T00:34:00-07:00",
+  "message": "Auditoría 00:52 PDT Jun 24 — AGREGADO: KOCU4689466 (🟡 yellow, RN-5008265 EXCEPTION, SPOT748 ~89h). Faltante detectado vs YMS/WMS. Verificación 6 contenedores Outlook: 5 CLOSED/FORCE_CLOSED correctamente excluidos. HMMU6422718 contradicción YMS vs WMS (GATE_CHECKED_IN DOCK119 pero RN CLOSED). CSGU6625300 CLOSED hoy, correctamente excluido. Watchdog: dashboard HTTP 200, feed JSON OK, JS sin raw.githubusercontent.com.",
+  "timestamp": "2026-06-24T00:53:09.877-07:00",
   "lastUpdated": "2026-06-24T00:34:00-07:00",
   "summary": {
     "totalVisible": 32,
@@ -218,6 +218,19 @@
       "statusText": "🟡 EXCEPTION + DOBLE ET — RN-5008265. DOCK65/SPOT748.",
       "rn": "RN-5008265",
       "location": "DOCK65/SPOT748"
+    },
+    {
+      "container": "KOCU4689466",
+      "color": "yellow",
+      "inYard": true,
+      "rn": "RN-5008265",
+      "receipt": "RN-5008265",
+      "rnStatus": "EXCEPTION",
+      "dock": "SPOT748",
+      "status": "🟡 EXCEPCIÓN — RN-5008265 EXCEPTION. SPOT748 ~89h. Lot mismatch: lot GN0426 sobre-recibido +900 CS, lot GN0526 faltante 900 CS.",
+      "appointmentTime": "Jun 20 7:00-9:00 AM",
+      "entry": "ET-1111636",
+      "note": "GATE_CHECKED_IN desde Jun 20 07:34 PDT (~89h). Camera OUT detectada — tractor salió, contenedor quedó. EXCEPTION marcada por jlnieves Jun 23 22:20 UTC. FALTANTE detectado en auditoría 00:49 PDT Jun 24."
     },
     {
       "container": "DDDU5053448",
