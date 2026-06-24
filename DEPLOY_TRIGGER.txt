@@ -1,2 +1,2 @@
-1782305062 - Ciclo 05:43 PDT Jun 24 - TQL06182026 Mineral Logic → EXCLUIDO. Citas vencidas. YMS/WMS cross-check. 4🟢 0🔴 8🟡 19⚪ 6⚫ = 37.
-Trigger deploy Wed Jun 24 13:19:37 UTC 2026
+1782315591 - Ciclo 08:15 PDT Jun 24 - Auditoría: 5🟢 0🔴 8🟡 21⚪ 5⚫ = 39. API YMS DEGRADADA.
+Trigger deploy Wed Jun 24 15:39:51 UTC 2026
