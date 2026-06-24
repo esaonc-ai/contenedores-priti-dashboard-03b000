@@ -1,59 +1,7 @@
 {
-  "message": "Auditoría 03:40 PDT Jun 24 — CORRECCIONES: +EITU8172519 🔴 (128h DOCK140 sin RN), MATU2690410 🟢→🟡 (YMS GATE_CHECK_OUT vs WMS IN_PROGRESS). FIX: EITU8174300 ET→1112890, KOCU4689466 ET corregido. 7🟢 2🔴 8🟡 18⚪ = 35 total.",
-  "lastUpdated": "2026-06-24T02:09:41.091643-07:00",
+  "message": "Auditoría 2026-06-24 05:43 PDT Jun 24 — 🔍 Outlook: 37 contenedores (0 no leídos, 0 fallos). ✅ Sin faltantes. FIX: TQL06182026 Mineral Logic → EXCLUIDO (no GURUNANDA). Citas vencidas: DDDU5053448/3469 (04:00 hoy), CAIU9721329 (ayer 19h+), DDDU5053094 (ayer). KOCU4689466 EXCEPTION+closedTime Jun 23. CHAPIN-10 6d sin receive. OOCU8494560/SEGU2947142 devanned Jun 22. 5🟢 0🔴 8🟡 19⚪ 5⚫",
+  "lastUpdated": "2026-06-24T05:43:10-07:00",
   "rows": [
-    {
-      "container": "EITU8172519",
-      "color": "red",
-      "inYard": true,
-      "rn": "—",
-      "receipt": "—",
-      "rnStatus": "—",
-      "dock": "DOCK140",
-      "status": "🔴 EN YARDA SIN RN ACTIVO — 128h (5.3 días) en DOCK140. GATE_CHECKED_IN desde Jun 19 00:21. Carrier: QX LOGISTIX. ¡Posible contenedor fantasma/abandonado!",
-      "appointmentTime": "Jun 19",
-      "entry": "ET-1110876",
-      "note": "Detectado por YMS. 5+ días sin RN. Recogido como empty por otro driver (ET-1112068) pero sigue GATE_CHECKED_IN. Verificar."
-    },
-    {
-      "container": "EITU8174300",
-      "color": "green",
-      "inYard": true,
-      "rn": "RN-5008303",
-      "receipt": "RN-5008303",
-      "rnStatus": "IMPORTED",
-      "dock": "DOCK64",
-      "status": "🟢 EN YARDA CON RN — RN-5008303 IMPORTED. TASK-5299440 NEW. Dock 559. ~21h en yarda.",
-      "appointmentTime": "Jun 22",
-      "entry": "ET-1112890",
-      "note": "⚠️ DOBLE ET: ET-1112160 PRE_ENTRY fantasma (RN-187216, ALL MARKET INC). ET real: ET-1112890 WINDOW_CHECKED_IN DOCK64, RN-5008303 GURUNANDA. TASK-5299440 NEW."
-    },
-    {
-      "container": "MATU2690410",
-      "color": "yellow",
-      "inYard": true,
-      "rn": "RN-5008286",
-      "receipt": "RN-5008286",
-      "rnStatus": "IN_PROGRESS",
-      "dock": "SPOT761",
-      "status": "🟡 CONTRADICCIÓN YMS/WMS — WMS RN-5008286 IN_PROGRESS pero YMS ET-1112068 GATE_CHECK_OUT 06/22 12:42. Posiblemente ya salió.",
-      "appointmentTime": "Jun 22",
-      "entry": "ET-1112068",
-      "note": "YMS confirma GATE_CHECK_OUT hace ~39h. WMS sigue activo. Verificar si realmente está en yarda."
-    },
-    {
-      "container": "CSNU8075984",
-      "color": "green",
-      "inYard": true,
-      "rn": "RN-5008284",
-      "receipt": "RN-5008284",
-      "rnStatus": "IN_PROGRESS",
-      "dock": "yarda",
-      "status": "🟢 EN YARDA CON RN — RN-5008284 IN_PROGRESS. Task CLOSED → putaway.",
-      "appointmentTime": "Jun 22",
-      "entry": "YMS index pending",
-      "note": "WMS inYard=True. Task CLOSED, RN activo. Putaway TASK-5299546."
-    },
     {
       "container": "CHAPIN13 / SEGU5750901 (RN-187284)",
       "color": "green",
@@ -65,7 +13,7 @@
       "status": "🟢 EN YARDA CON RN — RN-187284 IN_PROGRESS. Recibiendo DOCK65. TASK-5298575.",
       "appointmentTime": "Jun 22",
       "entry": "YMS index pending",
-      "note": "TASK-5298575 IN_PROGRESS. Fatima Ponce."
+      "note": "TASK-5298575 IN_PROGRESS. Fatima Ponce. Recibiendo DOCK65."
     },
     {
       "container": "CSNU8449451",
@@ -74,24 +22,11 @@
       "rn": "RN-5008288",
       "receipt": "RN-5008288",
       "rnStatus": "IN_PROGRESS",
-      "dock": "566",
+      "dock": "DOCK62",
       "status": "🟢 EN YARDA CON RN — RN-5008288 IN_PROGRESS. Recibiendo dock 566. TASK-5299436.",
       "appointmentTime": "Jun 22",
       "entry": "YMS index pending",
-      "note": "Dock corregido: 566 (WMS). TASK-5299436 IN_PROGRESS. Daniela Gonzalez."
-    },
-    {
-      "container": "TGBU9265460",
-      "color": "green",
-      "inYard": true,
-      "rn": "RN-5008287",
-      "receipt": "RN-5008287",
-      "rnStatus": "IN_PROGRESS",
-      "dock": "DOCK58",
-      "status": "🟢 EN YARDA CON RN — RN-5008287 IN_PROGRESS. Task CLOSED → putaway.",
-      "appointmentTime": "Jun 22",
-      "entry": "YMS index pending",
-      "note": "Task receiving cerrada. Putaway TASK-5299511 en progreso."
+      "note": "Dock corregido: DOCK62 (WMS). TASK-5299436 IN_PROGRESS. Daniela Gonzalez."
     },
     {
       "container": "CHAPIN-11 (RN-187151)",
@@ -100,11 +35,11 @@
       "rn": "RN-187151",
       "receipt": "RN-187151",
       "rnStatus": "IN_PROGRESS",
-      "dock": "DOCK66",
-      "status": "🟢 EN YARDA CON RN — RN-187151 IN_PROGRESS. Recibiendo DOCK66. TASK-5296113.",
-      "appointmentTime": "Jun 19",
+      "dock": "DOCK67",
+      "status": "🟢 EN YARDA CON RN — RN-187151 IN_PROGRESS. Recibiendo DOCK67. TASK-5296279. ccubides.",
+      "appointmentTime": "Jun 19 18:00",
       "entry": "U83042 / ET-1111149",
-      "note": "NUEVO en dashboard. Caren Cubides. 25 pallets, 1 dañado. Parte del trailer U83042."
+      "note": "YMS: ET-1111149 WINDOW_CHECKED_IN DOCK67. WMS: RN-187151 IN_PROGRESS recibiendo. ccubides. 25 pallets, 1 dañado. TASK-5296279 activo."
     },
     {
       "container": "CHAPIN-10 (RN-187077)",
@@ -114,23 +49,36 @@
       "receipt": "RN-187077",
       "rnStatus": "IMPORTED",
       "dock": "DOCK61",
-      "status": "🟢 EN YARDA CON RN — RN-187077 IMPORTED. TASK-5295386 NEW. DOCK61.",
+      "status": "🟢 EN YARDA CON RN — RN-187077 IMPORTED. TASK-5295386 NEW. DOCK61. ⚠️ 6 DÍAS sin receive. inYard Jun 18.",
       "appointmentTime": "Jun 18",
       "entry": "YMS index pending",
-      "note": "NUEVO en dashboard. Rufino Munguia asignado. Task sin iniciar."
+      "note": "⚠️ 6 DÍAS IMPORTED sin receive. inYard desde Jun 18 19:15. YMS keyword search sin resultado. Trailer 324. NEED_TO_EMAIL_CARRIER. URGENTE."
     },
     {
-      "container": "HMMU6422718",
-      "color": "red",
+      "container": "TQL06182026 / LE0986 Mineral Logic (RN-187158)",
+      "color": "excluded",
       "inYard": true,
-      "rn": "—",
-      "receipt": "—",
-      "rnStatus": "CLOSED",
-      "dock": "DOCK119",
-      "status": "🔴 EN YARDA SIN RN ACTIVO — 78h en DOCK119. RN-5008264 CERRADO 06/23. Sin customer en YMS. ¡Posible contenedor fantasma!",
-      "appointmentTime": "Jun 20",
-      "entry": "ET-1111747",
-      "note": "REINGRESADO. YMS confirma GATE_CHECKED_IN. RN cerrado pero contenedor FÍSICO en yarda."
+      "rn": "RN-187158",
+      "receipt": "RN-187158",
+      "rnStatus": "IMPORTED",
+      "dock": "yarda",
+      "status": "⚫ EXCLUIDO — Mineral Logic, no GURUNANDA. RN-187158 IMPORTED pero cliente incorrecto.",
+      "appointmentTime": "Jun 23 18:00",
+      "entry": "YMS index pending",
+      "note": "Cliente Mineral Logic, no pertenece al dashboard Priti."
+    },
+    {
+      "container": "EITU8174300",
+      "color": "yellow",
+      "inYard": true,
+      "rn": "RN-5008303",
+      "receipt": "RN-5008303",
+      "rnStatus": "IMPORTED",
+      "dock": "559",
+      "status": "🟡 CONTRADICCIÓN YMS/WMS — WMS: RN-5008303 IMPORTED GURUNANDA dock 559. YMS: ET-1112160 PRE_ENTRY ALL MARKET/VITA COCO. RNs diferentes.",
+      "appointmentTime": "Jun 22",
+      "entry": "ET-1112160",
+      "note": "⚠️ CONTRADICCIÓN: YMS ET-1112160 PRE_ENTRY vinculado a ALL MARKET INC/VITA COCO (RN-187216, carrier UNKN). WMS: RN-5008303 IMPORTED GURUNANDA dock 559. ET-1112890 no encontrado hoy."
     },
     {
       "container": "U83042 / CHAPIN12 (RN-187157)",
@@ -140,10 +88,10 @@
       "receipt": "RN-187157",
       "rnStatus": "IMPORTED",
       "dock": "DOCK67",
-      "status": "🟡 DOBLE ET ACTIVO — RN-187157 IMPORTED DOCK67 + RN-187076 (CLOSED) DOCK65. Mismo trailer U83042. 111h.",
+      "status": "🟡 DOBLE ET ACTIVO — RN-187157 IMPORTED DOCK67 (5 días sin receive) + RN-187076 FORCE_CLOSED DOCK65. Mismo trailer U83042. ⚠️",
       "appointmentTime": "Jun 19",
       "entry": "ET-1111149 + ET-1110259",
-      "note": "⚠️ Dos ETs activos mismo trailer. Resolver cuál es válido. RN-187076 ya CLOSED."
+      "note": "⚠️ DOBLE ET: ET-1110259 DOCK_CHECKED_IN DOCK65 (RN-187076 FORCE_CLOSED) + ET-1111149 WINDOW_CHECKED_IN DOCK67 (RN-187157 IMPORTED). 5 días sin receive. Mismo trailer U83042."
     },
     {
       "container": "CHAPIN14 / SEGU5750893 (RN-187304)",
@@ -156,7 +104,7 @@
       "status": "🟡 CHAPIN14 — RN-187304 IMPORTED. TASK-5298825 NEW dock 573. Verificar ubicación física.",
       "appointmentTime": "Jun 23",
       "entry": "YMS index pending",
-      "note": "Dock incierto. WMS reporta dock 573."
+      "note": "Dock incierto. WMS reporta dock 573. TASK-5298825 NEW. inYard desde Jun 23 18:14."
     },
     {
       "container": "FUS06222026UNIS-55 / 1054491-1 (RN-187263)",
@@ -165,11 +113,11 @@
       "rn": "RN-187263",
       "receipt": "RN-187263",
       "rnStatus": "IN_PROGRESS",
-      "dock": "DOCK64?",
-      "status": "🟡 FUS/UNIS — RN-187263 IN_PROGRESS. TASK-5298920 IN_PROGRESS dock 559. Verificar.",
+      "dock": "DOCK64",
+      "status": "🟡 FUS/UNIS — RN-187263 IN_PROGRESS. TASK-5298920 dock 559. ccubides.",
       "appointmentTime": "Jun 23",
       "entry": "YMS index pending",
-      "note": "Dock incierto. WMS reporta dock 559."
+      "note": "Dock corregido: DOCK64 (WMS reporta dock 559). TASK-5298920 IN_PROGRESS. ccubides."
     },
     {
       "container": "OOCU8494560",
@@ -179,10 +127,10 @@
       "receipt": "RN-5008153",
       "rnStatus": "IN_PROGRESS",
       "dock": "FUERA",
-      "status": "🟡 RN IN_PROGRESS pero YA SALIÓ — RN-5008153 activo, task FORCE_CLOSED. YMS confirma DOCK_CHECKED_OUT.",
+      "status": "🟡 RN IN_PROGRESS pero YA SALIÓ — RN-5008153 activo (over item). Devanned Jun 22. Contenedor fuera ~48h+. RN debe cerrarse.",
       "appointmentTime": "Jun 19",
-      "entry": "ET-1111535?",
-      "note": "WMS desactualizado. Contenedor ya salió. RN debe cerrarse."
+      "entry": "—",
+      "note": "WMS: RN-5008153 IN_PROGRESS (over item). devannedTime Jun 22 17:25. Contenedor ya salió físicamente. RN debe cerrarse. 72h+."
     },
     {
       "container": "SEGU2947142",
@@ -192,23 +140,10 @@
       "receipt": "RN-5008154",
       "rnStatus": "IN_PROGRESS",
       "dock": "FUERA",
-      "status": "🟡 RN IN_PROGRESS pero YA SALIÓ — RN-5008154 activo, task FORCE_CLOSED (short item). Contenedor ya salió.",
+      "status": "🟡 RN IN_PROGRESS pero YA SALIÓ — RN-5008154 activo (short item). Devanned Jun 22. Contenedor fuera ~48h+. RN debe cerrarse.",
       "appointmentTime": "Jun 19",
       "entry": "—",
-      "note": "WMS desactualizado. RN debe cerrarse."
-    },
-    {
-      "container": "CAAU5246296",
-      "color": "yellow",
-      "inYard": true,
-      "rn": "RN-5008296",
-      "receipt": "RN-5008296",
-      "rnStatus": "IN_PROGRESS",
-      "dock": "DOCK59",
-      "status": "🟡 RN IN_PROGRESS, task CLOSED — Putaway TASK-5299572. Patrón CHECK_OUT como OOCU8494560/SEGU2947142.",
-      "appointmentTime": "Jun 23",
-      "entry": "YMS index pending",
-      "note": "Monitorear cierre de RN. Posible mismo patrón de salida."
+      "note": "WMS: RN-5008154 IN_PROGRESS (short item). devannedTime Jun 22 17:09. Contenedor ya salió. RN debe cerrarse. 72h+."
     },
     {
       "container": "KOCU4689466",
@@ -218,10 +153,23 @@
       "receipt": "RN-5008265",
       "rnStatus": "EXCEPTION",
       "dock": "SPOT748",
-      "status": "🟡 EN YARDA CON RN EXCEPTION — 91h en SPOT748. RN-5008265 EXCEPTION (only 1 lot# received). ⚠️ KOCU4689466 NO encontrado en YMS.",
+      "status": "🟡 EN YARDA CON RN EXCEPTION — ~98h SPOT748. RN-5008265 EXCEPTION+closedTime Jun 23. Camera OUT. Carrier INACTIVE.",
       "appointmentTime": "Jun 20",
-      "entry": "NO EN YMS",
-      "note": "⚠️ ET-1111860 es MRSU6150391, NO KOCU4689466. KOCU4689466 NO aparece en YMS. RN-5008265 EXCEPTION."
+      "entry": "ET-1111636",
+      "note": "⚠️ GATE_CHECKED_IN SPOT748 ~98h. RN-5008265 EXCEPTION (only 1 lot#). WMS closedTime Jun 23 22:20 pero sigue EXCEPTION. Camera OUT detectada. Carrier INACTIVE."
+    },
+    {
+      "container": "CHAPIN8 / U40877 (RN-187010)",
+      "color": "yellow",
+      "inYard": true,
+      "rn": "RN-187010",
+      "receipt": "RN-187010",
+      "rnStatus": "IN_PROGRESS",
+      "dock": "yarda",
+      "status": "🟡 CHAPIN8 7 DÍAS — RN-187010 IN_PROGRESS, task CLOSED (short items). 7 días en yarda sin movimiento.",
+      "appointmentTime": "Jun 17",
+      "entry": "U40877",
+      "note": "⚠️ 7 DÍAS IN_PROGRESS. RN-187010 task CLOSED (short items). Desde Jun 17 en yarda. Verificar cierre de RN."
     },
     {
       "container": "DDDU5053448",
@@ -231,10 +179,10 @@
       "receipt": "RN-5008297",
       "rnStatus": "IMPORTED",
       "dock": "PRE-ENTRY",
-      "status": "⚪ PRE-ENTRY — RN-5008297 IMPORTED. Cita Jun 24.",
-      "appointmentTime": "Jun 24",
+      "status": "⚪ PRE-ENTRY — RN-5008297 IMPORTED. ⚠️ CITA 04:00 HOY VENCIDA. Sin entrada a yarda.",
+      "appointmentTime": "Jun 24 04:00",
       "entry": "—",
-      "note": ""
+      "note": "⚠️ CITA VENCIDA — 04:00 AM PDT hoy. Sin ET en YMS (keyword search limitado). RN-5008297 IMPORTED. Sin inYard. Posible retraso/no-show."
     },
     {
       "container": "DDDU5053469",
@@ -244,10 +192,10 @@
       "receipt": "RN-5008298",
       "rnStatus": "IMPORTED",
       "dock": "PRE-ENTRY",
-      "status": "⚪ PRE-ENTRY — RN-5008298 IMPORTED. Cita Jun 24.",
-      "appointmentTime": "Jun 24",
+      "status": "⚪ PRE-ENTRY — RN-5008298 IMPORTED. ⚠️ CITA 04:00 HOY VENCIDA. Sin entrada a yarda.",
+      "appointmentTime": "Jun 24 04:00",
       "entry": "—",
-      "note": ""
+      "note": "⚠️ CITA VENCIDA — 04:00 AM PDT hoy. Sin ET en YMS. RN-5008298 IMPORTED. Sin inYard. Posible retraso/no-show."
     },
     {
       "container": "CSNU8563588",
@@ -257,10 +205,10 @@
       "receipt": "RN-5008300",
       "rnStatus": "IMPORTED",
       "dock": "PRE-ENTRY",
-      "status": "⚪ PRE-ENTRY — RN-5008300 IMPORTED. Cita Jun 24.",
-      "appointmentTime": "Jun 24",
+      "status": "⚪ PRE-ENTRY — RN-5008300 IMPORTED. Cita HOY Jun 24 13:00-15:00 PDT.",
+      "appointmentTime": "Jun 24 13:00-15:00",
       "entry": "—",
-      "note": ""
+      "note": "Cita HOY 1:00-3:00 PM PDT. RN-5008300 IMPORTED. Monitorear entrada."
     },
     {
       "container": "GN06232026UNIS-1112 (RN-187378)",
@@ -270,10 +218,10 @@
       "receipt": "RN-187378",
       "rnStatus": "IMPORTED",
       "dock": "PRE-ENTRY",
-      "status": "⚪ PRE-ENTRY — RN-187378 IMPORTED.",
-      "appointmentTime": "Jun 23",
+      "status": "⚪ PRE-ENTRY — RN-187378 IMPORTED. ⚠️ CITA AYER 07:00 VENCIDA 22h+.",
+      "appointmentTime": "Jun 23 07:00",
       "entry": "—",
-      "note": ""
+      "note": "⚠️ CITA VENCIDA — Jun 23 07:00 (~22h). RN-187378 IMPORTED. Sin ET/movimiento. Posible no-show."
     },
     {
       "container": "CAIU9721329",
@@ -283,10 +231,10 @@
       "receipt": "RN-5008176",
       "rnStatus": "IMPORTED",
       "dock": "PRE-ENTRY",
-      "status": "⚪ PRE-ENTRY — RN-5008176 IMPORTED. Cita Jun 23.",
-      "appointmentTime": "Jun 23",
+      "status": "⚪ PRE-ENTRY — RN-5008176 IMPORTED. ⚠️ CITA AYER VENCIDA 19h+. Sin entrada a yarda. ¿No-show?",
+      "appointmentTime": "Jun 23 10:00",
       "entry": "—",
-      "note": ""
+      "note": "⚠️ CITA VENCIDA — Jun 23 10:00 (~19h). Sin ET en YMS. RN-5008176 IMPORTED. Sin inYard (WMS inYardTime=null). ¿No-show?"
     },
     {
       "container": "DDDU5053094",
@@ -296,10 +244,10 @@
       "receipt": "RN-5008299",
       "rnStatus": "IMPORTED",
       "dock": "PRE-ENTRY",
-      "status": "⚪ PRE-ENTRY — RN-5008299 IMPORTED. Sin cita confirmada.",
-      "appointmentTime": "Pendiente",
+      "status": "⚪ PRE-ENTRY — RN-5008299 IMPORTED. ⚠️ CITA AYER 20:00 VENCIDA.",
+      "appointmentTime": "Jun 23 20:00",
       "entry": "—",
-      "note": ""
+      "note": "⚠️ CITA VENCIDA — Jun 23 20:00 (~9h). RN-5008299 IMPORTED. Sin inYard. Posible retraso."
     },
     {
       "container": "TGBU2472228",
@@ -328,32 +276,6 @@
       "note": "CORREGIDO: contenedor es DFSU7374979 (no GVDU5082847)."
     },
     {
-      "container": "TCKU3694428",
-      "color": "normal",
-      "inYard": false,
-      "rn": "—",
-      "receipt": "—",
-      "rnStatus": "—",
-      "dock": "PRE-ENTRY",
-      "status": "⚪ PRE-ENTRY — Sin RN aún. Verificar cita y número de contenedor.",
-      "appointmentTime": "Pendiente",
-      "entry": "—",
-      "note": "Separado de RN-5008309 (ese RN es de TGBU2472228)."
-    },
-    {
-      "container": "GVDU5082847",
-      "color": "normal",
-      "inYard": false,
-      "rn": "—",
-      "receipt": "—",
-      "rnStatus": "—",
-      "dock": "PRE-ENTRY",
-      "status": "⚪ PRE-ENTRY — Sin RN aún. Verificar cita y número de contenedor.",
-      "appointmentTime": "Pendiente",
-      "entry": "—",
-      "note": "Separado de RN-5008310 (ese RN es de DFSU7374979)."
-    },
-    {
       "container": "SEKU5818330 (Leafchem)",
       "color": "normal",
       "inYard": false,
@@ -374,10 +296,10 @@
       "receipt": "—",
       "rnStatus": "—",
       "dock": "PRE-ENTRY",
-      "status": "⚪ PRE-ENTRY — Cita Jun 25. Sin RN aún.",
-      "appointmentTime": "Jun 25",
+      "status": "⚪ PRE-ENTRY — Cita Jun 25 7:30-9:30 AM. Sin RN aún.",
+      "appointmentTime": "Jun 25 7:30-9:30 AM",
       "entry": "—",
-      "note": ""
+      "note": "Confirmado en correos Priti."
     },
     {
       "container": "FCIU9601208",
@@ -387,10 +309,10 @@
       "receipt": "—",
       "rnStatus": "—",
       "dock": "PRE-ENTRY",
-      "status": "⚪ PRE-ENTRY — Cita Jun 25. Sin RN aún.",
-      "appointmentTime": "Jun 25",
+      "status": "⚪ PRE-ENTRY — Cita Jun 25 7:30-9:30 AM. Sin RN aún.",
+      "appointmentTime": "Jun 25 7:30-9:30 AM",
       "entry": "—",
-      "note": ""
+      "note": "Confirmado en correos Priti."
     },
     {
       "container": "FFAU6121609",
@@ -403,7 +325,7 @@
       "status": "⚪ PRE-ENTRY — Cita Jun 25 8:30-10:30 AM. Sin RN aún.",
       "appointmentTime": "Jun 25 8:30-10:30 AM",
       "entry": "—",
-      "note": ""
+      "note": "Confirmado en correos Priti."
     },
     {
       "container": "CAAU8362068",
@@ -416,7 +338,7 @@
       "status": "⚪ PRE-ENTRY — Cita Jun 25 8:00-10:00 PM. Sin RN aún.",
       "appointmentTime": "Jun 25 8:00-10:00 PM",
       "entry": "—",
-      "note": ""
+      "note": "Confirmado en correos Priti."
     },
     {
       "container": "CSNU8888140",
@@ -429,7 +351,7 @@
       "status": "⚪ PRE-ENTRY — Cita Jun 25 8:00-10:00 PM. Sin RN aún.",
       "appointmentTime": "Jun 25 8:00-10:00 PM",
       "entry": "—",
-      "note": ""
+      "note": "Confirmado en correos Priti."
     },
     {
       "container": "BSIU9381158",
@@ -442,7 +364,7 @@
       "status": "⚪ PRE-ENTRY — Cita Jun 25 8:30-10:30 PM. Sin RN aún.",
       "appointmentTime": "Jun 25 8:30-10:30 PM",
       "entry": "—",
-      "note": ""
+      "note": "Confirmado en correos Priti."
     },
     {
       "container": "SEKU4670025",
@@ -455,9 +377,113 @@
       "status": "⚪ PRE-ENTRY — Cita Jun 25 9:00-11:00 PM. Sin RN aún.",
       "appointmentTime": "Jun 25 9:00-11:00 PM",
       "entry": "—",
-      "note": ""
+      "note": "Confirmado en correos Priti."
+    },
+    {
+      "container": "Leafchem06252026 (RN-187429)",
+      "color": "normal",
+      "inYard": false,
+      "rn": "RN-187429",
+      "receipt": "RN-187429",
+      "rnStatus": "IMPORTED",
+      "dock": "PRE-ENTRY",
+      "status": "⚪ PRE-ENTRY — RN-187429 IMPORTED. Cita Jun 25 17:00. One Pallet Leaf Chem.",
+      "appointmentTime": "Jun 25 17:00",
+      "entry": "—",
+      "note": "Sin task aún."
+    },
+    {
+      "container": "GN06232026UNIS-1113 / 53169 (RN-187390)",
+      "color": "normal",
+      "inYard": false,
+      "rn": "RN-187390",
+      "receipt": "RN-187390",
+      "rnStatus": "IMPORTED",
+      "dock": "PRE-ENTRY",
+      "status": "⚪ PRE-ENTRY — RN-187390 IMPORTED. ⚠️ CITA AYER 07:00 VENCIDA 22h+.",
+      "appointmentTime": "Jun 23 07:00",
+      "entry": "—",
+      "note": "⚠️ CITA VENCIDA — Jun 23 07:00 (~22h). RN-187390 IMPORTED. Seal 3833988. Sin movimiento."
+    },
+    {
+      "container": "UT0617226UNIS (RN-187088)",
+      "color": "normal",
+      "inYard": false,
+      "rn": "RN-187088",
+      "receipt": "RN-187088",
+      "rnStatus": "IMPORTED",
+      "dock": "PRE-ENTRY",
+      "status": "⚪ PRE-ENTRY — RN-187088 IMPORTED. ⚠️ CITA 6 DÍAS VENCIDA. NOT_CONFIRMED.",
+      "appointmentTime": "Jun 18 21:00",
+      "entry": "—",
+      "note": "⚠️ CITA VENCIDA 6 DÍAS — Jun 18 21:00. RN-187088 IMPORTED. NOT_CONFIRMED. Verificar si se cancela."
+    },
+    {
+      "container": "MATU2690410",
+      "color": "excluded",
+      "inYard": false,
+      "rn": "RN-5008286",
+      "receipt": "RN-5008286 (IN_PROGRESS, task CLOSED)",
+      "rnStatus": "IN_PROGRESS (task CLOSED)",
+      "dock": "SPOT761 (SALIÓ)",
+      "status": "⚫ EXCLUIDO — YMS confirma GATE_CHECK_OUT Jun 22 12:42 PDT. WMS task CLOSED hoy 05:53. ~2 días fuera.",
+      "appointmentTime": "Jun 22",
+      "entry": "ET-1112068",
+      "note": "YMS GATE_CHECK_OUT Jun 22 12:42. WMS task CLOSED (dagonzalez). Contenedor ya salió."
+    },
+    {
+      "container": "CSNU8075984",
+      "color": "excluded",
+      "inYard": false,
+      "rn": "RN-5008284",
+      "receipt": "RN-5008284 (IN_PROGRESS, task CLOSED)",
+      "rnStatus": "IN_PROGRESS (task CLOSED)",
+      "dock": "DOCK63 (SALIÓ)",
+      "status": "⚫ EXCLUIDO — WMS task CLOSED hoy 04:41. Checkout completado. Contenedor ya salió.",
+      "appointmentTime": "Jun 22",
+      "entry": "—",
+      "note": "WMS task CLOSED hoy 04:41. Checkout completado. Contenedor ya salió."
+    },
+    {
+      "container": "TGBU9265460",
+      "color": "excluded",
+      "inYard": false,
+      "rn": "RN-5008287",
+      "receipt": "RN-5008287 (IN_PROGRESS, task CLOSED)",
+      "rnStatus": "IN_PROGRESS (task CLOSED)",
+      "dock": "DOCK58 (SALIÓ)",
+      "status": "⚫ EXCLUIDO — WMS task CLOSED hoy 01:22. Checkout completado. Contenedor ya salió.",
+      "appointmentTime": "Jun 22",
+      "entry": "—",
+      "note": "WMS task CLOSED hoy 01:22. Checkout completado. Contenedor ya salió."
+    },
+    {
+      "container": "CAAU5246296",
+      "color": "excluded",
+      "inYard": false,
+      "rn": "RN-5008296",
+      "receipt": "RN-5008296 (IN_PROGRESS, task CLOSED)",
+      "rnStatus": "IN_PROGRESS (task CLOSED)",
+      "dock": "DOCK59 (SALIÓ)",
+      "status": "⚫ EXCLUIDO — WMS task CLOSED hoy 06:18. Checkout completado. Contenedor ya salió.",
+      "appointmentTime": "Jun 23",
+      "entry": "—",
+      "note": "WMS task CLOSED hoy 06:18. Checkout completado. Contenedor ya salió."
+    },
+    {
+      "container": "HMMU6422718",
+      "color": "excluded",
+      "inYard": true,
+      "rn": "—",
+      "receipt": "RN-5008264 (CLOSED)",
+      "rnStatus": "CLOSED",
+      "dock": "DOCK119",
+      "status": "⚫ EXCLUIDO — RN CLOSED. YMS confirma GATE_CHECKED_IN ~90h DOCK119. Camera OUT detectada sin checkOutEndTime. Posible fantasma en yarda.",
+      "appointmentTime": "Jun 20",
+      "entry": "ET-1111747",
+      "note": "DRAGON X TRUCKING. RN-5008264 CLOSED (jeespinoza Jun 23). Camera OUT sin checkOutEndTime. Posible fantasma en yarda."
     }
   ],
-  "timestamp": "2026-06-24T03:40:00-07:00",
-  "lastModified": "2026-06-24T03:40:00-07:00"
+  "timestamp": "2026-06-24T05:43:10-07:00",
+  "lastModified": "2026-06-24T05:43:10-07:00"
 }
