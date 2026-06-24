@@ -1,6 +1,6 @@
 {
-  "message": "Auditoría 07:21 PDT Jun 24 — 22 correos (0 no leídos, 0 fallos). 43 contenedores extraídos. 14 CLOSED/FORCE_CLOSED (fuera). ✅ 5🟢 0🔴 8🟡 19⚪. CSGU6625300/MATU2752682/CAAU9247201 cerrados últimas 24h — fuera del dashboard.",
-  "lastUpdated": "2026-06-24T07:21:00.000000-07:00",
+  "message": "Auditoría 07:28 PDT Jun 24 — 🔴 Corrección DDDU5053448 (DOCK138 desde anoche, era PRE-ENTRY). 6🟢 0🔴 8🟡 18⚪. YMS confirma CSNU8449451 DOCK62. EITU8174300 GURUNANDA confirmado en ambos ETs. HMMU6422718 GATE_CHECK_OUT hoy.",
+  "lastUpdated": "2026-06-24T07:28:00.000000-07:00",
   "rows": [
     {
       "container": "CHAPIN13 / SEGU5750901 (RN-187284)",
@@ -16,17 +16,30 @@
       "note": "TASK-5298575 IN_PROGRESS. Fatima Ponce."
     },
     {
+      "container": "DDDU5053448",
+      "color": "green",
+      "inYard": true,
+      "rn": "RN-5008297",
+      "receipt": "RN-5008297",
+      "rnStatus": "IMPORTED",
+      "dock": "DOCK138",
+      "status": "🟢 EN YARDA CON RN — ET-1113013 DOCK_CHECKED_IN DOCK138 desde Jun 23 20:42. QX LOGISTIX. Seal YMAS326097.",
+      "appointmentTime": "Jun 23 20:42",
+      "entry": "ET-1113013",
+      "note": "⚠️ WMS no actualizado (inYardTime null). Pero YMS confirma en dock desde anoche. Jessica Sole Salazar."
+    },
+    {
       "container": "CSNU8449451",
       "color": "green",
       "inYard": true,
       "rn": "RN-5008288",
       "receipt": "RN-5008288",
       "rnStatus": "IN_PROGRESS",
-      "dock": "566",
-      "status": "🟢 EN YARDA CON RN — RN-5008288 IN_PROGRESS. Recibiendo dock 566. TASK-5299436.",
+      "dock": "DOCK62 (YMS) / 566 (WMS)",
+      "status": "🟢 EN YARDA CON RN — RN-5008288 IN_PROGRESS. YMS: DOCK62 ET-1112887. WMS: dock 566. TASK-5299436.",
       "appointmentTime": "Jun 22",
-      "entry": "YMS index pending",
-      "note": "Dock 566 (WMS). TASK-5299436 IN_PROGRESS. Daniela Gonzalez."
+      "entry": "ET-1112887",
+      "note": "YMS confirma DOCK62 GURUNANDA. WMS reporta dock 566. Discrepancia menor de ubicación."
     },
     {
       "container": "CHAPIN-11 (RN-187151)",
@@ -78,7 +91,7 @@
       "status": "🟡 DOBLE ET ACTIVO — ET-1112430 GATE_CHECKED_IN DOCK53 QX LOGISTIX + ET-1112890 WINDOW_CHECKED_IN DOCK64 WILL CALL. Ambos RN-5008303 GURUNANDA.",
       "appointmentTime": "Jun 22",
       "entry": "ET-1112430 + ET-1112890",
-      "note": "⚠️ DOBLE ET mismo contenedor. VITA COCO (ET-1112160) ya descartado — era otro CNTR. Verificar en yarda."
+      "note": "YMS confirma GURUNANDA en ET-1112890. VITA COCO descartado. DOBLE ET persiste — resolver cuál es el válido."
     },
     {
       "container": "U83042 / CHAPIN12 (RN-187157)",
@@ -172,19 +185,6 @@
       "note": "ccubides. Devanned Jun 22. Short items. RN debe cerrarse."
     },
     {
-      "container": "DDDU5053448",
-      "color": "normal",
-      "inYard": false,
-      "rn": "RN-5008297",
-      "receipt": "RN-5008297",
-      "rnStatus": "IMPORTED",
-      "dock": "PRE-ENTRY",
-      "status": "⚪ PRE-ENTRY — RN-5008297 IMPORTED. Cita Jun 24 04:00. ⚠️ ~3h de retraso. Sin ET en YMS.",
-      "appointmentTime": "Jun 24 04:00",
-      "entry": "—",
-      "note": "Cita programada 04:00. Sin evidencia de llegada. Posible no-show o retraso mayor."
-    },
-    {
       "container": "DDDU5053469",
       "color": "normal",
       "inYard": false,
@@ -192,10 +192,10 @@
       "receipt": "RN-5008298",
       "rnStatus": "IMPORTED",
       "dock": "PRE-ENTRY",
-      "status": "⚪ PRE-ENTRY — RN-5008298 IMPORTED. Cita Jun 24 04:00. ⚠️ ~3h de retraso. Sin ET en YMS.",
+      "status": "⚪ PRE-ENTRY — RN-5008298 IMPORTED. Cita Jun 24 04:00. ⚠️ ~3.5h de retraso. Sin ET en YMS.",
       "appointmentTime": "Jun 24 04:00",
       "entry": "—",
-      "note": "Cita programada 04:00. Sin evidencia de llegada. Posible no-show o retraso mayor."
+      "note": "Cita programada 04:00. Sin evidencia de llegada en YMS. WMS inYardTime null. Posible no-show."
     },
     {
       "container": "CSNU8563588",
@@ -419,25 +419,26 @@
       "note": "Cita vieja, NOT_CONFIRMED. Probable abandonado."
     }
   ],
-  "timestamp": "2026-06-24T07:21:00.000000-07:00",
+  "timestamp": "2026-06-24T07:28:00.000000-07:00",
   "summary": {
-    "green": 5,
+    "green": 6,
     "red": 0,
     "yellow": 8,
-    "normal": 19,
+    "normal": 18,
     "excluded": 0,
     "total_visible": 32,
     "total": 32
   },
   "alertas": [
-    "EITU8174300 DOBLE ET activo (ET-1112430 DOCK53 + ET-1112890 DOCK64) mismo RN-5008303",
+    "DDDU5053469 ~3.5h retraso cita 04:00, sin ET en YMS. DDDU5053448 ya llegó DOCK138.",
+    "EITU8174300 DOBLE ET activo (ET-1112430 DOCK53 + ET-1112890 DOCK64) mismo RN-5008303. GURUNANDA confirmado en ambos.",
     "KOCU4689466 DOBLE ET activo (ET-1111636 SPOT748 + ET-1112226 DOCK65) + RN EXCEPTION",
-    "DDDU5053448/DDDU5053469 ~3h retraso cita 04:00, sin ET en YMS",
     "OOCU8494560 DOCK_CHECKED_OUT Jun 22 + RN-5008153 sigue IN_PROGRESS (debe cerrarse)",
     "SEGU2947142 ya salió + RN-5008154 sigue IN_PROGRESS (debe cerrarse)",
     "CHAPIN8/U40877 7 días en yarda, task CLOSED, RN debe cerrarse",
     "CHAPIN-10 6 días sin iniciar receive (Rufino Munguia)",
-    "U83042 DOBLE RN (RN-187076 FORCE_CLOSED + RN-187157 IMPORTED mismo trailer)"
+    "U83042 DOBLE RN (RN-187076 FORCE_CLOSED + RN-187157 IMPORTED mismo trailer)",
+    "DDDU5053448 WMS desactualizado — inYardTime null pero YMS confirma DOCK138 desde anoche"
   ],
   "cierresRecientes": [
     "CSGU6625300 RN-5008285 CLOSED hoy 04:22 (jeespinoza)",
