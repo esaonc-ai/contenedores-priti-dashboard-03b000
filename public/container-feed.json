@@ -193,7 +193,7 @@
       "status": "🟡 ALERTA — RN-5008265 EXCEPTION en WMS. YMS GATE_CHECKED_IN SPOT748 desde Jun 20 (~89h). Camera OUT sin checkout formal. Carrier INACTIVE.",
       "appointmentTime": "Jun 20",
       "entry": "ET-1111636 (GATE_CHECKED_IN)",
-      "note": "⚠️ NUEVO en dashboard. RN EXCEPTION. Container físicamente en yarda 89h+. Requiere atención."
+      "note": "⚠️ Container físicamente en yarda 89h+. RN EXCEPTION con closeTime Jun 23. Requiere atención."
     },
     {
       "container": "YMMU6698133",
@@ -207,6 +207,32 @@
       "appointmentTime": "Jun 16",
       "entry": "ET-1109857 (DOCK_CHECKED_IN)",
       "note": "⚠️ CRÍTICO — 7+ días en yarda con RN cerrado. Verificar si contenedor físico sigue en DOCK59."
+    },
+    {
+      "container": "EITU8172519",
+      "color": "red",
+      "inYard": true,
+      "rn": "RN-5008258",
+      "receipt": "RN-5008258",
+      "rnStatus": "CLOSED",
+      "dock": "DOCK140",
+      "status": "🔴 EN YARDA SIN RN ACTIVO — RN-5008258 CLOSED (jlnieves Jun 22 08:52). YMS GATE_CHECKED_IN DOCK140 desde Jun 19 (~125h). ET residual sin inboundReceiptIds. Mismo equipo (EQP-248165) ya procesado en ET-1111442.",
+      "appointmentTime": "Jun 18",
+      "entry": "ET-1110876 (GATE_CHECKED_IN) + ET-1111442 (DOCK_CHECKED_OUT)",
+      "note": "⚠️ Contradicción: ET-1110876 residual ~125h. RN cerrado pero container físico posiblemente en yarda. Verificar manualmente."
+    },
+    {
+      "container": "HMMU6422718",
+      "color": "red",
+      "inYard": true,
+      "rn": "RN-5008264",
+      "receipt": "RN-5008264",
+      "rnStatus": "CLOSED",
+      "dock": "DOCK119",
+      "status": "🔴 EN YARDA SIN RN ACTIVO — RN-5008264 CLOSED (Jun 23). YMS GATE_CHECKED_IN DOCK119 desde Jun 20 (~88h). Camera OUT detectada (exitLaneId 14) sin checkOutEndTime. Posiblemente ya salió.",
+      "appointmentTime": "Jun 20",
+      "entry": "ET-1111747 (GATE_CHECKED_IN)",
+      "note": "⚠️ RN cerrado pero YMS muestra GATE_CHECKED_IN. Camera OUT = posible salida no registrada. Verificar."
     },
     {
       "container": "DDDU5053448",
@@ -443,8 +469,8 @@
       "note": "DO is not with UNIS."
     }
   ],
-  "timestamp": "2026-06-24T01:15:00-07:00",
-  "message": "Auditoría 01:15 PDT Jun 24 — AGREGADOS: YMMU6698133 (🔴 RED — 7+ días en DOCK59 con RN FORCE_CLOSED), KOCU4689466 (🟡 YELLOW — 89h en SPOT748 con RN EXCEPTION). ACTUALIZADOS: CAAU5246296 (DOCK_CHECKED_OUT confirmado 06/23 23:18), MATU2690410/CSNU8075984/CSNU8449451/TGBU9265460 (nota EMPTY Daniela 06/23). Outlook: 22 correos Priti OK, 37 contenedores únicos. WMS: 15 CLOSED/FORCE_CLOSED confirmados correctamente excluidos. Watchdog: dashboard HTTP 200, feed JSON OK, JS sin raw.githubusercontent.com, timestamp actualizado.",
-  "excludedCount": 69,
-  "excludedReason": "CLOSED/FORCE_CLOSED/DOCK_CHECKED_OUT/GATE_CHECK_OUT/EXCEPTION — excluidos del dashboard visible. +15 confirmados WMS en esta auditoría."
+  "timestamp": "2026-06-24T01:27:00-07:00",
+  "message": "Auditoría 01:27 PDT Jun 24 — AGREGADOS: EITU8172519 (🔴 RED — DOCK140 ~125h, RN-5008258 CLOSED, container físico en yarda sin RN activo, ET-1110876 residual), HMMU6422718 (🔴 RED — DOCK119 ~88h, RN-5008264 CLOSED, YMS GATE_CHECKED_IN sin RN activo, camera OUT sin checkout). PREVIAMENTE en repo: KOCU4689466 (🟡 YELLOW — SPOT748 89h+ RN EXCEPTION), YMMU6698133 (🔴 RED — DOCK59 168h+ RN FORCE_CLOSED). Outlook: 22 correos Priti OK, 53 contenedores únicos. WMS: 10 CLOSED/FORCE_CLOSED confirmados correctamente excluidos del dashboard visible. Watchdog: dashboard HTTP 200, feed JSON OK, JS sin raw.githubusercontent.com, timestamp actualizado.",
+  "excludedCount": 73,
+  "excludedReason": "CLOSED/FORCE_CLOSED en WMS = excluidos del dashboard visible. 26 contenedores con RN en WMS (CLOSED: OOCU6324970, XYLU8127277, EITU8172519-RN5008258, TLLU3336504, CAAU9247201, HMMU6422718, CSGU6625300; FORCE_CLOSED: OOCU9426488, MATU4542915, MATU2752682; INACTIVOS: + otros). Solo IN_PROGRESS, IMPORTED, EXCEPTION y PRE-ENTRY visibles."
 }
