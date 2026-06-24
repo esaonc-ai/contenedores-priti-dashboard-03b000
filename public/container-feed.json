@@ -1,6 +1,6 @@
 {
-  "message": "Auditoría 07:28 PDT Jun 24 — 🔴 Corrección DDDU5053448 (DOCK138 desde anoche, era PRE-ENTRY). 6🟢 0🔴 8🟡 18⚪. YMS confirma CSNU8449451 DOCK62. EITU8174300 GURUNANDA confirmado en ambos ETs. HMMU6422718 GATE_CHECK_OUT hoy.",
-  "lastUpdated": "2026-06-24T07:28:00.000000-07:00",
+  "message": "Auditoría 07:32 PDT Jun 24 — 🔍 Outlook: 22 correos (0 no leídos, 0 fallos). 43 contenedores extraídos. ✅ 6🟢 0🔴 10🟡 18⚪. +2🟡: TGBU9265460 y CAAU5246296 recuperados (RN IN_PROGRESS pese a DOCK_CHECKED_OUT). ⚠️ CAIU9721329 demurrage desde Jun 22 (externo).",
+  "lastUpdated": "2026-06-24T07:32:00.000000-07:00",
   "rows": [
     {
       "container": "CHAPIN13 / SEGU5750901 (RN-187284)",
@@ -185,6 +185,32 @@
       "note": "ccubides. Devanned Jun 22. Short items. RN debe cerrarse."
     },
     {
+      "container": "TGBU9265460",
+      "color": "yellow",
+      "inYard": false,
+      "rn": "RN-5008287",
+      "receipt": "RN-5008287",
+      "rnStatus": "IN_PROGRESS",
+      "dock": "FUERA",
+      "status": "🟡 RN IN_PROGRESS pero YA SALIÓ — RN-5008287 sigue IN_PROGRESS. ET-1112892 DOCK_CHECKED_OUT Jun 23 18:22. TASK-5299441 CLOSED (Daniela). RN no cerrado.",
+      "appointmentTime": "Jun 23",
+      "entry": "ET-1112892 DOCK_CHECKED_OUT",
+      "note": "⚠️ RECUPERADO de excluidos: task CLOSED pero RN sigue IN_PROGRESS. Requiere cierre manual. ~14h desde checkout."
+    },
+    {
+      "container": "CAAU5246296",
+      "color": "yellow",
+      "inYard": false,
+      "rn": "RN-5008296",
+      "receipt": "RN-5008296",
+      "rnStatus": "IN_PROGRESS",
+      "dock": "FUERA",
+      "status": "🟡 RN IN_PROGRESS pero YA SALIÓ — RN-5008296 sigue IN_PROGRESS. ET-1112878 DOCK_CHECKED_OUT Jun 23 23:18. TASK-5299413 CLOSED (Daniela). RN no cerrado.",
+      "appointmentTime": "Jun 23",
+      "entry": "ET-1112878 DOCK_CHECKED_OUT",
+      "note": "⚠️ RECUPERADO de excluidos: task CLOSED pero RN sigue IN_PROGRESS. Requiere cierre manual. ~9h desde checkout."
+    },
+    {
       "container": "DDDU5053469",
       "color": "normal",
       "inYard": false,
@@ -231,10 +257,10 @@
       "receipt": "RN-5008176",
       "rnStatus": "IMPORTED",
       "dock": "PRE-ENTRY",
-      "status": "⚪ PRE-ENTRY — RN-5008176 IMPORTED. Cita Jun 23 10:00 ⚠️ 21h PASADA.",
+      "status": "⚪ PRE-ENTRY ⚠️ DEMURRAGE — RN-5008176 IMPORTED. Cita Jun 23 10:00 vencida. Priti reporta demurrage desde Jun 22. Contenedor NO está en yarda LT_F1 — demurrage externo (puerto/terminal).",
       "appointmentTime": "Jun 23 10:00",
       "entry": "—",
-      "note": "Cita pasada. Verificar."
+      "note": "🚨 Priti: 'This container is still not empty. Please check it ASAP. This starts the demurrage charges from today.' (Jun 22). Demurrage externo."
     },
     {
       "container": "DDDU5053094",
@@ -419,32 +445,37 @@
       "note": "Cita vieja, NOT_CONFIRMED. Probable abandonado."
     }
   ],
-  "timestamp": "2026-06-24T07:28:00.000000-07:00",
+  "timestamp": "2026-06-24T07:32:00.000000-07:00",
   "summary": {
     "green": 6,
     "red": 0,
-    "yellow": 8,
+    "yellow": 10,
     "normal": 18,
     "excluded": 0,
-    "total_visible": 32,
-    "total": 32
+    "total_visible": 34,
+    "total": 34
   },
   "alertas": [
     "DDDU5053469 ~3.5h retraso cita 04:00, sin ET en YMS. DDDU5053448 ya llegó DOCK138.",
-    "EITU8174300 DOBLE ET activo (ET-1112430 DOCK53 + ET-1112890 DOCK64) mismo RN-5008303. GURUNANDA confirmado en ambos.",
-    "KOCU4689466 DOBLE ET activo (ET-1111636 SPOT748 + ET-1112226 DOCK65) + RN EXCEPTION",
+    "EITU8174300 DOBLE ET activo (ET-1112430 DOCK53 ~29h + ET-1112890 DOCK64 ~16h) mismo RN-5008303. GURUNANDA confirmado.",
+    "KOCU4689466 DOBLE ET activo (ET-1111636 SPOT748 ~120h + ET-1112226 DOCK65) + RN EXCEPTION",
     "OOCU8494560 DOCK_CHECKED_OUT Jun 22 + RN-5008153 sigue IN_PROGRESS (debe cerrarse)",
     "SEGU2947142 ya salió + RN-5008154 sigue IN_PROGRESS (debe cerrarse)",
+    "TGBU9265460 DOCK_CHECKED_OUT Jun 23 + RN-5008287 IN_PROGRESS (debe cerrarse) — RECUPERADO",
+    "CAAU5246296 DOCK_CHECKED_OUT Jun 23 + RN-5008296 IN_PROGRESS (debe cerrarse) — RECUPERADO",
     "CHAPIN8/U40877 7 días en yarda, task CLOSED, RN debe cerrarse",
     "CHAPIN-10 6 días sin iniciar receive (Rufino Munguia)",
     "U83042 DOBLE RN (RN-187076 FORCE_CLOSED + RN-187157 IMPORTED mismo trailer)",
-    "DDDU5053448 WMS desactualizado — inYardTime null pero YMS confirma DOCK138 desde anoche"
+    "DDDU5053448 WMS desactualizado — inYardTime null pero YMS confirma DOCK138 desde anoche",
+    "CAIU9721329 DEMURRAGE desde Jun 22 (Priti). Contenedor no está en yarda LT_F1 — externo."
   ],
   "cierresRecientes": [
-    "CSGU6625300 RN-5008285 CLOSED hoy 04:22 (jeespinoza)",
-    "MATU2752682 RN-5008294 FORCE_CLOSED reciente (jeespinoza)",
-    "CAAU9247201 RN-5008178 CLOSED ayer 18:52 (matmoreno)",
-    "MATU4542915 RN-5008260 FORCE_CLOSED (ccubides)",
-    "HMMU6422718 GATE_CHECK_OUT hoy 07:18 — física y documentalmente fuera"
+    "CSGU6625300 RN-5008285 CLOSED Jun 24 04:22 (jeespinoza)",
+    "MATU2752682 RN-5008294 FORCE_CLOSED (jeespinoza)",
+    "CAAU9247201 RN-5008178 CLOSED Jun 23 18:52 (matmoreno)",
+    "MATU4542915 RN-5008260 FORCE_CLOSED Jun 22 (ccubides)",
+    "CSNU8075984 RN-5008284 task CLOSED Jun 24 04:41",
+    "MATU2690410 GATE_CHECK_OUT Jun 22 12:42",
+    "HMMU6422718 GATE_CHECK_OUT Jun 24 07:18"
   ]
 }
