@@ -1,6 +1,6 @@
 {
-  "message": "Auditoría 07:38 PDT Jun 24 — 🔍 Outlook: 38 contenedores Priti (0 no leídos). YMS/WMS full cross-check. 2 correcciones: CSNU8449451 🟢→🟡 (DOBLE ET), DDDU5053469 ⚪→🟡 (CHECK_OUT + RN IMPORTED). ✅ 5🟢 0🔴 12🟡 17⚪.",
-  "lastUpdated": "2026-06-24T07:38:00.000000-07:00",
+  "message": "Auditoría 07:47 PDT Jun 24 — 🔍 YMS+WMS cross-check. 🚨 MATU2690410 RECUPERADO (IN_PROGRESS, estaba excluido por error). CSGU6625300 + CAAU9247201 CLOSED confirmados. HMMU6422718 salió hoy 07:18. 5🟢 0🔴 13🟡 17⚪.",
+  "lastUpdated": "2026-06-24T07:47:00.000000-07:00",
   "rows": [
     {
       "container": "CHAPIN13 / SEGU5750901 (RN-187284)",
@@ -14,6 +14,19 @@
       "appointmentTime": "Jun 22",
       "entry": "YMS index pending",
       "note": "TASK-5298575 IN_PROGRESS. Fatima Ponce."
+    },
+    {
+      "container": "MATU2690410",
+      "color": "yellow",
+      "inYard": true,
+      "rn": "RN-5008286",
+      "receipt": "RN-5008286",
+      "rnStatus": "IN_PROGRESS",
+      "dock": "SPOT761 (YMS GATE_CHECK_OUT)",
+      "status": "🟡 RECUPERADO — RN-5008286 IN_PROGRESS (dagonzalez). WMS confirma recibiendo. YMS: GATE_CHECK_OUT Jun 22 12:42 (tractor salió, contenedor en spot).",
+      "appointmentTime": "Jun 22",
+      "entry": "ET residual GATE_CHECK_OUT",
+      "note": "⚠️ Estaba EXCLUIDO por error. WMS confirma IN_PROGRESS activo. Tractor salió pero contenedor permanece en yarda siendo recibido. Verificar físicamente."
     },
     {
       "container": "DDDU5053448",
@@ -445,21 +458,25 @@
       "note": "Cita vieja, NOT_CONFIRMED. Probable abandonado."
     }
   ],
-  "timestamp": "2026-06-24T07:38:00.000000-07:00",
+  "timestamp": "2026-06-24T07:47:00.000000-07:00",
   "summary": {
     "green": 5,
     "red": 0,
-    "yellow": 12,
+    "yellow": 13,
     "normal": 17,
     "excluded": 0,
-    "total_visible": 34,
-    "total": 34
+    "total_visible": 35,
+    "total": 35
   },
   "alertas": [
-    "🆕 CSNU8449451 DOBLE ET activo DOCK62 + DOCK169 (corregido 🟢→🟡)",
-    "🆕 DDDU5053469 GATE_CHECK_OUT anoche pero RN-5008298 sigue IMPORTED (corregido ⚪→🟡)",
+    "🚨 MATU2690410 RECUPERADO — Estaba EXCLUIDO pero WMS confirma RN-5008286 IN_PROGRESS activo. Re-integrado como 🟡.",
+    "🆕 HMMU6422718 GATE_CHECK_OUT HOY 07:18 PDT — ESPACE LOGISTICS PICK_UP_EMPTY.",
+    "⚠️ CSGU6625300 RN-5008285 CLOSED hoy 04:22 (jeespinoza). Ya fuera del dashboard.",
+    "⚠️ CAAU9247201 RN-5008178 CLOSED ayer 18:52 (matmoreno). Ya fuera del dashboard.",
+    "🟡 CSNU8449451 DOBLE ET activo DOCK62 + DOCK169",
+    "🟡 DDDU5053469 GATE_CHECK_OUT anoche pero RN-5008298 sigue IMPORTED",
     "DDDU5053448 WMS desactualizado — inYardTime null pero YMS confirma DOCK138",
-    "EITU8174300 DOBLE ET activo (ET-1112430 DOCK53 + ET-1112890 DOCK64) mismo RN-5008303",
+    "EITU8174300 DOBLE ET activo (ET-1112430 DOCK53 + ET-1112890 DOCK64) mismo RN-5008303 GURUNANDA",
     "KOCU4689466 DOBLE ET activo (ET-1111636 SPOT748 ~120h + ET-1112226 DOCK65) + RN EXCEPTION",
     "OOCU8494560 DOCK_CHECKED_OUT Jun 22 + RN-5008153 sigue IN_PROGRESS (debe cerrarse)",
     "SEGU2947142 ya salió + RN-5008154 sigue IN_PROGRESS (debe cerrarse)",
@@ -472,14 +489,13 @@
     "⚠️ Outlook: 0 correos no leídos. 38 contenedores en ventana 9-29 Jun."
   ],
   "cierresRecientes": [
-    "HMMU6422718 GATE_CHECK_OUT HOY Jun 24 07:18 + RN-5008264 CLOSED (jeespinoza Jun 23)",
+    "HMMU6422718 GATE_CHECK_OUT HOY Jun 24 07:18 PDT — ESPACE LOGISTICS PICK_UP_EMPTY. RN-5008264 CLOSED (jeespinoza Jun 23).",
     "DDDU5053469 GATE_CHECK_OUT Jun 23 20:37 (RN-5008298 sigue IMPORTED ⚠️)",
     "CSGU6625300 RN-5008285 CLOSED Jun 24 04:22 (jeespinoza)",
     "MATU2752682 RN-5008294 FORCE_CLOSED (jeespinoza)",
     "CAAU9247201 RN-5008178 CLOSED Jun 23 18:52 (matmoreno)",
     "MATU4542915 RN-5008260 FORCE_CLOSED Jun 22 (ccubides)",
     "CSNU8075984 RN-5008284 task CLOSED Jun 24 04:41",
-    "MATU2690410 GATE_CHECK_OUT Jun 22 12:42",
     "YMMU6698133 RN-5008112 FORCE_CLOSED (confirmado excluded)",
     "OOCU9426488 RN-5008133 FORCE_CLOSED (confirmado excluded)"
   ]
