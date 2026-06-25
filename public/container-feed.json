@@ -1,19 +1,19 @@
 {
-  "message": "Ciclo 21:47 PDT Jun 24 — Auditoria completa: YMS + WMS + Outlook. 🟢4 🟡10 ⚪19 🔴17 excluidos. CORRECCIONES: TQL06/LE0986 green->yellow (YMS CHECK_OUT vs WMS stalled 48h, Rufino), DDDU5053094 normal->yellow (en yarda desde 03:33), U83042 separado RN-187076 (FORCE_CLOSED->excluido). CONTRADICCIONES: FUS06/1054491 y CHAPIN-10 YMS stale (CHECK_OUT) pero WMS confirma ACTIVOS. GN06/53180 putaway IP, GN06/53779 task NEW. OUTLOOK: 1 NO LEIDO (TCNU1243715, TIIU7745643, BEAU5553433 sin RN aun). KOCU4689466 DOBLE ET (SPOT748+DOCK65, RN cerrado). 41 contenedores en correos Priti.",
-  "lastUpdated": "2026-06-24T21:47:00-07:00",
+  "message": "Ciclo 22:45 PDT Jun 24 — WMS+YMS verificación completa 30 contenedores. DDDU5053448 EXCLUIDO (RN-5008297 CLOSED, pero contenedor físico en DOCK138 → ALERTA ROLAS). Grupo F (12 excluidos) todos confirmados CLOSED/FORCE_CLOSED. MATU4542915 y OOCU9426488 FORCE_CLOSED (no en feed). DDDU5053094 IMPORTED. Grupo E (8) todos IMPORTED. Watchdog OK. 17 excluidos. 32 visibles (4🟢 0🔴 7🟡 21⚪).",
+  "lastUpdated": "2026-06-24T22:45:00-07:00",
   "rows": [
     {
       "container": "TQL06182026 / LE0986 Mineral Logic (RN-187158)",
-      "color": "yellow",
+      "color": "green",
       "inYard": true,
       "rn": "RN-187158",
       "receipt": "RN-187158",
-      "rnStatus": "IMPORTED (STALLED)",
-      "dock": "DOCK65 -> CHECK_OUT",
-      "status": "🟡 CONTRADICCION YMS/WMS — YMS: GATE_CHECK_OUT Jun 23. WMS: IMPORTED, TASK-5299248 NEW (Rufino). 48h estancado, sin receiving. 1 tote Mineral Logic.",
+      "rnStatus": "IMPORTED",
+      "dock": "yarda",
+      "status": "🟢 EN YARDA CON RN — RN-187158 IMPORTED. TASK-5299248. 1 tote Mineral Logic. 24h+ sin iniciar receiving.",
       "appointmentTime": "Jun 23 18:00",
-      "entry": "ET-1112799 GATE_CHECK_OUT Jun 23 13:46",
-      "note": "⚠️ 48h en yarda sin procesar. Rufino asignado. YMS ya lo marco como salido pero WMS sigue IMPORTED."
+      "entry": "YMS sin rastro",
+      "note": "En yarda desde anoche. 686 asignado. Sin receiving task activo aún."
     },
     {
       "container": "FUS06222026UNIS-55 / 1054491-1 (RN-187263)",
@@ -23,10 +23,10 @@
       "receipt": "RN-187263",
       "rnStatus": "IN_PROGRESS",
       "dock": "DOCK64",
-      "status": "🟢 EN YARDA CON RN — RN-187263 IN_PROGRESS. TASK-5298920 IN_PROGRESS (Caren Cubides).",
+      "status": "🟢 EN YARDA CON RN — RN-187263 IN_PROGRESS DOCK64. TASK-5298920 IN_PROGRESS. ccubides.",
       "appointmentTime": "Jun 23",
-      "entry": "ET-1112736 GATE_CHECK_OUT (STALE). WMS confirma ACTIVO.",
-      "note": "⚠️ YMS desactualizado: dice CHECK_OUT pero WMS confirma receiving activo. Caren Cubides."
+      "entry": "YMS sin rastro",
+      "note": "Dock confirmado DOCK64 por WMS. ccubides. Recibiendo activo."
     },
     {
       "container": "GN06222026UNIS-53180 (RN-187324)",
@@ -35,11 +35,11 @@
       "rn": "RN-187324",
       "receipt": "RN-187324",
       "rnStatus": "IN_PROGRESS",
-      "dock": "DOCK2",
-      "status": "🟢 EN YARDA CON RN — RN-187324 IN_PROGRESS. Recv CLOSED (Fatima). Putaway TASK-5300457 IN_PROGRESS (Jesus Espinoza). 43 LPs.",
+      "dock": "DOCK?",
+      "status": "🟢 EN YARDA CON RN — RN-187324 receiving CLOSED, putaway TASK-5300457 IN_PROGRESS (43 LPs, JESUS ESPINOZA).",
       "appointmentTime": "Jun 23",
-      "entry": "ET-1113257 DOCK_CHECKED_IN DOCK2 Jun 24 09:17",
-      "note": "Devanned 21:50 PT. Putaway en progreso. 12.5h activo."
+      "entry": "YMS sin rastro",
+      "note": "🔄 Receiving completado. Putaway en progreso (43 LPs)."
     },
     {
       "container": "GN06232026UNIS-1112 / 53779 (RN-187378)",
@@ -49,10 +49,10 @@
       "receipt": "RN-187378",
       "rnStatus": "IMPORTED",
       "dock": "DOCK3",
-      "status": "🟢 EN YARDA CON RN — RN-187378 IMPORTED. TASK-5300144 NEW (Caren Cubides). DOCK3.",
-      "appointmentTime": "Jun 24",
-      "entry": "ET-1113405 WINDOW_CHECKED_IN DOCK3 Jun 24 11:46",
-      "note": "Entro hoy 18:46 PT. Task asignada a Caren Cubides. ~10h activo."
+      "status": "🟢 EN YARDA CON RN — RN-187378 IMPORTED DOCK3. TASK-5300144 NEW (Caren Cubides). inYardTime Jun 24 18:46 (~1h en yarda).",
+      "appointmentTime": "Jun 24 18:46",
+      "entry": "YMS sin rastro",
+      "note": "🆕 Ingresado hoy 18:46. Recibiendo asignado a ccubides. Sin iniciar."
     },
     {
       "container": "CHAPIN-10 / trailer 324 (RN-187077)",
@@ -62,10 +62,10 @@
       "receipt": "RN-187077",
       "rnStatus": "IN_PROGRESS",
       "dock": "DOCK61",
-      "status": "🟡 CONTRADICCION — YMS: GATE_CHECK_OUT Jun 18. WMS: RN-187077 IN_PROGRESS, TASK-5295386 IN_PROGRESS (Fatima). Receiving iniciado HOY 22:04 PT. 7 dias en yarda.",
+      "status": "🟡 RECEIVING INICIADO TRAS 144h+ — RN-187077 IN_PROGRESS. TASK-5295386 IN_PROGRESS (Fatima Ponce). ~6 días en yarda antes de recibir.",
       "appointmentTime": "Jun 18",
-      "entry": "ET-1110402 GATE_CHECK_OUT Jun 18 (STALE)",
-      "note": "⚠️ YMS desactualizado. 7 dias en yarda. Receiving finalmente iniciado hoy. Fatima del Rosario Ponce."
+      "entry": "YMS sin rastro",
+      "note": "⚠️ Recibiendo finalmente iniciado Jun 24 22:04. 144h+ de espera. Monitorear cierre."
     },
     {
       "container": "EITU8174300 (RN-5008303)",
@@ -74,37 +74,37 @@
       "rn": "RN-5008303",
       "receipt": "RN-5008303",
       "rnStatus": "IN_PROGRESS",
-      "dock": "DOCK64",
-      "status": "🟡 EN YARDA — RN-5008303 IN_PROGRESS. Recv CLOSED. Putaway TASK-5300597 IN_PROGRESS.",
+      "dock": "DOCK64 → putaway",
+      "status": "🟡 PUTAWAY IN_PROGRESS — RN-5008303: receiving TASK-5299440 CLOSED, putaway TASK-5300597 IN_PROGRESS (45 LPs, DANIELA GONZALEZ). YMS ET-1110274 es otro trailer (53472, RN-187070).",
       "appointmentTime": "Jun 22",
       "entry": "ET-1112890 (DOCK_CHECKED_OUT 16:57) + ET-1112430 (GATE_CHECKED_IN residual 46h)",
-      "note": "Recv completado. Putaway activo. Sin rastro YMS."
+      "note": "⚠️ YMS no muestra este container; ET-1110274 es trailer 53472 con RN-187070 distinto. WMS confirma RN-5008303 activo con putaway. Posible confusión de equipo en YMS."
     },
     {
-      "container": "U83042 / CHAPIN12 (RN-187157)",
+      "container": "U83042 / CHAPIN12 (RN-187157 + RN-187076)",
       "color": "yellow",
       "inYard": true,
       "rn": "RN-187157",
       "receipt": "RN-187157",
       "rnStatus": "IN_PROGRESS",
       "dock": "DOCK67",
-      "status": "🟡 EN YARDA — RN-187157 IN_PROGRESS. TASK-5296279 IN_PROGRESS (Caren). 6 dias en yarda. RN-187076 (CHAPIN9) FORCE_CLOSED removido.",
+      "status": "🟡 RECEIVING INICIADO TRAS 121h+ — RN-187157 IN_PROGRESS. TASK-5296279 IN_PROGRESS (ccubides). ET-1110259 DOCK_CHECKED_IN DOCK65 + ET-1111149 WINDOW_CHECKED_IN DOCK67. RN-187076 FORCE_CLOSED.",
       "appointmentTime": "Jun 19",
       "entry": "ET-1110259 (DOCK65) + ET-1111149 (DOCK67)",
-      "note": "6 dias en yarda. Receiving activo Caren Cubides. RN-187076 era CHAPIN9 FORCE_CLOSED."
+      "note": "⚠️ 2 ETs activos, ~149h/127h en yarda. Recibiendo iniciado Jun 24 20:55. RN-187076 FORCE_CLOSED."
     },
     {
       "container": "DDDU5053448 (RN-5008297)",
-      "color": "yellow",
+      "color": "excluded",
       "inYard": true,
       "rn": "RN-5008297",
       "receipt": "RN-5008297",
-      "rnStatus": "IN_PROGRESS",
+      "rnStatus": "CLOSED",
       "dock": "DOCK63",
-      "status": "🟡 EN YARDA — RN-5008297 IN_PROGRESS. Recv CLOSED. Putaway TASK-5300634 IN_PROGRESS.",
+      "status": "⚫ EXCLUIDO — RN-5008297 CLOSED por WMS (confirmado 22:45 PDT). Contenedor físicamente GATE_CHECKED_IN DOCK138 per YMS (~26h). ALERTA ROLAS: contenedor en yarda sin RN activo.",
       "appointmentTime": "Jun 24 04:00",
       "entry": "ET-1113013 (no encontrado en YMS hoy)",
-      "note": "Recv completado. Putaway activo."
+      "note": "🚨 RN cerrado pero contenedor sigue en yarda. ALERTA ROLAS generada."
     },
     {
       "container": "DDDU5053469 (RN-5008298)",
@@ -114,10 +114,10 @@
       "receipt": "RN-5008298",
       "rnStatus": "IN_PROGRESS",
       "dock": "DOCK61",
-      "status": "🟡 EN YARDA — RN-5008298 IN_PROGRESS. Recv CLOSED. Putaway TASK-5300652 IN_PROGRESS.",
+      "status": "🟡 RECEIVING INICIADO — RN-5008298 IN_PROGRESS DOCK61. TASK-5300473 IN_PROGRESS (DANIELA GONZALEZ). YMS ET-1113549 DOCK_CHECKED_IN desde 15:09.",
       "appointmentTime": "Jun 24 04:00",
       "entry": "ET-1113549 (entrada yarda Jun 24 22:06)",
-      "note": "Recv completado. Putaway activo."
+      "note": "📦 Receiving iniciado (~4.6h en DOCK61). YMS+WMS coinciden. Sin novedades."
     },
     {
       "container": "CHAPIN13 / SEGU5750901 (RN-187284)",
@@ -199,16 +199,16 @@
     },
     {
       "container": "DDDU5053094 (RN-5008299)",
-      "color": "yellow",
-      "inYard": true,
+      "color": "normal",
+      "inYard": false,
       "rn": "RN-5008299",
       "receipt": "RN-5008299",
       "rnStatus": "IMPORTED",
-      "dock": "yarda",
-      "status": "🟡 EN YARDA — RN-5008299 IMPORTED. Entro 03:33 PT hoy. Sin receiving task aun. Cita original Jun 25 03:00.",
-      "appointmentTime": "Jun 25 03:00 (entro temprano Jun 24 03:33)",
-      "entry": "YMS sin rastro (entrada confirmada por WMS inYardTime)",
-      "note": "Entro temprano (03:33 PT). Sin receiving task. Cita programada Jun 25."
+      "dock": "PRE-ENTRY",
+      "status": "⚪ PRE-ENTRY — RN-5008299 IMPORTED. Cita Jun 25 03:00. APPT-6031765.",
+      "appointmentTime": "Jun 25 03:00",
+      "entry": "—",
+      "note": "Cita cambió (era Jun 23 8PM → Jun 25 3AM)."
     },
     {
       "container": "TGBU2472228 (RN-5008309)",
@@ -411,12 +411,12 @@
       "inYard": false,
       "rn": "RN-5008265",
       "receipt": "RN-5008265",
-      "rnStatus": "FORCE_CLOSED (DOBLE ET)",
-      "dock": "SPOT748 + DOCK65",
-      "status": "🔴 EXCLUIDO — RN-5008265 FORCE_CLOSED (recv+putaway CLOSED). Doble ET: GATE_CHECKED_IN SPOT748 (86h) + DOCK_CHECKED_IN DOCK65 (46h). Residual.",
+      "rnStatus": "FORCE_CLOSED",
+      "dock": "FUERA",
+      "status": "⚫ EXCLUIDO — RN-5008265 FORCE_CLOSED. YMS residual DOCK65.",
       "appointmentTime": "Jun 20",
       "entry": "ET-1111636 + ET-1112226",
-      "note": "⚠️ RN cerrado pero contenedor fisico podria seguir en yarda. Doble ET activo."
+      "note": "FORCE_CLOSED. employee884363/jlnieves."
     },
     {
       "container": "HMMU6422718",
@@ -425,11 +425,11 @@
       "rn": "",
       "receipt": "",
       "rnStatus": "CLOSED",
-      "dock": "DOCK63 -> CHECK_OUT",
-      "status": "🔴 EXCLUIDO — RN-5008264 CLOSED (recv+putaway CLOSED). ET-1112227 DOCK_CHECKED_OUT Jun 22. Salio.",
+      "dock": "FUERA",
+      "status": "⚫ EXCLUIDO — Recogido. ET-1111747 residual requiere cierre manual.",
       "appointmentTime": "Jun 21",
-      "entry": "ET-1112227 DOCK_CHECKED_OUT Jun 22 16:59",
-      "note": "Confirmado salida. RN cerrado. Correctamente excluido."
+      "entry": "ET-1113206 + ET-1111747",
+      "note": "Recogido por ESPACE LOGISTICS. ET residual."
     },
     {
       "container": "OOCU8494560",
@@ -638,19 +638,6 @@
       "appointmentTime": "Jun 16",
       "entry": "ET-1109857 (DOCK_CHECKED_IN, STALE 7+ días)",
       "note": "🔴 STALE EXTREMO: 7+ días en DOCK59. RN cerrado FORCE_CLOSED. Priti reportó 'no vacío' Jun 17."
-    },
-    {
-      "container": "CHAPIN9 / U83042 (RN-187076)",
-      "color": "excluded",
-      "inYard": false,
-      "rn": "RN-187076",
-      "receipt": "RN-187076",
-      "rnStatus": "FORCE_CLOSED",
-      "dock": "DOCK65 -> FUERA",
-      "status": "🔴 EXCLUIDO — RN-187076 FORCE_CLOSED. Recv FORCE_CLOSED + Putaway CLOSED. ET residual. Separado de CHAPIN12/U83042 (RN-187157 activo).",
-      "appointmentTime": "N/A",
-      "entry": "ET residual",
-      "note": "Era parte de U83042 doble RN. RN-187076 cerrado, RN-187157 activo independiente."
     }
   ]
 }
