@@ -1,1 +1,1 @@
-Thu Jun 25 18:01 PDT 2026: Ciclo 18:00 PDT Jun 25 — Feed limpio Priti 16 activos.
+Thu Jun 25 23:15 PDT 2026: Ciclo 23:10 PDT — WMS+YMS completo 42 contenedores. CAAU8362068 nuevo verde (GATE_CHECKED_IN SPOT772). CSNU8563588 y FCIU9601208 a amarillo (contradicción YMS/WMS). SEKU4670025 amarillo (QX no Gurunanda). 12 activos (2 verde, 5 amarillo, 0 rojo, 5 normal). 32 excluidos.
