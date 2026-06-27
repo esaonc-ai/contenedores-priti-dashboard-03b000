@@ -7,31 +7,40 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background:#0f172a; color:#e2e8f0; min-height:100vh; }
-.header { background:#1e293b; border-bottom:2px solid #f59e0b; padding:16px 24px; display:flex; justify-content:space-between; align-items:center; }
+.header { background:#1e293b; border-bottom:2px solid #f59e0b; padding:16px 24px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
 .header h1 { font-size:1.4rem; color:#f59e0b; }
 .header .badge { background:#f59e0b; color:#0f172a; padding:4px 12px; border-radius:20px; font-weight:700; font-size:0.85rem; }
+.monitor-pill { background:#0b5; color:#052e16; padding:6px 12px; border-radius:999px; font-weight:700; font-size:0.8rem; }
 .message-bar { background:#1e293b; padding:10px 24px; font-size:0.85rem; color:#94a3b8; border-bottom:1px solid #334155; }
+.alerts-wrap { padding:16px 24px 0; display:flex; flex-direction:column; gap:8px; }
+.alert-pill { padding:10px 12px; border-radius:8px; font-size:0.85rem; font-weight:700; border:1px solid transparent; }
+.alert-pill.warning { background:#3b2f05; color:#fde68a; border-color:#92400e; }
+.alert-pill.critical { background:#3b1c1c; color:#fecaca; border-color:#b91c1c; }
+.stale-pill { margin:16px 24px 0; padding:10px 12px; border-radius:8px; font-size:0.85rem; font-weight:700; background:#3b2f05; color:#fde68a; border:1px solid #92400e; display:none; }
 .stats { display:flex; gap:16px; padding:16px 24px; flex-wrap:wrap; }
 .stat-card { background:#1e293b; border:1px solid #334155; border-radius:8px; padding:12px 20px; min-width:140px; }
 .stat-card .value { font-size:1.8rem; font-weight:700; }
 .stat-card .label { font-size:0.75rem; color:#94a3b8; text-transform:uppercase; letter-spacing:0.5px; }
-.stat-card.yard .value { color:#ef4444; }
-.stat-card.rn .value { color:#f59e0b; }
-.stat-card.out .value { color:#22c55e; }
-.stat-card.noshow .value { color:#a855f7; }
+.stat-card.green .value { color:#22c55e; }
+.stat-card.yellow .value { color:#f59e0b; }
+.stat-card.red .value { color:#ef4444; }
+.stat-card.normal .value { color:#93c5fd; }
+.stat-card.excluded .value { color:#94a3b8; }
 .table-wrap { padding:0 24px 24px; overflow-x:auto; }
 table { width:100%; border-collapse:collapse; font-size:0.85rem; }
 th { background:#1e293b; padding:10px 12px; text-align:left; font-weight:600; color:#f59e0b; border-bottom:2px solid #334155; position:sticky; top:0; }
-td { padding:8px 12px; border-bottom:1px solid #1e293b; }
+td { padding:8px 12px; border-bottom:1px solid #1e293b; vertical-align:top; }
 tr:hover { background:#1e293b; }
-tr.in-yard { background:#3b1c1c; }
-tr.in-yard:hover { background:#4a2424; }
+tr.row-green { background:#052e16; }
+tr.row-yellow { background:#3b2f05; }
+tr.row-red { background:#3b1c1c; }
+tr.row-normal { background:transparent; }
 .tag { display:inline-block; padding:2px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; }
-.tag-yard { background:#dc2626; color:#fff; }
-.tag-out { background:#166534; color:#86efac; }
-.tag-norn { background:#92400e; color:#fde68a; }
-.tag-future { background:#312e81; color:#a5b4fc; }
-.tag-noshow { background:#4c1d95; color:#c4b5fd; }
+.tag-green { background:#166534; color:#bbf7d0; }
+.tag-yellow { background:#92400e; color:#fde68a; }
+.tag-red { background:#b91c1c; color:#fecaca; }
+.tag-normal { background:#1e3a8a; color:#bfdbfe; }
+.tag-none { background:#334155; color:#cbd5e1; }
 .footer { padding:16px 24px; font-size:0.75rem; color:#64748b; border-top:1px solid #1e293b; }
 @media (max-width:768px) { .stats { flex-direction:column; } .stat-card { min-width:auto; } }
 </style>
@@ -39,62 +48,92 @@ tr.in-yard:hover { background:#4a2424; }
 <body>
 <div class="header">
   <h1>📦 Contenedores Priti en Yarda</h1>
-  <span class="badge" id="totalBadge">--</span>
+  <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+    <span class="monitor-pill">🚶‍♂️ Priti monitor activo · Inbox Priti gurunanda · Auto cada 15 min</span>
+    <span class="badge" id="totalBadge">--</span>
+  </div>
 </div>
 <div class="message-bar" id="messageBar">Cargando...</div>
+<div id="staleWarning" class="stale-pill"></div>
+<div id="alertsWrap" class="alerts-wrap"></div>
 <div class="stats" id="statsRow"></div>
 <div class="table-wrap">
   <table>
     <thead><tr>
-      <th>Container</th><th>Cita</th><th>Entry</th><th>Status</th><th>Receipt</th><th>Nota</th>
+      <th>Container</th><th>Cita</th><th>Entry</th><th>Categoría</th><th>Receipt/RN</th><th>Nota</th>
     </tr></thead>
     <tbody id="tableBody"></tbody>
   </table>
 </div>
-<div class="footer">Contenedores Priti · Gurunanda · Solo lectura · LT / LT_F1</div>
+<div class="footer" id="footerText">Contenedores Priti · Gurunanda · Solo lectura · LT / LT_F1</div>
 <script>
-fetch('./container-feed.json?'+Date.now())
-  .then(r=>r.json())
-  .then(d=>{
-    document.getElementById('messageBar').textContent = d.message;
-    const rows = d.rows;
-    document.getElementById('totalBadge').textContent = rows.length + ' contenedores';
-    
-    const inYard = rows.filter(r=>r.inYard).length;
-    const sinRN = rows.filter(r=>r.inYard && !r.receipt).length;
-    const yaSalieron = rows.filter(r=>!r.inYard && r.entry!=='No existe').length;
-    const sinRastro = rows.filter(r=>r.entry==='No existe' && !r.appointmentTime.includes('futura')).length;
-    const futuras = rows.filter(r=>r.entry==='No existe' && r.appointmentTime.includes('futura')).length;
-    
-    document.getElementById('statsRow').innerHTML = 
-      `<div class="stat-card yard"><div class="value">${inYard}</div><div class="label">En Yarda</div></div>
-       <div class="stat-card rn"><div class="value">${sinRN}</div><div class="label">Sin RN en Yarda</div></div>
-       <div class="stat-card noshow"><div class="value">${sinRastro}</div><div class="label">Cita Pasada Sin Rastro</div></div>
-       <div class="stat-card out"><div class="value">${yaSalieron}</div><div class="label">Ya Salieron</div></div>
-       <div class="stat-card" style="border-color:#6366f1"><div class="value" style="color:#818cf8">${futuras}</div><div class="label">Citas Futuras</div></div>`;
-    
-    document.getElementById('tableBody').innerHTML = rows.map(r=>{
-      let rowClass = r.inYard ? 'in-yard' : '';
-      let tag = '';
-      if (r.inYard) tag = '<span class="tag tag-yard">EN YARDA</span>';
-      else if (r.entry==='No existe') tag = r.note.includes('futura') ? '<span class="tag tag-future">FUTURA</span>' : '<span class="tag tag-noshow">SIN RASTRO</span>';
-      else tag = '<span class="tag tag-out">SALIÓ</span>';
-      
-      let rnTag = '';
-      if (r.receipt) rnTag = '<span class="tag tag-out" style="margin-left:4px">✓RN</span>';
-      else if (r.inYard) rnTag = '<span class="tag tag-norn" style="margin-left:4px">⚠ SIN RN</span>';
-      
-      return `<tr class="${rowClass}">
-        <td><strong>${r.container}</strong></td>
-        <td>${r.appointmentTime}</td>
-        <td>${r.entry}${rnTag}</td>
-        <td>${r.status} ${tag}</td>
-        <td>${r.receipt||'—'}</td>
-        <td style="max-width:300px">${r.note}</td>
+function minutesSince(ts) {
+  const parsed = Date.parse(ts || '');
+  if (Number.isNaN(parsed)) return null;
+  return Math.floor((Date.now() - parsed) / 60000);
+}
+
+fetch('./container-feed.json?' + Date.now(), { cache: 'no-store' })
+  .then(r => {
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  })
+  .then(d => {
+    const rows = Array.isArray(d.rows) ? d.rows : [];
+    const summary = d.summary || {};
+    const alerts = Array.isArray(d.alertasRolas) ? d.alertasRolas : [];
+    document.getElementById('messageBar').textContent = d.message || 'Sin mensaje';
+    document.getElementById('totalBadge').textContent = (summary.totalVisible ?? rows.length) + ' visibles';
+    document.getElementById('footerText').textContent = `Contenedores Priti · Gurunanda · Solo lectura · LT / LT_F1 · Feed ${d.lastUpdated || 'sin timestamp'}`;
+
+    const staleMins = minutesSince(d.lastUpdated || d.timestamp);
+    if (staleMins !== null && staleMins > 30) {
+      const staleNode = document.getElementById('staleWarning');
+      staleNode.style.display = 'block';
+      staleNode.textContent = `ALERTA ROLAS: feed con ${staleMins} min de antigüedad; el monitor esperado es cada 15 min.`;
+    }
+
+    document.getElementById('alertsWrap').innerHTML = alerts.map(msg => {
+      const cls = /CRÍTICA/i.test(msg) ? 'critical' : 'warning';
+      return `<div class="alert-pill ${cls}">${msg}</div>`;
+    }).join('');
+
+    const stats = [
+      { cls:'green', value: summary.green ?? rows.filter(r => (r.displayCategory || r.color) === 'green').length, label:'Verdes' },
+      { cls:'yellow', value: summary.yellow ?? rows.filter(r => (r.displayCategory || r.color) === 'yellow').length, label:'Amarillos' },
+      { cls:'red', value: summary.red ?? rows.filter(r => (r.displayCategory || r.color) === 'red').length, label:'Rojos' },
+      { cls:'normal', value: summary.normal ?? rows.filter(r => (r.displayCategory || r.color) === 'normal').length, label:'Pre-entry / normal' },
+      { cls:'excluded', value: summary.excluded ?? (d.excludedContainers || []).length, label:'Excluidos' }
+    ];
+
+    document.getElementById('statsRow').innerHTML = stats.map(s =>
+      `<div class="stat-card ${s.cls}"><div class="value">${s.value}</div><div class="label">${s.label}</div></div>`
+    ).join('');
+
+    const tagClass = category => ({ green:'tag-green', yellow:'tag-yellow', red:'tag-red', normal:'tag-normal' }[category] || 'tag-none');
+    const rowClass = category => ({ green:'row-green', yellow:'row-yellow', red:'row-red', normal:'row-normal' }[category] || 'row-normal');
+    const categoryLabel = category => ({ green:'VERDE', yellow:'AMARILLO', red:'ROJO', normal:'NORMAL' }[category] || (category || 'N/A').toUpperCase());
+
+    document.getElementById('tableBody').innerHTML = rows.map(r => {
+      const category = r.displayCategory || r.color || 'normal';
+      const receipt = r.receipt || r.rn || '—';
+      return `<tr class="${rowClass(category)}">
+        <td><strong>${r.container || '—'}</strong></td>
+        <td>${r.appointmentTime || '—'}</td>
+        <td>${r.entry || '—'}</td>
+        <td><span class="tag ${tagClass(category)}">${categoryLabel(category)}</span><div style="margin-top:4px">${r.statusText || ''}</div></td>
+        <td>${receipt}</td>
+        <td style="max-width:360px">${r.note || ''}<div style="margin-top:6px; color:#cbd5e1;">${r.status || ''}</div></td>
       </tr>`;
     }).join('');
+
+    if (!rows.length) {
+      document.getElementById('messageBar').textContent = 'ALERTA ROLAS: feed cargó pero sin rows activas visibles.';
+    }
   })
-  .catch(e=>{ document.getElementById('messageBar').textContent='Error al cargar datos: '+e.message; });
+  .catch(e => {
+    document.getElementById('messageBar').textContent = 'ALERTA ROLAS: Error al cargar feed — ' + e.message;
+  });
 </script>
 </body>
 </html>
