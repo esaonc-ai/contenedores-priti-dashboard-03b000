@@ -12,6 +12,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .header .badge { background:#f59e0b; color:#0f172a; padding:4px 12px; border-radius:20px; font-weight:700; font-size:0.85rem; }
 .monitor-pill { background:#0b5; color:#052e16; padding:6px 12px; border-radius:999px; font-weight:700; font-size:0.8rem; }
 .message-bar { background:#1e293b; padding:10px 24px; font-size:0.85rem; color:#94a3b8; border-bottom:1px solid #334155; }
+.alerts-wrap { padding:16px 24px 0; display:flex; flex-direction:column; gap:8px; }
+.alert-pill { padding:10px 12px; border-radius:8px; font-size:0.85rem; font-weight:700; border:1px solid transparent; }
+.alert-pill.warning { background:#3b2f05; color:#fde68a; border-color:#92400e; }
+.alert-pill.critical { background:#3b1c1c; color:#fecaca; border-color:#b91c1c; }
+.stale-pill { margin:16px 24px 0; padding:10px 12px; border-radius:8px; font-size:0.85rem; font-weight:700; background:#3b2f05; color:#fde68a; border:1px solid #92400e; display:none; }
 .stats { display:flex; gap:16px; padding:16px 24px; flex-wrap:wrap; }
 .stat-card { background:#1e293b; border:1px solid #334155; border-radius:8px; padding:12px 20px; min-width:140px; }
 .stat-card .value { font-size:1.8rem; font-weight:700; }
@@ -49,6 +54,8 @@ tr.row-normal { background:transparent; }
   </div>
 </div>
 <div class="message-bar" id="messageBar">Cargando...</div>
+<div id="staleWarning" class="stale-pill"></div>
+<div id="alertsWrap" class="alerts-wrap"></div>
 <div class="stats" id="statsRow"></div>
 <div class="table-wrap">
   <table>
@@ -60,6 +67,12 @@ tr.row-normal { background:transparent; }
 </div>
 <div class="footer" id="footerText">Contenedores Priti · Gurunanda · Solo lectura · LT / LT_F1</div>
 <script>
+function minutesSince(ts) {
+  const parsed = Date.parse(ts || '');
+  if (Number.isNaN(parsed)) return null;
+  return Math.floor((Date.now() - parsed) / 60000);
+}
+
 fetch('./container-feed.json?' + Date.now(), { cache: 'no-store' })
   .then(r => {
     if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -68,9 +81,22 @@ fetch('./container-feed.json?' + Date.now(), { cache: 'no-store' })
   .then(d => {
     const rows = Array.isArray(d.rows) ? d.rows : [];
     const summary = d.summary || {};
+    const alerts = Array.isArray(d.alertasRolas) ? d.alertasRolas : [];
     document.getElementById('messageBar').textContent = d.message || 'Sin mensaje';
     document.getElementById('totalBadge').textContent = (summary.totalVisible ?? rows.length) + ' visibles';
     document.getElementById('footerText').textContent = `Contenedores Priti · Gurunanda · Solo lectura · LT / LT_F1 · Feed ${d.lastUpdated || 'sin timestamp'}`;
+
+    const staleMins = minutesSince(d.lastUpdated || d.timestamp);
+    if (staleMins !== null && staleMins > 30) {
+      const staleNode = document.getElementById('staleWarning');
+      staleNode.style.display = 'block';
+      staleNode.textContent = `ALERTA ROLAS: feed con ${staleMins} min de antigüedad; el monitor esperado es cada 15 min.`;
+    }
+
+    document.getElementById('alertsWrap').innerHTML = alerts.map(msg => {
+      const cls = /CRÍTICA/i.test(msg) ? 'critical' : 'warning';
+      return `<div class="alert-pill ${cls}">${msg}</div>`;
+    }).join('');
 
     const stats = [
       { cls:'green', value: summary.green ?? rows.filter(r => (r.displayCategory || r.color) === 'green').length, label:'Verdes' },
@@ -100,6 +126,10 @@ fetch('./container-feed.json?' + Date.now(), { cache: 'no-store' })
         <td style="max-width:360px">${r.note || ''}<div style="margin-top:6px; color:#cbd5e1;">${r.status || ''}</div></td>
       </tr>`;
     }).join('');
+
+    if (!rows.length) {
+      document.getElementById('messageBar').textContent = 'ALERTA ROLAS: feed cargó pero sin rows activas visibles.';
+    }
   })
   .catch(e => {
     document.getElementById('messageBar').textContent = 'ALERTA ROLAS: Error al cargar feed — ' + e.message;
