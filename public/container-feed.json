@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-01T22:15:59-07:00",
-  "message": "Auditoría Jul 1 22:15 PT: RN-5008386/OOCU8342103 removido (WMS CLOSED + YMS DOCK_CHECKED_OUT). RN-188031 → EN YARDA DOCK148. RN-188037 → EN YARDA DOCK38. Total: 30 activos, 55 excluidos.",
+  "lastUpdated": "2026-07-01T15:54:03-07:00",
+  "message": "Deploy Jul 01 15:54 PT: REMOVED RN-5008361 / CORRU0629026UNIS, ADDED OOCU5501937 / RN-5008506 (PRE-ENTRY), ADDED CBHU7024789 / RN-5008507 (PRE-ENTRY), FIXED RN-5008450: container updated to BEAU5553433, FIXED JTAU7362598 / RN-5008424: re-verified. Total: 31 activos, 56 excluidos.",
   "rows": [
     {
       "container": "Leafchem06242026 (PO8367)",
@@ -37,22 +37,6 @@
       "verificationSource": "WMS/YMS/Outlook live Jul 1 13:26 PT + anti-estado-viejo",
       "staleStateGuard": "OK",
       "ymsAlert": "DUAL_ET: ET-1115924 + ET-1116033"
-    },
-    {
-      "container": "CORRU0629026UNIS",
-      "rn": "RN-5008361",
-      "rnStatus": "IN_PROGRESS",
-      "receipt": "RN-5008361",
-      "dock": "DOCK67",
-      "entry": "En yarda · DOCK67 · Recv FORCE_CLOSED, Put Away pendiente",
-      "inYard": true,
-      "color": "green",
-      "appointmentTime": "Jun 29",
-      "note": "Revalidado Jul 1: RN-5008361 IN_PROGRESS; receiving FORCE_CLOSED DOCK67, putaway IN_PROGRESS.",
-      "status": "🟢 EN PROCESO — RN-5008361 IN_PROGRESS. DOCK67 · Recv FORCE_CLOSED · putaway IN_PROGRESS.",
-      "lastVerifiedAt": "2026-07-01T05:55:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 + anti-estado-viejo",
-      "staleStateGuard": "OK"
     },
     {
       "container": "RN-5008449 (contenedor pendiente)",
@@ -160,10 +144,10 @@
       "inYard": true,
       "color": "green",
       "appointmentTime": "Jun 30 23:00",
-      "note": "Revalidado Jul 1 13:26 PT: YMS confirma DOCK_CHECKED_IN DOCK156. Sin receiveTask. Mantener EN YARDA.",
+      "note": "Revalidado Jul 01 15:54 PT: YMS DOCK_CHECKED_IN DOCK156. RN-5008424 IMPORTED activo. Sin receiveTask aún. AMERICAN CARRIERS.",
       "status": "🟢 EN YARDA — RN-5008424 IMPORTED activo · JTAU7362598 · YMS DOCK156 DOCK_CHECKED_IN · AMERICAN CARRIERS",
-      "lastVerifiedAt": "2026-07-01T20:29:39-07:00",
-      "verificationSource": "WMS/YMS/Outlook live Jul 1 13:26 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T15:54:03-07:00",
+      "verificationSource": "WMS/YMS recheck + deploy",
       "staleStateGuard": "OK"
     },
     {
@@ -408,7 +392,7 @@
       "staleStateGuard": "OK"
     },
     {
-      "container": "RN-5008450 (LabelKing07012026)",
+      "container": "BEAU5553433 (LabelKing07012026, RN-5008450)",
       "rn": "RN-5008450",
       "rnStatus": "IN_PROGRESS",
       "receipt": "RN-5008450",
@@ -418,9 +402,9 @@
       "color": "green",
       "appointmentTime": "Jul 1 17:00",
       "status": "🟢 EN PROCESO — RN-5008450 IMPORTED con inYardTime + TASK-5305892 receiving IN_PROGRESS · LabelKing07012026",
-      "note": "Promovido Jul 1 13:26 PT: WMS muestra inYardTime Jul 1 18:36 + receiveTask TASK-5305892. Anti-estado-viejo: no puede seguir PRE-ENTRY con receiving activo. Container: BEAU5553433.",
-      "lastVerifiedAt": "2026-07-01T20:29:39-07:00",
-      "verificationSource": "WMS/YMS/Outlook live Jul 1 13:26 PT + anti-estado-viejo",
+      "note": "Corregido Jul 01 15:54 PT: container actualizado a BEAU5553433. WMS inYardTime Jul 1 18:36 + TASK-5305892 receiving IN_PROGRESS.",
+      "lastVerifiedAt": "2026-07-01T15:54:03-07:00",
+      "verificationSource": "WMS/YMS + deploy correction",
       "staleStateGuard": "PROMOTED_FROM_PRE_ENTRY"
     },
     {
@@ -486,9 +470,52 @@
       "lastVerifiedAt": "2026-07-01T22:15:59-07:00",
       "verificationSource": "YMS live read-only Jul 1 22:15 PT + anti-estado-viejo",
       "staleStateGuard": "OK"
+    },
+    {
+      "container": "OOCU5501937",
+      "rn": "RN-5008506",
+      "rnStatus": "IMPORTED",
+      "receipt": "RN-5008506",
+      "dock": "—",
+      "entry": "PRE-ENTRY · Nuevo RN Gurunanda · Pendiente cita/llegada",
+      "inYard": false,
+      "color": "normal",
+      "appointmentTime": "Pendiente",
+      "note": "NUEVO Jul 01 15:54 PT: Agregado por solicitud de Rufino. RN-5008506 IMPORTED · OOCU5501937 · Gurunanda. Verificar WMS/YMS para cita y llegada.",
+      "status": "📅 PRE-ENTRY — RN-5008506 IMPORTED · OOCU5501937 · Gurunanda · Pendiente verificación",
+      "lastVerifiedAt": "2026-07-01T15:54:03-07:00",
+      "verificationSource": "Rufino request + deploy",
+      "staleStateGuard": "OK_NO_ARRIVAL_EVIDENCE"
+    },
+    {
+      "container": "CBHU7024789",
+      "rn": "RN-5008507",
+      "rnStatus": "IMPORTED",
+      "receipt": "RN-5008507",
+      "dock": "—",
+      "entry": "PRE-ENTRY · Nuevo RN Gurunanda · Pendiente cita/llegada",
+      "inYard": false,
+      "color": "normal",
+      "appointmentTime": "Pendiente",
+      "note": "NUEVO Jul 01 15:54 PT: Agregado por solicitud de Rufino. RN-5008507 IMPORTED · CBHU7024789 · Gurunanda. Verificar WMS/YMS para cita y llegada.",
+      "status": "📅 PRE-ENTRY — RN-5008507 IMPORTED · CBHU7024789 · Gurunanda · Pendiente verificación",
+      "lastVerifiedAt": "2026-07-01T15:54:03-07:00",
+      "verificationSource": "Rufino request + deploy",
+      "staleStateGuard": "OK_NO_ARRIVAL_EVIDENCE"
     }
   ],
   "excludedContainers": [
+    {
+      "container": "CORRU0629026UNIS",
+      "rn": "RN-5008361",
+      "rnStatus": "IN_PROGRESS",
+      "reason": "WMS closed audit Jul 01 15:54 PT: RN-5008361 receiving FORCE_CLOSED + putaway completed. Removido del activo por solicitud de Rufino.",
+      "removedAt": "2026-07-01T15:54:03-07:00",
+      "removalSource": "WMS closed audit + Rufino request",
+      "lastStatus": "🟢 EN PROCESO — RN-5008361 IN_PROGRESS. DOCK67 · Recv FORCE_CLOSED · putaway IN_PROGRESS.",
+      "lastVerifiedAt": "2026-07-01T15:54:03-07:00",
+      "verificationSource": "WMS closed audit + deploy request"
+    },
     {
       "container": "GN06302026UNIS-1125 (53393)",
       "rn": "RN-187974",
@@ -856,12 +883,15 @@
     }
   ],
   "summary": {
-    "green": 13,
+    "green": 12,
     "yellow": 4,
-    "normal": 13,
+    "normal": 15,
     "red": 0
   },
   "alerts": [
+    "⚠️ RN-5008361 / CORRU0629026UNIS removido: receiving FORCE_CLOSED + putaway completado.",
+    "⚠️ NUEVOS: OOCU5501937 (RN-5008506) y CBHU7024789 (RN-5008507) agregados como PRE-ENTRY Gurunanda.",
+    "⚠️ RN-5008450 corregido: container BEAU5553433.",
     "⚠️ RN-5008386 / OOCU8342103 removido: WMS CLOSED + receiving CLOSED + putaway CLOSED. YMS DOCK_CHECKED_OUT.",
     "⚠️ RN-188031 (53169) promovido PRE-ENTRY→EN YARDA: DOCK148 + TASK-5306175 NEW.",
     "⚠️ RN-188037 (MRKU6829749) promovido PRE-ENTRY→EN YARDA: YMS GATE_CHECKED_IN DOCK38.",
@@ -888,8 +918,8 @@
     ]
   },
   "statusMappingRule": "green=RN activo receiving/putaway | yellow=excepción/RT FORCE_CLOSED/multi-RN/contradicción/stale | normal=IMPORTED cita futura | red=SIN RN cita próxima",
-  "totalActive": 30,
-  "totalExcluded": 55,
+  "totalActive": 31,
+  "totalExcluded": 56,
   "guardrails": {
     "antiEstadoViejo": "ACTIVE",
     "rule": "PRE-ENTRY/normal is not allowed when row has live evidence: inYard=true, rnStatus IN_PROGRESS, ET/yard event, dock/location, receiving/putaway task, or inYardTime. Frontend normalizes stale rows and feed stores lastVerifiedAt per row.",
@@ -898,9 +928,9 @@
     "secondReview": "ACTIVE - RN as primary key recommended; active rows rechecked for stale state and closures.",
     "rnPrimaryKey": "ACTIVE - refresh by RN + customer; container/reference secondary",
     "removedNonUnis": "EITU8162104 removed 2026-07-01T08:18:00-07:00",
-    "lastFullRun": "2026-07-01T22:15:59-07:00",
+    "lastFullRun": "2026-07-01T15:54:03-07:00",
     "lastWmsYmsAudit": "2026-07-01T22:15:59-07:00",
-    "lastClosedAudit": "2026-07-01T22:15:59-07:00",
+    "lastClosedAudit": "2026-07-01T15:54:03-07:00",
     "closedRemovalRule": "ACTIVE - ocultar si RN CLOSED/FORCE_CLOSED/CANCELLED o receiving+putaway CLOSED/FORCE_CLOSED/CANCELLED."
   },
   "excluded": [
@@ -971,5 +1001,5 @@
     },
     "OOCU8342103"
   ],
-  "messageTimestamp": "2026-07-01T22:15:59-07:00"
+  "messageTimestamp": "2026-07-01T15:54:03-07:00"
 }
