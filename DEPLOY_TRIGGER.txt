@@ -1,2 +1,2 @@
-2026-07-02T01:44:52Z
-FORCE REDEPLOY: Verificación final Jul 1 18:45 PT — 34 rows, commit f04cf66. IN_PROGRESS → amarillo.
+2026-07-02T01:46:20Z
+FORCE REDEPLOY via Dockerfile: 34 rows, commit e084403
