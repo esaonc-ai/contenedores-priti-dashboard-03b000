@@ -1,1 +1,2 @@
-Force rebuild trigger: Jul 1 18:04 PT — WMS 10 RNs verificados, no-shows confirmados, RN-5008450 DOCK45 TASK-5305892 NEW, MRKU6829749+DDDU5053432 WMS sin dock. 31 activos, 60 excluidos.
+2026-07-02T01:40:59Z
+Actualización Jul 1 18:35 PT: 1 removido, +3 nuevos, IN_PROGRESS → amarillo, 34 rows activos
