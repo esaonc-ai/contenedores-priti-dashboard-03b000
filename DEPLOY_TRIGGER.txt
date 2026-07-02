@@ -1,1 +1,1 @@
-Force rebuild trigger: Jul 1 17:51 PT — CORRU RN-5008361 removido, docks corregidos, putaway GN actualizado, Leafchem→amarillo. 31 activos, 56 excluidos.
+Force rebuild trigger: Jul 1 18:04 PT — WMS 10 RNs verificados, no-shows confirmados, RN-5008450 DOCK45 TASK-5305892 NEW, MRKU6829749+DDDU5053432 WMS sin dock. 31 activos, 60 excluidos.
