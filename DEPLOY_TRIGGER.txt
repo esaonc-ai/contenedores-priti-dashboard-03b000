@@ -1,1 +1,1 @@
-Force rebuild trigger: Jul 1 22:57 PT — Corrección completa con WMS/YMS audit. RN-5008361 out, RN-5008506/RN-5008507 in, RN-5008450 fixed.
+Force rebuild trigger: Jul 1 17:51 PT — CORRU RN-5008361 removido, docks corregidos, putaway GN actualizado, Leafchem→amarillo. 31 activos, 56 excluidos.
