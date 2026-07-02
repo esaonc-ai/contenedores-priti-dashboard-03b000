@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T19:50:00-07:00",
+  "lastUpdated": "2026-07-01T20:06:00-07:00",
   "message": "Corrida Jul 1 19:50 PT: Verificación completa sin cambios de estado. 6 EN PROCESO (3 receiving activo + 3 putaway activo confirmados), 6 EN YARDA, 17 PRE-ENTRY. Putaway tasks verificados: TASK-5305439/6099/6386 IN_PROGRESS. OOCU7355889 cita 20:00 PT aún no llega. 0 removidos. Guardrail anti-estado-viejo activo (0 stale). Bug WMS anterior corregido (data.list vs data.rows). Total: 29 activos, 57 excluidos.",
   "rows": [
     {
@@ -1134,5 +1134,6 @@
     "downgradedRows": "MRKU6829749 downgraded EN YARDA→PRE-ENTRY (sin evidencia YMS actual ni dock en WMS)",
     "dockCorrections": "OOLU9324944 SW0128→DOCK59"
   },
-  "messageTimestamp": "2026-07-01T19:50:00-07:00"
+  "messageTimestamp": "2026-07-01T19:50:00-07:00",
+  "_auditNote": "Verified 20:06 PT — WMS audit clean, 0 changes, 0 closures, OOCU7355889 still IMPORTED awaiting receiving"
 }
