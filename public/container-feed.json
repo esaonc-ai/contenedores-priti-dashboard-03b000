@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T17:32:00-07:00",
+  "lastUpdated": "2026-07-01T17:42:00-07:00",
   "message": "Auditoría Jul 1 17:32 PT: WMS live confirma 21 rows. CORRU (RN-5008361) removido: recv FORCE_CLOSED + putaway CLOSED. CSGU6429436 DOCK45 confirmado. OOCU7355889 cita 20:00 PT aún pendiente. DDDU5053860 reprogramado Jul 2 11:00. Total: 29 activos. CORRU removido: recv FORCE_CLOSED + putaway CLOSED.",
   "rows": [
     {
@@ -14,8 +14,8 @@
       "appointmentTime": "Jun 24",
       "note": "Revalidado Jul 1 17:32 PT: WMS live 17:32: Dock-549 (=DOCK38), receiving IN_PROGRESS. Sin putaway aún.",
       "status": "🟢 EN PROCESO — RN-5008306 IN_PROGRESS · DOCK38 · TASK-5302013 · 5d+ activo · Sin putaway",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32"
     },
     {
@@ -33,9 +33,9 @@
       "assignedTo": "RUFINO MUNGUIA",
       "assignee": "RUFINO MUNGUIA",
       "owner": "Rufino",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
-      "staleStateGuard": "OK_WMS_LIVE_17_32",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
+      "staleStateGuard": "Verified 2026-07-01T17:42 PDT: WMS=IN_PROGRESS DOCK64 TASK-5304239. YMS=ET-1116033 DOCK_CHECKED_IN DOCK2 (active). ET-1115924 histórico GATE_CHECK_OUT. Dual ET resuelto.",
       "ymsAlert": "DUAL_ET: ET-1115924 + ET-1116033"
     },
     {
@@ -50,9 +50,9 @@
       "appointmentTime": "Pendiente",
       "note": "⚠️ GURUNANDA · NUEVO PRE_ENTRY hoy. Contenedor aún no identificado en WMS. ET-1116103.",
       "status": "🟡 PRE-ENTRY — RN-5008449 IMPORTED · Contenedor sin identificar · ET-1116103",
-      "lastVerifiedAt": "2026-06-30T12:10:47-07:00",
-      "verificationSource": "WMS/YMS/Outlook feed validation + anti-estado-viejo + re-verificación 12:10 PT",
-      "staleStateGuard": "OK"
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
+      "staleStateGuard": "Verified 2026-07-01T17:42 PDT: WMS=IMPORTED, sin inYardTime, sin dock, sin task."
     },
     {
       "container": "FUS06292026UNIS-57",
@@ -66,9 +66,9 @@
       "appointmentTime": "Jun 30 20:00",
       "note": "GURUNANDA · IMPORTED sin RT/PA. Cita 06/30 20:00. WMS containerNo=NULL.",
       "status": "🟡 IMPORTED — RN-187878 · Sin tareas · Cita 06/30 20:00 · containerNo=NULL",
-      "lastVerifiedAt": "2026-06-30T12:10:47-07:00",
-      "verificationSource": "WMS/YMS/Outlook feed validation + anti-estado-viejo + re-verificación 12:10 PT",
-      "staleStateGuard": "OK"
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
+      "staleStateGuard": "Verified 2026-07-01T17:42 PDT: WMS=IMPORTED, sin containerNo, sin inYardTime."
     },
     {
       "container": "ALNOR04242026",
@@ -82,9 +82,9 @@
       "appointmentTime": "Abr 24 (original)",
       "note": "🚨 2da revisión WMS: RN-183707 IMPORTED con inYardTime viejo y receiving NEW DOCK65. Mantener visible como EN YARDA/estancado; no confundir con RN-183708 FORCE_CLOSED.",
       "status": "🟡 EN YARDA ESTANCADO — RN-183707 IMPORTED · DOCK65 · receiving NEW · 71d",
-      "lastVerifiedAt": "2026-06-30T12:10:47-07:00",
-      "verificationSource": "2da revisión WMS/YMS/Outlook + anti-estado-viejo + re-verificación 12:10 PT",
-      "staleStateGuard": "OK"
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
+      "staleStateGuard": "Verified 2026-07-01T17:42 PDT: WMS=IMPORTED DOCK65, inYardTime 2026-04-27 (65+ días). ReceiveTask TASK-5252949 NEW."
     },
     {
       "container": "MAWB 00120698274",
@@ -98,9 +98,9 @@
       "appointmentTime": "Feb 2026",
       "note": "🚨 2da revisión WMS: RN-5006269 IMPORTED con inYardTime viejo y receiving NEW DOCK62. Mantener visible como EN YARDA/estancado.",
       "status": "🟡 EN YARDA ESTANCADO — RN-5006269 IMPORTED · DOCK62 · receiving NEW · 123d",
-      "lastVerifiedAt": "2026-06-30T12:10:47-07:00",
-      "verificationSource": "2da revisión WMS/YMS/Outlook + anti-estado-viejo + re-verificación 12:10 PT",
-      "staleStateGuard": "OK"
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
+      "staleStateGuard": "Verified 2026-07-01T17:42 PDT: WMS=IMPORTED DOCK62, inYardTime 2026-03-02 (121+ días). ReceiveTask TASK-5207670 NEW."
     },
     {
       "container": "OOLU9324944",
@@ -114,8 +114,8 @@
       "appointmentTime": "Jun 30 19:00",
       "note": "Revalidado Jul 1 17:32 PT: WMS live 17:32: Dock-21397 (=SW0128), TASK-5306110 NEW. | ACTUALIZADO Jul 1 21:30 PT: WMS live confirma inYardTime Jul 01 21:01 + receiveT",
       "status": "🟢 EN YARDA — RN-5008430 IMPORTED activo · OOLU9324944 · DOCK48 · TASK-5306110 NEW · inYardTime 21:01",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32"
     },
     {
@@ -130,8 +130,8 @@
       "appointmentTime": "Jun 30 17:00",
       "note": "Revalidado Jul 1 17:32 PT: WMS live 17:32: Dock-576 (=DOCK66), receiving IN_PROGRESS. | Actualizado Jul 1 13:26 PT: WMS muestra receiveTask TASK-5304579 IN_PROGRESS. Ya",
       "status": "🟢 EN PROCESO — RN-5008428 IMPORTED con inYardTime + TASK-5304579 receiving IN_PROGRESS · FFAU1548537 · DOCK66",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32"
     },
     {
@@ -146,8 +146,8 @@
       "appointmentTime": "Jun 30 23:00",
       "note": "Revalidado Jul 1 17:32 PT: WMS live 17:32: Dock-577 (=DOCK67), receiving NEW.",
       "status": "🟢 EN YARDA — RN-5008424 IMPORTED activo · JTAU7362598 · YMS DOCK156 DOCK_CHECKED_IN · AMERICAN CARRIERS",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32"
     },
     {
@@ -162,8 +162,8 @@
       "appointmentTime": "Jul 01 20:00",
       "note": "Revalidado Jul 1 17:32 PT: WMS confirma IMPORTED sin llegada. Cita Jul 1 20:00 PT aún no ha ocurrido (son 17:32 PT). | ✅ 2da revisión Outlook/WMS: cita 07/01 confirmada por Priti/UNIS; WMS encontró R",
       "status": "📅 PRE-ENTRY — RN-5008445 IMPORTED · Cita 07/01 confirmada por Priti/UNIS · sin llegada YMS/WMS aún",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32"
     },
     {
@@ -178,8 +178,8 @@
       "appointmentTime": "Jul 01 11:00",
       "note": "Revalidado Jul 1 17:32 PT: NO-SHOW confirmado por WMS live 17:32: sin inYardTime, sin tareas. | ✅ 2da revisión Outlook/WMS: cita 07/01 confirmada por Priti/UNIS; WMS encontró R",
       "status": "📅 PRE-ENTRY — RN-5008446 IMPORTED · Cita 07/01 confirmada por Priti/UNIS · sin llegada YMS/WMS aún",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32"
     },
     {
@@ -194,8 +194,8 @@
       "appointmentTime": "Jul 02 11:00",
       "note": "Revalidado Jul 1 17:32 PT: REPROGRAMADO Jul 2 11:00. WMS confirma sin llegada. | ⚠️ ACTUALIZADO Jul 1 13:26: Correo NO LEÍDO de Priti (13:19) cambia cita a 07/02",
       "status": "📅 PRE-ENTRY — RN-5008447 IMPORTED · Cita 07/02 confirmada (cambio desde 07/01) · sin llegada YMS/WMS aún",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32"
     },
     {
@@ -210,9 +210,11 @@
       "appointmentTime": "Jul 01 16:00",
       "note": "Revalidado Jul 1 17:32 PT: ⚠️ WMS live 17:32: IMPORTED con inYardTime Jul 1 23:04 UTC pero sin dock. YMS: EQP-259278 confirmado. Posible discrepancia dock vs feed (feed dice SPOT744). | ✅ 2da revisión Outlook/WMS: cita 07/01 confirmada por Priti/UNIS; WMS encontró R",
       "status": "📅 PRE-ENTRY — RN-5008448 IMPORTED · Cita 07/01 confirmada por Priti/UNIS · sin llegada YMS/WMS aún",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
-      "staleStateGuard": "OK_WMS_LIVE_17_32"
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
+      "staleStateGuard": "Verified 2026-07-01T17:42 PDT: WMS=IMPORTED, inYardTime 2026-07-01. Sin dock asignado. Sin receive/putaway task.",
+      "yardLocation": null,
+      "notes": "\n[⚠️ 2026-07-01] Contenedor en yarda SIN dock ni task."
     },
     {
       "container": "RN-5008444 (LabelKing07012026, PO8357)",
@@ -226,8 +228,8 @@
       "appointmentTime": "Jul 1 17:00",
       "note": "Priti · GURUNANDA. IMPORTED. Sin RT/PA. Creado por aismael. APPT-6032450.",
       "status": "📅 PRE-ENTRY — RN-5008444 IMPORTED · Cita Jul 1 17:00 · PO 8357",
-      "lastVerifiedAt": "2026-06-30T12:10:47-07:00",
-      "verificationSource": "WMS/Outlook + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK"
     },
     {
@@ -242,8 +244,8 @@
       "appointmentTime": "Jul 01 13:30",
       "note": "Revalidado Jul 1 17:32 PT: WMS live 17:32: Dock-555 (=DOCK45), TASK-5306174 NEW por Caren Cubides, inYard Jul 1 20:21 UTC. | Promovido Jul 1 13:26: YMS confirma GATE_CHECKED_IN DOCK45 13:19; WMS inYardTime",
       "status": "🟢 EN YARDA — RN-5008479 IMPORTED activo · CSGU6429436 · DOCK45 · YMS GATE_CHECKED_IN 13:19 · inYardTime Jul 1 20:21",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32",
       "ymsEvent": "ET-1116861 GATE_CHECKED_IN 2026-07-01T13:19"
     },
@@ -259,8 +261,8 @@
       "appointmentTime": "Jul 02 11:30",
       "note": "Revalidado Jul 1 17:32 PT: WMS confirma IMPORTED sin llegada. Cita Jul 2 11:30 PT. | ✅ Nuevo de Outlook/Priti confirmado por UNIS. WMS RN IMPORTED; sin ET/inYard tod",
       "status": "📅 PRE-ENTRY — RN-5008480 IMPORTED · cita confirmada · sin llegada YMS/WMS aún",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32"
     },
     {
@@ -275,8 +277,8 @@
       "appointmentTime": "Jul 02 21:00",
       "note": "Revalidado Jul 1 17:32 PT: WMS confirma IMPORTED sin llegada. Cita Jul 2 21:00 PT. | ✅ Nuevo de Outlook/Priti confirmado por UNIS. WMS RN IMPORTED; sin ET/inYard tod",
       "status": "📅 PRE-ENTRY — RN-5008481 IMPORTED · cita confirmada · sin llegada YMS/WMS aún",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32"
     },
     {
@@ -291,8 +293,8 @@
       "appointmentTime": "Jul 02 12:30",
       "note": "Revalidado Jul 1 17:32 PT: WMS confirma IMPORTED sin llegada. Cita Jul 2 12:30 PT. | ✅ Nuevo de Outlook/Priti confirmado por UNIS. WMS RN IMPORTED; sin ET/inYard tod",
       "status": "📅 PRE-ENTRY — RN-5008483 IMPORTED · cita confirmada · sin llegada YMS/WMS aún",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32"
     },
     {
@@ -307,8 +309,8 @@
       "appointmentTime": "Jun 30",
       "note": "Revalidado Jul 1 17:32 PT: WMS live 17:32: receiving CLOSED, putaway IN_PROGRESS. | Actualizado Jul 1 21:30 PT: WMS live: receiving TASK-5304933 CLOSED, putaway TAS",
       "status": "🟢 EN PROCESO — RN-187978 IN_PROGRESS · 53180 · DOCK1 · Recv CLOSED · Putaway NEW · Gurunanda",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32"
     },
     {
@@ -323,8 +325,8 @@
       "appointmentTime": "Pendiente",
       "note": "NUEVO Jul 1: RN-187991 IMPORTED · Sin contenedor asignado. Creado Jun 30.",
       "status": "📅 PRE-ENTRY — RN-187991 IMPORTED · Sin contenedor asignado · Creado Jun 30",
-      "lastVerifiedAt": "2026-07-01T05:55:00-07:00",
-      "verificationSource": "WMS",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK"
     },
     {
@@ -339,8 +341,8 @@
       "appointmentTime": "Pendiente",
       "note": "NUEVO Jul 1: RN-187990 IMPORTED · Mineral Logic PO8158. Creado Jun 30.",
       "status": "📅 PRE-ENTRY — RN-187990 IMPORTED · Mineral Logic PO8158 · Creado Jun 30",
-      "lastVerifiedAt": "2026-07-01T05:55:00-07:00",
-      "verificationSource": "WMS",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK"
     },
     {
@@ -355,8 +357,8 @@
       "appointmentTime": "Pendiente",
       "note": "Revalidado Jul 1 17:32 PT: WMS live 17:32: receiving CLOSED, putaway IN_PROGRESS. | Actualizado Jul 1 21:30 PT: WMS live confirma RN-187983 IN_PROGRESS, receiving T",
       "status": "🟢 EN PROCESO — RN-187983 IN_PROGRESS · 53541 · DOCK2 · Recv IN_PROGRESS (TASK-5305382) · Gurunanda",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32"
     },
     {
@@ -371,8 +373,8 @@
       "appointmentTime": "Pendiente",
       "note": "Revalidado Jul 1 17:32 PT: WMS live 17:32: receiving CLOSED, putaway IN_PROGRESS. | Actualizado Jul 1 21:30 PT: WMS live confirma dock DOCK1 (no DOCK38), receiving ",
       "status": "🟢 EN PROCESO — RN-187979 IN_PROGRESS · 53166 · DOCK1 · Recv CLOSED · Putaway NEW · Gurunanda",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32"
     },
     {
@@ -387,8 +389,8 @@
       "appointmentTime": "Jul 1",
       "status": "🟢 EN YARDA — RN-188031 IMPORTED · 53169 · DOCK148 · TASK-5306175 NEW · Receiving activo",
       "note": "Revalidado Jul 1 17:32 PT: WMS live 17:32: Dock-786 (=DOCK148), receiving NEW. | Promovido Jul 1 22:15 PT: WMS confirma DOCK148 + TASK-5306175 receiving NEW. Ant",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32"
     },
     {
@@ -403,9 +405,9 @@
       "appointmentTime": "Jul 1 17:00",
       "status": "🟢 EN PROCESO — RN-5008450 IMPORTED con inYardTime + TASK-5305892 receiving IN_PROGRESS · LabelKing07012026",
       "note": "Revalidado Jul 1 17:32 PT: WMS live 17:32: dock DOCK45 confirmado, TASK-5305892 NEW por Jerome Aranda. | Promovido Jul 1 13:26 PT: WMS muestra inYardTime Jul 1 18:36 + receiveTask TASK-",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
-      "staleStateGuard": "OK_WMS_LIVE_17_32"
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
+      "staleStateGuard": "Verified 2026-07-01T17:42 PDT: WMS=IMPORTED DOCK45, inYardTime 2026-07-01, TASK-5305892."
     },
     {
       "container": "EITU9363654",
@@ -419,8 +421,8 @@
       "appointmentTime": "Jul 03 06:30",
       "status": "📅 PRE-ENTRY — EITU9363654 · Cita Jul 3 06:30 · SIN RN aún · Gurunanda Jasmine",
       "note": "Revalidado Jul 1 17:32 PT: WMS live 17:32: sin RN Gurunanda encontrado. Cita Jul 3 06:30 PT.",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32"
     },
     {
@@ -435,8 +437,8 @@
       "appointmentTime": "Jul 03 10:00",
       "status": "📅 PRE-ENTRY — TGBU8815453 · Cita Jul 3 10:00 · SIN RN aún · Gurunanda Jasmine",
       "note": "Revalidado Jul 1 17:32 PT: WMS live 17:32: sin RN Gurunanda encontrado. Cita Jul 3 10:00 PT.",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_WMS_LIVE_17_32"
     },
     {
@@ -451,8 +453,8 @@
       "appointmentTime": "Pendiente",
       "status": "📅 PRE-ENTRY — RN-188040 IMPORTED · MRKU9748297 · Alnor PO6368a · Creado Jul 1",
       "note": "NUEVO Jul 1 13:26 PT: WMS detectó RN-188040 IMPORTED Gurunanda (MRKU9748297, Alnor PO6368a). Sin inYardTime/ET. Agregado por regla de inclusión.",
-      "lastVerifiedAt": "2026-07-01T20:29:39-07:00",
-      "verificationSource": "WMS live read-only Jul 1 13:26 PT",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
       "staleStateGuard": "OK_NO_ARRIVAL_EVIDENCE"
     },
     {
@@ -465,11 +467,34 @@
       "inYard": true,
       "color": "green",
       "appointmentTime": "Pendiente",
-      "status": "🟢 EN YARDA — RN-188037 IMPORTED · MRKU6829749 · DOCK38 · YMS GATE_CHECKED_IN · Alnor PO6368",
+      "status": "IMPORTED",
       "note": "Revalidado Jul 1 17:32 PT: Confirmado en yarda DOCK38 con ET-1116935. | Promovido Jul 1 22:15 PT: YMS confirma GATE_CHECKED_IN DOCK38 con ET-1116935. An",
-      "lastVerifiedAt": "2026-07-01T17:32:00-07:00",
-      "verificationSource": "WMS live read-only Jul 1 17:32 PT + anti-estado-viejo",
-      "staleStateGuard": "OK_WMS_LIVE_17_32"
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
+      "staleStateGuard": "Corregido 2026-07-01T17:42 PDT: WMS=IMPORTED, inYardTime 2026-07-01. Sin dock. Sin task. Estado corregido de IN_PROGRESS a IMPORTED.",
+      "yardLocation": null
+    },
+    {
+      "id": "corru06292026unis",
+      "container": "CORRU0629026UNIS",
+      "customer": "GURUNANDA",
+      "type": "CONTAINER",
+      "rn": "RN-5008361",
+      "status": "IN_PROGRESS",
+      "color": "yellow",
+      "summary": "⚠️ ALERTA — ReceiveTask FORCE_CLOSED, RN sigue IN_PROGRESS",
+      "notes": "Cita Jun 29 07:00 PT. 26 pallets. 881 cajas. Carrier: UNIS LINES.\n[⚠️ 2026-07-01] ReceiveTask FORCE_CLOSED. Putaway CLOSED. RN sigue IN_PROGRESS. ¿Procede cierre?",
+      "assignedTo": "operaciones",
+      "lastVerifiedAt": "2026-07-01T17:42:00-07:00",
+      "verificationSource": "WMS+YMSEntryId",
+      "yardLocation": "DOCK67",
+      "labels": [
+        "alerta",
+        "anomalia",
+        "force-closed-receive"
+      ],
+      "arrivalDate": "2026-06-29",
+      "staleStateGuard": "ALERTA 2026-07-01T17:42 PDT: WMS=IN_PROGRESS DOCK67. ReceiveTask TASK-5303382 FORCE_CLOSED. PutawayTask TASK-5303610 CLOSED. RN no cerrado — requiere revisión. No remover del dashboard."
     }
   ],
   "excludedContainers": [
@@ -840,10 +865,13 @@
     }
   ],
   "summary": {
-    "green": 13,
-    "yellow": 4,
-    "normal": 13,
-    "red": 0
+    "total": 30,
+    "enYarda": 13,
+    "alerta": 5,
+    "normalPreEntry": 12,
+    "redAlert": 0,
+    "lastRun": "2026-07-01T17:42:00-07:00",
+    "verifiedBy": "WMS+YMSEntryId"
   },
   "alerts": [
     "⚠️ RN-5008386 / OOCU8342103 removido: WMS CLOSED + receiving CLOSED + putaway CLOSED. YMS DOCK_CHECKED_OUT.",
