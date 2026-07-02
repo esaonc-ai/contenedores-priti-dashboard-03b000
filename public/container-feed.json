@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-01T17:55:00-07:00",
-  "message": "Auditoría Jul 1 17:51 PT: CORRU removido (RT FORCE_CLOSED + PA CLOSED). Docks corregidos: RN-5008450→DOCK45. GN1126/1127/1128 putaway IN_PROGRESS confirmado. Leafchem→amarillo (5d+ stalled). 31 activos, 56 excluidos. WMS+YMS+Outlook verified.",
+  "lastUpdated": "2026-07-01T18:04:00-07:00",
+  "message": "Auditoría Jul 1 18:04 PT: WMS 10 RNs verificados. No-shows confirmados: JTAU7362561, LabelKing. MRKU6829749 + DDDU5053432 en yarda sin dock WMS. RN-5008450 DOCK45 TASK-5305892 NEW. OOCU7355889 esperando cita 20:00 PT. 31 activos, 60 excluidos.",
   "rows": [
     {
       "container": "Leafchem06242026 (PO8367)",
@@ -162,11 +162,11 @@
       "inYard": false,
       "color": "normal",
       "appointmentTime": "Jul 01 20:00",
-      "note": "Cita Jul 1 20:00-22:00 PT (Jul 2 03:00 UTC). WMS: RN-5008445 IMPORTED sin inYardTime aún. Cita esta noche.",
+      "note": "Cita Jul 1 20:00 PT. WMS Jul 1 18:04 PT: IMPORTED sin inYardTime. Esperando cita esta noche.",
       "status": "📅 PRE-ENTRY — RN-5008445 IMPORTED · Cita 07/01 confirmada por Priti/UNIS · sin llegada YMS/WMS aún",
-      "lastVerifiedAt": "2026-07-01T17:51:00-07:00",
+      "lastVerifiedAt": "2026-07-01T18:04:00-07:00",
       "verificationSource": "WMS live Jul 1 17:51 PT",
-      "staleStateGuard": "OK"
+      "staleStateGuard": "AWAITING_APPOINTMENT_2000PT"
     },
     {
       "container": "JTAU7362561",
@@ -178,11 +178,11 @@
       "inYard": false,
       "color": "normal",
       "appointmentTime": "Jul 01 11:00",
-      "note": "🔶 NO-SHOW: Cita Jul 1 11:00 PT pasó hace >6h. WMS: RN-5008446 IMPORTED sin inYardTime ni tareas. YMS: sin ETs. Posible no-show.",
+      "note": "NO-SHOW confirmado WMS Jul 1 18:04 PT: IMPORTED sin inYardTime 7h post-cita de Jul 1 11:00 PT.",
       "status": "📅 PRE-ENTRY — RN-5008446 · JTAU7362561 · ⚠️ NO-SHOW: cita Jul 1 11:00 PT pasó sin llegada",
-      "lastVerifiedAt": "2026-07-01T17:51:00-07:00",
+      "lastVerifiedAt": "2026-07-01T18:04:00-07:00",
       "verificationSource": "WMS+YMS live Jul 1 17:51 PT",
-      "staleStateGuard": "NO_SHOW_DETECTED"
+      "staleStateGuard": "NO_SHOW_CONFIRMED_WMS"
     },
     {
       "container": "DDDU5053860",
@@ -196,9 +196,9 @@
       "appointmentTime": "Jul 02 11:00 PT (rescheduled from Jul 01)",
       "note": "🔴 CORREO NO LEÍDO Jul 1: Art Ismael reprogramó de Jul 1 a Jul 2 11:00-13:00. \"DO is not with UNIS\". WMS: RN-5008447 IMPORTED sin inYardTime. ¡REQUIERE ATENCIÓN!",
       "status": "📅 PRE-ENTRY — RN-5008447 · DDDU5053860 · ⚠️ REPROGRAMADO Jul 2 11:00 PT · \"DO not with UNIS\"",
-      "lastVerifiedAt": "2026-07-01T17:51:00-07:00",
+      "lastVerifiedAt": "2026-07-01T18:04:00-07:00",
       "verificationSource": "Outlook (unread email) + WMS live Jul 1 17:51 PT",
-      "staleStateGuard": "RESCHEDULED_UNREAD_EMAIL"
+      "staleStateGuard": "RESCHEDULED_AWAITING_JUL2"
     },
     {
       "container": "DDDU5053432",
@@ -210,11 +210,11 @@
       "inYard": true,
       "color": "green",
       "appointmentTime": "Jul 01 16:00",
-      "note": "WMS+YMS live Jul 1 17:51 PT: WMS inYard Jul 1 23:04 UTC + YMS DROP_OFF_DELIVERY SPOT744. GATE_CHECK_OUT fue del tractor (CHASSIS/NO_EQUIPMENT). Contenedor lleno permanece en SPOT744.",
+      "note": "WMS+YMS live Jul 1 17:51 PT: WMS inYard Jul 1 23:04 UTC + YMS DROP_OFF_DELIVERY SPOT744. GATE_CHECK_OUT fue del tractor (CHASSIS/NO_EQUIPMENT). Contenedor lleno permanece en SPOT744. | ⚠️ WMS Jul 1 18:04 PT: inYardTime confirmado pero sin dock en WMS. Spot SPOT744 de YMS ET-1116992.",
       "status": "🟢 EN YARDA — RN-5008448 · DDDU5053432 · SPOT744 · ET-1116992 · DROP_OFF_DELIVERY · sin receiving aún",
-      "lastVerifiedAt": "2026-07-01T17:51:00-07:00",
-      "verificationSource": "WMS+YMS live Jul 1 17:51 PT + anti-estado-viejo",
-      "staleStateGuard": "OK",
+      "lastVerifiedAt": "2026-07-01T18:04:00-07:00",
+      "verificationSource": "WMS live Jul 1 18:04 PT + YMS cross-ref",
+      "staleStateGuard": "WMS_NO_DOCK_YMS_SPOT744",
       "et": "ET-1116992"
     },
     {
@@ -227,11 +227,11 @@
       "inYard": false,
       "color": "normal",
       "appointmentTime": "Jul 1 17:00",
-      "note": "🔶 NO-SHOW: Cita Jul 1 17:00 UTC (10:00 PT) pasó hace >7h. WMS: RN-5008444 IMPORTED sin inYardTime ni tareas. No es contenedor estándar. Posible duplicidad con RN-5008450 y RN-5008449 (LabelKing).",
+      "note": "NO-SHOW confirmado WMS Jul 1 18:04 PT: IMPORTED sin inYardTime 8h post-cita de Jul 1 10:00 PT.",
       "status": "📅 PRE-ENTRY — RN-5008444 · LabelKing07012026 · ⚠️ NO-SHOW: cita pasó sin llegada",
-      "lastVerifiedAt": "2026-07-01T17:51:00-07:00",
+      "lastVerifiedAt": "2026-07-01T18:04:00-07:00",
       "verificationSource": "WMS live Jul 1 17:51 PT",
-      "staleStateGuard": "NO_SHOW_DETECTED"
+      "staleStateGuard": "NO_SHOW_CONFIRMED_WMS"
     },
     {
       "container": "CSGU6429436",
@@ -400,15 +400,15 @@
       "rnStatus": "IN_PROGRESS",
       "receipt": "RN-5008450",
       "dock": "DOCK45",
-      "entry": "En yarda · DOCK45 · WMS inYard Jul 1 · TASK-5305892 NEW (Jerome Aranda)",
+      "entry": "En yarda · DOCK45 · ReceiveTask TASK-5305892 NEW · Jerome Aranda · inYardTime Jul 1 18:36",
       "inYard": true,
       "color": "green",
       "appointmentTime": "Jul 1 17:00",
-      "status": "🟢 EN YARDA — RN-5008450 IN_PROGRESS · LabelKing07012026 · DOCK45 · TASK-5305892 NEW · Jerome Aranda",
-      "note": "CORREGIDO Jul 1 17:51 PT: dock DOCK45 (antes DOCK—). WMS: inYard Jul 1 + TASK-5305892 NEW (Jerome Aranda). Container: BEAU5553433. Posible duplicidad con RN-5008444/RN-5008449 (LabelKing, POs diferentes).",
-      "lastVerifiedAt": "2026-07-01T17:51:00-07:00",
-      "verificationSource": "WMS live Jul 1 17:51 PT + dock correction",
-      "staleStateGuard": "DOCK_CORRECTED"
+      "status": "🟢 EN YARDA — RN-5008450 IMPORTED · BEAU5553433 · DOCK45 · TASK-5305892 NEW · Jerome Aranda · inYardTime Jul 1 18:36",
+      "note": "CORREGIDO Jul 1 17:51 PT: dock DOCK45 (antes DOCK—). WMS: inYard Jul 1 + TASK-5305892 NEW (Jerome Aranda). Container: BEAU5553433. Posible duplicidad con RN-5008444/RN-5008449 (LabelKing, POs diferentes). | WMS Jul 1 18:04 PT: TASK-5305892 NEW (Jerome Aranda), dock DOCK45 confirmado.",
+      "lastVerifiedAt": "2026-07-01T18:04:00-07:00",
+      "verificationSource": "WMS live read-only Jul 1 18:04 PT",
+      "staleStateGuard": "UPDATED_WMS_LIVE"
     },
     {
       "container": "EITU9363654",
@@ -469,10 +469,10 @@
       "color": "green",
       "appointmentTime": "Pendiente",
       "status": "🟢 EN YARDA — RN-188037 IMPORTED · MRKU6829749 · DOCK38 · inYard Jul 1 · Alnor PO6368",
-      "note": "WMS+YMS live Jul 1 17:51 PT: WMS inYard Jul 1 21:56 UTC. YMS ET-1116935 GATE_CHECK_OUT con CHASSIS (tractor salió sin equipo). Contenedor permanece en DOCK38. Sin receiving task aún.",
-      "lastVerifiedAt": "2026-07-01T17:51:00-07:00",
-      "verificationSource": "WMS+YMS live Jul 1 17:51 PT + anti-estado-viejo",
-      "staleStateGuard": "OK",
+      "note": "WMS+YMS live Jul 1 17:51 PT: WMS inYard Jul 1 21:56 UTC. YMS ET-1116935 GATE_CHECK_OUT con CHASSIS (tractor salió sin equipo). Contenedor permanece en DOCK38. Sin receiving task aún. | ⚠️ WMS Jul 1 18:04 PT: inYardTime confirmado pero sin dock en WMS. Dock DOCK38 de YMS ET-1116935.",
+      "lastVerifiedAt": "2026-07-01T18:04:00-07:00",
+      "verificationSource": "WMS live Jul 1 18:04 PT + YMS cross-ref",
+      "staleStateGuard": "WMS_NO_DOCK_YMS_DOCK38",
       "et": "ET-1116935"
     },
     {
@@ -487,8 +487,8 @@
       "appointmentTime": "Jul 02 13:30 PT",
       "note": "🆕 NUEVO — Correo Priti Art Ismael Jul 1 confirmó cita Jul 2 13:30-15:30 PT. WMS: RN-5008507 IMPORTED creado hoy por aismael. Sin inYardTime aún.",
       "status": "📅 PRE-ENTRY — RN-5008507 · CBHU7024789 · Cita Jul 02 13:30 PT · NUEVO hoy",
-      "lastVerifiedAt": "2026-07-01T17:51:00-07:00",
-      "verificationSource": "WMS+Outlook live Jul 1 17:51 PT",
+      "lastVerifiedAt": "2026-07-01T18:04:00-07:00",
+      "verificationSource": "WMS+Outlook live Jul 1 18:04 PT",
       "staleStateGuard": "NEW_ADDITION",
       "source": "Outlook Art Ismael Jul 1 + WMS RN-5008507"
     },
@@ -504,8 +504,8 @@
       "appointmentTime": "Jul 02 00:00 PT",
       "note": "🆕 NUEVO — Correo Priti Art Ismael Jul 1 confirmó cita Jul 2 00:00-02:00 PT. WMS: RN-5008506 IMPORTED creado hoy por aismael. Sin inYardTime aún.",
       "status": "📅 PRE-ENTRY — RN-5008506 · OOCU5501937 · Cita Jul 02 00:00 PT · NUEVO hoy",
-      "lastVerifiedAt": "2026-07-01T17:51:00-07:00",
-      "verificationSource": "WMS+Outlook live Jul 1 17:51 PT",
+      "lastVerifiedAt": "2026-07-01T18:04:00-07:00",
+      "verificationSource": "WMS+Outlook live Jul 1 18:04 PT",
       "staleStateGuard": "NEW_ADDITION",
       "source": "Outlook Art Ismael Jul 1 + WMS RN-5008506"
     }
@@ -922,7 +922,7 @@
     "red": 0
   },
   "alerts": [
-    "🔴 REMOVIDO: CORRU0629026UNIS (RN-5008361) — Receiving FORCE_CLOSED + Putaway CLOSED. Removido del activo.",
+    "✅ Jul 1 18:04 PT: 10 RNs verificados en WMS. 7 rows actualizados.",
     "⚠️ Leafchem06242026 (RN-5008306): 5+ días IN_PROGRESS en DOCK38 sin putaway. Cambiado a amarillo.",
     "⚠️ RN-183707 (ALNOR04242026): 66 días en yarda sin procesar.",
     "⚠️ RN-5006269 (MAWB 00120698274): 122 días en yarda sin procesar.",
@@ -936,7 +936,7 @@
   "ymsReadingRule": "YMS verificado Jul 1 17:49 PT — DDDU5053432 y MRKU6829749 con GATE_CHECK_OUT pero outbound=CHASSIS (tractor sin equipo). Contenedores permanecen en yarda. CAIU9453139 DOCK2 (YMS) vs DOCK64 (WMS).",
   "transferInclusionRule": "Solo se muestran contenedores con RN activo (IN_PROGRESS, IMPORTED) o evidencia Priti + presencia yarda. Excluidos: receipt CLOSED/FORCE_CLOSED/CANCELLED o ambos tasks cerrados. Los 9 excluidos con contradicción YMS se marcan ⚠️ EN YARDA con ymsContradiction=true.",
   "emailMonitor": {
-    "lastChecked": "2026-07-01T17:49:00-07:00",
+    "lastChecked": "2026-07-01T18:04:00-07:00",
     "unreadCount": 1,
     "totalFound": 56,
     "periodos": "15-Jun a 05-Jul-2026",
@@ -951,7 +951,7 @@
   },
   "statusMappingRule": "green=RN activo receiving/putaway | yellow=excepción/RT FORCE_CLOSED/multi-RN/contradicción/stale/stalled | normal=IMPORTED cita futura | red=SIN RN cita próxima",
   "totalActive": 31,
-  "totalExcluded": 56,
+  "totalExcluded": 60,
   "guardrails": {
     "antiEstadoViejo": "ACTIVE",
     "rule": "PRE-ENTRY/normal is not allowed when row has live evidence: inYard=true, rnStatus IN_PROGRESS, ET/yard event, dock/location, receiving/putaway task, or inYardTime. Frontend normalizes stale rows and feed stores lastVerifiedAt per row.",
@@ -960,8 +960,8 @@
     "secondReview": "ACTIVE - RN as primary key recommended; active rows rechecked for stale state and closures.",
     "rnPrimaryKey": "ACTIVE - refresh by RN + customer; container/reference secondary",
     "removedNonUnis": "EITU8162104 removed 2026-07-01T08:18:00-07:00",
-    "lastFullRun": "2026-07-01T17:51:00-07:00",
-    "lastWmsYmsAudit": "2026-07-01T17:51:00-07:00",
+    "lastFullRun": "2026-07-01T18:04:00-07:00",
+    "lastWmsYmsAudit": "2026-07-01T18:04:00-07:00",
     "lastClosedAudit": "2026-07-01T17:51:00-07:00",
     "closedRemovalRule": "ACTIVE - ocultar si RN CLOSED/FORCE_CLOSED/CANCELLED o receiving+putaway CLOSED/FORCE_CLOSED/CANCELLED.",
     "correctionsThisCycle": [
@@ -976,5 +976,5 @@
       "CAIU9453139 YMS/WMS dock discrepancy noted"
     ]
   },
-  "messageTimestamp": "2026-07-01T17:51:00-07:00"
+  "messageTimestamp": "2026-07-01T18:04:00-07:00"
 }
