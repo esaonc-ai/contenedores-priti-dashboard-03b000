@@ -1,2 +1,1 @@
-Thu Jul  2 19:38:34 UTC 2026
-FORCE REDEPLOY: Corrida Jul 2 12:38 PT — WMS+YMS fresh. 30 activos.
+FORCE DEPLOY: Corrida Jul 3 11:49 PT - 2026-07-03T18:50:40Z
