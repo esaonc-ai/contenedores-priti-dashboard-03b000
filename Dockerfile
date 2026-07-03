@@ -1,4 +1,4 @@
 FROM nginx:alpine
 COPY public/ /usr/share/nginx/html/
 EXPOSE 80
-# force rebuild 2026-07-03T21:24:11Z -- Corrida 14:22 PT feed update 19 changes
+# force rebuild 2026-07-03T21:34:21Z -- Corrida 14:34 PT feed update
