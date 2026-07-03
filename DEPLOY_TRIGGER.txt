@@ -1,1 +1,2 @@
 DEPLOY 2026-07-03T23:21:38Z - Corrida 16:20 PT - 3 anti-stale EN YARDA→EN PROCESO + 3 false-green corregidos
+DEPLOY_TRIGGER 1783122579
