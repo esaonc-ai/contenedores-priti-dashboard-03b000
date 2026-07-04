@@ -1,1 +1,1 @@
-Redeploy trigger Sat Jul  4 16:59:07 UTC 2026 — Corrida Jul 4 09:57 PT 1783184347
+Force Coolify redeploy — Corrida Jul 4 11:30 PT. 28 activos (6G/10Y/0R/12N). RN-188048 y RN-188031 recuperados de excluded.
