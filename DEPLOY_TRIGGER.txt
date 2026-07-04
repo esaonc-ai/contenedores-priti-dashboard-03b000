@@ -1,2 +1,2 @@
-DEPLOY 2026-07-04T00:56:57Z - Corrida 17:55 PT - 3 green→yellow recv IN_PROGRESS + 3 normal→green Entry List + full revalidation
-DEPLOY_TRIGGER 1783126617
+DEPLOY 2026-07-04T03:43:12Z - Corrida 20:40 PT - RN-188094 excluded, 25 activos (5g/7y/0r/13n), feed fresco
+DEPLOY_TRIGGER 1783136592
