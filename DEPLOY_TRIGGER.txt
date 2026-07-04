@@ -1,1 +1,1 @@
-FORCE REDEPLOY — Corrida Jul 4 14:22 PT: 4 falsos green corregidos + 1 removido + WMS Entry List validation
+REDEPLOY TRIGGER v2 2026-07-04T21:23:43Z
