@@ -1,4 +1,4 @@
 FROM nginx:alpine
 COPY public/ /usr/share/nginx/html/
 EXPOSE 80
-# Force Docker rebuild 2026-07-04T18:38:29Z -- Corrida Jul 4 11:38 AM PT 28activos 6G/10Y/0R/12N -- repeat trigger
+# Force Docker rebuild 2026-07-04T20:51:41Z — Corrida Jul 4 13:51 PT 25activos 6G/7Y/12N — RN-188094 removido
