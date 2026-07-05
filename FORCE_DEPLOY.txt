@@ -1,2 +1,1 @@
-FORCE_DEPLOY 2026-07-05T04:37:18Z
-Corrida 21:32 PT - YMS/WMS cross-check completo
+FORCE_DEPLOY 2026-07-05T04:51:08Z - Corrida Jul 4 21:39 PT - 25 activos, 26 excluidos. Anti-estado-viejo, falsos-green corregidos, reglas Rufino activas.
