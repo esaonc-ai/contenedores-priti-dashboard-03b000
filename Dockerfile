@@ -1,4 +1,4 @@
 FROM nginx:alpine
 COPY public/ /usr/share/nginx/html/
 EXPOSE 80
-# Force Docker rebuild 2026-07-04T20:51:41Z — Corrida Jul 4 13:51 PT 25activos 6G/7Y/12N — RN-188094 removido
+# Force Docker rebuild 2026-07-05T08:38:00Z — Corrida Jul 4 18:33 PT — all 25 containers re-verified against WMS+YMS. Updated lastVerifiedAt, verificationSource, appointmentTime, recvTask/putTask fields. Fresh verification timestamp.
