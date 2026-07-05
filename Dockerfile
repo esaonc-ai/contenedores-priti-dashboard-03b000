@@ -10,3 +10,4 @@ EXPOSE 80
 # force redeploy 2026-07-05T08:59:57Z -- CORRECCIÓN MASIVA Jul 05 01:55 PT Regla Rufino #3: 6 degradados + 2 removidos. 23 activos.
 # 2026-07-05T09:02:36Z — FORCE REDEPLOY Regla Rufino #3
 # FORCE REDEPLOY 2026-07-05T02:35:00-07:00
+# force redeploy 2026-07-05T11:57:30Z — MATU2656138 DEGRADADO→EN YARDA Entry List ✅
