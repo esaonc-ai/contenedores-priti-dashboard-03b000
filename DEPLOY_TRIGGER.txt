@@ -1,1 +1,2 @@
-DEPLOY 2026-07-05T02:30:40Z — Corrida Jul 4 19:15 PT Rufino rule Entry List+YMS revalidation
+FORCE DEPLOY: Corrida Jul 4 22:36 PT — 31 activos (3 green, 8 yellow, 19 PRE-ENTRY, 1 transfer)
+TIMESTAMP: 2026-07-05T05:52:35Z
