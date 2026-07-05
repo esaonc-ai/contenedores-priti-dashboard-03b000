@@ -1,2 +1,1 @@
-2026-07-05T08:58:51Z
-FORCE REDEPLOY: Corrida Jul 05 01:55 PT — 6 degradados EN YARDA→PRE-ENTRY (Regla Rufino #3), 2 removidos (GATE_CHECK_OUT histórico). 23 activos.
+FORCE REDEPLOY: Corrida Jul 05 01:47-01:55 PT — 6 degradados + 2 removidos. 2026-07-05T09:01:54Z
