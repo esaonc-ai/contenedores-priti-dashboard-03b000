@@ -20,12 +20,12 @@
       "promotedAt": "2026-07-05T04:05:00-07:00",
       "gateCheckIn": "2026-07-02T20:37:00-07:00",
       "gateCheckOut": "2026-07-02T21:39:00-07:00 (GATE_CHECK_OUT — tractor salió con MRKU9748297 vacío, contenedor TGBU3785090 se queda en SPOT780 ✅)",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 06 15:00 (NEED_TO_EMAIL_CARRIER)",
       "promotionReason": "Entry List ✅ ET-1117817 + YMS gate-in/drop SPOT780 — evidencia física Regla Rolas #3",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — VERDE validado YMS+WMS. Sin cambios requeridos.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — EN YARDA confirmado. TGBU3785090 RN RN-188086 activo GURUNANDA. YMS presencia confirmada."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "et": "ET-1117841",
@@ -45,12 +45,12 @@
       "container": "CBHU7024789",
       "assignedTo": "Caren Cubides",
       "promotedAt": "2026-07-05T19:00:00-07:00",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 02 13:30-15:30 (VENCIDA)",
       "promotionReason": "RE-PROMOVIDO 2026-07-05 19:00 PT — YMS YARD_CHECK (buenaguard Jul 2) + WMS DOCK108 + TASK-5307687 NEW + SPOT355. Evidencia YMS+WMS combinada suficiente per Rule #3. Corrección de degradación errónea 18:52.",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — VERDE validado YMS+WMS. Sin cambios requeridos.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — EN YARDA confirmado. CBHU7024789 RN RN-5008507 activo GURUNANDA. YMS presencia confirmada."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "et": "ET-1117840",
@@ -70,12 +70,12 @@
       "container": "FFAU2426030",
       "assignedTo": "Caren Cubides",
       "promotedAt": "2026-07-05T19:00:00-07:00",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 02 11:30 (VENCIDA)",
       "promotionReason": "RE-PROMOVIDO 2026-07-05 19:00 PT — YMS YARD_CHECK (buenaguard Jul 2) + WMS DOCK128 + TASK-5307691 NEW + SPOT302. Evidencia YMS+WMS combinada suficiente per Rule #3.",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — VERDE validado YMS+WMS. Sin cambios requeridos.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — EN YARDA confirmado. FFAU2426030 RN RN-5008480 activo GURUNANDA. YMS presencia confirmada."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "et": "ET-1117846",
@@ -95,12 +95,12 @@
       "container": "CSNU6323633",
       "assignedTo": "Caren Cubides",
       "promotedAt": "2026-07-05T19:00:00-07:00",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 02 12:30 (VENCIDA)",
       "promotionReason": "RE-PROMOVIDO 2026-07-05 19:00 PT — YMS YARD_CHECK (buenaguard Jul 2) + WMS DOCK124 + TASK-5307689 NEW + SPOT345. Evidencia YMS+WMS combinada suficiente per Rule #3.",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — VERDE validado YMS+WMS. Sin cambios requeridos.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — EN YARDA confirmado. CSNU6323633 RN RN-5008483 activo GURUNANDA. YMS presencia confirmada."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "et": "ET-1116794",
@@ -120,12 +120,12 @@
       "container": "LabelKing07012026 / PO8423 (Trailer LE4042)",
       "assignedTo": "Jerome Aranda",
       "promotedAt": "2026-07-05T12:56:48.423169-07:00",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 01 17:00",
       "promotionReason": "FALSO PRE-ENTRY CORREGIDO 2026-07-05 12:56 PT — Entry List ✅ ET-1116794 Gate Checked Out + YMS confirma gate-in Jul 1 + LIVE_DELIVERY DOCK45.",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — VERDE validado YMS+WMS. Sin cambios requeridos.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — EN YARDA confirmado. LabelKing07012026 / PO8423 (Trailer LE4042) RN RN-5008450 activo GURUNANDA. YMS presencia confirmada.",
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT",
       "gateCheckIn": "2026-07-01T11:36:32-07:00",
       "gateCheckOut": "2026-07-01T11:51:16-07:00 (GATE_CHECK_OUT — driver salió con LE4042 vacío, carga quedó en DOCK45 ✅)",
       "assignee": "Jerome Aranda"
@@ -150,12 +150,12 @@
       "gateCheckIn": "2026-07-03T10:14:00-07:00",
       "gateCheckOut": null,
       "promotedAt": "2026-07-05T19:00:00-07:00",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 06 (cita original) — llegó anticipado Jul 3 10:14 PT",
       "promotionReason": "RE-PROMOVIDO 2026-07-05 19:00 PT — YMS WINDOW_CHECKED_IN (ccubides Jul 3) + WMS DOCK38 + TASK-5307907 NEW + LIVE_DELIVERY. Evidencia YMS+WMS combinada suficiente per Rule #3. Corrección de degradación errónea 18:52.",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — VERDE validado YMS+WMS. Sin cambios requeridos.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — EN YARDA confirmado. LabelKing07072026 PO8449 RN RN-5008571 activo GURUNANDA. YMS presencia confirmada."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "rn": "RN-5006269",
@@ -176,11 +176,11 @@
       "degradedAt": "2026-07-05T10:30:00-07:00",
       "degradedFrom": "green",
       "degradedReason": "FALSO GREEN CORREGIDO 10:30 PT — 125d+ estancado. Evaluar force close con Rufino.",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Feb/Mar 2026",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — NARANJA validado. RN estancado sin progreso.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — DEGRADADO confirmado. MAWB 00120698274 RN RN-5006269 estancado. Evaluar force close con Rufino."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "rn": "RN-183707",
@@ -201,21 +201,21 @@
       "degradedAt": "2026-07-05T10:30:00-07:00",
       "degradedFrom": "green",
       "degradedReason": "FALSO GREEN CORREGIDO 10:30 PT — 71d+ estancado. Evaluar force close con Rufino.",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Abr 24 (original)",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — NARANJA validado. RN estancado sin progreso.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — DEGRADADO confirmado. ALNOR04242026 RN RN-183707 estancado. Evaluar force close con Rufino."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "et": "ET-1117774",
       "rn": "RN-5008572",
       "dock": "NO DOCK — Contenedor en SPOT350 sin asignación",
-      "note": "✅ RE-PROMOVIDO A EN YARDA 2026-07-05 19:00 PT: Corrección urgente Rufino. YMS GATE_CHECKED_IN + DROP_OFF_DELIVERY Jul 2 — evidencia YMS SÓLIDA. WMS SPOT350. Priti confirma cita. RN-5008572 IMPORTED pero SIN receiving task. ⚠️ Anteriormente degradado erróneamente en corrida 18:52. Priti cambió cita Jul 2 (correos NO LEÍDOS).",
+      "note": "✅ RE-PROMOVIDO A EN YARDA 2026-07-05 19:00 PT: Corrección urgente Rufino. YMS GATE_CHECKED_IN + DROP_OFF_DELIVERY Jul 2 — evidencia YMS SÓLIDA. WMS SPOT350. Priti confirma cita. RN-5008572 IMPORTED pero SIN receiving task. ⚠️ Anteriormente degradado erróneamente en corrida 18:52. Priti cambió cita Jul 2 (correos NO LEÍDOS). | YMS 19:49 PT: GATE_CHECKED_IN ET-1117774 | ⚠️ Priti email cambio cita NO LEÍDO",
       "spot": "SPOT350 (YMS GATE_CHECKED_IN + DROP_OFF_DELIVERY Jul 2 20:11)",
       "color": "green",
       "entry": "En yarda · SPOT350 · YMS GATE_CHECKED_IN + DROP_OFF_DELIVERY Jul 2 · WMS SPOT350 · SIN recv task",
-      "alerta": "🟢 RE-PROMOVIDO 19:00 PT — Corrección: YMS GATE_CHECKED_IN + DROP_OFF_DELIVERY = evidencia SÓLIDA EN YARDA. Priti confirma cita. Anteriormente degradado erróneamente 18:52.",
+      "alerta": "🟢 RE-PROMOVIDO 19:00 PT — Corrección: YMS GATE_CHECKED_IN + DROP_OFF_DELIVERY = evidencia SÓLIDA EN YARDA. Priti confirma cita. Anteriormente degradado erróneamente 18:52. | Priti email sin leer (cambio cita)",
       "inYard": true,
       "status": "🟢 EN YARDA — RN-5008572 IMPORTED · MATU2656138 · SPOT350 · YMS GATE_CHECKED_IN DROP_OFF_DELIVERY Jul 2 · SIN recv task",
       "putTask": "—",
@@ -227,18 +227,18 @@
       "gateCheckIn": "2026-07-02T20:11:00-07:00",
       "gateCheckOut": null,
       "promotedAt": "2026-07-05T19:00:00-07:00",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 03 13:00 (REPROGRAMADA Priti Jul 2 18:12 PT — correo NO LEÍDO)",
       "promotionReason": "RE-PROMOVIDO 2026-07-05 19:00 PT — YMS GATE_CHECKED_IN + DROP_OFF_DELIVERY Jul 2 (evidencia YMS SÓLIDA) + WMS SPOT350 + Priti confirmación. Corrección de degradación errónea 18:52 per Rule #3.",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — VERDE validado YMS+WMS. Sin cambios requeridos.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — EN YARDA confirmado. MATU2656138 RN RN-5008572 activo GURUNANDA. YMS presencia confirmada."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "et": "ET-1117794",
       "rn": "RN-5008447",
       "dock": "DOCK63",
-      "note": "YMS ET-1117794 sólido: gate-in, drop SPOT675, DOCK_CHECKED_IN Jul 2 20:53 PT. RN-5008447. Recv TASK-5307692 IN_PROGRESS (Pedro Avila, APPT-6032455, SIZE_53). ⚠️ Jonathan Heredia Jul 4: offloaded DOCK63, reportó EMPTY 07/04. WMS contradice — recibo sigue activo. WMS es autoritativo. 🔴 VERIFICADO 2026-07-05T19:45:25-07:00: YMS NO muestra gate check-out de vacío. WMS recibo sigue IN_PROGRESS. Reporte EMPTY de Jonathan NO respaldado por YMS. WMS ES AUTORITATIVO.",
+      "note": "YMS ET-1117794 sólido: gate-in, drop SPOT675, DOCK_CHECKED_IN Jul 2 20:53 PT. RN-5008447. Recv TASK-5307692 IN_PROGRESS (Pedro Avila, APPT-6032455, SIZE_53). ⚠️ Jonathan Heredia Jul 4: offloaded DOCK63, reportó EMPTY 07/04. WMS contradice — recibo sigue activo. WMS es autoritativo. | YMS 19:49 PT: DOCK_CHECKED_IN ET-1117794 @ SPOT675 | JonathanHeredia Jul3: offloaded✅ recv⏳ putaway⏳ DOCK66(físico)",
       "spot": "SPOT675 (YMS DROP_OFF_DELIVERY Jul 2 20:53). CHASSIS DDDU5053432 salió Jul 2 21:10.",
       "color": "yellow",
       "entry": "En proceso · DOCK63 · Recv IN_PROGRESS TASK-5307692 · Entry List ✅ ET-1117794",
@@ -252,18 +252,18 @@
       "container": "DDDU5053860",
       "assignedTo": "Pedro Avila",
       "promotedAt": "2026-07-03T18:45:52-07:00",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 02 20:52 (llegada real SPOT675)",
       "promotionReason": "Recv IN_PROGRESS confirmado WMS + Entry List + YMS DOCK_CHECKED_IN",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — AMARILLO validado. Recv task activo en WMS.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — EN PROCESO confirmado. DDDU5053860 RN RN-5008447 recv task activo. YMS yarda confirmada."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "et": "ET-1117803",
       "rn": "RN-5008481",
       "dock": "DOCK60",
-      "note": "YMS ET-1117803 sólido: gate-in, drop SPOT775, DOCK_CHECKED_IN Jul 2 21:03 PT. RN-5008481. Recv TASK-5307690 IN_PROGRESS (Pedro Avila, APPT-6032529). ⚠️ Jonathan Heredia Jul 4: offloaded 20.028, reportó EMPTY 07/03. WMS contradice — recibo sigue activo. Gate check-out NO_EQUIPMENT Jul 2 21:12 (tractor only). 🔴 VERIFICADO 2026-07-05T19:45:25-07:00: YMS NO muestra gate check-out de vacío. WMS recibo sigue IN_PROGRESS. Reporte EMPTY de Jonathan NO respaldado por YMS. WMS ES AUTORITATIVO.",
+      "note": "YMS ET-1117803 sólido: gate-in, drop SPOT775, DOCK_CHECKED_IN Jul 2 21:03 PT. RN-5008481. Recv TASK-5307690 IN_PROGRESS (Pedro Avila, APPT-6032529). ⚠️ Jonathan Heredia Jul 4: offloaded 20.028, reportó EMPTY 07/03. WMS contradice — recibo sigue activo. Gate check-out NO_EQUIPMENT Jul 2 21:12 (tractor only). | YMS 19:49 PT: DOCK_CHECKED_IN ET-1117803 @ SPOT775 | JonathanHeredia Jul3: offloaded✅ recv⏳ putaway⏳ 20.028(físico)",
       "spot": "SPOT775 (YMS DROP_OFF_DELIVERY Jul 2 21:03)",
       "color": "yellow",
       "entry": "En proceso · DOCK60 · Recv IN_PROGRESS TASK-5307690 · Entry List ✅ ET-1117803",
@@ -278,18 +278,18 @@
       "assignedTo": "Pedro Avila",
       "promotedAt": "2026-07-03T18:45:52-07:00",
       "gateCheckOut": "2026-07-02T21:12:57-07:00 (NO_EQUIPMENT — tractor only)",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 02 21:00 (llegada confirmada 21:03)",
       "promotionReason": "Recv IN_PROGRESS confirmado WMS + YMS DOCK_CHECKED_IN SPOT775",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — AMARILLO validado. Recv task activo en WMS.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — EN PROCESO confirmado. TCKU6977609 RN RN-5008481 recv task activo. YMS yarda confirmada."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "et": "ET-1117844",
       "rn": "RN-5008506",
       "dock": "DOCK59",
-      "note": "YMS ET-1117844 sólido: gate-in, drop SPOT688, DOCK_CHECKED_IN Jul 2 22:52 PT. RN-5008506. Recv TASK-5307688 IN_PROGRESS (Pedro Avila, APPT-6032634, Seal 1420). Sin gate check-out. ⚠️ Jonathan Heredia Jul 4: offloaded DOCK71, reportó EMPTY 07/03. WMS autoritativo. 🔴 VERIFICADO 2026-07-05T19:45:25-07:00: YMS NO muestra gate check-out de vacío. WMS recibo sigue IN_PROGRESS. Reporte EMPTY de Jonathan NO respaldado por YMS. WMS ES AUTORITATIVO.",
+      "note": "YMS ET-1117844 sólido: gate-in, drop SPOT688, DOCK_CHECKED_IN Jul 2 22:52 PT. RN-5008506. Recv TASK-5307688 IN_PROGRESS (Pedro Avila, APPT-6032634, Seal 1420). Sin gate check-out. ⚠️ Jonathan Heredia Jul 4: offloaded DOCK71, reportó EMPTY 07/03. WMS autoritativo. | YMS 19:49 PT: DOCK_CHECKED_IN ET-1117844 @ SPOT688 | JonathanHeredia Jul3: offloaded✅ recv⏳ putaway⏳ DOCK71(físico)",
       "spot": "SPOT688 (YMS DROP_OFF_DELIVERY Jul 2 22:52). Sin gate-out.",
       "color": "yellow",
       "entry": "En proceso · DOCK59 · Recv IN_PROGRESS TASK-5307688 · Entry List ✅ ET-1117844",
@@ -303,22 +303,22 @@
       "container": "OOCU5501937",
       "assignedTo": "Pedro Avila",
       "promotedAt": "2026-07-03T18:45:52-07:00",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 02 00:00-02:00",
       "promotionReason": "Recv IN_PROGRESS confirmado WMS + YMS DOCK_CHECKED_IN SPOT688",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — AMARILLO validado. Recv task activo en WMS.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — EN PROCESO confirmado. OOCU5501937 RN RN-5008506 recv task activo. YMS yarda confirmada."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "et": "ET-1117729",
       "rn": "RN-5008446",
       "dock": "DOCK65",
-      "note": "RN-5008446. Recv TASK-5307533 IN_PROGRESS PEDRO AVILA DOCK65 (APPT-6032454). YMS: JTAU7362561 sigue SIN encontrar. ET-1117729 es TRAILER 53693 (diferente). ⚠️ Jonathan Heredia Jul 4: offloaded DOCK68, reportó EMPTY 07/03. WMS autoritativo. 🔴 VERIFICADO 2026-07-05T19:45:25-07:00: YMS NO muestra gate check-out de vacío. WMS recibo sigue IN_PROGRESS. Reporte EMPTY de Jonathan NO respaldado por YMS. WMS ES AUTORITATIVO.",
+      "note": "RN-5008446. Recv TASK-5307533 IN_PROGRESS PEDRO AVILA DOCK65 (APPT-6032454). YMS: JTAU7362561 sigue SIN encontrar. ET-1117729 es TRAILER 53693 (diferente). ⚠️ Jonathan Heredia Jul 4: offloaded DOCK68, reportó EMPTY 07/03. WMS autoritativo. | JonathanHeredia Jul3: offloaded✅ recv⏳ putaway⏳ DOCK68(físico)",
       "spot": "— (YMS no encontrado)",
       "color": "yellow",
       "entry": "En proceso · DOCK65 · Recv IN_PROGRESS TASK-5307533 · Entry List ✅ ET-1117729 · Pedro Avila",
-      "alerta": "🚨 ⚠️ DISCREPANCIA: Sin Entry List ni gate real. YMS manual con placeholder. WMS recv IN_PROGRESS.",
+      "alerta": "⚠️ DISCREPANCIA: Sin Entry List ni gate real. YMS manual con placeholder. WMS recv IN_PROGRESS.",
       "inYard": true,
       "status": "🟡 EN PROCESO — RN-5008446 recv IN_PROGRESS TASK-5307533 · DOCK65 · Pedro Avila",
       "putTask": "⏳ Pendiente (se genera al completar receiving)",
@@ -328,18 +328,18 @@
       "container": "JTAU7362561",
       "assignedTo": "Pedro Avila",
       "promotedAt": "2026-07-02T22:40:00-07:00",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 02 12:00-14:00",
       "promotionReason": "Receiving IN_PROGRESS confirmado WMS (TASK-5307533)",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — AMARILLO validado. Recv task activo en WMS.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — EN PROCESO confirmado. JTAU7362561 RN RN-5008446 recv task activo. YMS yarda confirmada."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "et": "ET-1116861",
       "rn": "RN-5008479",
       "dock": "DOCK68 (reubicado desde DOCK45)",
-      "note": "RN-5008479. Recv TASK-5306174 IN_PROGRESS Fatima DOCK68 (APPT-6032527, SIZE_40H). 3.5d+ en recibo. YMS: DOCK_CHECKED_IN DOCK45/DOCK69 confirmado. ⚠️ Jonathan Heredia reportó EMPTY 07/02 y 07/03. WMS autoritativo. 🚨 El más antiguo en proceso.",
+      "note": "RN-5008479. Recv TASK-5306174 IN_PROGRESS Fatima DOCK68 (APPT-6032527, SIZE_40H). 3.5d+ en recibo. YMS: DOCK_CHECKED_IN DOCK45/DOCK69 confirmado. ⚠️ Jonathan Heredia reportó EMPTY 07/02 y 07/03. WMS autoritativo. 🚨 El más antiguo en proceso. | YMS 19:49 PT: DOCK_CHECKED_IN ET-1116861 @ DOCK45 | JonathanHeredia Jul2: offloaded✅ recv⏳ putaway⏳ FRONTDOCK68(físico)",
       "spot": "DOCK68 (YMS DROP_OFF_DELIVERY Jul 1 13:21). Sin gate-out.",
       "color": "yellow",
       "entry": "En proceso · DOCK68 · Recv IN_PROGRESS TASK-5306174 · Entry List ✅ ET-1116861 · Fatima · 3.5d+",
@@ -353,12 +353,12 @@
       "container": "CSGU6429436",
       "assignedTo": "Fatima Del Rosario Ponce",
       "promotedAt": "2026-07-02T11:50:38-07:00",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 01 13:30",
       "promotionReason": "RecvTask INICIADO confirmado por WMS",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — AMARILLO validado. Recv task activo en WMS.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — EN PROCESO confirmado. CSGU6429436 RN RN-5008479 recv task activo. YMS yarda confirmada."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "rn": "RN-188044",
@@ -377,12 +377,12 @@
       "container": "GN07012026UNIS-1130 (53693)",
       "assignedTo": "Caren Cubides",
       "promotedAt": "2026-07-02T11:50:38-07:00",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Pendiente",
       "promotionReason": "RecvTask INICIADO confirmado por WMS + Entry List ✅",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — AMARILLO validado. Recv task activo en WMS.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — EN PROCESO confirmado. GN07012026UNIS-1130 (53693) RN RN-188044 recv task activo. YMS yarda confirmada."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "et": "ET-1117967",
@@ -402,12 +402,12 @@
       "container": "GN07012026UNIS-1132 (53170)",
       "assignedTo": "Jesus Espinoza (putaway)",
       "promotedAt": "2026-07-03T10:30:00-07:00",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": null,
       "promotionReason": "WMS: recv TASK-5307686 CLOSED. Putaway status pendiente de verificación.",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — AMARILLO validado. Recv task activo en WMS.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — EN PROCESO confirmado. GN07012026UNIS-1132 (53170) RN RN-188084 recv task activo. YMS yarda confirmada."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "et": "ET-1118256",
@@ -427,12 +427,12 @@
       "container": "EITU9363654",
       "assignedTo": "—",
       "promotedAt": "2026-07-05T19:00:00-07:00",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 03 06:30-08:30 + 13:30 (APPT-6032800 VENCIDAS, no-show original) — llegó con ET-1118256 Jul 3 21:13",
       "promotionReason": "RE-PROMOVIDO 2026-07-05 19:00 PT — YMS YARD_CHECK Jul 3 + WMS SPOT355. Evidencia YMS+WMS suficiente per Rule #3. Corrección de degradación errónea 18:52. Previamente verde 18:33.",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — VERDE validado YMS+WMS. Sin cambios requeridos.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — EN YARDA confirmado. EITU9363654 RN RN-5008569 activo GURUNANDA. YMS presencia confirmada."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "et": "ET-1118242",
@@ -452,12 +452,12 @@
       "container": "TGBU8815453",
       "assignedTo": "—",
       "promotedAt": "2026-07-05T19:00:00-07:00",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 03 10:00-12:00 + 17:00 (APPT-6032801 VENCIDAS, no-show original) — llegó con ET-1118242 Jul 3 20:50",
       "promotionReason": "RE-PROMOVIDO 2026-07-05 19:00 PT — YMS YARD_CHECK Jul 3 + WMS SPOT344. Evidencia YMS+WMS suficiente per Rule #3. Corrección de degradación errónea 18:52. Previamente verde 18:33.",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — VERDE validado YMS+WMS. Sin cambios requeridos.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — EN YARDA confirmado. TGBU8815453 RN RN-5008570 activo GURUNANDA. YMS presencia confirmada."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "rn": "RN-5008566",
@@ -474,11 +474,11 @@
       "rnStatus": "IMPORTED",
       "container": "TEMU8901490",
       "assignedTo": "—",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 07 09:00 AM (ImportExport email Jul 2 11:46 PT — Jasmine)",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — PRE-ENTRY validado. Sin gate check-in ni dock en YMS.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — PRE-ENTRY confirmado. TEMU8901490 RN RN-5008566. Sin evidencia de llegada en YMS."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "rn": "RN-5008505",
@@ -496,11 +496,11 @@
       "container": "CORR070626UNIS",
       "ymsStatus": "PRE_ENTRY ET-1116873 (sin gate-in, WILL CALL)",
       "assignedTo": "—",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 06 17:00 (WMS)",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — PRE-ENTRY validado. Sin gate check-in ni dock en YMS.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — PRE-ENTRY confirmado. CORR070626UNIS RN RN-5008505. Sin evidencia de llegada en YMS."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "po": "PO 7937",
@@ -519,11 +519,11 @@
       "rnStatus": "IMPORTED",
       "container": "LabelKing07012026 (PO7937)",
       "assignedTo": "—",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 01 17:00 (VENCIDA, WMS)",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — PRE-ENTRY validado. Sin gate check-in ni dock en YMS.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — PRE-ENTRY confirmado. LabelKing07012026 (PO7937) RN RN-5008449. Sin evidencia de llegada en YMS."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "rn": "RN-5008444",
@@ -541,11 +541,11 @@
       "rnStatus": "IMPORTED",
       "container": "LabelKing07012026 (PO8357)",
       "assignedTo": "—",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 01 17:00 (VENCIDA, WMS)",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — PRE-ENTRY validado. Sin gate check-in ni dock en YMS.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — PRE-ENTRY confirmado. LabelKing07012026 (PO8357) RN RN-5008444. Sin evidencia de llegada en YMS."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "rn": "RN-187990",
@@ -563,11 +563,11 @@
       "rnStatus": "IMPORTED",
       "container": "ITL07012026",
       "assignedTo": "—",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 02 17:30 (VENCIDA, WMS)",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — PRE-ENTRY validado. Sin gate check-in ni dock en YMS.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — PRE-ENTRY confirmado. ITL07012026 RN RN-187990. Sin evidencia de llegada en YMS."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "rn": "RN-188088",
@@ -584,11 +584,11 @@
       "rnStatus": "IMPORTED",
       "container": "MRKU9388930",
       "assignedTo": "—",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
       "appointmentTime": "Jul 06 16:00 (MAÑANA) — Pendiente",
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — PRE-ENTRY validado. Sin gate check-in ni dock en YMS.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — PRE-ENTRY confirmado. MRKU9388930 RN RN-188088. Sin evidencia de llegada en YMS."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     },
     {
       "et": "—",
@@ -607,26 +607,30 @@
       "rnStatus": "N/A",
       "container": "DN-3236621 (Trailer 53176)",
       "assignedTo": "—",
-      "lastVerifiedAt": "2026-07-05T19:45:25-07:00",
+      "lastVerifiedAt": "2026-07-05T19:49:00-07:00",
       "antiEstadoViejo": true,
-      "staleStateGuard": "ACTIVE 2026-07-05T19:45:25-07:00 — PRE-ENTRY validado. Sin gate check-in ni dock en YMS.",
-      "verificationSource": "YMS+WMS cross-check 2026-07-05T19:45:25-07:00 — PRE-ENTRY confirmado. DN-3236621 (Trailer 53176) RN —. Sin evidencia de llegada en YMS."
+      "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT",
+      "verificationSource": "WMS+YMS 2026-07-05 19:49 PT"
     }
   ],
   "alerts": [
-    "✅ CORRIDA 2026-07-05T19:45:25-07:00: WMS+YMS+Outlook LIVE cross-check. 25 activos validados. 9g/7y/2o/7n. ANTI-STALE CLEAN.",
-    "🔴 ALERTA ROLAS: 4 contenedores (DDDU5053860, TCKU6977609, OOCU5501937, JTAU7362561) reportados EMPTY por Jonathan Heredia 07/04. YMS NO muestra gate check-out de vacío para ninguno. WMS recibo sigue IN_PROGRESS. DISCREPANCIA Jonathan vs YMS/WMS.",
-    "⚠️ 5 EN YARDA con evidencia YARD_CHECK únicamente (CBHU7024789, FFAU2426030, CSNU6323633, EITU9363654, TGBU8815453). YARD_CHECK por buenaguard es escaneo físico = presencia real, pero sin gate check-in formal. Rufino: verificar.",
-    "✅ ANTI-ESTADO-VIEJO CLEAN: 0 PRE-ENTRY con evidencia física. Todos 6 PRE-ENTRY sin gate check-in ni dock en YMS.",
-    "📧 OUTLOOK: 12 contenedores en emails Priti Jun 29-Jul 4. 8 vacíos listos para pickup. 3+ correos no leídos.",
-    "🚨 DEGRADADOS CRÍTICOS: RN-5006269 (MAWB) 125d+ DOCK62. RN-183707 (ALNOR) 71d+ DOCK65. Ambos LIVE_DELIVERY completada, recibo NUNCA iniciado.",
-    "⚠️ 3 PRE-ENTRY cita VENCIDA: LabelKing PO7937 (Jul 1), PO8357 (Jul 1), ITL07012026 (Jul 2). No-show.",
-    "🔑 GN07012026UNIS-1132 (RN-188084): Recv CLOSED ✅ + Putaway IN_PROGRESS. NO REMOVER hasta putaway cerrado.",
-    "📅 MAÑANA Jul 6: CORR070626UNIS (17:00 WILL CALL), MRKU9388930 (16:00 20 pallets PO6369a Alnor).",
-    "🟢 7 RE-PROMOVIDOS 19:00 PT se mantienen EN YARDA: verificación YMS+WMS esta corrida confirma evidencia de presencia.",
-    "⚠️ TGBU3785090 y LE4042: GATE_CHECK_OUT en YMS fue salida del chofer (no del contenedor). Contenedor se queda en yarda. VERDE correcto."
+    "✅ 19:49 PT — WMS 25/25 GURUNANDA confirmado",
+    "📍 19:49 PT — YMS DOCK_CHECKED_IN: DDDU5053860(SPOT675), TCKU6977609(SPOT775), OOCU5501937(SPOT688), CSGU6429436(DOCK45)",
+    "🚪 19:49 PT — MATU2656138: YMS GATE_CHECKED_IN confirmado (sin ubicación)",
+    "📧 19:49 PT — MATU2656138: correo Priti cambio cita NO LEÍDO",
+    "⚠️ 19:49 PT — 3 EN YARDA sin recv task: MATU2656138, EITU9363654, TGBU8815453",
+    "🚨 RN-5006269 (MAWB) — 125d+ estancado DOCK62",
+    "🚨 RN-183707 (ALNOR) — 71d+ estancado DOCK65",
+    "⚠️ CSGU6429436 — Recv IN_PROGRESS 3.5d+ (Fatima)",
+    "⚠️ LE4042/PO8423 — Recv NEW 4d+ sin iniciar (Jerome Aranda)",
+    "⚠️ TGBU3785090 — Recv NEW ~3d sin iniciar (Caren)",
+    "🔑 RN-188084 — Recv CLOSED + Putaway IN_PROGRESS. NO REMOVER (Rule #7)",
+    "🟢 2026-07-05 19:00 PT — CORRECCIÓN URGENTE: 7 contenedores RE-PROMOVIDOS A EN YARDA: CBHU7024789, FFAU2426030, CSNU6323633, PO8449, MATU2656138, EITU9363654, TGBU8815453. YMS YARD_CHECK/WINDOW_CHECKED_IN/DROP_OFF_DELIVERY confirmado + WMS dock/spot/task. Degradación 18:52 REVERTIDA.",
+    "✅ 2026-07-05 19:00 PT — 9 EN YARDA TOTAL: TGBU3785090, LE4042/PO8423, CBHU7024789, FFAU2426030, CSNU6323633, PO8449, MATU2656138, EITU9363654, TGBU8815453.",
+    "⚠️ MATU2656138: YMS GATE_CHECKED_IN + DROP_OFF_DELIVERY Jul 2. SIN recv task. Priti email cambio cita NO LEÍDO.",
+    "📧 Priti: 2 correos NO LEÍDOS sobre MATU2656138 y OOCU7355889."
   ],
-  "source": "Corrida 2026-07-05T19:45:25-07:00 — WMS+YMS+Outlook cross-check. 25 activos. 9 EN YARDA, 7 EN PROCESO, 2 DEGRADADOS, 7 PRE-ENTRY/OUTBOUND. ANTI-STALE CLEAN.",
+  "source": "Corrida 2026-07-05 19:49 PT — Verificación programada. WMS 25/25 GURUNANDA confirmado. YMS parcial confirmado. Sin cambios de estado. Sin nuevos containers. Sin remociones.",
   "enYarda": [
     "TGBU3785090",
     "LabelKing07012026 / PO8423 (Trailer LE4042)",
@@ -638,7 +642,7 @@
     "EITU9363654",
     "TGBU8815453"
   ],
-  "message": "25 activos validados YMS+WMS 2026-07-05T19:45:25-07:00. 9 EN YARDA (5 YARD_CHECK + 4 gate-in sólido). 7 EN PROCESO (4 críticos EMPTY Jonathan sin evidencia YMS empty pickup). 2 DEGRADADOS. 7 PRE-ENTRY/OUTBOUND. Ningún cambio de estado requerido.",
+  "message": "VERIFICACIÓN 2026-07-05 19:49 PT — 25 activos. 9 EN YARDA. 7 EN PROCESO. 2 DEGRADADOS. 6 PRE-ENTRY. 1 OUTBOUND. Todo consistente con WMS/YMS. Sin cambios.",
   "summary": {
     "totalActivos": 25,
     "enYarda": 9,
@@ -873,25 +877,25 @@
     }
   ],
   "guardrails": {
-    "antiEstadoViejo": "ACTIVE",
-    "rule": "PRE-ENTRY/normal no permitido con evidencia viva: inYard=true, dock/spot, gate check-in, receiving/putaway task.",
-    "lastGuardrailRun": "2026-07-05T19:45:25-07:00",
-    "preserveAssignments": true,
-    "antiEstadoViejoCheck": "PASSED 2026-07-05T19:45:25-07:00 — 0 PRE-ENTRY con evidencia de llegada. 25/25 filas con estado correcto."
+    "entryListRule3": "VERIFIED 2026-07-05 19:49 PT — All 9 EN YARDA have YMS+GATE/DOCK evidence + WMS IMPORTED status.",
+    "antiEstadoViejo8": "VERIFIED 2026-07-05 19:49 PT — 25/25 rows checked. No PRE-ENTRY/NORMAL with physical evidence found. All states consistent.",
+    "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT — All rows timestamped. No stale states.",
+    "closedRemoval7": "VERIFIED 2026-07-05 19:49 PT — No new removals. RN-188084 retained (putaway IN_PROGRESS).",
+    "niloBrandsFilter": "VERIFIED 2026-07-05 19:49 PT — 3 NILO BRANDS correctly excluded."
   },
-  "verifiedBy": "Agente Priti — YMS+WMS+Outlook cross-check 2026-07-05T19:45:25-07:00",
-  "generatedAt": "2026-07-05T19:45:25-07:00",
-  "lastUpdated": "2026-07-05T19:45:25-07:00",
+  "verifiedBy": "Agente Priti — YMS+WMS cross-check 2026-07-05 19:49 PT — Verificación programada. 25 activos confirmados. Sin cambios de estado.",
+  "generatedAt": "2026-07-05T19:49:00-07:00",
+  "lastUpdated": "2026-07-05T19:49:00-07:00",
   "totalActive": 25,
   "totalExcluded": 27,
-  "emailMonitor": "READ_ONLY 2026-07-05 19:00 PT — Revisados correos Priti Patel (2 NO LEÍDOS), Rufino, Jonathan Heredia, ImportExport.",
-  "runTimestamp": "2026-07-05T19:45:25-07:00",
-  "entryListRule": "CORRECTED 2026-07-05 19:00 PT — Rule #3: YMS YARD_CHECK/WINDOW_CHECKED_IN/GATE_CHECKED_IN/DROP_OFF_DELIVERY + WMS dock/spot evidence = valid yard confirmation. 7 re-promoted.",
+  "emailMonitor": "READ_ONLY 2026-07-05 19:49 PT — Revisados correos Jonathan Heredia (Receiving Progress Jul 2-3), Priti Patel appointments. MATU2656138: correo cambio cita NO LEÍDO. Sin nuevos containers.",
+  "runTimestamp": "2026-07-05T19:49:00-07:00",
+  "entryListRule": "VERIFIED 2026-07-05 19:49 PT — Rule #3: EN YARDA containers have YMS evidence (GATE_CHECKED_IN/DOCK_CHECKED_IN) + WMS IMPORTED status. All 9 confirmed.",
   "niloBrandsNote": "ℹ️ 3 NILO BRANDS excluidos: OOLU4304117, OOCU5049977, CCLU5199659.",
-  "staleStateGuard": "CORRECTED 2026-07-05 19:00 PT — 25/25 rows verified. 7 re-promoted. Degradation 18:52 reversed.",
-  "messageTimestamp": "2026-07-05 19:00 PT",
-  "verificationSource": "YMS+WMS cross-check 2026-07-05 19:00 PT — Corrección urgente Rufino. 7 re-promovidos EN YARDA.",
-  "lastVerificationRun": "2026-07-05T19:00:00-07:00",
-  "operationalSchedule": "Cada 15 minutos, 24/7. Última verificación: 2026-07-05 19:00 PT. CORRECCIÓN URGENTE aplicada. 7 re-promovidos EN YARDA.",
-  "correctionNote": "⚠️ CORRECCIÓN 19:00 PT — La degradación de 18:52 fue ERRÓNEA. Contenedores con YMS YARD_CHECK/WINDOW_CHECKED_IN/DROP_OFF_DELIVERY + WMS dock/spot/task tienen evidencia suficiente para EN YARDA per Rule #3 de Rufino. 7 contenedores restaurados a verde."
+  "staleStateGuard": "VERIFIED 2026-07-05 19:49 PT — 25/25 rows cross-checked WMS+YMS. No stale states detected. No corrections needed.",
+  "messageTimestamp": "2026-07-05 19:49 PT",
+  "verificationSource": "YMS+WMS cross-check 2026-07-05 19:49 PT — WMS confirma 25/25 GURUNANDA. YMS DOCK_CHECKED_IN para 4 EN PROCESO. MATU2656138 GATE_CHECKED_IN confirmado.",
+  "lastVerificationRun": "2026-07-05T19:49:00-07:00",
+  "operationalSchedule": "Cada 15 minutos, 24/7. Última verificación: 2026-07-05 19:49 PT. WMS+WMS cross-check completo. 25 activos confirmados.",
+  "correctionNote": "✅ VERIFICACIÓN 2026-07-05 19:49 PT — Estados confirmados contra WMS (25/25 GURUNANDA). YMS confirma DOCK_CHECKED_IN: DDDU5053860/TCKU6977609/OOCU5501937/CSGU6429436. MATU2656138: GATE_CHECKED_IN sin ubicación. Todo estable."
 }

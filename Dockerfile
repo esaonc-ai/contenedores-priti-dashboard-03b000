@@ -23,3 +23,5 @@ EXPOSE 80
 
 # force redeploy 2026-07-05T23:51:45Z -- CORRIDA 16:41 PT 3 PROMOVIDOS PRE-ENTRY→EN YARDA: CBHU7024789, FFAU2426030, CSNU6323633. enYarda: 3→6.
 # force redeploy 2026-07-06T02:46:00Z -- CORRIDA Jul 05 19:45 PT. 25 activos validados YMS+WMS. ANTI-STALE CLEAN. ALERTA ROLAS 4 EMPTY Jonathan.
+# force redeploy 2026-07-06T03:07:14Z -- CORRIDA Jul 05 19:49 PT. WMS+YMS cross-check. 25 activos confirmados. Sin cambios de estado.
+# force redeploy 2026-07-06T03:07:19Z -- CORRIDA Jul 05 19:49 PT. WMS+YMS cross-check. 25 activos confirmados. Sin cambios de estado.
