@@ -1,1 +1,1 @@
-FORCE DEPLOY: Corrida 04:23 PT — 2026-07-06T11:34:23Z
+FORCE DEPLOY: 19 activos, 2 removidos (DDDU5053860, TCKU6977609), 1 nuevo (BMOU6706676), spots corregidos, 3 PRE-ENTRY limpiados
