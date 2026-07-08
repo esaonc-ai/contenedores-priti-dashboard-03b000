@@ -2,10 +2,10 @@
   "mode": "MONITORING_READ_ONLY",
   "tenant": "LT",
   "facility": "LT_F1",
-  "lastUpdated": "2026-07-07T19:03:00-07:00",
+  "lastUpdated": "2026-07-07T19:15:00-07:00",
   "totalActive": 25,
   "totalExcluded": 10,
-  "verificationSource": "wms-agent+yms-agent+outlook-agent-19-03-PT",
+  "verificationSource": "wms-agent+yms-agent+outlook-agent-19-15-PT",
   "message": "Corrida Jul 7 19:03 PT — 25 activos (4 green, 6 yellow, 15 normal). CMAU8611150 PROMOVIDO A GREEN (corrección: YMS confirma DOCK132 gate check-in Jul 6 23:11). AGREGADO: GN07072026UNIS-1136 (RN-188312, Transfer Gurunanda). Todos los demás rows verificados correctos.",
   "alerts": [
     "🔴 ALERTA ROLAS CRÍTICA: CMAU8611150 PROMOVIDO A EN YARDA 19:03 PT — YMS confirma DOCK132, gate check-in Jul 6 23:11, ET-1118934, IN_YARD. El FALSE GREEN de corrida 17:38 fue INCORRECTO. Urgente crear RN en WMS.",
@@ -33,7 +33,7 @@
     "rnUpdatesThisRun": 0,
     "falseGreensCorrected": 0,
     "promotedToGreenThisRun": 1,
-    "dockUpdatesThisRun": 1
+    "dockUpdatesThisRun": 3
   },
   "rows": [
     {
@@ -109,7 +109,7 @@
       "status": "EN_PROCESO",
       "color": "yellow",
       "inYard": true,
-      "dock": "DOCK63",
+      "dock": "DOCK1",
       "assignedTo": "Daniela Gonzalez",
       "note": "Recv TASK-5310475 CLOSED, devanned Jul 7 22:11. Putaway TASK-5310551 activo. Reportado VACÍO por Daniela.",
       "notes": "Recv TASK-5310475 CLOSED, devanned Jul 7 22:11. Putaway TASK-5310551 activo. Reportado VACÍO por Daniela.",
@@ -139,7 +139,7 @@
       "status": "EN_PROCESO",
       "color": "yellow",
       "inYard": true,
-      "dock": "DOCK65",
+      "dock": "DOCK104",
       "assignedTo": "Daniela Gonzalez",
       "note": "Recv TASK-5307689 CLOSED, devanned Jul 7 21:57. Putaway TASK-5310533 IN_PROGRESS (Caren Cubides). ¡Próximo a cerrar!",
       "notes": "Recv TASK-5307689 CLOSED, devanned Jul 7 21:57. Putaway TASK-5310533 IN_PROGRESS (Caren Cubides). ¡Próximo a cerrar!",
@@ -310,13 +310,19 @@
       "gateCheckin": "2026-07-06T23:11:26-07:00",
       "appointment": "2026-07-07 13:00-15:00",
       "appointmentTime": "2026-07-07 13:00-15:00",
+      "ymsEvidence": {
+        "et": "ET-1118934",
+        "status": "IN_YARD",
+        "gateCheckin": "2026-07-06 23:11",
+        "loadStatus": "FULL"
+      },
       "note": "⚠️ PROMOVIDO A EN YARDA corrida 19:03 PT (corrección de falso FALSE GREEN en corrida 17:38). YMS confirma gate check-in Jul 6 23:11, DOCK132, IN_YARD, FULL_TO_OFFLOAD. Sin RN en WMS aún (urgente crear RN). Anti-estado-viejo: presencia física comprobada por YMS.",
       "notes": "⚠️ PROMOVIDO A EN YARDA corrida 19:03 PT (corrección de falso FALSE GREEN en corrida 17:38). YMS confirma gate check-in Jul 6 23:11, DOCK132, IN_YARD, FULL_TO_OFFLOAD. Sin RN en WMS aún (urgente crear RN). Anti-estado-viejo: presencia física comprobada por YMS.",
-      "lastVerifiedAt": "2026-07-07T19:03:00-07:00",
+      "lastVerifiedAt": "2026-07-07T19:15:00-07:00",
       "staleStateGuard": true,
-      "antiEstadoViejo": true,
+      "antiEstadoViejo": "2026-07-07T19:00:00-07:00",
       "plannedEmailInclusionRule": true,
-      "verificationSource": "wms-agent+yms-agent+outlook-agent-19-03-PT",
+      "verificationSource": "wms-agent+yms-agent+outlook-agent-19-15-PT",
       "greenEvidenceRule": "YMS gate check-in 2026-07-06 23:11 + DOCK132 + IN_YARD + ET-1118934. Anti-estado-viejo: no puede quedarse PRE_ENTRY con evidencia YMS de presencia física."
     },
     {
@@ -561,6 +567,16 @@
       {
         "container": "CMAU8611150",
         "dock": "DOCK132"
+      },
+      {
+        "container": "CBHU7024789",
+        "oldDock": "DOCK63",
+        "dock": "DOCK1"
+      },
+      {
+        "container": "CSNU6323633",
+        "oldDock": "DOCK65",
+        "dock": "DOCK104"
       }
     ],
     "rnUpdatesThisRun": [],
