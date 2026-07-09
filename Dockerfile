@@ -1,5 +1,7 @@
+# FORCE_FULL_REBUILD 2026-07-09T04:43:30Z — CRITICO: CAAU7998380 GREEN + SMCU1143199 EXCLUDED no-cache fix
 FROM nginx:1.31-alpine
 COPY public/ /usr/share/nginx/html/
+COPY public/nginx/feed-no-cache.conf /etc/nginx/conf.d/feed-no-cache.conf
 EXPOSE 80
 # Force Docker rebuild 2026-07-05T03:16:00Z -- Corrida Jul 4 20:13 PT 6 falsos green corregidos Entry List No Data
 # force redeploy 2026-07-05T03:18:38Z -- Corrida Jul 4 20:13 PT
@@ -55,3 +57,4 @@ FORCE_REDEPLOY_2026-07-06T06:27:50Z -- CORRIDA Jul 05 23:18 PT TRIPLE VERIFICACI
 # FORCE_NO_CACHE_REDEPLOY 2026-07-08T22:20:14Z -- RN-188044 CLOSED exclusion 23act/20exc
 # FORCE_REDEPLOY 2026-07-09T00:13:05Z — 3 cambios 5:10 PM PT
 # FORCE_REDEPLOY 2026-07-09T04:39:04Z — SMCU1143199/RN-5008592 CLOSED removal
+# FORCE_REDEPLOY 2026-07-09T04:43:30Z — CRITICO: CAAU7998380 GREEN + SMCU1143199 EXCLUDED + no-cache nginx config
