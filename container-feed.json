@@ -302,26 +302,27 @@
     },
     {
       "rn": "RN-188400",
-      "note": "Transfer Gurunanda. WMS IMPORTED 07/08. Ref: 53170, seal 6833903. 11 líneas, ~8,593 units. Cita vencida 07/08 07:00. Sin evidencia YMS/WISE.",
+      "note": "⚠️ ANTI-ESTADO-VIEJO corregido 08:18 PT: PRE_ENTRY→EN_PROCESO. WMS RECEIVE IN_PROGRESS TASK-5311752. Transfer Gurunanda. Ref: 53170, seal 6833903. 11 líneas, ~8,593 units.",
       "seal": "6833903",
-      "color": "normal",
+      "color": "yellow",
       "lines": 11,
-      "notes": "Transfer Gurunanda. WMS IMPORTED 07/08. Ref: 53170, seal 6833903. 11 líneas, ~8,593 units. Cita vencida 07/08 07:00. Sin evidencia YMS/WISE.",
+      "notes": "⚠️ ANTI-ESTADO-VIEJO corregido 08:18 PT: PRE_ENTRY→EN_PROCESO. WMS RECEIVE IN_PROGRESS TASK-5311752. Transfer Gurunanda. Ref: 53170, seal 6833903. 11 líneas, ~8,593 units.",
       "units": 8593,
-      "inYard": false,
+      "inYard": true,
       "source": "wms_transfer",
-      "status": "PRE_ENTRY",
+      "status": "EN_PROCESO",
       "receipt": "RN-188400",
       "customer": "GURUNANDA (ORG-655875)",
       "container": "GN07082026UNIS-1137",
       "reference": "53170",
       "appointment": "2026-07-08 07:00",
       "operationType": "Transfer",
-      "lastVerifiedAt": "2026-07-09T04:50:00-07:00",
+      "lastVerifiedAt": "2026-07-09T08:18:00-07:00",
       "appointmentTime": "2026-07-08 07:00",
       "staleStateGuard": true,
-      "verificationSource": "WMS cross-check 21:50 PT",
-      "plannedEmailInclusionRule": true
+      "verificationSource": "WMS Entry List — TASK-5311752 activo",
+      "plannedEmailInclusionRule": true,
+      "antiEstadoViejo": true
     },
     {
       "rn": "RN-188511",
@@ -386,6 +387,7 @@
     }
   ],
   "alerts": [
+    "⚠️ ANTI-ESTADO-VIEJO 08:18 PT: GN07082026UNIS-1137 (RN-188400) PROMOVIDO NORMAL→YELLOW/EN_PROCESO. WMS TASK-5311752 IN_PROGRESS. Transfer Gurunanda. Ref 53170, seal 6833903, 11 líneas, ~8,593 units.",
     "✅ CORRECCIÓN 2026-07-09 04:10 PT: Actualización de citas WMS. TGSU5157420 → Jul 09 03:00, TGBU5468303 → Jul 09 02:00. 21 activos (1g/6y/14n/0r). 26 excluidos.",
     "✅ CORRECCIÓN 2026-07-09 01:13 PT: CAAU7998380 (RN-5008646) PROMOVIDO NORMAL→GREEN/EN_YARDA. YMS ET-1119632 CHECK_IN + ET-1120155 YARD_CHECK FULL + WMS inYard confirmados. 21 activos (1g/6y/14n/0r). 26 excluidos.",
     "🟢 CAAU7998380 (RN-5008646): ANTI-ESTADO-VIEJO corregido. Tenía evidencia YMS (ET-1119632 CHECK_IN 02:12 + ET-1120155 YARD_CHECK FULL 21:32) y WMS inYard desde 09:12 pero estaba NORMAL/PRE_ENTRY. Promovido a GREEN/EN_YARDA.",
@@ -399,12 +401,12 @@
     "⚠️ TGSU5157375: Sin RN WMS. Anunciado Jasmine 07/08 17:47 PT."
   ],
   "tenant": "LT",
-  "message": "CORRECCIÓN Jul 9 04:10 PT — Actualización de citas: TGSU5157420 → Jul 09 03:00, TGBU5468303 → Jul 09 02:00 (WMS). 21 activos (1g/6y/14n/0r). 26 excluidos.",
+  "message": "CORRECCIÓN Jul 9 08:18 PT — ANTI-ESTADO-VIEJO: GN07082026UNIS-1137 (RN-188400) PROMOVIDO PRE_ENTRY→EN_PROCESO/YELLOW. WMS TASK-5311752 IN_PROGRESS. 21 activos (1g/7y/13n/0r). 26 excluidos.",
   "summary": {
     "red": 0,
     "green": 1,
-    "normal": 14,
-    "yellow": 6,
+    "normal": 13,
+    "yellow": 7,
     "totalActive": 21,
     "totalExcluded": 26,
     "excludedThisRun": 1,
@@ -412,11 +414,11 @@
     "rnUpdatesThisRun": 0,
     "dockUpdatesThisRun": 0,
     "reactivatedThisRun": 0,
-    "notesUpdatedThisRun": 2,
+    "notesUpdatedThisRun": 3,
     "falseGreensCorrected": 0,
     "promotedToGreenThisRun": 1,
     "demotedFromGreenThisRun": 0,
-    "promotedToYellowThisRun": 0,
+    "promotedToYellowThisRun": 1,
     "appointmentsUpdatedThisRun": 2
   },
   "excluded": [
@@ -639,7 +641,7 @@
       "status": "ACTIVE"
     },
     "antiEstadoViejo": {
-      "note": "Jul 9 04:10 PT: TGSU5157420 + TGBU5468303 appointment times updated from WMS. CAAU7998380 GREEN confirmed.",
+      "note": "Jul 9 08:18 PT: GN07082026UNIS-1137 (RN-188400) corregido NORMAL→YELLOW (WMS TASK-5311752 IN_PROGRESS). 1g/7y/13n/0r.",
       "status": "ACTIVE"
     },
     "staleStateGuard": {
@@ -647,13 +649,13 @@
     },
     "closedRemovalRule": {
       "status": "ACTIVE",
-      "removalNote": "Jul 9 04:10 PT: 0 removals. 26 excluidos total.",
+      "removalNote": "Jul 9 08:18 PT: 0 removals. 26 excluidos total.",
       "removalsThisRun": 1,
       "reactivationsThisRun": 0
     },
     "greenEvidenceRule": {
       "status": "ACTIVE",
-      "promotionNote": "Jul 9 01:25 PT: CAAU7998380 promoted to GREEN. YMS: ET-1119632 CHECK_IN + ET-1120155 YARD_CHECK FULL. 1 green activo.",
+      "promotionNote": "Jul 9 08:18 PT: RN-188400 promoted to YELLOW/EN_PROCESO. WMS TASK-5311752 IN_PROGRESS. 1 green + 7 yellow activos.",
       "demotionsThisRun": 0,
       "promotionsThisRun": 1,
       "falseGreensDetected": 0
@@ -666,34 +668,25 @@
       "additionsThisRun": 0
     }
   },
-  "lastUpdated": "2026-07-09T04:10:00-07:00",
+  "lastUpdated": "2026-07-09T08:18:00-07:00",
   "totalActive": 21,
   "_corrections": {
-    "alert": "CORRECCIÓN Jul 9 04:10 PT — Actualización de citas WMS: TGSU5157420 → Jul 09 03:00, TGBU5468303 → Jul 09 02:00. 21 activos (1g/6y/14n/0r). 26 excluidos.",
-    "timestamp": "2026-07-09T04:10:00-07:00",
-    "appointmentUpdates": [
+    "alert": "CORRECCIÓN Jul 9 08:18 PT — ANTI-ESTADO-VIEJO: GN07082026UNIS-1137 (RN-188400) PROMOVIDO NORMAL→YELLOW/EN_PROCESO. WMS TASK-5311752 IN_PROGRESS. 21 activos (1g/7y/13n/0r). 26 excluidos.",
+    "timestamp": "2026-07-09T08:18:00-07:00",
+    "promotionsThisRun": [
       {
-        "container": "TGSU5157420",
-        "rn": "RN-5008666",
-        "old": "2026-07-08 20:00-22:00",
-        "new": "2026-07-09 03:00"
-      },
-      {
-        "container": "TGBU5468303",
-        "rn": "RN-5008665",
-        "old": "2026-07-08 19:00-21:00",
-        "new": "2026-07-09 02:00"
+        "rn": "RN-188400",
+        "reason": "ANTI-ESTADO-VIEJO: NORMAL→YELLOW. WMS TASK-5311752 IN_PROGRESS activo.",
+        "container": "GN07082026UNIS-1137"
       }
     ],
     "removalsThisRun": [],
     "additionsThisRun": [],
     "demotionsThisRun": [],
-    "promotionsThisRun": [],
     "notesUpdatedThisRun": [
-      "TGSU5157420 appointment updated",
-      "TGBU5468303 appointment updated"
+      "GN07082026UNIS-1137 (RN-188400) promoted PRE_ENTRY→EN_PROCESO/YELLOW"
     ]
   },
   "totalExcluded": 26,
-  "verificationSource": "WMS appointment update 04:10 PT — 2 appointment corrections (TGSU5157420, TGBU5468303)"
+  "verificationSource": "WMS Entry List cross-check 08:18 PT — 1 promotion (RN-188400 NORMAL→YELLOW, TASK-5311752 activo)"
 }
