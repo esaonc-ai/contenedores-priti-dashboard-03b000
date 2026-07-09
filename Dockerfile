@@ -1,4 +1,4 @@
-# FORCE_FULL_REBUILD 2026-07-09T05:58:00Z — CRITICO: CMAU8611150 removal + CAAU7998380 green→normal force deploy. 21act(0g/6y/15n) 26exc.
+# FORCE_FULL_REBUILD 2026-07-09T07:30:24Z — CMAU8611150 REMOVIDO. public/container-feed.json updated. 21act(0g/6y/15n) 26exc. VERIFIED.
 FROM nginx:1.31-alpine
 COPY public/ /usr/share/nginx/html/
 COPY public/nginx/feed-no-cache.conf /etc/nginx/conf.d/feed-no-cache.conf
