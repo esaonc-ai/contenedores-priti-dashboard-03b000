@@ -377,8 +377,8 @@
     }
   ],
   "alerts": [
-    "✅ CORRECCIÓN 2026-07-09 00:24 PT: REMOVIDO CMAU8611150 (RN-5008676) — WMS RN CLOSED, recv CLOSED, vacío/ready pickup. 21 activos (0 green, 6 yellow, 15 normal, 0 red). 26 excluidos.",
-    "📝 CMAU8611150 (RN-5008676): REMOVIDO. WMS RN-5008676 CLOSED. Receive TASK-5311612 CLOSED. Vacío/ready pickup per Daniela 07/08.",
+    "✅ CORRECCIÓN 2026-07-09 00:51 PT: REMOVIDO CMAU8611150 (RN-5008676) — WMS CLOSED 05:43, recv TASK-5311612 + putaway TASK-5311626 both CLOSED. 21 activos (0 green, 6 yellow, 15 normal, 0 red). 26 excluidos.",
+    "📝 CMAU8611150 (RN-5008676): REMOVIDO. WMS CLOSED 05:43. Receive TASK-5311612 CLOSED. Putaway TASK-5311626 CLOSED. Ambos tasks completos.",
     "🟡 ZCSU7781965 (RN-5008664): ANTI-ESTADO-VIEJO — NORMAL→YELLOW DOCK41. TASK-5311621 IN_PROGRESS.",
     "⚠️ MRKU9388930 (RN-188088): YMS DOCK_CHECKED_OUT pero WMS receiving IN_PROGRESS.",
     "⚠️ CAAU7998380 (RN-5008646): WMS inYard 09:12 PT pero YMS sin evidencia física.",
@@ -388,7 +388,7 @@
     "⚠️ TGSU5157375: Sin RN WMS. Anunciado Jasmine 07/08 17:47 PT."
   ],
   "tenant": "LT",
-  "message": "CORRECCIÓN Jul 9 2026-07-09 00:24 PT: REMOVIDO CMAU8611150 (RN-5008676). 21 activos (0g/6y/15n/0r). 26 excluidos.",
+  "message": "CORRECCIÓN Jul 9 2026-07-09 00:51 PT: REMOVIDO CMAU8611150 (RN-5008676) — WMS CLOSED 05:43, ambos tasks CLOSED. 21 activos (0g/6y/15n/0r). 26 excluidos.",
   "summary": {
     "red": 0,
     "green": 0,
@@ -411,13 +411,13 @@
   "excluded": [
     {
       "rn": "RN-5008676",
-      "reason": "WMS RN-5008676 CLOSED (created & closed 07/09 01:42). Receive TASK-5311612 CLOSED. Vacío/ready pickup per Daniela 07/08. Fecha remocion: 2026-07-09 00:24 PT.",
+      "reason": "WMS RN-5008676 CLOSED 2026-07-09 05:43. Receive TASK-5311612 CLOSED. Putaway TASK-5311626 CLOSED. Both tasks complete. Fecha remocion: 2026-07-09 00:51 PT.",
       "recvTask": "TASK-5311612 CLOSED",
-      "putTask": "TASK-5311626 IN_PROGRESS (was still in progress at removal)",
+      "putTask": "TASK-5311626 CLOSED",
       "wasDock": "DOCK65",
       "wasColor": "yellow",
       "container": "CMAU8611150",
-      "removedAt": "2026-07-09T00:24:00-07:00",
+      "removedAt": "2026-07-09T00:51:57-07:00",
       "wasActive": true,
       "wasStatus": "EN_PROCESO",
       "customer": "GURUNANDA (ORG-655875)"
@@ -627,7 +627,7 @@
       "status": "ACTIVE"
     },
     "antiEstadoViejo": {
-      "note": "Jul 9 2026-07-09 00:24 PT: CAAU7998380 re-evaluado — WMS inYard=true pero YMS sin evidencia → NORMAL. CMAU8611150 removido CLOSED.",
+      "note": "Jul 9 2026-07-09 00:51 PT: CMAU8611150 removido CLOSED. CAAU7998380: WMS inYard pero YMS sin evidencia → NORMAL.",
       "status": "ACTIVE"
     },
     "staleStateGuard": {
@@ -635,7 +635,7 @@
     },
     "closedRemovalRule": {
       "status": "ACTIVE",
-      "removalNote": "Jul 9 2026-07-09 00:24 PT: 1 removal (CMAU8611150/RN-5008676). 26 excluidos total.",
+      "removalNote": "Jul 9 2026-07-09 00:51 PT: 1 removal (CMAU8611150/RN-5008676). 26 excluidos total.",
       "removalsThisRun": 1,
       "reactivationsThisRun": 0
     },
@@ -654,16 +654,16 @@
       "additionsThisRun": 0
     }
   },
-  "lastUpdated": "2026-07-09T00:24:00-07:00",
+  "lastUpdated": "2026-07-09T00:51:57-07:00",
   "totalActive": 21,
   "_corrections": {
-    "alert": "CORRECCIÓN Jul 9 2026-07-09 00:24 PT: REMOVIDO CMAU8611150 (RN-5008676). 21 activos (0g/6y/15n/0r). 26 excluidos.",
-    "timestamp": "2026-07-09T00:24:00-07:00",
-    "ymsCheckNote": "CMAU8611150: ET-1118934 stale + ET-1120075. WMS RN CLOSED. Both WMS+YMS return 404 (fully processed).",
+    "alert": "CORRECCIÓN Jul 9 2026-07-09 00:51 PT: REMOVIDO CMAU8611150 (RN-5008676) — WMS CLOSED 05:43, ambos tasks CLOSED. 21 activos (0g/6y/15n/0r). 26 excluidos.",
+    "timestamp": "2026-07-09T00:51:57-07:00",
+    "ymsCheckNote": "CMAU8611150: ET-1118934 stale + ET-1120075. WMS RN CLOSED 05:43. Receive+Putaway both CLOSED.",
     "removalsThisRun": [
       {
         "rn": "RN-5008676",
-        "reason": "WMS RN-5008676 CLOSED. Receive TASK-5311612 CLOSED. Vacío/ready pickup per Daniela 07/08.",
+        "reason": "WMS CLOSED 05:43. Receive TASK-5311612 + Putaway TASK-5311626 CLOSED.",
         "container": "CMAU8611150"
       }
     ],
@@ -673,5 +673,5 @@
     "notesUpdatedThisRun": []
   },
   "totalExcluded": 26,
-  "verificationSource": "WMS+YMS cross-check 2026-07-09 00:24 PT — 1 removal (CMAU8611150/RN-5008676 CLOSED)"
+  "verificationSource": "WMS cross-check 2026-07-09 00:51 PT — CMAU8611150/RN-5008676: recv+putaway both CLOSED"
 }
