@@ -21,15 +21,15 @@
     {
       "rn": "RN-5008480",
       "dock": null,
-      "note": "⚠️ Daniela reporta vacío 07/08. Receive CLOSED. Putaway TASK-5311289 IN_PROGRESS (Mateo Moreno). YMS: YARD_CHECK Spot 565, TRAILER EMPTY.",
+      "note": "⚠️ Daniela reporta vacío 07/08. WMS shows assigned to Fatima Ponce. Recv TASK-5307691 CLOSED. No putaway task yet. YMS: YARD_CHECK Spot 565, TRAILER EMPTY.",
       "color": "yellow",
-      "notes": "⚠️ Daniela reporta vacío 07/08. Receive CLOSED. Putaway TASK-5311289 IN_PROGRESS (Mateo Moreno). YMS: YARD_CHECK Spot 565, TRAILER EMPTY.",
+      "notes": "⚠️ Daniela reporta vacío 07/08. WMS shows assigned to Fatima Ponce. Recv TASK-5307691 CLOSED. No putaway task yet. YMS: YARD_CHECK Spot 565, TRAILER EMPTY.",
       "inYard": true,
       "status": "EN_PROCESO",
       "receipt": "RN-5008480",
       "container": "FFAU2426030",
       "assignedTo": "Mateo Moreno",
-      "lastVerifiedAt": "2026-07-08T20:20:00-07:00",
+      "lastVerifiedAt": "2026-07-08T22:50:00-07:00",
       "staleStateGuard": true,
       "verificationSource": "WMS+YMS cross-check 20:20 PT"
     },
@@ -66,39 +66,18 @@
     {
       "rn": "RN-188088",
       "dock": "DOCK63",
-      "note": "RECEIVING IN_PROGRESS. TASK-5311340 OFFLOAD (Caren). DOCK63. ET-1119932. Gate check-in 07/08 13:19. ⚠️ YMS DOCK_CHECKED_OUT 14:23 pero WMS receiving sigue IN_PROGRESS. Priti reporta vacío/ready pickup.",
+      "note": "RECEIVING IN_PROGRESS. TASK-5311340 OFFLOAD (Caren). DOCK63. ET-1119932. YMS confirms EN YARDA DOCK63, EMPTY_AFTER_OFFLOADED, ET-1119932, gate check-in Jul 8 13:19, yard check EMPTY Jul 8 21:04. ⚠️ Priti reporta vacío/ready pickup.",
       "color": "yellow",
-      "notes": "RECEIVING IN_PROGRESS. TASK-5311340 OFFLOAD (Caren). DOCK63. ET-1119932. Gate check-in 07/08 13:19. ⚠️ YMS DOCK_CHECKED_OUT 14:23 pero WMS receiving sigue IN_PROGRESS. Priti reporta vacío/ready pickup.",
+      "notes": "RECEIVING IN_PROGRESS. TASK-5311340 OFFLOAD (Caren). DOCK63. ET-1119932. YMS confirms EN YARDA DOCK63, EMPTY_AFTER_OFFLOADED, ET-1119932, gate check-in Jul 8 13:19, yard check EMPTY Jul 8 21:04. ⚠️ Priti reporta vacío/ready pickup.",
       "inYard": true,
       "status": "EN_PROCESO",
       "receipt": "RN-188088",
       "container": "MRKU9388930",
       "reference": "PO6369a",
-      "lastVerifiedAt": "2026-07-08T19:00:00-07:00",
+      "lastVerifiedAt": "2026-07-08T22:50:00-07:00",
       "antiEstadoViejo": true,
       "staleStateGuard": true,
-      "verificationSource": "YMS+WMS cross-check 19:00 PT",
-      "plannedEmailInclusionRule": true
-    },
-    {
-      "rn": "RN-5008676",
-      "dock": "DOCK65",
-      "entry": "ET-1118934",
-      "note": "Recién inició receiving 18:42 PT. Daniela Gonzalez DOCK65. TASK-5311612 IN_PROGRESS. ⚠️ Dual ET: ET-1118934 stale GATE_CHECKED_IN + ET-1120075 DOCK_CHECKED_IN active. GREEN→YELLOW: receiving activo. Cita original Jul 7 13:00-15:00 vencida.",
-      "color": "yellow",
-      "notes": "Recién inició receiving 18:42 PT. Daniela Gonzalez DOCK65. TASK-5311612 IN_PROGRESS. ⚠️ Dual ET: ET-1118934 stale GATE_CHECKED_IN + ET-1120075 DOCK_CHECKED_IN active. GREEN→YELLOW: receiving activo. Cita original Jul 7 13:00-15:00 vencida.",
-      "inYard": true,
-      "status": "EN_PROCESO",
-      "receipt": "RN-5008676",
-      "customer": "GURUNANDA (ORG-655875)",
-      "container": "CMAU8611150",
-      "assignedTo": "Daniela Gonzalez",
-      "appointment": "2026-07-07 13:00-15:00",
-      "lastVerifiedAt": "2026-07-08T20:20:00-07:00",
-      "appointmentTime": "2026-07-07 13:00-15:00",
-      "antiEstadoViejo": true,
-      "staleStateGuard": true,
-      "verificationSource": "WMS+YMS cross-check 20:20 PT",
+      "verificationSource": "YMS cross-check 22:50 PT — EMPTY_AFTER_OFFLOADED DOCK63",
       "plannedEmailInclusionRule": true
     },
     {
@@ -240,9 +219,9 @@
     },
     {
       "rn": "RN-5008666",
-      "note": "UFB-128971. WMS IMPORTED APPT-6033193. Batch TGSU5157420+TGSU5157415. Anunciado por ImportExport (Jasmine) 07/08 12:26 PT.",
+      "note": "UFB-128971. WMS IMPORTED APPT-6033193. Batch TGSU5157420+TGSU5157415. Anunciado por ImportExport (Jasmine) 07/08 12:26 PT. ⚠️ Drop window Jul 8 20:00-22:00 VENCIDO. Sin gate-in. Posible no-show.",
       "color": "normal",
-      "notes": "UFB-128971. WMS IMPORTED APPT-6033193. Batch TGSU5157420+TGSU5157415. Anunciado por ImportExport (Jasmine) 07/08 12:26 PT.",
+      "notes": "UFB-128971. WMS IMPORTED APPT-6033193. Batch TGSU5157420+TGSU5157415. Anunciado por ImportExport (Jasmine) 07/08 12:26 PT. ⚠️ Drop window Jul 8 20:00-22:00 VENCIDO. Sin gate-in. Posible no-show.",
       "inYard": false,
       "source": "outlook_email",
       "status": "PRE_ENTRY",
@@ -251,7 +230,7 @@
       "container": "TGSU5157420",
       "appointment": "2026-07-08 20:00-22:00",
       "operationType": "Drop",
-      "lastVerifiedAt": "2026-07-08T19:00:00-07:00",
+      "lastVerifiedAt": "2026-07-08T22:50:00-07:00",
       "appointmentTime": "2026-07-08T20:00:00-07:00",
       "staleStateGuard": true,
       "verificationSource": "Outlook+WMS cross-check 7:00 PM PT",
@@ -297,22 +276,22 @@
     {
       "rn": "RN-5008646",
       "dock": null,
-      "note": "⚠️ ANTI-ESTADO-VIEJO CORREGIDO 21:30 PT. YMS ET-1119632 SELF_CHECKIN gate check-in confirmado (driver Adrienne Bell, carrier WILL CALL). WMS inYard 2026-07-08. Promovido NORMAL→GREEN.",
-      "color": "green",
-      "notes": "⚠️ ANTI-ESTADO-VIEJO CORREGIDO 21:30 PT. YMS ET-1119632 SELF_CHECKIN gate check-in confirmado (driver Adrienne Bell, carrier WILL CALL). WMS inYard 2026-07-08. Promovido NORMAL→GREEN.",
+      "note": "⚠️ WMS confirms inYard since Jul 8 09:12, IMPORTED, no receive task yet. Sin evidencia YMS física (sin gate-in/yard-check/drop). Per greenEvidenceRule: YMS physical evidence required for green. Mantener NORMAL/PRE-ENTRY.",
+      "color": "normal",
+      "notes": "⚠️ WMS confirms inYard since Jul 8 09:12, IMPORTED, no receive task yet. Sin evidencia YMS física (sin gate-in/yard-check/drop). Per greenEvidenceRule: YMS physical evidence required for green. Mantener NORMAL/PRE-ENTRY.",
       "inYard": true,
-      "status": "EN_YARDA",
+      "status": "PRE_ENTRY",
       "receipt": "RN-5008646",
       "container": "CAAU7998380",
       "appointment": "2026-07-09 08:00",
-      "lastVerifiedAt": "2026-07-08T21:30:00-07:00",
+      "lastVerifiedAt": "2026-07-08T22:50:00-07:00",
       "appointmentTime": "2026-07-09 08:00",
       "staleStateGuard": true,
-      "verificationSource": "YMS+WMS cross-check 2026-07-08 21:30 PT",
+      "verificationSource": "WMS cross-check 22:50 PT — WMS inYard=true, YMS sin evidencia física → NORMAL",
       "plannedEmailInclusionRule": true,
       "entry": "ET-1119632",
       "customer": "GURUNANDA (ORG-655875)",
-      "antiEstadoViejo": true
+      "falseGreenCorrected": true
     },
     {
       "rn": "RN-188400",
@@ -400,40 +379,49 @@
     }
   ],
   "alerts": [
-    "✅ CORRECCIÓN 2026-07-08 22:10 PT: CAAU7998380 NORMAL→GREEN (WMS inYardTime). 22 activos (1g/7y/14n/0r). 25 excluidos.",
-    "🟢 CAAU7998380 (RN-5008646): PROMOVIDO A GREEN. WMS inYardTime 2026-07-08 09:12 PT — más de 13h en yarda. Regla #2 Rufino.",
-    "📝 TGBU7180260 (RN-5008591): EXCLUIDO. WMS RN CLOSED (recv+putaway).",
-    "📝 SMCU1143199 (RN-5008592): EXCLUIDO. WMS RN CLOSED (recv+putaway).",
-    "🟡 ZCSU7781965 (RN-5008664): ANTI-ESTADO-VIEJO — NORMAL→YELLOW DOCK41. TASK-5311621 IN_PROGRESS.",
-    "⚠️ CMAU8611150 (RN-5008676): Dual ET — ET-1118934 stale + ET-1120075 active.",
-    "⚠️ MRKU9388930 (RN-188088): YMS DOCK_CHECKED_OUT pero WMS receiving IN_PROGRESS.",
-    "🟠 ALERTA ROLAS: FFAU2426030 (RN-5008480) — Reportado VACÍO por Daniela 07/08. Putaway IN_PROGRESS.",
+    "✅ CORRECCIÓN 2026-07-08 22:50 PT: REMOVIDO CMAU8611150 (RN-5008676) WMS RN CLOSED. CAAU7998380 green→normal. 21 activos (0g/6y/15n/0r). 26 excluidos.",
+    "📝 CMAU8611150 (RN-5008676): REMOVIDO. WMS RN CLOSED. Receive TASK-5311612 CLOSED. DOCK65.",
+    "📝 CAAU7998380 (RN-5008646): green→normal. Sin evidencia física YMS. WMS inYard confirmado pero greenEvidenceRule requiere YMS.",
+    "⚠️ MRKU9388930 (RN-188088): YMS confirma EMPTY_AFTER_OFFLOADED DOCK63. Yard check EMPTY Jul 8 21:04.",
+    "⚠️ TGSU5157420 (RN-5008666): Drop window Jul 8 20:00-22:00 VENCIDO. Posible no-show.",
+    "🟠 ALERTA ROLAS: FFAU2426030 (RN-5008480) — Reportado VACÍO por Daniela. WMS assigned Fatima Ponce.",
     "🔴 ALERTA ROLAS CRÍTICA: CSGU6429436 (RN-5008479) — CONTENEDOR FANTASMA en DOCK45.",
     "⚠️ TIIU6675897: Sin RN WMS aún. Drop 07/09 12:00-14:00. PENDIENTE item setup.",
     "⚠️ TGSU5157375: Sin RN WMS. Anunciado Jasmine 07/08 17:47 PT."
   ],
   "tenant": "LT",
-  "message": "CORRECCIÓN Jul 8 2026-07-08 22:10 PT — CAAU7998380/RN-5008646 NORMAL→GREEN (ANTI-ESTADO-VIEJO: WMS inYardTime confirma presencia física). TGBU7180260+SMCU1143199 excluidos previamente. 22 activos (1g/7y/14n/0r). 25 excluidos.",
+  "message": "CORRECCIÓN Jul 8 2026-07-08 22:50 PT — REMOVIDO: CMAU8611150 (RN-5008676) WMS RN CLOSED (recv TASK-5311612). CAAU7998380 green→normal (sin evidencia YMS). 21 activos (0g/6y/15n/0r). 26 excluidos.",
   "summary": {
     "red": 0,
-    "green": 1,
-    "normal": 14,
-    "yellow": 7,
-    "totalActive": 22,
-    "totalExcluded": 25,
-    "excludedThisRun": 0,
+    "green": 0,
+    "normal": 15,
+    "yellow": 6,
+    "totalActive": 21,
+    "totalExcluded": 26,
+    "excludedThisRun": 1,
     "manualAdditions": 0,
     "rnUpdatesThisRun": 0,
-    "dockUpdatesThisRun": 0,
+    "dockUpdatesThisRun": 1,
     "reactivatedThisRun": 0,
-    "notesUpdatedThisRun": 1,
-    "falseGreensCorrected": 0,
-    "promotedToGreenThisRun": 1,
-    "demotedFromGreenThisRun": 0,
+    "notesUpdatedThisRun": 4,
+    "falseGreensCorrected": 1,
+    "promotedToGreenThisRun": 0,
+    "demotedFromGreenThisRun": 1,
     "promotedToYellowThisRun": 0,
     "appointmentsUpdatedThisRun": 0
   },
   "excluded": [
+    {
+      "rn": "RN-5008676",
+      "reason": "WMS RN CLOSED. Recv TASK-5311612 CLOSED. DOCK65. Fecha remocion: 2026-07-08 ~22:50 PT.",
+      "container": "CMAU8611150",
+      "removedAt": "2026-07-08T22:50:00-07:00",
+      "wasActive": true,
+      "wasColor": "yellow",
+      "wasStatus": "EN_PROCESO",
+      "wasDock": "DOCK65",
+      "recvTask": "TASK-5311612 CLOSED"
+    },
     {
       "rn": "RN-5008591",
       "reason": "WMS RN CLOSED. Receive TASK-5311604 CLOSED. Putaway TASK-5311618 CLOSED. Fecha remocion: 2026-07-08 22:10 PT.",
@@ -647,16 +635,16 @@
     },
     "closedRemovalRule": {
       "status": "ACTIVE",
-      "removalNote": "Jul 8 2026-07-08 21:30 PT: 0 removals this run. 24 excluidos total.",
-      "removalsThisRun": 0,
+      "removalNote": "Jul 8 2026-07-08 22:50 PT: 1 removal (CMAU8611150). 26 excluidos total.",
+      "removalsThisRun": 1,
       "reactivationsThisRun": 0
     },
     "greenEvidenceRule": {
       "status": "ACTIVE",
-      "promotionNote": "Jul 8 2026-07-08 21:30 PT: 1 promotion (CAAU7998380 NORMAL→GREEN via ANTI-ESTADO-VIEJO). 1 green activos.",
-      "demotionsThisRun": 0,
-      "promotionsThisRun": 1,
-      "falseGreensDetected": 0
+      "promotionNote": "Jul 8 2026-07-08 22:50 PT: 1 demotion (CAAU7998380 green→normal). 0 green activos. YMS physical evidence required.",
+      "demotionsThisRun": 1,
+      "promotionsThisRun": 0,
+      "falseGreensDetected": 1
     },
     "preserveAssignments": {
       "status": "ACTIVE"
@@ -666,26 +654,36 @@
       "additionsThisRun": 0
     }
   },
-  "lastUpdated": "2026-07-08T22:10:00-07:00",
-  "totalActive": 22,
+  "lastUpdated": "2026-07-08T22:50:00-07:00",
+  "totalActive": 21,
   "_corrections": {
-    "alert": "CORRECCIÓN Jul 8 2026-07-08 22:10 PT — CAAU7998380/RN-5008646 NORMAL→GREEN (WMS inYardTime). 22 activos (1g/7y/14n/0r). 25 excluidos.",
-    "timestamp": "2026-07-08T22:10:00-07:00",
-    "ymsCheckNote": "CAAU7998380: WMS inYardTime 2026-07-08 09:12 PT. Regla #2 Rufino: WMS Entry List real result = valid evidence. Promoted to GREEN.",
-    "removalsThisRun": [],
-    "additionsThisRun": [],
-    "demotionsThisRun": [],
-    "promotionsThisRun": [
+    "alert": "CORRECCIÓN Jul 8 2026-07-08 22:50 PT — REMOVIDO: CMAU8611150 (RN-5008676) WMS RN CLOSED (recv TASK-5311612). CAAU7998380 green→normal (sin evidencia YMS). 21 activos (0g/6y/15n/0r). 26 excluidos.",
+    "timestamp": "2026-07-08T22:50:00-07:00",
+    "ymsCheckNote": "CMAU8611150 WMS RN CLOSED. CAAU7998380: WMS inYard=true pero YMS sin evidencia física → NORMAL.",
+    "removalsThisRun": [
       {
-        "rn": "RN-5008646",
-        "reason": "WMS inYardTime 2026-07-08 09:12 PT — anti-estado-viejo. Regla #2: evidencia WMS válida.",
-        "container": "CAAU7998380"
+        "rn": "RN-5008676",
+        "reason": "WMS RN CLOSED. Recv TASK-5311612 CLOSED. DOCK65.",
+        "container": "CMAU8611150"
       }
     ],
+    "additionsThisRun": [],
+    "demotionsThisRun": [
+      {
+        "rn": "RN-5008646",
+        "from": "green",
+        "to": "normal",
+        "reason": "Sin evidencia física YMS per greenEvidenceRule"
+      }
+    ],
+    "promotionsThisRun": [],
     "notesUpdatedThisRun": [
-      "CAAU7998380/RN-5008646: NORMAL→GREEN"
+      "RN-188088",
+      "RN-5008646",
+      "RN-5008666",
+      "RN-5008480"
     ]
   },
-  "totalExcluded": 25,
-  "verificationSource": "WMS inYardTime cross-check 2026-07-08 22:10 PT — CAAU7998380 promoted NORMAL→GREEN"
+  "totalExcluded": 26,
+  "verificationSource": "WMS+YMS cross-check 2026-07-08 22:50 PT — 1 removal (CMAU8611150 CLOSED), 1 demotion (CAAU7998380 green→normal)"
 }

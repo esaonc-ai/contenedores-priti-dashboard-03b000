@@ -1,1 +1,1 @@
-BUILD_ID: 2026-07-09T05:33:01Z — CAAU7998380 NORMAL→GREEN WMS inYardTime Regla #2 Rufino — 22act (1g/7y/14n/0r) 25exc
+BUILD: 2026-07-09T05:50:00Z — 22:50 PT correction: CMAU8611150 removed, CAAU7998380 green→normal, 21act/26exc.
