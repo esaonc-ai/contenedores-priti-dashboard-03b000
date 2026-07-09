@@ -1,64 +1,22 @@
 {
   "mode": "MONITORING_ACTIVE",
-  "tenant": "LT",
-  "facility": "LT_F1",
-  "lastUpdated": "2026-07-08T15:15:09-07:00",
-  "totalActive": 23,
-  "totalExcluded": 20,
-  "message": "CORRIDA Jul 8 2:50 PM PT — Follow-up Outlook/WMS: GN07072026UNIS-1135/RN-188338 removido de activos por receiving FORCE_CLOSED + putaway CLOSED/completed aunque receipt siga IN_PROGRESS. Planned Outlook confirmados visibles: TGSU5157420, TGSU5157415, TIIU6675897 (reemplaza/actualiza TIIU6671567). 24 activos (2 green, 6 yellow, 16 normal). 19 excluidos.",
-  "verificationSource": "WMS+Outlook+YMS cross-check 15:08 PT",
-  "summary": {
-    "red": 0,
-    "green": 2,
-    "normal": 16,
-    "yellow": 5,
-    "totalActive": 23,
-    "totalExcluded": 20,
-    "excludedThisRun": 2,
-    "manualAdditions": 0,
-    "rnUpdatesThisRun": 0,
-    "dockUpdatesThisRun": 1,
-    "reactivatedThisRun": 0,
-    "notesUpdatedThisRun": 8,
-    "falseGreensCorrected": 3,
-    "promotedToGreenThisRun": 0,
-    "demotedFromGreenThisRun": 3,
-    "promotedToYellowThisRun": 1,
-    "appointmentsUpdatedThisRun": 0
-  },
   "rows": [
     {
       "rn": "RN-188263",
       "dock": "DOCK44",
-      "note": "TASK-5309896 NEW (Caren). DOCK44. WMS inYardTime Jul 07 15:38. TV53560.",
-      "color": "green",
-      "notes": "TASK-5309896 NEW (Caren). DOCK44. WMS inYardTime Jul 07 15:38. TV53560.",
+      "note": "RECEIVING IN_PROGRESS. TASK-5309896 IN_PROGRESS (Caren). DOCK44. WMS inYardTime Jul 07 15:38. TV53560. CORREGIDO: estaba verde, pero receiving activo => yellow.",
+      "color": "yellow",
+      "notes": "RECEIVING IN_PROGRESS. TASK-5309896 IN_PROGRESS (Caren). DOCK44. WMS inYardTime Jul 07 15:38. TV53560. CORREGIDO: estaba verde, pero receiving activo => yellow.",
       "inYard": true,
-      "status": "EN_YARDA",
+      "status": "EN_PROCESO",
       "receipt": "RN-188263",
       "container": "GN07062026UNIS-1134",
       "reference": "TV53560",
       "assignedTo": "Caren Cubides",
-      "lastVerifiedAt": "2026-07-08T04:05:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "staleStateGuard": true,
-      "greenEvidenceRule": "WMS inYardTime + DOCK44 + TASK-5309896",
-      "verificationSource": "YMS+WMS cross-check 04:05 PT"
-    },
-    {
-      "rn": "RN-5008571",
-      "dock": "DOCK38",
-      "note": "⚠️ 4 DÍAS en yarda sin receiving. TASK-5307907 NEW (Caren). DOCK38. WMS inYardTime Jul 03 17:14.",
-      "color": "green",
-      "notes": "⚠️ 4 DÍAS en yarda sin receiving. TASK-5307907 NEW (Caren). DOCK38. WMS inYardTime Jul 03 17:14.",
-      "inYard": true,
-      "status": "EN_YARDA",
-      "receipt": "RN-5008571",
-      "container": "LabelKing07072026 PO8449",
-      "assignedTo": "Caren Cubides",
-      "lastVerifiedAt": "2026-07-08T04:05:00-07:00",
-      "staleStateGuard": true,
-      "greenEvidenceRule": "WMS inYardTime Jul 03 17:14",
-      "verificationSource": "YMS+WMS cross-check 04:05 PT"
+      "greenEvidenceRule": null,
+      "verificationSource": "WMS cross-check 4:05 PM PT"
     },
     {
       "rn": "RN-5008480",
@@ -71,25 +29,9 @@
       "receipt": "RN-5008480",
       "container": "FFAU2426030",
       "assignedTo": "Daniela Gonzalez",
-      "lastVerifiedAt": "2026-07-08T04:05:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "staleStateGuard": true,
-      "verificationSource": "YMS+WMS cross-check 04:05 PT"
-    },
-    {
-      "rn": "RN-5008569",
-      "dock": "DOCK65",
-      "note": "YMS DOCK_CHECKED_IN DOCK65 07/08 12:21. ET-1119888. WMS IN_PROGRESS recv started 07/08 19:23. Anti-estado-viejo.",
-      "color": "yellow",
-      "notes": "YMS DOCK_CHECKED_IN DOCK65 07/08 12:21. ET-1119888. WMS IN_PROGRESS recv started 07/08 19:23. Anti-estado-viejo.",
-      "inYard": true,
-      "status": "EN_PROCESO",
-      "receipt": "RN-5008569",
-      "container": "EITU9363654",
-      "lastVerifiedAt": "2026-07-08T13:46:00-07:00",
-      "antiEstadoViejo": true,
-      "staleStateGuard": true,
-      "verificationSource": "WMS+YMS cross-check 13:46 PT",
-      "plannedEmailInclusionRule": true
+      "verificationSource": "YMS+WMS cross-check 16:05 PT"
     },
     {
       "rn": "RN-5008589",
@@ -101,10 +43,10 @@
       "status": "EN_PROCESO",
       "receipt": "RN-5008589",
       "container": "CORR007082026UNIS PO8469",
-      "lastVerifiedAt": "2026-07-08T13:46:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "antiEstadoViejo": true,
       "staleStateGuard": true,
-      "verificationSource": "WMS+YMS cross-check 13:46 PT"
+      "verificationSource": "WMS+YMS cross-check 16:05 PT"
     },
     {
       "rn": "RN-5008588",
@@ -116,10 +58,10 @@
       "status": "EN_PROCESO",
       "receipt": "RN-5008588",
       "container": "CORR007082026UNIS PO8462",
-      "lastVerifiedAt": "2026-07-08T13:46:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "antiEstadoViejo": true,
       "staleStateGuard": true,
-      "verificationSource": "WMS+YMS cross-check 13:46 PT"
+      "verificationSource": "WMS+YMS cross-check 16:05 PT"
     },
     {
       "rn": "RN-188088",
@@ -132,10 +74,10 @@
       "receipt": "RN-188088",
       "container": "MRKU9388930",
       "reference": "PO6369a",
-      "lastVerifiedAt": "2026-07-08T13:46:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "antiEstadoViejo": true,
       "staleStateGuard": true,
-      "verificationSource": "YMS+WMS cross-check 13:46 PT",
+      "verificationSource": "YMS+WMS cross-check 16:05 PT",
       "plannedEmailInclusionRule": true
     },
     {
@@ -148,27 +90,31 @@
       "receipt": "RN-5008591",
       "container": "TGBU7180260",
       "appointment": "2026-07-07 05:00",
-      "lastVerifiedAt": "2026-07-08T13:46:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "appointmentTime": "2026-07-07 05:00",
       "staleStateGuard": true,
-      "verificationSource": "YMS+WMS cross-check 13:46 PT",
+      "verificationSource": "YMS+WMS cross-check 16:05 PT",
       "plannedEmailInclusionRule": true
     },
     {
       "rn": "RN-5008592",
-      "note": "WMS IMPORTED Gurunanda. YMS equipment muestra KARAKA (no Gurunanda). RN-183446 es KARAKA. Posible mismatch customer. Cita vencida 07/07. Sin evidencia física.",
-      "color": "normal",
-      "notes": "WMS IMPORTED Gurunanda. YMS equipment muestra KARAKA (no Gurunanda). RN-183446 es KARAKA. Posible mismatch customer. Cita vencida 07/07. Sin evidencia física.",
-      "inYard": false,
-      "status": "PRE_ENTRY",
+      "note": "✅ PROMOVIDO 5:05 PM PT: GURUNANDA (ORG-655875). WMS IMPORTED inYard Jul 08 23:40 UTC. TASK-5311587 NEW DOCK62 (Daniela Gonzalez). YMS ET-1120046 WINDOW_CHECKED_IN DOCK62. Anti-estado-viejo: KARAKA mismatch RESUELTO — YMS confirma GURUNANDA LLC. Cita original 07/07 (llegada tardía).",
+      "color": "green",
+      "notes": "✅ PROMOVIDO 5:05 PM PT: GURUNANDA (ORG-655875). WMS IMPORTED inYard Jul 08 23:40 UTC. TASK-5311587 NEW DOCK62 (Daniela Gonzalez). YMS ET-1120046 WINDOW_CHECKED_IN DOCK62. Anti-estado-viejo: KARAKA mismatch RESUELTO — YMS confirma GURUNANDA LLC. Cita original 07/07 (llegada tardía).",
+      "inYard": true,
+      "status": "EN_YARDA",
       "receipt": "RN-5008592",
       "container": "SMCU1143199",
       "appointment": "2026-07-07 01:00-03:00",
-      "lastVerifiedAt": "2026-07-08T13:46:00-07:00",
+      "lastVerifiedAt": "2026-07-08T17:10:24-07:00",
       "appointmentTime": "2026-07-07 01:00-03:00",
       "staleStateGuard": true,
-      "verificationSource": "YMS+WMS cross-check 13:46 PT",
-      "plannedEmailInclusionRule": true
+      "verificationSource": "YMS+WMS cross-check 5:05 PM PT — GURUNANDA confirmado",
+      "plannedEmailInclusionRule": true,
+      "dock": "DOCK62",
+      "assignedTo": "Daniela Gonzalez",
+      "antiEstadoViejo": true,
+      "greenEvidenceRule": "YMS ET-1120046 WINDOW_CHECKED_IN DOCK62 + WMS TASK-5311587 DOCK62"
     },
     {
       "rn": "RN-5008593",
@@ -180,10 +126,10 @@
       "receipt": "RN-5008593",
       "container": "CMAU4986523",
       "appointment": "2026-07-08 08:00",
-      "lastVerifiedAt": "2026-07-08T04:05:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "appointmentTime": "2026-07-08 08:00",
       "staleStateGuard": true,
-      "verificationSource": "YMS+WMS cross-check 04:05 PT",
+      "verificationSource": "YMS+WMS cross-check 16:05 PT",
       "plannedEmailInclusionRule": true
     },
     {
@@ -196,10 +142,10 @@
       "receipt": "RN-188264",
       "container": "FUS07062026UNIS-58",
       "appointment": "2026-07-08 20:00",
-      "lastVerifiedAt": "2026-07-08T04:05:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "appointmentTime": "2026-07-08 20:00",
       "staleStateGuard": true,
-      "verificationSource": "YMS+WMS cross-check 04:05 PT"
+      "verificationSource": "YMS+WMS cross-check 16:05 PT"
     },
     {
       "rn": "RN-188301",
@@ -211,10 +157,10 @@
       "receipt": "RN-188301",
       "container": "FUS07072026UNIS-59",
       "appointment": "2026-07-08 17:00",
-      "lastVerifiedAt": "2026-07-08T04:05:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "appointmentTime": "2026-07-08 17:00",
       "staleStateGuard": true,
-      "verificationSource": "YMS+WMS cross-check 04:05 PT",
+      "verificationSource": "YMS+WMS cross-check 16:05 PT",
       "plannedEmailInclusionRule": true
     },
     {
@@ -227,10 +173,10 @@
       "receipt": "RN-5008654",
       "container": "TIIU8088862",
       "appointment": "2026-07-09 03:00",
-      "lastVerifiedAt": "2026-07-08T04:05:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "appointmentTime": "2026-07-09 03:00",
       "staleStateGuard": true,
-      "verificationSource": "YMS+WMS cross-check 04:05 PT",
+      "verificationSource": "YMS+WMS cross-check 16:05 PT",
       "plannedEmailInclusionRule": true
     },
     {
@@ -243,10 +189,10 @@
       "receipt": "RN-5008655",
       "container": "CMAU6679803",
       "appointment": "2026-07-09 08:00",
-      "lastVerifiedAt": "2026-07-08T04:05:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "appointmentTime": "2026-07-09 08:00",
       "staleStateGuard": true,
-      "verificationSource": "YMS+WMS cross-check 04:05 PT",
+      "verificationSource": "YMS+WMS cross-check 16:05 PT",
       "plannedEmailInclusionRule": true
     },
     {
@@ -265,27 +211,27 @@
       "assignedTo": null,
       "appointment": "2026-07-07T07:00",
       "operationType": "Transfer",
-      "lastVerifiedAt": "2026-07-08T04:05:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "appointmentTime": "2026-07-07T07:00",
       "staleStateGuard": true,
-      "verificationSource": "YMS+WMS cross-check 04:05 PT",
+      "verificationSource": "YMS+WMS cross-check 16:05 PT",
       "plannedEmailInclusionRule": true
     },
     {
       "rn": "RN-5008664",
-      "note": "⚠️ CITA VENCIDA 07/08 12:00-14:00. Sin evidencia YMS de llegada. Posible NO-SHOW. Anunciado por ImportExport (Jasmine) 07/08 10:45 AM.",
+      "note": "⚠️ CITA VENCIDA 07/08 12:00-14:00 PT. No llegó. Posible NO-SHOW. Sin evidencia YMS de arrival. WMS IMPORTED sin tasks. Anunciado por ImportExport (Jasmine) 07/08 10:45 AM.",
       "color": "normal",
-      "notes": "⚠️ CITA VENCIDA 07/08 12:00-14:00. Sin evidencia YMS de llegada. Posible NO-SHOW. Anunciado por ImportExport (Jasmine) 07/08 10:45 AM.",
+      "notes": "⚠️ CITA VENCIDA 07/08 12:00-14:00 PT. No llegó. Posible NO-SHOW. Sin evidencia YMS de arrival. WMS IMPORTED sin tasks. Anunciado por ImportExport (Jasmine) 07/08 10:45 AM.",
       "inYard": false,
       "source": "outlook_email",
       "status": "PRE_ENTRY",
       "receipt": "RN-5008664",
       "container": "ZCSU7781965",
       "operationType": "Drop",
-      "lastVerifiedAt": "2026-07-08T13:46:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "appointmentTime": "2026-07-08T12:00:00-07:00",
       "staleStateGuard": true,
-      "verificationSource": "YMS+WMS cross-check 13:46 PT",
+      "verificationSource": "YMS+WMS cross-check 16:05 PT",
       "plannedEmailInclusionRule": true
     },
     {
@@ -299,10 +245,10 @@
       "receipt": "RN-5008665",
       "container": "TGBU5468303",
       "operationType": "Drop",
-      "lastVerifiedAt": "2026-07-08T13:06:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "appointmentTime": "2026-07-08T19:00:00-07:00",
       "staleStateGuard": true,
-      "verificationSource": "Outlook+WMS cross-check 1:06 PM PT",
+      "verificationSource": "Outlook+WMS cross-check 4:05 PM PT",
       "plannedEmailInclusionRule": true
     },
     {
@@ -316,13 +262,13 @@
       "receipt": "RN-5008666",
       "customer": "GURUNANDA (ORG-655875)",
       "container": "TGSU5157420",
+      "appointment": "2026-07-08 20:00-22:00",
       "operationType": "Drop",
-      "lastVerifiedAt": "2026-07-08T13:06:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "appointmentTime": "2026-07-08T20:00:00-07:00",
       "staleStateGuard": true,
-      "verificationSource": "Outlook+WMS cross-check 1:06 PM PT",
-      "plannedEmailInclusionRule": true,
-      "appointment": "2026-07-08 20:00-22:00"
+      "verificationSource": "Outlook+WMS cross-check 4:05 PM PT",
+      "plannedEmailInclusionRule": true
     },
     {
       "rn": "RN-5008667",
@@ -335,13 +281,13 @@
       "receipt": "RN-5008667",
       "customer": "GURUNANDA (ORG-655875)",
       "container": "TGSU5157415",
+      "appointment": "2026-07-09 16:00-18:00",
       "operationType": "Drop",
-      "lastVerifiedAt": "2026-07-08T13:06:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "appointmentTime": "2026-07-09T16:00:00-07:00",
       "staleStateGuard": true,
-      "verificationSource": "Outlook+WMS cross-check 1:06 PM PT",
-      "plannedEmailInclusionRule": true,
-      "appointment": "2026-07-09 16:00-18:00"
+      "verificationSource": "Outlook+WMS cross-check 4:05 PM PT",
+      "plannedEmailInclusionRule": true
     },
     {
       "rn": null,
@@ -351,101 +297,145 @@
       "inYard": false,
       "source": "outlook_email",
       "status": "PRE_ENTRY",
+      "receipt": "",
       "container": "TIIU6675897",
+      "appointment": "2026-07-09 12:00-14:00",
       "operationType": "Drop",
-      "lastVerifiedAt": "2026-07-08T13:46:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "appointmentTime": "2026-07-09T12:00:00-07:00",
       "staleStateGuard": true,
-      "verificationSource": "YMS+WMS cross-check 13:46 PT",
-      "plannedEmailInclusionRule": true,
-      "appointment": "2026-07-09 12:00-14:00",
-      "receipt": ""
-    },
-    {
-      "rn": "RN-5008587",
-      "dock": null,
-      "note": "FALSO VERDE CORREGIDO. YMS check-out 07/08 11:07 lane 14. ET-1119595 EQP-263500. WMS IMPORTED sin tasks. Ya no está en yarda.",
-      "color": "normal",
-      "notes": "FALSO VERDE CORREGIDO. YMS check-out 07/08 11:07 lane 14. ET-1119595 EQP-263500. WMS IMPORTED sin tasks. Ya no está en yarda.",
-      "inYard": false,
-      "status": "PRE_ENTRY",
-      "receipt": "RN-5008587",
-      "container": "BMOU6706676",
-      "appointment": "2026-07-08 09:00",
-      "lastVerifiedAt": "2026-07-08T13:46:00-07:00",
-      "appointmentTime": "2026-07-08 09:00",
-      "staleStateGuard": true,
-      "falseGreenCorrected": true,
-      "verificationSource": "YMS+WMS cross-check 13:46 PT",
+      "verificationSource": "YMS+WMS cross-check 16:05 PT",
       "plannedEmailInclusionRule": true
     },
     {
+      "rn": "RN-5008587",
+      "dock": "DOCK61",
+      "note": "🟡 PROMOVIDO 5:05 PM PT: WMS TASK-5311586 IN_PROGRESS DOCK61 (Daniela Gonzalez), started Jul 08 23:38 UTC. YMS ET-1120044 DOCK_CHECKED_IN DOCK61, GURUNANDA. Anti-estado-viejo: previamente revertido a NORMAL (falso verde), ahora tiene receiving legítimo IN_PROGRESS + YMS DOCK_CHECKED_IN.",
+      "color": "yellow",
+      "notes": "🟡 PROMOVIDO 5:05 PM PT: WMS TASK-5311586 IN_PROGRESS DOCK61 (Daniela Gonzalez), started Jul 08 23:38 UTC. YMS ET-1120044 DOCK_CHECKED_IN DOCK61, GURUNANDA. Anti-estado-viejo: previamente revertido a NORMAL (falso verde), ahora tiene receiving legítimo IN_PROGRESS + YMS DOCK_CHECKED_IN.",
+      "inYard": true,
+      "status": "EN_PROCESO",
+      "receipt": "RN-5008587",
+      "container": "BMOU6706676",
+      "appointment": "2026-07-08 09:00",
+      "lastVerifiedAt": "2026-07-08T17:10:24-07:00",
+      "appointmentTime": "2026-07-08 09:00",
+      "staleStateGuard": true,
+      "verificationSource": "YMS+WMS cross-check 5:05 PM PT — receiving IN_PROGRESS DOCK61",
+      "plannedEmailInclusionRule": true,
+      "assignedTo": "Daniela Gonzalez",
+      "antiEstadoViejo": true
+    },
+    {
       "rn": "RN-5008646",
-      "note": "FALSO VERDE CORREGIDO. YMS check-out 07/08 11:07 lane 14. ET-1119632 EQP-263541. WMS IMPORTED sin tasks. Cita original 07/09 08:00.",
+      "dock": null,
+      "note": "FALSO VERDE CORREGIDO (3:50→). YMS NEED_WINDOW_CHECK_IN con fotos OUT. WMS IMPORTED sin tasks. Cita original 07/09 08:00. La promoción a green fue prematura — YMS confirma que NO está en yarda.",
       "color": "normal",
-      "notes": "FALSO VERDE CORREGIDO. YMS check-out 07/08 11:07 lane 14. ET-1119632 EQP-263541. WMS IMPORTED sin tasks. Cita original 07/09 08:00.",
+      "notes": "FALSO VERDE CORREGIDO (3:50→). YMS NEED_WINDOW_CHECK_IN con fotos OUT. WMS IMPORTED sin tasks. Cita original 07/09 08:00. La promoción a green fue prematura — YMS confirma que NO está en yarda.",
       "inYard": false,
       "status": "PRE_ENTRY",
       "receipt": "RN-5008646",
       "container": "CAAU7998380",
       "appointment": "2026-07-09 08:00",
-      "lastVerifiedAt": "2026-07-08T13:46:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "appointmentTime": "2026-07-09 08:00",
       "staleStateGuard": true,
+      "verificationSource": "YMS+WMS cross-check 2026-07-08 16:05 PT",
       "falseGreenCorrected": true,
-      "verificationSource": "YMS+WMS cross-check 13:46 PT",
       "plannedEmailInclusionRule": true
     },
     {
-      "rn": null,
-      "dock": null,
-      "note": "FALSO VERDE CORREGIDO. YMS check-out 07/08 11:07. ET-1118934 EQP-262379. SIN RN en WMS. SIN customer Gurunanda en YMS. Item setup pendiente. ¿Se fue sin procesar?",
-      "color": "normal",
-      "notes": "FALSO VERDE CORREGIDO. YMS check-out 07/08 11:07. ET-1118934 EQP-262379. SIN RN en WMS. SIN customer Gurunanda en YMS. Item setup pendiente. ¿Se fue sin procesar?",
-      "inYard": false,
-      "status": "PRE_ENTRY",
-      "receipt": "",
+      "rn": "RN-5008676",
+      "dock": "DOCK132",
+      "note": "✅ CORRECCIÓN CRÍTICA 4:05 PM PT: RN-5008676 asignado (IMPORTED, creado Jul 8 21:39, customer GURUNANDA). YMS EV-124653 IN_YARD activo desde Jul 6 23:11. ET-1118934 GATE_CHECKED_IN sin checkout formal. El reporte de checkout Jul 8 11:07 era FALSO (confusión corregida). Sin receiving iniciado.",
+      "color": "green",
+      "entry": "ET-1118934",
+      "notes": "✅ CORRECCIÓN CRÍTICA 4:05 PM PT: RN-5008676 asignado (IMPORTED, creado Jul 8 21:39, customer GURUNANDA). YMS EV-124653 IN_YARD activo desde Jul 6 23:11. ET-1118934 GATE_CHECKED_IN sin checkout formal. El reporte de checkout Jul 8 11:07 era FALSO (confusión corregida). Sin receiving iniciado.",
+      "inYard": true,
+      "status": "EN_YARDA",
+      "receipt": "RN-5008676",
+      "customer": "GURUNANDA (ORG-655875)",
       "container": "CMAU8611150",
       "appointment": "2026-07-07 13:00-15:00",
-      "lastVerifiedAt": "2026-07-08T13:46:00-07:00",
+      "lastVerifiedAt": "2026-07-08T16:05:00-07:00",
       "appointmentTime": "2026-07-07 13:00-15:00",
       "staleStateGuard": true,
-      "falseGreenCorrected": true,
-      "verificationSource": "YMS+WMS cross-check 13:46 PT",
+      "verificationSource": "YMS+WMS cross-check 2026-07-08 16:05 PT — RN-5008676 confirmado",
       "plannedEmailInclusionRule": true
     }
   ],
   "alerts": [
-    "🗑️ REMOVIDO 2:50 PM PT: GN07072026UNIS-1135 (RN-188338) — WMS receiving TASK-5310812 FORCE_CLOSED + putaway CLOSED/completed; receipt puede seguir IN_PROGRESS, pero regla receiving+putaway completed => remover activos.",
-    "ℹ️ OUTLOOK CHECK 2:50 PM PT: planned rows visibles — TGSU5157420 07/08 20:00-22:00 Drop, TGSU5157415 07/09 16:00-18:00 Drop, TIIU6675897 07/09 12:00-14:00 Drop; TIIU6671567 queda excluido/error corregido.",
-    "🔄 CORRIDA 1:46 PM PT Jul 8: 2 removidos, 3 falsos verdes corregidos, 1 promovido a EN_PROCESO.",
-    "🔴 ALERTA ROLAS CRÍTICA: CSGU6429436 (RN-5008479) — CONTENEDOR FANTASMA en DOCK45. RN CLOSED pero equipo físico presente desde Jul 1.",
-    "🟠 ALERTA ROLAS: LabelKing07072026 (RN-5008571) — 4 DÍAS en yarda sin receiving iniciado.",
-    "🟠 ALERTA ROLAS: FFAU2426030 (RN-5008480) — Reportado VACÍO por Daniela 07/08.",
-    "🚨 FALSO VERDE CORREGIDO 1:46 PM: BMOU6706676 (RN-5008587) — YMS check-out 11:07 AM lane 14. Ya no está en yarda.",
-    "🚨 FALSO VERDE CORREGIDO 1:46 PM: CAAU7998380 (RN-5008646) — YMS check-out 11:07 AM lane 14. Ya no está en yarda.",
-    "🚨 FALSO VERDE CORREGIDO 1:46 PM: CMAU8611150 — YMS check-out 11:07 AM. SIN RN. SIN customer Gurunanda. ¿Se fue sin procesar?",
-    "🟡 PROMOVIDO 1:46 PM PT: MRKU9388930 (RN-188088) → EN_PROCESO/YELLOW — WMS IN_PROGRESS TASK-5311340 + YMS DOCK_CHECKED_IN DOCK63 13:19. ET-1119932.",
-    "🗑️ REMOVIDO 1:46 PM PT: TEMU8901490 (RN-5008566) — RN CLOSED. Recv+Putaway completos. Ciclo completo.",
-    "🗑️ REMOVIDO 1:46 PM PT: TIIU6671567 (RN-5008661) — ERROR CORREGIDO. Jasmine confirmó contenedor correcto es TIIU6675897.",
-    "⚠️ MONITOREO: TGBU7180260 (RN-5008591) — WMS IMPORTED sin inYardTime, sin tasks. YMS sin evidencia. Cita vencida.",
-    "⚠️ MONITOREO: SMCU1143199 (RN-5008592) — Gate-in con RN-183446 KARAKA (no Gurunanda). Mismatch customer.",
-    "⚠️ MONITOREO: ZCSU7781965 (RN-5008664) — Cita 12:00-14:00 VENCIDA. Sin evidencia YMS. Posible NO-SHOW.",
-    "ℹ️ INFO: 1:46 PM PT — 3 falsos verdes corregidos (salieron 11:07 AM en grupo), +1 promovido a yellow, +2 removidos. Summary: 2 green (▼3), 7 yellow (▲1), 16 normal. 25 activos, 18 excluidos.",
-    {
-      "level": "INFO",
-      "message": "RN-188044 (GN07012026UNIS-1130) removido: Recv FORCE_CLOSED + Putaway CLOSED. Ciclo completo.",
-      "timestamp": "2026-07-08T15:15:09-07:00"
-    }
+    "✅ CORRIDA 05:10 PM PT: 3 cambios aplicados. 21 activos (2g/6y/13n/0r). 22 excluidos.",
+    "🗑️ REMOVIDO 05:10 PM PT: EITU9363654/RN-5008569 — WMS CLOSED. Receiving+Putaway completos. YMS DOCK_CHECKED_OUT. Ciclo completo.",
+    "🟢 PROMOVIDO 05:10 PM PT: SMCU1143199/RN-5008592 → GREEN/EN_YARDA DOCK62 — GURUNANDA (ORG-655875). WMS inYard + TASK-5311587 NEW. YMS ET-1120046 WINDOW_CHECKED_IN DOCK62. KARAKA mismatch RESUELTO.",
+    "🟡 PROMOVIDO 05:10 PM PT: BMOU6706676/RN-5008587 → YELLOW/EN_PROCESO DOCK61 — WMS TASK-5311586 IN_PROGRESS (Daniela Gonzalez). YMS ET-1120044 DOCK_CHECKED_IN. Anti-estado-viejo: recuperado de falso verde.",
+    "📊 POST-CAMBIO: 2 green, 6 yellow, 13 normal, 0 red. Excluidos: 22.",
+    "🔴 CORRECCIÓN CRÍTICA 2026-07-08 16:00:27 PT: CAAU7998380 (RN-5008646) — REVERTIDO green→normal PRE_ENTRY. YMS NEED_WINDOW_CHECK_IN con fotos OUT. NO está en yarda.",
+    "🔴 CORRECCIÓN CRÍTICA 2026-07-08 16:00:27 PT: BMOU6706676 (RN-5008587) — REVERTIDO green→normal PRE_ENTRY. YMS NEED_WINDOW_CHECK_IN con fotos OUT. NO está en yarda.",
+    "🟠 ALERTA ROLAS: FFAU2426030 (RN-5008480) — Reportado VACÍO por Daniela 07/08."
   ],
+  "tenant": "LT",
+  "message": "CORRIDA Jul 8 05:10 PM PT — 3 cambios: EITU9363654/RN-5008569 removido (WMS CLOSED ciclo completo), SMCU1143199/RN-5008592 PROMOVIDO green DOCK62 (GURUNANDA, YMS+WMS confirmado), BMOU6706676/RN-5008587 PROMOVIDO yellow DOCK61 (receiving IN_PROGRESS). 21 activos (2g/6y/13n/0r). 22 excluidos.",
+  "summary": {
+    "red": 0,
+    "green": 2,
+    "normal": 13,
+    "yellow": 6,
+    "totalActive": 21,
+    "totalExcluded": 22,
+    "excludedThisRun": 1,
+    "manualAdditions": 0,
+    "rnUpdatesThisRun": 3,
+    "dockUpdatesThisRun": 2,
+    "reactivatedThisRun": 0,
+    "notesUpdatedThisRun": 3,
+    "falseGreensCorrected": 0,
+    "promotedToGreenThisRun": 1,
+    "demotedFromGreenThisRun": 0,
+    "promotedToYellowThisRun": 1,
+    "appointmentsUpdatedThisRun": 0
+  },
   "excluded": [
     {
+      "rn": "RN-5008569",
+      "container": "EITU9363654",
+      "reason": "WMS CLOSED (07/08 23:57 UTC). Receiving TASK-5311282 completed, Putaway TASK-5311461 completed. YMS DOCK_CHECKED_OUT. Cycle complete.",
+      "removedAt": "2026-07-08T17:10:24-07:00",
+      "recvTask": "TASK-5311282 completed",
+      "putTask": "TASK-5311461 completed",
+      "wasActive": true,
+      "wasColor": "yellow",
+      "wasStatus": "EN_PROCESO"
+    },
+    {
+      "rn": "RN-5008571",
+      "reason": "WMS FORCE_CLOSED — Recv TASK-5307907 FORCE_CLOSED + Putaway TASK-5311429 CLOSED. Estaba en verde falso.",
+      "putTask": "TASK-5311429 CLOSED",
+      "recvTask": "TASK-5307907 FORCE_CLOSED",
+      "wasColor": "green",
+      "container": "LabelKing07072026 PO8449",
+      "removedAt": "2026-07-08T15:50:00-07:00",
+      "wasActive": true,
+      "wasStatus": "EN_YARDA"
+    },
+    {
+      "rn": "RN-188044",
+      "reason": "WMS receive FORCE_CLOSED + putaway CLOSED — ambos tasks completados. Recv TASK-5306724 FORCE_CLOSED, Putaway TASK-5310048 CLOSED.",
+      "putTask": "TASK-5310048 CLOSED",
+      "recvTask": "TASK-5306724 FORCE_CLOSED",
+      "wasColor": "yellow",
+      "container": "GN07012026UNIS-1130",
+      "removedAt": "2026-07-08T15:50:00-07:00",
+      "wasActive": true,
+      "wasStatus": "EN_PROCESO"
+    },
+    {
       "rn": "RN-188338",
-      "container": "GN07072026UNIS-1135",
       "reason": "RN-188338 / GN07072026UNIS-1135 removido por closedRemovalRule: WMS encontró receiving TASK-5310812 FORCE_CLOSED + putaway CLOSED/completed aunque receipt/RN siga IN_PROGRESS. Regla operativa: receiving+putaway completed => ocultar/remover de activos.",
-      "removedAt": "2026-07-08T14:50:00-07:00",
-      "recvTask": "TASK-5310812 FORCE_CLOSED",
       "putTask": "CLOSED",
+      "recvTask": "TASK-5310812 FORCE_CLOSED",
+      "container": "GN07072026UNIS-1135",
+      "removedAt": "2026-07-08T14:50:00-07:00",
       "wasActive": true
     },
     {
@@ -558,16 +548,9 @@
       "container": "LabelKing07012026 PO7937",
       "removedAt": "2026-07-08T09:30:00-07:00",
       "wasActive": true
-    },
-    {
-      "rn": "RN-188044",
-      "container": "GN07012026UNIS-1130",
-      "reason": "RN CLOSED: Recv TASK-5306724 FORCE_CLOSED + Putaway TASK-5310048 CLOSED (Jul 08 20:23). Ciclo completo.",
-      "removedAt": "2026-07-08T15:15:09-07:00",
-      "color": "yellow",
-      "dock": "DOCK3"
     }
   ],
+  "facility": "LT_F1",
   "guardrails": {
     "schedule": {
       "status": "ACTIVE",
@@ -580,7 +563,7 @@
       "status": "ACTIVE"
     },
     "antiEstadoViejo": {
-      "note": "1:46 PM PT Jul 8: 1 PROMOCIÓN anti-estado-viejo — MRKU9388930 (WMS IN_PROGRESS TASK-5311340 + YMS DOCK_CHECKED_IN DOCK63 13:19).",
+      "note": "05:10 PM PT: 2 anti-estado-viejo — SMCU1143199 normal→green, BMOU6706676 normal→yellow.",
       "status": "ACTIVE"
     },
     "staleStateGuard": {
@@ -588,16 +571,16 @@
     },
     "closedRemovalRule": {
       "status": "ACTIVE",
-      "removalNote": "1:46 PM PT Jul 8: 2 removals — TEMU8901490 (CLOSED), TIIU6671567 (error corregido). 18 excluidos total.",
-      "removalsThisRun": 2,
+      "removalNote": "05:10 PM PT: 1 removal — EITU9363654/RN-5008569 (WMS CLOSED ciclo completo). 22 excluidos total.",
+      "removalsThisRun": 1,
       "reactivationsThisRun": 0
     },
     "greenEvidenceRule": {
       "status": "ACTIVE",
-      "promotionNote": "1:46 PM PT Jul 8: Sin promociones a green. 3 DEMOTIONS: BMOU6706676, CAAU7998380, CMAU8611150 (todos check-out 11:07 AM).",
-      "demotionsThisRun": 3,
-      "promotionsThisRun": 0,
-      "falseGreensDetected": 3
+      "promotionNote": "05:10 PM PT: 1 PROMOTION — SMCU1143199/RN-5008592 green DOCK62 (GURUNANDA, YMS+WMS confirmado).",
+      "demotionsThisRun": 0,
+      "promotionsThisRun": 1,
+      "falseGreensDetected": 0
     },
     "preserveAssignments": {
       "status": "ACTIVE"
@@ -607,51 +590,35 @@
       "additionsThisRun": 0
     }
   },
+  "lastUpdated": "2026-07-08T17:10:24-07:00",
+  "totalActive": 21,
   "_corrections": {
-    "alert": "CORRIDA Jul 8 2:50 PM PT — Follow-up Outlook/WMS: GN07072026UNIS-1135/RN-188338 removido de activos por receiving FORCE_CLOSED + putaway CLOSED/completed aunque receipt siga IN_PROGRESS. Planned Outlook confirmados visibles: TGSU5157420, TGSU5157415, TIIU6675897 (reemplaza/actualiza TIIU6671567). 24 activos (2 green, 6 yellow, 16 normal). 19 excluidos.",
-    "timestamp": "2026-07-08T14:50:00-07:00",
+    "alert": "CORRIDA Jul 8 05:10 PM PT — 3 cambios: EITU9363654/RN-5008569 removido (WMS CLOSED), SMCU1143199/RN-5008592 → green DOCK62 (GURUNANDA), BMOU6706676/RN-5008587 → yellow DOCK61 (receiving IN_PROGRESS). 21 activos (2g/6y/13n/0r). 22 excluidos.",
+    "timestamp": "2026-07-08T17:10:24-07:00",
+    "ymsCheckNote": "SMCU1143199: YMS ET-1120046 WINDOW_CHECKED_IN DOCK62, GURUNANDA. BMOU6706676: YMS ET-1120044 DOCK_CHECKED_IN DOCK61, GURUNANDA.",
+    "demotionsThisRun": [],
+    "promotionsThisRun": [
+      {
+        "rn": "RN-5008592",
+        "change": "NORMAL→GREEN EN_YARDA DOCK62",
+        "reason": "GURUNANDA confirmado. WMS inYard + TASK-5311587. YMS ET-1120046 WINDOW_CHECKED_IN DOCK62.",
+        "container": "SMCU1143199"
+      },
+      {
+        "rn": "RN-5008587",
+        "change": "NORMAL→YELLOW EN_PROCESO DOCK61",
+        "reason": "WMS TASK-5311586 IN_PROGRESS. YMS ET-1120044 DOCK_CHECKED_IN DOCK61.",
+        "container": "BMOU6706676"
+      }
+    ],
     "excludedThisRun": [
       {
-        "rn": "RN-188338",
-        "container": "GN07072026UNIS-1135",
-        "reason": "RN-188338 / GN07072026UNIS-1135 removido por closedRemovalRule: WMS encontró receiving TASK-5310812 FORCE_CLOSED + putaway CLOSED/completed aunque receipt/RN siga IN_PROGRESS. Regla operativa: receiving+putaway completed => ocultar/remover de activos."
-      }
-    ],
-    "activeRemovedThisRun": [
-      {
-        "rn": "RN-188338",
-        "dock": "DOCK38",
-        "note": "RECEIVING IN_PROGRESS. WMS inYardTime Jul 08. TASK-5310812 IN_PROGRESS (employee884363). DOCK38. ET-1119689. EQP-262944.",
-        "color": "yellow",
-        "notes": "RECEIVING IN_PROGRESS. WMS inYardTime Jul 08. TASK-5310812 IN_PROGRESS (employee884363). DOCK38. ET-1119689. EQP-262944.",
-        "inYard": true,
-        "status": "EN_PROCESO",
-        "receipt": "RN-188338",
-        "customer": "GURUNANDA (ORG-655875)",
-        "container": "GN07072026UNIS-1135",
-        "lastVerifiedAt": "2026-07-08T13:46:00-07:00",
-        "antiEstadoViejo": true,
-        "staleStateGuard": true,
-        "verificationSource": "WMS+YMS cross-check 13:46 PT"
-      }
-    ],
-    "plannedRowsVerified": [
-      {
-        "container": "TGSU5157420",
-        "rn": "RN-5008666",
-        "appointment": "07/08 20:00-22:00 Drop"
-      },
-      {
-        "container": "TGSU5157415",
-        "rn": "RN-5008667",
-        "appointment": "07/09 16:00-18:00 Drop"
-      },
-      {
-        "container": "TIIU6675897",
-        "rn": null,
-        "appointment": "07/09 12:00-14:00 Drop",
-        "replaces": "TIIU6671567"
+        "rn": "RN-5008569",
+        "container": "EITU9363654",
+        "reason": "WMS CLOSED. Receiving+Putaway completos. YMS DOCK_CHECKED_OUT."
       }
     ]
-  }
+  },
+  "totalExcluded": 22,
+  "verificationSource": "YMS+WMS cross-check 05:10 PM PT"
 }
