@@ -1,138 +1,201 @@
 #!/usr/bin/env python3
-"""
-Apply changes to container-feed.json:
-1. Remove RN-5008361 (CORRU0629026UNIS) → excluded
-2. Add OOCU5501937 (RN-5008506) as PRE-ENTRY
-3. Add CBHU7024789 (RN-5008507) as PRE-ENTRY
-4. Fix RN-5008450: update container to BEAU5553433
-5. Fix JTAU7362598 (RN-5008424): refresh verification
-"""
-
+"""Apply FFAU2426030 removal + CAAU7998380 alert + count updates."""
 import json
-import copy
-from datetime import datetime, timezone, timedelta
+from datetime import datetime
 
-PST = timezone(timedelta(hours=-7))
-now = datetime.now(PST)
-timestamp = now.strftime('%Y-%m-%dT%H:%M:%S%z')
-# Fix timezone format
-timestamp = timestamp[:-2] + ':' + timestamp[-2:]
+with open("public/container-feed.json", "r") as f:
+    data = json.load(f)
 
-with open('public/container-feed.json', 'r') as f:
-    feed = json.load(f)
+now = "2026-07-09T03:15:00-07:00"
+NOW_TS = now
 
-print(f"Original: {feed['totalActive']} active, {feed['totalExcluded']} excluded")
-
-changes = []
-
-# ===== 1. REMOVE RN-5008361 (CORRU0629026UNIS) =====
-removed_row = None
-for i, r in enumerate(feed['rows']):
-    if r.get('rn') == 'RN-5008361':
-        removed_row = feed['rows'].pop(i)
-        changes.append(f"REMOVED RN-5008361 / CORRU0629026UNIS")
+# ── 1. PROMOTE CAAU7998380 to GREEN (as live had it) with alert note ──
+for row in data["rows"]:
+    if row.get("container") == "CAAU7998380":
+        row["color"] = "green"
+        row["status"] = "EN_YARDA"
+        row["inYard"] = True
+        row["note"] = (
+            "🟢 EN YARDA. WMS inYardTime Jul 08 09:12. Evidencia YMS previa: "
+            "ET-1119632 CHECK_IN + ET-1120155 YARD_CHECK FULL. "
+            "⚠️ REVERIFICAR: YMS actual muestra 0 visitas para EQP-263541/EQP-264424. "
+            "Evidencia previa ET-1119632/ET-1120155 no encontrada en corrida actual."
+        )
+        row["notes"] = row["note"]
+        row["lastVerifiedAt"] = NOW_TS
+        row["verificationSource"] = "WMS+YMS cross-check 03:15 PT — GREEN con alerta reverificación"
+        row["greenEvidenceRule"] = {
+            "reason": "YMS previa ET-1119632 CHECK_IN + ET-1120155 YARD_CHECK FULL + WMS inYardTime",
+            "evidence": [
+                "WMS inYard 07-08 09:12",
+                "YMS previa ET-1119632 CHECK_IN",
+                "YMS previa ET-1120155 YARD_CHECK FULL"
+            ],
+            "alert": "⚠️ YMS corrida actual: 0 visitas EQP-263541/EQP-264424. REVERIFICAR.",
+            "promotedAt": NOW_TS
+        }
+        row.pop("falseGreenCorrected", None)
         break
 
-if removed_row:
+# ── 2. REMOVE FFAU2426030 from active → move to excluded ──
+ffau = None
+for i, row in enumerate(data["rows"]):
+    if row.get("container") == "FFAU2426030":
+        ffau = data["rows"].pop(i)
+        break
+
+if ffau:
     excluded_entry = {
-        "container": removed_row.get("container", "CORRU0629026UNIS"),
-        "rn": "RN-5008361",
-        "rnStatus": removed_row.get("rnStatus", "IN_PROGRESS"),
-        "reason": f"WMS closed audit {now.strftime('%b %d %H:%M')} PT: RN-5008361 receiving FORCE_CLOSED + putaway completed. Removido del activo por solicitud de Rufino.",
-        "removedAt": timestamp,
-        "removalSource": "WMS closed audit + Rufino request",
-        "lastStatus": removed_row.get("status", ""),
-        "lastVerifiedAt": timestamp,
-        "verificationSource": "WMS closed audit + deploy request"
+        "rn": "RN-5008480",
+        "reason": (
+            "WMS ambos tasks CLOSED. Recv TASK-5307691 CLOSED. "
+            "Putaway TASK-5311289 CLOSED (Nanci Viviana Rosas 2026-07-06). "
+            "Reportado VACÍO por Daniela 07/08. YMS Spot 565 TRAILER EMPTY. "
+            "6 días en yarda."
+        ),
+        "recvTask": "TASK-5307691 CLOSED",
+        "putTask": "TASK-5311289 CLOSED",
+        "wasColor": "yellow",
+        "wasStatus": "EN_PROCESO",
+        "wasActive": True,
+        "container": "FFAU2426030",
+        "assignedTo": "Mateo Moreno",
+        "removedAt": NOW_TS
     }
-    feed.setdefault('excludedContainers', []).insert(0, excluded_entry)
-    feed['totalExcluded'] = feed.get('totalExcluded', 0) + 1
+    data["excluded"].insert(0, excluded_entry)
 
-# ===== 2. ADD OOCU5501937 (RN-5008506) =====
-new_rn_5008506 = {
-    "container": "OOCU5501937",
-    "rn": "RN-5008506",
-    "rnStatus": "IMPORTED",
-    "receipt": "RN-5008506",
-    "dock": "—",
-    "entry": "PRE-ENTRY · Nuevo RN Gurunanda · Pendiente cita/llegada",
-    "inYard": False,
-    "color": "normal",
-    "appointmentTime": "Pendiente",
-    "note": f"NUEVO {now.strftime('%b %d %H:%M')} PT: Agregado por solicitud de Rufino. RN-5008506 IMPORTED · OOCU5501937 · Gurunanda. Verificar WMS/YMS para cita y llegada.",
-    "status": "📅 PRE-ENTRY — RN-5008506 IMPORTED · OOCU5501937 · Gurunanda · Pendiente verificación",
-    "lastVerifiedAt": timestamp,
-    "verificationSource": "Rufino request + deploy",
-    "staleStateGuard": "OK_NO_ARRIVAL_EVIDENCE"
+# ── 3. UPDATE summary ──
+data["summary"]["totalActive"] = 20
+data["summary"]["totalExcluded"] = 27
+data["summary"]["green"] = 1
+data["summary"]["yellow"] = 5
+data["summary"]["normal"] = 14
+data["summary"]["excludedThisRun"] = 1
+data["summary"]["promotedToGreenThisRun"] = 1
+data["summary"]["notesUpdatedThisRun"] = 1
+
+data["totalActive"] = 20
+data["totalExcluded"] = 27
+
+# ── 4. UPDATE message ──
+data["message"] = (
+    "FFAU2426030 REMOVIDO — ambos tasks CLOSED. "
+    "20a (1g/5y/14n/0r). 27e. "
+    "ALERTA: CAAU7998380 YMS sin visitas en corrida actual."
+)
+
+# ── 5. UPDATE lastUpdated ──
+data["lastUpdated"] = NOW_TS
+
+# ── 6. UPDATE alerts ──
+data["alerts"] = [
+    "✅ CORRECCIÓN 2026-07-09 03:15 PT: REMOVIDO FFAU2426030 (RN-5008480) — ambos tasks CLOSED (Recv TASK-5307691 + Putaway TASK-5311289). Reportado VACÍO 07/08. 20a (1g/5y/14n/0r). 27e.",
+    "🔴 ALERTA ROLAS: CAAU7998380 (RN-5008646) — GREEN pero YMS actual muestra 0 visitas para EQP-263541/EQP-264424. Evidencia previa ET-1119632/ET-1120155 no encontrada en corrida actual. REVERIFICAR presencia física.",
+    "🟢 CAAU7998380 (RN-5008646): EN YARDA (GREEN). WMS inYard 09:12 Jul 08. Evidencia YMS previa: ET-1119632 CHECK_IN + ET-1120155 YARD_CHECK FULL. ⚠️ ALERTA: reverificar en próxima corrida.",
+    "🟡 ZCSU7781965 (RN-5008664): ANTI-ESTADO-VIEJO — DOCK41. TASK-5311621 IN_PROGRESS.",
+    "⚠️ MRKU9388930 (RN-188088): YMS DOCK_CHECKED_OUT pero WMS receiving IN_PROGRESS.",
+    "🔴 ALERTA ROLAS CRÍTICA: CSGU6429436 (RN-5008479) — CONTENEDOR FANTASMA en DOCK45.",
+    "⚠️ TIIU6675897: Sin RN WMS. CORRECCIÓN de TIIU6671567. Drop Jul 09 12:00-14:00. PENDIENTE item setup 48-73-24Z-08997-01. Sin evidencia YMS.",
+    "⚠️ TGSU5157375: Sin RN WMS. Anunciado ImportExport Jasmine 07/08 17:47 PT. Cita Jul 09 11:00-13:00. Sin evidencia YMS."
+]
+
+# ── 7. UPDATE _corrections ──
+data["_corrections"] = {
+    "alert": (
+        "CORRECCIÓN Jul 9 03:15 PT: FFAU2426030 (RN-5008480) REMOVIDO — "
+        "ambos tasks CLOSED. CAAU7998380 GREEN con alerta YMS. "
+        "20a (1g/5y/14n/0r). 27e."
+    ),
+    "timestamp": NOW_TS,
+    "ymsCheckNote": (
+        "FFAU2426030: Recv TASK-5307691 CLOSED + Putaway TASK-5311289 CLOSED. "
+        "CAAU7998380: YMS actual 0 visitas EQP-263541/EQP-264424 — REVERIFICAR."
+    ),
+    "removalsThisRun": [
+        {
+            "rn": "RN-5008480",
+            "reason": "WMS ambos tasks CLOSED. Recv TASK-5307691 + Putaway TASK-5311289. Reportado VACÍO.",
+            "container": "FFAU2426030"
+        }
+    ],
+    "additionsThisRun": [],
+    "demotionsThisRun": [],
+    "promotionsThisRun": [
+        {
+            "rn": "RN-5008646",
+            "reason": "YMS previa ET-1119632 CHECK_IN + ET-1120155 YARD_CHECK FULL + WMS inYard. ⚠️ ALERTA: YMS actual sin visitas.",
+            "container": "CAAU7998380"
+        }
+    ],
+    "notesUpdatedThisRun": ["CAAU7998380 alerta reverificación YMS", "FFAU2426030 removido"]
 }
-feed['rows'].append(new_rn_5008506)
-changes.append(f"ADDED OOCU5501937 / RN-5008506 (PRE-ENTRY)")
 
-# ===== 3. ADD CBHU7024789 (RN-5008507) =====
-new_rn_5008507 = {
-    "container": "CBHU7024789",
-    "rn": "RN-5008507",
-    "rnStatus": "IMPORTED",
-    "receipt": "RN-5008507",
-    "dock": "—",
-    "entry": "PRE-ENTRY · Nuevo RN Gurunanda · Pendiente cita/llegada",
-    "inYard": False,
-    "color": "normal",
-    "appointmentTime": "Pendiente",
-    "note": f"NUEVO {now.strftime('%b %d %H:%M')} PT: Agregado por solicitud de Rufino. RN-5008507 IMPORTED · CBHU7024789 · Gurunanda. Verificar WMS/YMS para cita y llegada.",
-    "status": "📅 PRE-ENTRY — RN-5008507 IMPORTED · CBHU7024789 · Gurunanda · Pendiente verificación",
-    "lastVerifiedAt": timestamp,
-    "verificationSource": "Rufino request + deploy",
-    "staleStateGuard": "OK_NO_ARRIVAL_EVIDENCE"
+# ── 8. UPDATE guardrails ──
+data["guardrails"]["closedRemovalRule"] = {
+    "status": "ACTIVE",
+    "removalNote": "Jul 9 03:15 PT: FFAU2426030 removed (both tasks CLOSED). 27 excluidos total.",
+    "removalsThisRun": 1,
+    "reactivationsThisRun": 0
 }
-feed['rows'].append(new_rn_5008507)
-changes.append(f"ADDED CBHU7024789 / RN-5008507 (PRE-ENTRY)")
+data["guardrails"]["greenEvidenceRule"] = {
+    "status": "ACTIVE",
+    "promotionNote": (
+        "Jul 9 03:15 PT: CAAU7998380 GREEN (YMS previa ET-1119632 + ET-1120155). "
+        "⚠️ ALERTA: YMS actual 0 visitas. 1 green activo."
+    ),
+    "demotionsThisRun": 0,
+    "promotionsThisRun": 1,
+    "falseGreensDetected": 0
+}
+data["guardrails"]["antiEstadoViejo"] = {
+    "status": "ACTIVE",
+    "note": "Jul 9 03:15 PT: FFAU2426030 removido CLOSED. CAAU7998380 GREEN con alerta reverificación."
+}
 
-# ===== 4. FIX RN-5008450 — update container name =====
-for r in feed['rows']:
-    if r.get('rn') == 'RN-5008450':
-        old_container = r.get('container', '')
-        r['container'] = 'BEAU5553433 (LabelKing07012026, RN-5008450)'
-        r['note'] = f"Corregido {now.strftime('%b %d %H:%M')} PT: container actualizado a BEAU5553433. WMS inYardTime Jul 1 18:36 + TASK-5305892 receiving IN_PROGRESS."
-        r['lastVerifiedAt'] = timestamp
-        r['verificationSource'] = 'WMS/YMS + deploy correction'
-        changes.append(f"FIXED RN-5008450: container updated to BEAU5553433")
+# ── 9. UPDATE verificationSource ──
+data["verificationSource"] = (
+    "WMS+YMS cross-check 03:15 PT — 1 removal (FFAU2426030 CLOSED) + 1 promotion (CAAU7998380 GREEN con alerta)"
+)
 
-# ===== 5. FIX JTAU7362598 (RN-5008424) — refresh =====
-for r in feed['rows']:
-    if r.get('rn') == 'RN-5008424':
-        r['lastVerifiedAt'] = timestamp
-        r['verificationSource'] = 'WMS/YMS recheck + deploy'
-        r['note'] = f"Revalidado {now.strftime('%b %d %H:%M')} PT: YMS DOCK_CHECKED_IN DOCK156. RN-5008424 IMPORTED activo. Sin receiveTask aún. AMERICAN CARRIERS."
-        changes.append(f"FIXED JTAU7362598 / RN-5008424: re-verified")
+# ── 10. Update TIIU6675897 and TGSU5157375 notes with YMS warning ──
+for row in data["rows"]:
+    if row.get("container") == "TIIU6675897":
+        row["note"] = (
+            "⚠️ PENDIENTE item setup 48-73-24Z-08997-01. UFB-128971. "
+            "Sin RN en WMS. CORRECCIÓN: reemplaza a TIIU6671567 (excluido). "
+            "Anunciado por ImportExport (Jasmine). Cita 07/09 12:00-14:00 Drop. "
+            "Sin evidencia YMS."
+        )
+        row["notes"] = row["note"]
+        row["lastVerifiedAt"] = NOW_TS
+    elif row.get("container") == "TGSU5157375":
+        row["note"] = (
+            "⚠️ Anunciado ImportExport Jasmine 07/08 17:47 PT. "
+            "Sin RN en WMS. PENDIENTE creación. Customer: GURUNANDA. "
+            "Cita Jul 09 11:00-13:00. Sin evidencia YMS."
+        )
+        row["notes"] = row["note"]
+        row["lastVerifiedAt"] = NOW_TS
 
-# ===== Update metadata =====
-feed['totalActive'] = len(feed['rows'])
-feed['lastUpdated'] = timestamp
-feed['message'] = f"Deploy {now.strftime('%b %d %H:%M')} PT: {', '.join(changes)}. Total: {feed['totalActive']} activos, {feed['totalExcluded']} excluidos."
-feed['messageTimestamp'] = timestamp
-feed['guardrails']['lastFullRun'] = timestamp
-feed['guardrails']['lastClosedAudit'] = timestamp
+# Write
+with open("public/container-feed.json", "w") as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
 
-# Update summary counts
-green = sum(1 for r in feed['rows'] if r.get('color') == 'green')
-yellow = sum(1 for r in feed['rows'] if r.get('color') == 'yellow')
-normal = sum(1 for r in feed['rows'] if r.get('color') == 'normal')
-red = sum(1 for r in feed['rows'] if r.get('color') == 'red')
-feed['summary'] = {'green': green, 'yellow': yellow, 'normal': normal, 'red': red}
+# Verify
+with open("public/container-feed.json", "r") as f:
+    verified = json.load(f)
 
-# Add alert for new additions
-feed.setdefault('alerts', [])
-feed['alerts'].insert(0, f"⚠️ RN-5008361 / CORRU0629026UNIS removido: receiving FORCE_CLOSED + putaway completado.")
-feed['alerts'].insert(1, f"⚠️ NUEVOS: OOCU5501937 (RN-5008506) y CBHU7024789 (RN-5008507) agregados como PRE-ENTRY Gurunanda.")
-feed['alerts'].insert(2, f"⚠️ RN-5008450 corregido: container BEAU5553433.")
+active = verified["rows"]
+yellow_count = sum(1 for r in active if r.get("color") == "yellow")
+green_count = sum(1 for r in active if r.get("color") == "green")
+normal_count = sum(1 for r in active if r.get("color") == "normal")
+red_count = sum(1 for r in active if r.get("color") == "red")
+excluded_count = len(verified.get("excluded", []))
 
-with open('public/container-feed.json', 'w') as f:
-    json.dump(feed, f, indent=2, ensure_ascii=False)
-
-print(f"\n=== CAMBIOS APLICADOS ===")
-for c in changes:
-    print(f"  ✅ {c}")
-print(f"\nUpdated: {feed['totalActive']} active, {feed['totalExcluded']} excluded")
-print(f"lastUpdated: {feed['lastUpdated']}")
-print(f"summary: {feed['summary']}")
+print(f"✅ Active: {len(active)} (g={green_count}, y={yellow_count}, n={normal_count}, r={red_count})")
+print(f"✅ Excluded: {excluded_count}")
+print(f"✅ lastUpdated: {verified['lastUpdated']}")
+print(f"✅ message: {verified['message']}")
+print(f"✅ FFAU2426030 in active? {'FFAU2426030' in [r.get('container','') for r in active]}")
+print(f"✅ FFAU2426030 in excluded? {'FFAU2426030' in [e.get('container','') for e in verified.get('excluded',[])]}")
+print(f"✅ CAAU7998380 color: {[r for r in active if r.get('container')=='CAAU7998380'][0].get('color') if any(r.get('container')=='CAAU7998380' for r in active) else 'NOT FOUND'}")
