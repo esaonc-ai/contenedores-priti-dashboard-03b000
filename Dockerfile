@@ -1,1 +1,9 @@
-# FORCE_REDEPLOY 2026-07-17T08:34:00Z — RUTINA 2 STATUS REAL 07/17 01:32 PT: 18a (1r/12y/5b). 79e.\nFROM nginx:1.31-alpine\nCOPY public/ /usr/share/nginx/html/\nCOPY public/nginx/feed-no-cache.conf /etc/nginx/conf.d/feed-no-cache.conf\nEXPOSE 80\n
+FROM node:20-alpine
+WORKDIR /app
+COPY package.json ./
+RUN npm install --production
+COPY server.js ./
+COPY container-feed.json ./
+COPY public/ ./public/
+EXPOSE 3000
+CMD ["node", "server.js"]

@@ -1,0 +1,12 @@
+{
+  "name": "priti-gurunanda-dashboard",
+  "version": "1.0.0",
+  "description": "Contenedores Priti Dashboard — Monitoreo Yarda Gurunanda",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.21.2"
+  }
+}
