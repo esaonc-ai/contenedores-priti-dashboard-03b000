@@ -1,651 +1,651 @@
 {
-  "activos": [
-    {
-      "ref": "ONEU0796867",
-      "rn": "—",
-      "loc": "PRE_ENTRY — equipo en YMS (EQP-276288) pero sin visitas — sin evidencia de llegada",
-      "cita": "— (cámara 07/19 ~04:18)",
-      "dash": "🔵 P1 ⚠️ SIN LLEGADA — Equipo existe en YMS (EQP-276288) sin visitas. ET-1125294 anterior ya no existe.",
-      "real": "🔵 R6 LLEGADAS 08/02 23:55 PT: YMS confirma llegada HISTÓRICA (no nueva): ET-1127737 GATE_CHECK_IN 07/23 19:19 → DROP_OFF_DELIVERY FULL (SPOT520, seal CN34375BD) → RECEIVE TASK-5326351 → DOCK67 (07/24). EMPTY_AFTER_OFFLOADED. inYard=FALSE — ya NO está en yarda. RN-5008976. Visit EV-135625 mal indexada bajo MLAZ009/EQP-276289.",
-      "color": "blue",
-      "recibe": "—",
-      "notas": "🔵 P1 LLEGADA HISTÓRICA (07/23) pero ya FUERA de yarda (EMPTY_AFTER_OFFLOADED, inYard FALSE). RN-5008976. No es llegada nueva. Verificar cierre con Rutina STATUS REAL."
-    },
-    {
-      "ref": "FFAU2716677",
-      "rn": "RN-5008860 ⚠️ MISMATCH (ET muestra RN-5008569/EITU9363654 CLOSED)",
-      "loc": "🆕 ET-1125306 GATE_CHECKED_IN (HOY 07:02) Lane 11 — INDEXADO COMO TRAILER — SIN DOCK",
-      "cita": "07/17 11:00 PM 🚨 VENCIDA ~53h — APPT-6034064",
-      "dash": "🟡 P2 🚨 LLEGÓ HOY 07:02 — MISMATCH RN (ET→RN-5008569, WMS→RN-5008860) — INDEXADO COMO TRAILER — UOM FALTANTE — SIN TASKS",
-      "real": "🟡 R4 09:17: ET-1125306 GATE_CHECKED_IN 07:02 AM (Steve Flores, tractor ZP37368, Realistic Transportation). RN en ET: RN-5008569 (EITU9363654, CLOSED Jul 8 — heredado del trailer). WMS: RN-5008860 IMPORTED GURUNANDA ✅. ⚠️ UOM FALTANTE: 'New UOM… please set up'. SIN TASKS.",
-      "color": "yellow",
-      "recibe": "— (SIN TASKS, UOM bloqueado)",
-      "notas": "🟡 P2 LLEGÓ HOY. MISMATCH RN (ET vs WMS). INDEXADO COMO TRAILER. UOM issue bloquea creación de tasks. Urgente corregir UOM y crear tasks."
-    },
-    {
-      "ref": "MATU2754330",
-      "rn": "RN-5008904",
-      "loc": "SPOT419 — ET-1124240 — EQP MATU2754330 CONTAINER inYard (nuevo ET-1125323 dock 530)",
-      "cita": "07/16 06:18 PM ⚠️ ~87h (3.6d)",
-      "dash": "🟡 P3 🚨 PUTAWAY PENDIENTE ~87h — RECEIVE CLOSED ✅ + PUTAWAY IN_PROGRESS 🔄 (jlnieves, 26 LPs)",
-      "real": "🟡 R4 09:17: ET-1124240 DOCK_CHECKED_IN → SPOT419, EMPTY_AFTER_OFFLOADED. WMS: RN-5008904 IN_PROGRESS GURUNANDA ✅. TASK-5321331 RECEIVE CLOSED ✅. TASK-5321419 PUTAWAY 🔄 IN_PROGRESS (jlnieves, 26 LPs, iniciado 07/20 15:51). RN-5008825 histórico CANCELLED.",
-      "color": "yellow",
-      "recibe": "TASK-5321331 RECEIVE ✅ + TASK-5321419 PUTAWAY 🔄 (jlnieves, 26 LPs)",
-      "notas": "🟡 P3 PUTAWAY PENDIENTE ~87h. RECEIVE cerrado hoy. PUTAWAY iniciado. NO CERRAR hasta putaway completado."
-    },
-    {
-      "ref": "FTAU2755048",
-      "rn": "RN-5008772",
-      "loc": "DOCK62 (566) — ET-1122943 — EQP FTAU2755048 ⚠️ TRAILER inYard FALSE",
-      "cita": "07/14 04:06 PM 🚨 ~137h (5.7d)",
-      "dash": "🟡 P4 🚨 RECEIVING PENDIENTE ~137h — OFFLOAD+LP_SETUP IN_PROGRESS — YMS EMPTY_AFTER_OFFLOADED — inYard FALSE — SIN PUTAWAY",
-      "real": "🟡 R4 09:17: ET-1122943 DOCK_CHECKED_IN DOCK62. YMS: EMPTY_AFTER_OFFLOADED, inYard=FALSE. WMS: RN-5008772 IN_PROGRESS GURUNANDA ✅. TASK-5316381 OFFLOAD 🔄 IN_PROGRESS + LP_SETUP 🔄. SIN PUTAWAY TASK.",
-      "color": "yellow",
-      "recibe": "Fatima Del Rosario Ponce (TASK-5316381) + ⚠️ SIN PUTAWAY",
-      "notas": "🟡 P4 RECEIVING PENDIENTE 5.7d. OFFLOAD+LP_SETUP IN_PROGRESS. inYard FALSE. SIN PUTAWAY. Mayor antigüedad en proceso."
-    },
-    {
-      "ref": "GN07162026UNIS-1152",
-      "rn": "RN-189010",
-      "loc": "DOCK1 LIVE (ET-1124607) + Trailer 546 (ET-1124161) sin dock",
-      "cita": "07/17 10:19 AM ⚠️ ~69h — LIVE",
-      "dash": "🟡 P5 ⚠️ LIVE DOCK1 + TRAILER 546 — OFFLOAD IN_PROGRESS + LP_SETUP NEW — SIN PUTAWAY",
-      "real": "🟡 R4 09:17: ET-1124607 DOCK_CHECKED_IN DOCK1 LIVE. ET-1124161 WINDOW_CHECKED_IN Trailer 546. Driver Victor Carrillo, carrier Top Notch. WMS: RN-189010 IN_PROGRESS GURUNANDA ✅. TASK-5319459 OFFLOAD 🔄 + LP_SETUP ⬜ NEW (rmunguia). SIN PUTAWAY.",
-      "color": "yellow",
-      "recibe": "Rufino Munguia (TASK-5319459) + ⚠️ SIN PUTAWAY",
-      "notas": "🟡 P5 LIVE DOCK1 + TRAILER 546 ~69h. OFFLOAD IN_PROGRESS. LP_SETUP NEW. SIN PUTAWAY."
-    },
-    {
-      "ref": "GN07172026UNIS-1153",
-      "rn": "RN-189025",
-      "loc": "🆕 DOCK 525 (ET-1125316) — Trailer 53393 inYard",
-      "cita": "07/17 07:00 AM 🚨 VENCIDA ~72h",
-      "dash": "🟡 P6 🚨 RECEIVING ACTIVO ~72h — DOCK 525 — OFFLOAD+LP_SETUP IN_PROGRESS (2/7 items) — SIN PUTAWAY",
-      "real": "🟡 R4 09:17: ET-1125316 DOCK 525 (nuevo). WMS: RN-189025 IN_PROGRESS GURUNANDA ✅. TASK-5321309 RECEIVE 🔄 IN_PROGRESS (iniciado 07/20 14:28). OFFLOAD+LP_SETUP IN_PROGRESS. SIN PUTAWAY. 7 líneas (2,594u).",
-      "color": "yellow",
-      "recibe": "TASK-5321309 RECEIVE 🔄 (2/7 items) + ⚠️ SIN PUTAWAY",
-      "notas": "🟡 P6 RECEIVING ACTIVO ~72h. ¡YA TIENE DOCK 525! Recepción parcial. SIN PUTAWAY."
-    },
-    {
-      "ref": "GN07172026UNIS-1154",
-      "rn": "RN-189037",
-      "loc": "🆕 DOCK 529 (ET-1125317) — Trailer 53375 inYard",
-      "cita": "07/17 07:00 AM 🚨 VENCIDA ~72h",
-      "dash": "🟡 P7 🚨 RECEIVING PENDIENTE ~72h — DOCK 529 — RECEIVE NEW (Jerome) — 40 LÍNEAS (~343K u) — SIN PUTAWAY",
-      "real": "🟡 R4 09:17: ET-1125317 DOCK 529 (nuevo). WMS: RN-189037 IMPORTED GURUNANDA ✅. TASK-5321318 RECEIVE NEW 🔵 (Jerome Aranda). SIN PUTAWAY. 40 líneas (342,938u). appointmentStatus: NEED_TO_EMAIL_CARRIER.",
-      "color": "yellow",
-      "recibe": "TASK-5321318 RECEIVE NEW 🔵 (Jerome Aranda) + ⚠️ SIN PUTAWAY",
-      "notas": "🟡 P7 RECEIVING PENDIENTE ~72h. ¡YA TIENE DOCK 529! RECEIVE NEW asignado. 40 LÍNEAS (~343K u). SIN PUTAWAY."
-    },
-    {
-      "ref": "OOCU6818063",
-      "rn": "RN-5008804",
-      "loc": "SPOT607 — ET-1124930 DOCK_CHECKED_OUT pero inYard TRUE — EQP OOCU6818063 CONTAINER",
-      "cita": "—",
-      "dash": "🟡 P8 🚨 PUTAWAY PENDIENTE ~64h — RECEIVE CLOSED ✅ + PUTAWAY IN_PROGRESS 🔄 (rjcardona, 21 LPs)",
-      "real": "🟡 R4 09:17: ET-1124930 DOCK_CHECKED_OUT → SPOT607, EMPTY_AFTER_OFFLOADED. inYard=TRUE ✅. WMS: RN-5008804 IN_PROGRESS GURUNANDA ✅. TASK-5319902 RECEIVE CLOSED ✅. TASK-5319924 PUTAWAY 🔄 IN_PROGRESS (rjcardona, 21 LPs, desde Jul 18).",
-      "color": "yellow",
-      "recibe": "TASK-5319902 RECEIVE ✅ + TASK-5319924 PUTAWAY 🔄 (rjcardona, 21 LPs)",
-      "notas": "🟡 P8 PUTAWAY PENDIENTE ~64h (2.7d). RECEIVE cerrado Jul 18. PUTAWAY sigue IN_PROGRESS. NO CERRAR hasta putaway completado."
-    },
-    {
-      "ref": "CMAU9726339",
-      "rn": "RN-5008861",
-      "loc": "⚠️ PRE_ENTRY CAMERA_DETECTION_IN (~54h) — ET-1125014 Lane 11 — inYard WMS 07/20",
-      "cita": "07/18 03:00 AM 🚨 VENCIDA ~52h — APPT-6034065",
-      "dash": "🟡 P9 🚨 RECEIVING PENDIENTE ~54h — CÁMARA + CITA VENCIDA — IMPORTED SIN TASKS — 2 líneas (5,040u)",
-      "real": "🟡 R4 09:17: ET-1125014 PRE_ENTRY CAMERA_DETECTION_IN 07/18. WMS: RN-5008861 IMPORTED GURUNANDA ✅, inYard 07/20. 2 líneas, 5,040u. SIN TASKS.",
-      "color": "yellow",
-      "recibe": "— (SIN TASKS)",
-      "notas": "🟡 P9 RECEIVING PENDIENTE ~54h. Cámara + cita vencida. SIN TASKS. RN en WMS ✅."
-    },
-    {
-      "ref": "GN07172026UNIS-1155",
-      "rn": "RN-189052",
-      "loc": "⚠️ SIN LLEGADA CONFIRMADA — ET-1125101 PRE_ENTRY CAMERA pero WMS inYard=NO",
-      "cita": "07/17 07:00 AM ⚠️ VENCIDA ~72h",
-      "dash": "🟡 P10 🚨 RECEIVING PENDIENTE ~40h — CÁMARA + CITA VENCIDA — IMPORTED SIN TASKS — WMS sin inYard — 10 líneas (1,812u)",
-      "real": "🟡 R4 09:17: ET-1125101 PRE_ENTRY CAMERA_DETECTION_IN 07/18 16:56. WMS: RN-189052 IMPORTED GURUNANDA ✅ pero inYard=NO. appointmentStatus: NEED_TO_EMAIL_CARRIER. 10 líneas (1,812u). SIN TASKS.",
-      "color": "yellow",
-      "recibe": "— (SIN TASKS)",
-      "notas": "🟡 P10 RECEIVING PENDIENTE ~40h. Cámara pero WMS NO confirma en yard. Cita vencida. SIN TASKS."
-    },
-    {
-      "ref": "FFAU5735726",
-      "rn": "RN-5008893",
-      "loc": "PRE_ENTRY — sin YMS — sin evidencia de llegada",
-      "cita": "07/20 10:00 PM Drop — Jasmine + Art Ismael CONFIRMADO ⚠️ HOY",
-      "dash": "🔵 P12 🚨 CITA HOY 10PM — IMPORTED — 2p 1,004 CS",
-      "real": "🔵 R6 LLEGADAS 08/02 23:55 PT: YMS confirma llegada HISTÓRICA (no nueva): ET-1125785 GATE_CHECK_IN 07/20 21:37 → DROP_OFF_DELIVERY FULL (SPOT616, seal NJ937646, RN-5008893, APPT-6034173) → RECEIVE DOCK61 (07/21). Gate-out 07/20 21:54 fue con OOCU6818063 EMPTY (equipo distinto). EMPTY_AFTER_OFFLOADED. inYard=FALSE — ya NO está en yarda. No es llegada nueva.",
-      "color": "blue",
-      "recibe": "—",
-      "notas": "🔵 P12 LLEGADA HISTÓRICA (07/20) pero ya FUERA de yarda (EMPTY_AFTER_OFFLOADED, inYard FALSE). RN-5008893 recibido 07/21. No es llegada nueva. Verificar cierre con Rutina STATUS REAL."
-    },
-    {
-      "ref": "FFAU3376606",
-      "rn": "RN-5008800",
-      "loc": "SPOT606 — ET-1125826 — DROP_OFF_DELIVERY FULL (Jul 21). RECEIVE CLOSED (DOCK68, TASK-5323359). Shuttle exception→SPOT657.",
-      "cita": "07/20 11:00 PM — REPROGRAMADO (original 07/14 8PM) ⚠️ HOY",
-      "dash": "🟡 P13 🚨 CITA HOY 11PM — REPROGRAMADO — PRE_ENTRY ~137h (5.7d) — 🚨 NO SHOW original 🚨 LLEGÓ — SPOT606",
-      "real": "🟡 R5 LLEGADAS 08/03 03:32 PT: ET-1125826 DROP_OFF_DELIVERY FULL (Jul 21). RECEIVE CLOSED (DOCK68, TASK-5323359). Shuttle exception→SPOT657.. WMS: RN-5008800.",
-      "color": "yellow",
-      "recibe": "—",
-      "notas": "🟡 LLEGÓ SPOT606. ET-1125826. NO SHOW ~137h (5.7d). Reprogramado. Verificar llegada HOY."
-    },
-    {
-      "ref": "ONEU1569240",
-      "rn": "RN-5008894",
-      "loc": "SPOT583? — ET-1126365 — IN_YARD ATÍPICO (Jul 22). Sin DROP_OFF. Visit creado por shuttle exception. EMPTY. EQUIPMENT_NOT_FOUND. RECEIVE no confirmado.",
-      "cita": "07/20 11:00 PM Drop — Jasmine + Art Ismael CONFIRMADO ⚠️ HOY",
-      "dash": "🟡 P14 🚨 CITA HOY 11PM — IMPORTED — 2p 4,850 CS 🚨 LLEGÓ — SPOT583?",
-      "real": "🟡 R5 LLEGADAS 08/03 03:32 PT: ET-1126365 IN_YARD ATÍPICO (Jul 22). Sin DROP_OFF. Visit creado por shuttle exception. EMPTY. EQUIPMENT_NOT_FOUND. RECEIVE no confirmado.. WMS: RN-5008894.",
-      "color": "yellow",
-      "recibe": "—",
-      "notas": "🟡 LLEGÓ SPOT583?. ET-1126365. 2p 4,850 CS. Verificar en próxima rutina."
-    },
-    {
-      "ref": "297-67545730",
-      "rn": "RN-5008783",
-      "loc": "AIR — sin YMS — sin dock",
-      "cita": "—",
-      "dash": "🔵 P15 AIR ~212h+ — IMPORTED — 1p 5,760u — sin cita ni tasks — 7d+ antigüedad",
-      "real": "🔵 R4 09:17: AIR. WMS: RN-5008783 IMPORTED GURUNANDA ✅. 1 línea, 5,760u. SIN TASKS. Creado 07/13 (7d+).",
-      "color": "blue",
-      "recibe": "—",
-      "notas": "🔵 P15 AIR ~212h+. Mayor antigüedad pre-entry (7d+). IMPORTED sin cita ni tasks."
-    },
-    {
-      "ref": "SEKU4045310",
-      "rn": "—",
-      "loc": "SPOT560 — ET-1128085 — DROP_OFF_DELIVERY FULL (Jul 24). RECEIVE CLOSED (DOCK69, TASK-5326721). Shuttle exception→SPOT581.",
-      "cita": "— (delivery pendiente)",
-      "dash": "🟡 P17 🚨 SIN RN — Advance ASN (Jasmine 07/17) — Delivery TBD 🚨 LLEGÓ — SPOT560",
-      "real": "🟡 R5 LLEGADAS 08/03 03:32 PT: ET-1128085 DROP_OFF_DELIVERY FULL (Jul 24). RECEIVE CLOSED (DOCK69, TASK-5326721). Shuttle exception→SPOT581.. WMS: —.",
-      "color": "yellow",
-      "recibe": "—",
-      "notas": "🟡 LLEGÓ SPOT560. ET-1128085. Advance ASN Gurunanda."
-    },
-    {
-      "ref": "CMAU7264078",
-      "rn": "—",
-      "loc": "SPOT596 — ET-1127264 — DROP_OFF_DELIVERY FULL (Jul 23). RECEIVE CLOSED (DOCK61, TASK-5325737). Shuttle exception→SPOT617.",
-      "cita": "— (delivery pendiente)",
-      "dash": "🟡 P18 🚨 SIN RN — Advance ASN (Jasmine 07/17) — Delivery TBD 🚨 LLEGÓ — SPOT596",
-      "real": "🟡 R5 LLEGADAS 08/03 03:32 PT: ET-1127264 DROP_OFF_DELIVERY FULL (Jul 23). RECEIVE CLOSED (DOCK61, TASK-5325737). Shuttle exception→SPOT617.. WMS: —.",
-      "color": "yellow",
-      "recibe": "—",
-      "notas": "🟡 LLEGÓ SPOT596. ET-1127264. Advance ASN Gurunanda."
-    },
-    {
-      "ref": "YMLU8790190",
-      "rn": "—",
-      "loc": "PRE_ENTRY — sin YMS — sin WMS RN",
-      "cita": "— (delivery pendiente)",
-      "dash": "🔵 P19 🚨 SIN RN — Advance ASN (Jasmine 07/17) — Delivery TBD",
-      "real": "🔵 R6 LLEGADAS 08/02 23:55 PT: Sin registro en YMS/WISE — búsqueda por Container y Trailer sin resultados. Mantener azul/PRE_ENTRY, En yarda=No.",
-      "color": "blue",
-      "recibe": "—",
-      "notas": "🚨 P19 SIN RN. Advance ASN Gurunanda."
-    },
-    {
-      "ref": "CAIU7049534",
-      "rn": "—",
-      "loc": "SPOT346 — ET-1131764 — DROP_OFF_DELIVERY FULL (08/01 00:10, seal 7572) — movido SPOT704→SPOT346 (08/02 17:05)",
-      "cita": "— (delivery pendiente)",
-      "dash": "🟡 P20 🚨 LLEGÓ A YARDA — SPOT346 — FULL seal 7572 — inYard TRUE — SIN RN",
-      "real": "🟡 R6 LLEGADAS 08/02 23:55 PT: ET-1131764 GATE_CHECK_IN 08/01 00:10 (Adrienne Bell, tractor 9G00188, rtl). DROP_OFF_DELIVERY FULL seal 7572. inYard=TRUE. SPOT346 (movido desde SPOT704 el 08/02 17:05). Gate Check-out 08/01 00:50 fue del CHASIS GCXU5097405 (EQP-280869) — el contenedor NO salió. Visit EV-141305 mal indexada bajo LUU2633.",
-      "color": "yellow",
-      "recibe": "—",
-      "notas": "🟡 LLEGÓ 08/01. SPOT346. FULL seal 7572. inYard TRUE. SIN RN. Gate-out fue del chasis, NO del contenedor."
-    },
-    {
-      "ref": "FBLU0243220",
-      "rn": "— ⚠️ CONFLICTO: WMS RN-176487 DUPRAY USA (CLOSED) ≠ Gurunanda ASN",
-      "loc": "SPOT605 — ET-1129308 — DROP_OFF_DELIVERY FULL (Jul 27). RECEIVE CLOSED (DOCK17, TASK-5328053, Astrid Aguilar). RN-5008978 Gurunanda. Shuttle TASK-42717 NEW pendiente.",
-      "cita": "— (delivery pendiente — Jasmine ASN 07/17)",
-      "dash": "🟡 P21 ⚠️ CONFLICTO — Advance ASN Gurunanda (Jasmine 07/17) — WMS: RN-176487 DUPRAY USA — Pendiente Rufino 🚨 LLEGÓ — SPOT605",
-      "real": "🟡 R5 LLEGADAS 08/03 03:32 PT: ET-1129308 DROP_OFF_DELIVERY FULL (Jul 27). RECEIVE CLOSED (DOCK17, TASK-5328053, Astrid Aguilar). RN-5008978 Gurunanda. Shuttle TASK-42717 NEW pendiente.. WMS: — ⚠️ CONFLICTO: WMS RN-176487 DUPRAY USA (CLOSED) ≠ Gurunanda ASN.",
-      "color": "yellow",
-      "recibe": "—",
-      "notas": "🟡 LLEGÓ SPOT605. ET-1129308. WMS: RN-176487 DUPRAY USA CLOSED histórico. Contenedor posiblemente reutilizado. Pendiente Rufino."
-    }
-  ],
-  "cerrados": [
-    [
-      "OOCU7830058",
-      "RN-5008876",
-      "✅ VERDE CERRADO — TASK-5319366 CLOSED (3/3). Fatima Del Rosario Ponce, DOCK572.",
-      "R2 07/19 04:32 PT"
-    ],
-    [
-      "MATU2735237",
-      "RN-5008859",
-      "✅ VERDE — AMBOS CLOSED: RECEIVING + PUTAWAY.",
-      "R2 07/19 18:28 PT"
-    ],
-    [
-      "CMAU4909316",
-      "RN-5008766",
-      "✅ VERDE — AMBOS CLOSED: RECEIVING + PUTAWAY.",
-      "R2 07/19 18:28 PT"
-    ],
-    [
-      "MAGU5705533",
-      "RN-5008806",
-      "✅ VERDE — AMBOS CLOSED: RECEIVING + PUTAWAY.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "TIIU6675500",
-      "RN-5008692",
-      "CLOSED — WMS ambos tasks. GURUNANDA ✅.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "CMAU9998260",
-      "RN-5008701",
-      "CLOSED — WMS ambos tasks. GURUNANDA ✅.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "TIIU6675897",
-      "RN-5008683",
-      "CLOSED — WMS ambos tasks. GURUNANDA ✅.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "CSNU8854201",
-      "RN-5008805",
-      "CLOSED — Receive + Putaway CLOSED.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "CMAU4260783",
-      "RN-5008767",
-      "CLOSED — Receive + Putaway CLOSED.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "GN07162026UNIS-1150",
-      "RN-188999",
-      "✅ VERDE — AMBOS CLOSED. Transfer GN.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "GN07162026UNIS-1151",
-      "RN-189000",
-      "✅ VERDE — AMBOS CLOSED (TASK-5319458 + TASK-5319816). Cerrado 07/17 18:55 PT.",
-      "R1 07/19 20:30 PT"
-    ],
-    [
-      "GN07152026UNIS-1147",
-      "RN-188957",
-      "CLOSED — WMS ambos tasks.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "GN07152026UNIS-1148",
-      "RN-188963",
-      "CLOSED — WMS ambos tasks.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "GN07152026UNIS-1149",
-      "RN-188964",
-      "CLOSED — WMS ambos tasks.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "GN07102026UNIS-1143",
-      "RN-188672",
-      "CLOSED — WMS ambos tasks 07/14.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "TV53560",
-      "RN-188691",
-      "CLOSED — RECEIVING FORCE_CLOSED + PUTAWAY CLOSED.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "TV53734",
-      "RN-188964",
-      "CLOSED — WMS ambos tasks.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "53761",
-      "RN-188694",
-      "CLOSED — WMS ambos tasks 07/15.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "OERU4145681",
-      "RN-5008789",
-      "CLOSED — Receive + Putaway.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "TIIU6671227",
-      "RN-5008750",
-      "CLOSED — WMS receive + putaway.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "TIIU6675095",
-      "RN-5008751",
-      "CLOSED — Receive + Putaway.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "TIIU6675238",
-      "RN-5008755",
-      "CLOSED — Receive + Putaway.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "SEGU6907220",
-      "RN-5008771",
-      "CLOSED — WMS receive + putaway.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "OOLU9909409",
-      "RN-5008765",
-      "CLOSED — Receive + Putaway.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "CSLU6039614",
-      "RN-5008721",
-      "FORCE_CLOSED — LP_SETUP + Putaway CLOSED.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "ZCSU7781965",
-      "RN-5008664",
-      "CLOSED — Receive + Putaway.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "CSNU8443854",
-      "RN-5008802",
-      "CERRADO — Receive FORCE_CLOSED + Putaway CLOSED.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "FFAU3608358",
-      "RN-5008801",
-      "CERRADO — Receive CLOSED + Putaway CLOSED.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "FUS07092026UNIS-61",
-      "RN-188658",
-      "CERRADO — Receive + Putaway. GN Transfer.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "FUS07102026UNIS-62",
-      "RN-188659",
-      "CERRADO — RECEIVING FORCE_CLOSED + PUTAWAY CLOSED.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "LAC071526UNIS",
-      "RN-5008793",
-      "CERRADO — Receive FORCE_CLOSED + Putaway CLOSED.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "TIIU6674463",
-      "RN-5008749",
-      "CERRADO — Receive + Putaway CLOSED.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "TIIU5491025",
-      "RN-5008703",
-      "CERRADO — Receive + Putaway CLOSED.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "CHAPIN0615UNIS-8",
-      "RN-188956",
-      "CERRADO — Receive FORCE_CLOSED + Putaway CLOSED.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "MATU2751536",
-      "RN-5008814",
-      "CERRADO — Receive CLOSED + Putaway CLOSED.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "CSNU8614108",
-      "RN-5008803",
-      "CERRADO — Receive CLOSED + Putaway CLOSED.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "CSNU8614106",
-      "—",
-      "⚠️ Reportado vacío 07/15 — sin registro WMS.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "TGBU5468303",
-      "RN-5008665",
-      "FORCE_CLOSED qty not match 07/15. Ambos cerrados: TASK-5316430 FORCE_CLOSED + TASK-5316964 PUTAWAY CLOSED.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "TGSU5157415",
-      "RN-5008667",
-      "CLOSED — WMS CLOSED 07/13.",
-      "R1 07/20 00:00 PT"
-    ],
-    [
-      "CMAU8611150",
-      "RN-5008676",
-      "CLOSED — WMS ambos tasks 07/09.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "TIIU6671567",
-      "RN-5008661",
-      "CLOSED — WMS ambos tasks.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "TGSU5157375",
-      "RN-5008681",
-      "CLOSED — WMS ambos tasks.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "BEAU6183170",
-      "RN-5008702",
-      "CLOSED — WMS ambos tasks.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "OOCU7830058-OLD",
-      "RN-5008815→RN-5008876",
-      "CANCELLED RN-5008815 → RENACIDO RN-5008876. AHORA CERRADO ✅.",
-      "R2 07/19 04:32 PT"
-    ],
-    [
-      "MATU2754330-OLD",
-      "RN-5008825→RN-5008890→RN-5008904",
-      "CANCELLED → CANCELLED → NUEVO RN-5008904. ACTIVO 🟡 P3.",
-      "R2 07/19 22:26 PT"
-    ],
-    [
-      "OOCU6818063-OLD",
-      "ET-1123754→ET-1124930",
-      "🔄 CORRECCIÓN — Viejo ET TRAILER KARAKA → 🆕 ET CONTAINER GURUNANDA. RN-5008804 AHORA EN ACTIVOS 🟡 P8.",
-      "R3 07/20 02:24 PT"
-    ],
-    [
-      "OOCU7830058-1",
-      "RN-5008676",
-      "⚠️ CORREO RUFINO 07/17: OOCU7830058-1 con RN-5008676 42 pallets. RN-5008676 ya CLOSED (CMAU8611150).",
-      "R2 07/19 04:32 PT"
-    ],
-    [
-      "CORR007272026UNIS-CANCELLED",
-      "RN-5008887→RN-5008890",
-      "CANCELLED — RN cancelados para MATU2754330. ACTIVO 🟡 P3.",
-      "R2 07/19 22:26 PT"
-    ],
-    [
-      "GN07172026UNIS-1155-OLD",
-      "RN-189052",
-      "🔄 CORRECCIÓN — ET-1124081 OUTBOUND confirmado, NO inbound. P10 🟡.",
-      "R2 07/19 22:26 PT"
-    ],
-    [
-      "FFAU2716677-PRE-ARRIVAL",
-      "RN-5008860",
-      "🔄 R4 09:17 — LLEGÓ HOY 07:02 AM. ET-1125306 GATE_CHECKED_IN. Movido a ACTIVOS 🟡 P2.",
-      "R4 07/20 09:17 PT"
-    ],
-    [
-      "EITU9363654",
-      "RN-5008569",
-      "✅ WMS CLOSED — Ambos tasks. GURUNANDA ✅.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "TEMU8901490",
-      "RN-5008566",
-      "✅ WMS CLOSED — Ambos tasks. GURUNANDA ✅.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "FFAU2426030",
-      "RN-5008480",
-      "✅ WMS CLOSED — Ambos tasks. GURUNANDA ✅.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "MRKU9388930",
-      "RN-188088",
-      "✅ WMS FORCE_CLOSED — SHORT ITEM. GURUNANDA ✅.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "CSNU6323633",
-      "RN-5008483",
-      "✅ WMS CLOSED — Ambos tasks. GURUNANDA ✅.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "CBHU7024789",
-      "RN-5008507",
-      "✅ WMS CLOSED — Ambos tasks. GURUNANDA ✅.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "TGBU8815453",
-      "RN-5008570",
-      "✅ WMS CLOSED — Ambos tasks. GURUNANDA ✅.",
-      "R3 07/19 04:21 PT"
-    ],
-    [
-      "CAAU7998380",
-      "RN-5008646",
-      "✅ CLOSED 07/10 — WMS ambos tasks CLOSED. GURUNANDA ✅.",
-      "R1 07/19 12:20 PT"
-    ],
-    [
-      "GN07062026UNIS-1134",
-      "RN-188263",
-      "✅ CLOSED 10-Jul — WMS ambos tasks CLOSED. GURUNANDA ✅.",
-      "R1 07/19 14:11 PT"
-    ],
-    [
-      "FUS07152026UNIS-63",
-      "RN-189038",
-      "🟠 EXCLUIDO R4 07/19 18:01 PT — CUSTOMER NO GURUNANDA.",
-      "R4 07/19 18:01 PT"
-    ],
-    [
-      "CORR007242026UNIS",
-      "RN-5008858",
-      "🟠 EXCLUIDO R4 07/19 18:01 PT — CUSTOMER NO GURUNANDA.",
-      "R4 07/19 18:01 PT"
-    ],
-    [
-      "CORR007272026UNIS",
-      "RN-5008869",
-      "🟠 EXCLUIDO R4 07/19 18:01 PT — CUSTOMER NO GURUNANDA.",
-      "R4 07/19 18:01 PT"
-    ],
-    [
-      "CORR007272026UNIS-PO8557",
-      "RN-5008873",
-      "🟠 EXCLUIDO R4 07/19 18:01 PT — CUSTOMER NO GURUNANDA.",
-      "R4 07/19 18:01 PT"
-    ],
-    [
-      "CORR007272026UNIS-PO8551",
-      "RN-5008874",
-      "🟠 EXCLUIDO R4 07/19 18:01 PT — CUSTOMER NO GURUNANDA.",
-      "R4 07/19 18:01 PT"
-    ],
-    [
-      "CORR007282026UNIS",
-      "RN-5008866",
-      "🟠 EXCLUIDO R4 07/19 18:01 PT — CUSTOMER NO GURUNANDA.",
-      "R4 07/19 18:01 PT"
-    ],
-    [
-      "FTAU2755048-ET-CORREGIDO",
-      "ET-1124913→ET-1122943",
-      "🔄 R3 07/19 21:30 PT — CORRECCIÓN DE IDENTIDAD.",
-      "R3 07/19 21:30 PT"
-    ],
-    [
-      "FTAU2755048-YMS-WARNING",
-      "RN-5008772",
-      "⚠️ R2 07/19 23:54 PT — YMS encontró ET-1122423 con KARAKA LLC + RN-183352. WMS confirma GURUNANDA. Prevalece WMS.",
-      "R2 07/19 23:54 PT"
-    ],
-    [
-      "ONEU0796867-ETs-EXPIRADOS",
-      "ET-1125296/5295/5220",
-      "⚠️ R2 07/20 02:29 PT — ETs cámara 07/19 ya no existen en YMS.",
-      "R2.1 07/20 03:31 PT"
-    ],
-    [
-      "ONEU0796867-YARD-ALERT",
-      "ET-1125294 TCNU6396419",
-      "⚠️ R2 07/20 03:52 PT — ET-1125294 WINDOW_CHECKED_IN Loc 581 con equipo TCNU6396419 ≠ ONEU0796867. Posible confusión identidad.",
-      "R2 07/20 03:52 PT"
-    ],
-    [
-      "CAAU8776319",
-      "RN-5008895",
-      "🔄 R5 LLEGADAS 08/03 03:32 PT — OUT_OF_YARD. DROP_OFF Jul 21 SPOT613→DOCK69. RECEIVE CLOSED. PICK_UP_EMPTY Jul 23 01:52. Ciclo completo.",
-      "Agente Priti — RUTINA LIGERA LLEGADAS YMS 08/03 03:32 PT"
-    ],
-    [
-      "YMMU6638670",
-      "—",
-      "🔄 R5 LLEGADAS 08/03 03:32 PT — OUT_OF_YARD. DROP_OFF EMPTY Jul 27 23:11 → PICK_UP_EMPTY Jul 27 23:47 (mismo día). CHASSIS vs CONTAINER inconsistencia. Ciclo completo.",
-      "Agente Priti — RUTINA LIGERA LLEGADAS YMS 08/03 03:32 PT"
-    ]
-  ],
-  "updatedAt": "2026-08-03T06:58:00.000Z",
-  "updatedBy": "Agente Priti — RUTINA LIGERA LLEGADAS YMS 08/02 23:55 PT",
-  "summary": {
-    "total": 19,
-    "rojos": 0,
-    "amarillos": 15,
-    "azules": 4,
-    "cerrados": 71,
-    "novedades": "🆕 R6 LLEGADAS: CAIU7049534 → amarillo (SPOT346, llegó 08/01 00:10, FULL seal 7572, inYard TRUE; gate-out 08/01 fue del chasis GCXU5097405, no del contenedor). ONEU0796867/FFAU5735726: llegadas históricas ya fuera de yarda (mantener azul). YMLU8790190 sin rastro YMS (mantener azul)."
+ "activos": [
+  {
+   "ref": "ONEU0796867",
+   "rn": "—",
+   "loc": "PRE_ENTRY — equipo en YMS (EQP-276288) pero sin visitas — sin evidencia de llegada",
+   "cita": "— (cámara 07/19 ~04:18)",
+   "dash": "🔵 P1 ⚠️ SIN LLEGADA — Equipo existe en YMS (EQP-276288) sin visitas. ET-1125294 anterior ya no existe.",
+   "real": "🔵 R6 LLEGADAS 08/02 23:55 PT: YMS confirma llegada HISTÓRICA (no nueva): ET-1127737 GATE_CHECK_IN 07/23 19:19 → DROP_OFF_DELIVERY FULL (SPOT520, seal CN34375BD) → RECEIVE TASK-5326351 → DOCK67 (07/24). EMPTY_AFTER_OFFLOADED. inYard=FALSE — ya NO está en yarda. RN-5008976. Visit EV-135625 mal indexada bajo MLAZ009/EQP-276289.",
+   "color": "blue",
+   "recibe": "—",
+   "notas": "🔵 P1 LLEGADA HISTÓRICA (07/23) pero ya FUERA de yarda (EMPTY_AFTER_OFFLOADED, inYard FALSE). RN-5008976. No es llegada nueva. Verificar cierre con Rutina STATUS REAL."
+  },
+  {
+   "ref": "FFAU2716677",
+   "rn": "RN-5008860 ⚠️ MISMATCH (ET muestra RN-5008569/EITU9363654 CLOSED)",
+   "loc": "ET-1125306 GATE_CHECK_IN 07/20 07:02 (SELF_CHECKIN — indexado TRAILER EQP-272393). Visit EV-132259 COMPLETED/OUT_OF_YARD: in 07/20 07:02 → out 07/21 03:39 (tras drop ONEU1569240 en SPOT661). inYard=FALSE — ya NO está en yarda",
+   "cita": "07/17 11:00 PM 🚨 VENCIDA ~53h — APPT-6034064",
+   "dash": "🟡 P2 ⚠️ SIN LLEGADA NUEVA — llegó 07/20 y salió 07/21 (OUT_OF_YARD, inYard FALSE). MISMATCH RN (ET→RN-5008569 CLOSED, WMS→RN-5008860 IMPORTED) — INDEXADO COMO TRAILER — UOM FALTANTE — SIN TASKS",
+   "real": "🟡 R7 LLEGADAS 08/03 07:25 PT: YMS confirma SIN llegada nueva. ET-1125306 GATE_CHECK_IN fue 07/20 07:02 (no 08/03 — el \"LLEGÓ HOY\" era error de lectura de fecha). Visit EV-132259 COMPLETED/OUT_OF_YARD (in 07/20 07:02, out 07/21 03:39). inYard=FALSE. RN-5008569 CLOSED en ET (heredado del trailer, EITU9363654). Mantener amarillo por MISMATCH con WMS RN-5008860 IMPORTED — verificar con Rutina STATUS REAL.",
+   "color": "yellow",
+   "recibe": "— (SIN TASKS, UOM bloqueado)",
+   "notas": "🟡 P2 SIN LLEGADA NUEVA — llegó 07/20 y salió 07/21 (OUT_OF_YARD, inYard FALSE). MISMATCH RN (ET vs WMS). INDEXADO COMO TRAILER. UOM issue bloquea tasks. Pendiente STATUS REAL."
+  },
+  {
+   "ref": "MATU2754330",
+   "rn": "RN-5008904",
+   "loc": "SPOT419 — ET-1124240 — EQP MATU2754330 CONTAINER inYard (nuevo ET-1125323 dock 530)",
+   "cita": "07/16 06:18 PM ⚠️ ~87h (3.6d)",
+   "dash": "🟡 P3 🚨 PUTAWAY PENDIENTE ~87h — RECEIVE CLOSED ✅ + PUTAWAY IN_PROGRESS 🔄 (jlnieves, 26 LPs)",
+   "real": "🟡 R4 09:17: ET-1124240 DOCK_CHECKED_IN → SPOT419, EMPTY_AFTER_OFFLOADED. WMS: RN-5008904 IN_PROGRESS GURUNANDA ✅. TASK-5321331 RECEIVE CLOSED ✅. TASK-5321419 PUTAWAY 🔄 IN_PROGRESS (jlnieves, 26 LPs, iniciado 07/20 15:51). RN-5008825 histórico CANCELLED.",
+   "color": "yellow",
+   "recibe": "TASK-5321331 RECEIVE ✅ + TASK-5321419 PUTAWAY 🔄 (jlnieves, 26 LPs)",
+   "notas": "🟡 P3 PUTAWAY PENDIENTE ~87h. RECEIVE cerrado hoy. PUTAWAY iniciado. NO CERRAR hasta putaway completado."
+  },
+  {
+   "ref": "FTAU2755048",
+   "rn": "RN-5008772",
+   "loc": "DOCK62 (566) — ET-1122943 — EQP FTAU2755048 ⚠️ TRAILER inYard FALSE",
+   "cita": "07/14 04:06 PM 🚨 ~137h (5.7d)",
+   "dash": "🟡 P4 🚨 RECEIVING PENDIENTE ~137h — OFFLOAD+LP_SETUP IN_PROGRESS — YMS EMPTY_AFTER_OFFLOADED — inYard FALSE — SIN PUTAWAY",
+   "real": "🟡 R4 09:17: ET-1122943 DOCK_CHECKED_IN DOCK62. YMS: EMPTY_AFTER_OFFLOADED, inYard=FALSE. WMS: RN-5008772 IN_PROGRESS GURUNANDA ✅. TASK-5316381 OFFLOAD 🔄 IN_PROGRESS + LP_SETUP 🔄. SIN PUTAWAY TASK.",
+   "color": "yellow",
+   "recibe": "Fatima Del Rosario Ponce (TASK-5316381) + ⚠️ SIN PUTAWAY",
+   "notas": "🟡 P4 RECEIVING PENDIENTE 5.7d. OFFLOAD+LP_SETUP IN_PROGRESS. inYard FALSE. SIN PUTAWAY. Mayor antigüedad en proceso."
+  },
+  {
+   "ref": "GN07162026UNIS-1152",
+   "rn": "RN-189010",
+   "loc": "DOCK1 LIVE (ET-1124607) + Trailer 546 (ET-1124161) sin dock",
+   "cita": "07/17 10:19 AM ⚠️ ~69h — LIVE",
+   "dash": "🟡 P5 ⚠️ LIVE DOCK1 + TRAILER 546 — OFFLOAD IN_PROGRESS + LP_SETUP NEW — SIN PUTAWAY",
+   "real": "🟡 R4 09:17: ET-1124607 DOCK_CHECKED_IN DOCK1 LIVE. ET-1124161 WINDOW_CHECKED_IN Trailer 546. Driver Victor Carrillo, carrier Top Notch. WMS: RN-189010 IN_PROGRESS GURUNANDA ✅. TASK-5319459 OFFLOAD 🔄 + LP_SETUP ⬜ NEW (rmunguia). SIN PUTAWAY.",
+   "color": "yellow",
+   "recibe": "Rufino Munguia (TASK-5319459) + ⚠️ SIN PUTAWAY",
+   "notas": "🟡 P5 LIVE DOCK1 + TRAILER 546 ~69h. OFFLOAD IN_PROGRESS. LP_SETUP NEW. SIN PUTAWAY."
+  },
+  {
+   "ref": "GN07172026UNIS-1153",
+   "rn": "RN-189025",
+   "loc": "🆕 DOCK 525 (ET-1125316) — Trailer 53393 inYard",
+   "cita": "07/17 07:00 AM 🚨 VENCIDA ~72h",
+   "dash": "🟡 P6 🚨 RECEIVING ACTIVO ~72h — DOCK 525 — OFFLOAD+LP_SETUP IN_PROGRESS (2/7 items) — SIN PUTAWAY",
+   "real": "🟡 R4 09:17: ET-1125316 DOCK 525 (nuevo). WMS: RN-189025 IN_PROGRESS GURUNANDA ✅. TASK-5321309 RECEIVE 🔄 IN_PROGRESS (iniciado 07/20 14:28). OFFLOAD+LP_SETUP IN_PROGRESS. SIN PUTAWAY. 7 líneas (2,594u).",
+   "color": "yellow",
+   "recibe": "TASK-5321309 RECEIVE 🔄 (2/7 items) + ⚠️ SIN PUTAWAY",
+   "notas": "🟡 P6 RECEIVING ACTIVO ~72h. ¡YA TIENE DOCK 525! Recepción parcial. SIN PUTAWAY."
+  },
+  {
+   "ref": "GN07172026UNIS-1154",
+   "rn": "RN-189037",
+   "loc": "🆕 DOCK 529 (ET-1125317) — Trailer 53375 inYard",
+   "cita": "07/17 07:00 AM 🚨 VENCIDA ~72h",
+   "dash": "🟡 P7 🚨 RECEIVING PENDIENTE ~72h — DOCK 529 — RECEIVE NEW (Jerome) — 40 LÍNEAS (~343K u) — SIN PUTAWAY",
+   "real": "🟡 R4 09:17: ET-1125317 DOCK 529 (nuevo). WMS: RN-189037 IMPORTED GURUNANDA ✅. TASK-5321318 RECEIVE NEW 🔵 (Jerome Aranda). SIN PUTAWAY. 40 líneas (342,938u). appointmentStatus: NEED_TO_EMAIL_CARRIER.",
+   "color": "yellow",
+   "recibe": "TASK-5321318 RECEIVE NEW 🔵 (Jerome Aranda) + ⚠️ SIN PUTAWAY",
+   "notas": "🟡 P7 RECEIVING PENDIENTE ~72h. ¡YA TIENE DOCK 529! RECEIVE NEW asignado. 40 LÍNEAS (~343K u). SIN PUTAWAY."
+  },
+  {
+   "ref": "OOCU6818063",
+   "rn": "RN-5008804",
+   "loc": "SPOT607 — ET-1124930 DOCK_CHECKED_OUT pero inYard TRUE — EQP OOCU6818063 CONTAINER",
+   "cita": "—",
+   "dash": "🟡 P8 🚨 PUTAWAY PENDIENTE ~64h — RECEIVE CLOSED ✅ + PUTAWAY IN_PROGRESS 🔄 (rjcardona, 21 LPs)",
+   "real": "🟡 R4 09:17: ET-1124930 DOCK_CHECKED_OUT → SPOT607, EMPTY_AFTER_OFFLOADED. inYard=TRUE ✅. WMS: RN-5008804 IN_PROGRESS GURUNANDA ✅. TASK-5319902 RECEIVE CLOSED ✅. TASK-5319924 PUTAWAY 🔄 IN_PROGRESS (rjcardona, 21 LPs, desde Jul 18).",
+   "color": "yellow",
+   "recibe": "TASK-5319902 RECEIVE ✅ + TASK-5319924 PUTAWAY 🔄 (rjcardona, 21 LPs)",
+   "notas": "🟡 P8 PUTAWAY PENDIENTE ~64h (2.7d). RECEIVE cerrado Jul 18. PUTAWAY sigue IN_PROGRESS. NO CERRAR hasta putaway completado."
+  },
+  {
+   "ref": "CMAU9726339",
+   "rn": "RN-5008861",
+   "loc": "⚠️ PRE_ENTRY CAMERA_DETECTION_IN (~54h) — ET-1125014 Lane 11 — inYard WMS 07/20",
+   "cita": "07/18 03:00 AM 🚨 VENCIDA ~52h — APPT-6034065",
+   "dash": "🟡 P9 🚨 RECEIVING PENDIENTE ~54h — CÁMARA + CITA VENCIDA — IMPORTED SIN TASKS — 2 líneas (5,040u)",
+   "real": "🟡 R4 09:17: ET-1125014 PRE_ENTRY CAMERA_DETECTION_IN 07/18. WMS: RN-5008861 IMPORTED GURUNANDA ✅, inYard 07/20. 2 líneas, 5,040u. SIN TASKS.",
+   "color": "yellow",
+   "recibe": "— (SIN TASKS)",
+   "notas": "🟡 P9 RECEIVING PENDIENTE ~54h. Cámara + cita vencida. SIN TASKS. RN en WMS ✅."
+  },
+  {
+   "ref": "GN07172026UNIS-1155",
+   "rn": "RN-189052",
+   "loc": "⚠️ SIN LLEGADA CONFIRMADA — ET-1125101 PRE_ENTRY CAMERA pero WMS inYard=NO",
+   "cita": "07/17 07:00 AM ⚠️ VENCIDA ~72h",
+   "dash": "🟡 P10 🚨 RECEIVING PENDIENTE ~40h — CÁMARA + CITA VENCIDA — IMPORTED SIN TASKS — WMS sin inYard — 10 líneas (1,812u)",
+   "real": "🟡 R4 09:17: ET-1125101 PRE_ENTRY CAMERA_DETECTION_IN 07/18 16:56. WMS: RN-189052 IMPORTED GURUNANDA ✅ pero inYard=NO. appointmentStatus: NEED_TO_EMAIL_CARRIER. 10 líneas (1,812u). SIN TASKS.",
+   "color": "yellow",
+   "recibe": "— (SIN TASKS)",
+   "notas": "🟡 P10 RECEIVING PENDIENTE ~40h. Cámara pero WMS NO confirma en yard. Cita vencida. SIN TASKS."
+  },
+  {
+   "ref": "FFAU5735726",
+   "rn": "RN-5008893",
+   "loc": "PRE_ENTRY — sin YMS — sin evidencia de llegada",
+   "cita": "07/20 10:00 PM Drop — Jasmine + Art Ismael CONFIRMADO ⚠️ HOY",
+   "dash": "🔵 P12 🚨 CITA HOY 10PM — IMPORTED — 2p 1,004 CS",
+   "real": "🔵 R6 LLEGADAS 08/02 23:55 PT: YMS confirma llegada HISTÓRICA (no nueva): ET-1125785 GATE_CHECK_IN 07/20 21:37 → DROP_OFF_DELIVERY FULL (SPOT616, seal NJ937646, RN-5008893, APPT-6034173) → RECEIVE DOCK61 (07/21). Gate-out 07/20 21:54 fue con OOCU6818063 EMPTY (equipo distinto). EMPTY_AFTER_OFFLOADED. inYard=FALSE — ya NO está en yarda. No es llegada nueva.",
+   "color": "blue",
+   "recibe": "—",
+   "notas": "🔵 P12 LLEGADA HISTÓRICA (07/20) pero ya FUERA de yarda (EMPTY_AFTER_OFFLOADED, inYard FALSE). RN-5008893 recibido 07/21. No es llegada nueva. Verificar cierre con Rutina STATUS REAL."
+  },
+  {
+   "ref": "FFAU3376606",
+   "rn": "RN-5008800",
+   "loc": "SPOT606 — ET-1125826 — DROP_OFF_DELIVERY FULL (Jul 21). RECEIVE CLOSED (DOCK68, TASK-5323359). Shuttle exception→SPOT657.",
+   "cita": "07/20 11:00 PM — REPROGRAMADO (original 07/14 8PM) ⚠️ HOY",
+   "dash": "🟡 P13 🚨 CITA HOY 11PM — REPROGRAMADO — PRE_ENTRY ~137h (5.7d) — 🚨 NO SHOW original 🚨 LLEGÓ — SPOT606",
+   "real": "🟡 R5 LLEGADAS 08/03 03:32 PT: ET-1125826 DROP_OFF_DELIVERY FULL (Jul 21). RECEIVE CLOSED (DOCK68, TASK-5323359). Shuttle exception→SPOT657.. WMS: RN-5008800.",
+   "color": "yellow",
+   "recibe": "—",
+   "notas": "🟡 LLEGÓ SPOT606. ET-1125826. NO SHOW ~137h (5.7d). Reprogramado. Verificar llegada HOY."
+  },
+  {
+   "ref": "ONEU1569240",
+   "rn": "RN-5008894",
+   "loc": "SPOT583? — ET-1126365 — IN_YARD ATÍPICO (Jul 22). Sin DROP_OFF. Visit creado por shuttle exception. EMPTY. EQUIPMENT_NOT_FOUND. RECEIVE no confirmado.",
+   "cita": "07/20 11:00 PM Drop — Jasmine + Art Ismael CONFIRMADO ⚠️ HOY",
+   "dash": "🟡 P14 🚨 CITA HOY 11PM — IMPORTED — 2p 4,850 CS 🚨 LLEGÓ — SPOT583?",
+   "real": "🟡 R5 LLEGADAS 08/03 03:32 PT: ET-1126365 IN_YARD ATÍPICO (Jul 22). Sin DROP_OFF. Visit creado por shuttle exception. EMPTY. EQUIPMENT_NOT_FOUND. RECEIVE no confirmado.. WMS: RN-5008894.",
+   "color": "yellow",
+   "recibe": "—",
+   "notas": "🟡 LLEGÓ SPOT583?. ET-1126365. 2p 4,850 CS. Verificar en próxima rutina."
+  },
+  {
+   "ref": "297-67545730",
+   "rn": "RN-5008783",
+   "loc": "AIR — sin YMS — sin dock",
+   "cita": "—",
+   "dash": "🔵 P15 AIR ~212h+ — IMPORTED — 1p 5,760u — sin cita ni tasks — 7d+ antigüedad",
+   "real": "🔵 R4 09:17: AIR. WMS: RN-5008783 IMPORTED GURUNANDA ✅. 1 línea, 5,760u. SIN TASKS. Creado 07/13 (7d+).",
+   "color": "blue",
+   "recibe": "—",
+   "notas": "🔵 P15 AIR ~212h+. Mayor antigüedad pre-entry (7d+). IMPORTED sin cita ni tasks."
+  },
+  {
+   "ref": "SEKU4045310",
+   "rn": "—",
+   "loc": "SPOT560 — ET-1128085 — DROP_OFF_DELIVERY FULL (Jul 24). RECEIVE CLOSED (DOCK69, TASK-5326721). Shuttle exception→SPOT581.",
+   "cita": "— (delivery pendiente)",
+   "dash": "🟡 P17 🚨 SIN RN — Advance ASN (Jasmine 07/17) — Delivery TBD 🚨 LLEGÓ — SPOT560",
+   "real": "🟡 R5 LLEGADAS 08/03 03:32 PT: ET-1128085 DROP_OFF_DELIVERY FULL (Jul 24). RECEIVE CLOSED (DOCK69, TASK-5326721). Shuttle exception→SPOT581.. WMS: —.",
+   "color": "yellow",
+   "recibe": "—",
+   "notas": "🟡 LLEGÓ SPOT560. ET-1128085. Advance ASN Gurunanda."
+  },
+  {
+   "ref": "CMAU7264078",
+   "rn": "—",
+   "loc": "SPOT596 — ET-1127264 — DROP_OFF_DELIVERY FULL (Jul 23). RECEIVE CLOSED (DOCK61, TASK-5325737). Shuttle exception→SPOT617.",
+   "cita": "— (delivery pendiente)",
+   "dash": "🟡 P18 🚨 SIN RN — Advance ASN (Jasmine 07/17) — Delivery TBD 🚨 LLEGÓ — SPOT596",
+   "real": "🟡 R5 LLEGADAS 08/03 03:32 PT: ET-1127264 DROP_OFF_DELIVERY FULL (Jul 23). RECEIVE CLOSED (DOCK61, TASK-5325737). Shuttle exception→SPOT617.. WMS: —.",
+   "color": "yellow",
+   "recibe": "—",
+   "notas": "🟡 LLEGÓ SPOT596. ET-1127264. Advance ASN Gurunanda."
+  },
+  {
+   "ref": "YMLU8790190",
+   "rn": "—",
+   "loc": "PRE_ENTRY — sin YMS — sin WMS RN",
+   "cita": "— (delivery pendiente)",
+   "dash": "🔵 P19 🚨 SIN RN — Advance ASN (Jasmine 07/17) — Delivery TBD",
+   "real": "🔵 R6 LLEGADAS 08/02 23:55 PT: Sin registro en YMS/WISE — búsqueda por Container y Trailer sin resultados. Mantener azul/PRE_ENTRY, En yarda=No.",
+   "color": "blue",
+   "recibe": "—",
+   "notas": "🚨 P19 SIN RN. Advance ASN Gurunanda."
+  },
+  {
+   "ref": "CAIU7049534",
+   "rn": "—",
+   "loc": "SPOT346 — ET-1131764 — DROP_OFF_DELIVERY FULL (08/01 00:10, seal 7572) — movido SPOT704→SPOT346 (08/02 17:05)",
+   "cita": "— (delivery pendiente)",
+   "dash": "🟡 P20 🚨 LLEGÓ A YARDA — SPOT346 — FULL seal 7572 — inYard TRUE — SIN RN",
+   "real": "🟡 R6 LLEGADAS 08/02 23:55 PT: ET-1131764 GATE_CHECK_IN 08/01 00:10 (Adrienne Bell, tractor 9G00188, rtl). DROP_OFF_DELIVERY FULL seal 7572. inYard=TRUE. SPOT346 (movido desde SPOT704 el 08/02 17:05). Gate Check-out 08/01 00:50 fue del CHASIS GCXU5097405 (EQP-280869) — el contenedor NO salió. Visit EV-141305 mal indexada bajo LUU2633.",
+   "color": "yellow",
+   "recibe": "—",
+   "notas": "🟡 LLEGÓ 08/01. SPOT346. FULL seal 7572. inYard TRUE. SIN RN. Gate-out fue del chasis, NO del contenedor."
+  },
+  {
+   "ref": "FBLU0243220",
+   "rn": "— ⚠️ CONFLICTO: WMS RN-176487 DUPRAY USA (CLOSED) ≠ Gurunanda ASN",
+   "loc": "SPOT605 — ET-1129308 — DROP_OFF_DELIVERY FULL (Jul 27). RECEIVE CLOSED (DOCK17, TASK-5328053, Astrid Aguilar). RN-5008978 Gurunanda. Shuttle TASK-42717 NEW pendiente.",
+   "cita": "— (delivery pendiente — Jasmine ASN 07/17)",
+   "dash": "🟡 P21 ⚠️ CONFLICTO — Advance ASN Gurunanda (Jasmine 07/17) — WMS: RN-176487 DUPRAY USA — Pendiente Rufino 🚨 LLEGÓ — SPOT605",
+   "real": "🟡 R5 LLEGADAS 08/03 03:32 PT: ET-1129308 DROP_OFF_DELIVERY FULL (Jul 27). RECEIVE CLOSED (DOCK17, TASK-5328053, Astrid Aguilar). RN-5008978 Gurunanda. Shuttle TASK-42717 NEW pendiente.. WMS: — ⚠️ CONFLICTO: WMS RN-176487 DUPRAY USA (CLOSED) ≠ Gurunanda ASN.",
+   "color": "yellow",
+   "recibe": "—",
+   "notas": "🟡 LLEGÓ SPOT605. ET-1129308. WMS: RN-176487 DUPRAY USA CLOSED histórico. Contenedor posiblemente reutilizado. Pendiente Rufino."
   }
+ ],
+ "cerrados": [
+  [
+   "OOCU7830058",
+   "RN-5008876",
+   "✅ VERDE CERRADO — TASK-5319366 CLOSED (3/3). Fatima Del Rosario Ponce, DOCK572.",
+   "R2 07/19 04:32 PT"
+  ],
+  [
+   "MATU2735237",
+   "RN-5008859",
+   "✅ VERDE — AMBOS CLOSED: RECEIVING + PUTAWAY.",
+   "R2 07/19 18:28 PT"
+  ],
+  [
+   "CMAU4909316",
+   "RN-5008766",
+   "✅ VERDE — AMBOS CLOSED: RECEIVING + PUTAWAY.",
+   "R2 07/19 18:28 PT"
+  ],
+  [
+   "MAGU5705533",
+   "RN-5008806",
+   "✅ VERDE — AMBOS CLOSED: RECEIVING + PUTAWAY.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "TIIU6675500",
+   "RN-5008692",
+   "CLOSED — WMS ambos tasks. GURUNANDA ✅.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "CMAU9998260",
+   "RN-5008701",
+   "CLOSED — WMS ambos tasks. GURUNANDA ✅.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "TIIU6675897",
+   "RN-5008683",
+   "CLOSED — WMS ambos tasks. GURUNANDA ✅.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "CSNU8854201",
+   "RN-5008805",
+   "CLOSED — Receive + Putaway CLOSED.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "CMAU4260783",
+   "RN-5008767",
+   "CLOSED — Receive + Putaway CLOSED.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "GN07162026UNIS-1150",
+   "RN-188999",
+   "✅ VERDE — AMBOS CLOSED. Transfer GN.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "GN07162026UNIS-1151",
+   "RN-189000",
+   "✅ VERDE — AMBOS CLOSED (TASK-5319458 + TASK-5319816). Cerrado 07/17 18:55 PT.",
+   "R1 07/19 20:30 PT"
+  ],
+  [
+   "GN07152026UNIS-1147",
+   "RN-188957",
+   "CLOSED — WMS ambos tasks.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "GN07152026UNIS-1148",
+   "RN-188963",
+   "CLOSED — WMS ambos tasks.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "GN07152026UNIS-1149",
+   "RN-188964",
+   "CLOSED — WMS ambos tasks.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "GN07102026UNIS-1143",
+   "RN-188672",
+   "CLOSED — WMS ambos tasks 07/14.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "TV53560",
+   "RN-188691",
+   "CLOSED — RECEIVING FORCE_CLOSED + PUTAWAY CLOSED.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "TV53734",
+   "RN-188964",
+   "CLOSED — WMS ambos tasks.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "53761",
+   "RN-188694",
+   "CLOSED — WMS ambos tasks 07/15.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "OERU4145681",
+   "RN-5008789",
+   "CLOSED — Receive + Putaway.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "TIIU6671227",
+   "RN-5008750",
+   "CLOSED — WMS receive + putaway.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "TIIU6675095",
+   "RN-5008751",
+   "CLOSED — Receive + Putaway.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "TIIU6675238",
+   "RN-5008755",
+   "CLOSED — Receive + Putaway.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "SEGU6907220",
+   "RN-5008771",
+   "CLOSED — WMS receive + putaway.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "OOLU9909409",
+   "RN-5008765",
+   "CLOSED — Receive + Putaway.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "CSLU6039614",
+   "RN-5008721",
+   "FORCE_CLOSED — LP_SETUP + Putaway CLOSED.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "ZCSU7781965",
+   "RN-5008664",
+   "CLOSED — Receive + Putaway.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "CSNU8443854",
+   "RN-5008802",
+   "CERRADO — Receive FORCE_CLOSED + Putaway CLOSED.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "FFAU3608358",
+   "RN-5008801",
+   "CERRADO — Receive CLOSED + Putaway CLOSED.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "FUS07092026UNIS-61",
+   "RN-188658",
+   "CERRADO — Receive + Putaway. GN Transfer.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "FUS07102026UNIS-62",
+   "RN-188659",
+   "CERRADO — RECEIVING FORCE_CLOSED + PUTAWAY CLOSED.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "LAC071526UNIS",
+   "RN-5008793",
+   "CERRADO — Receive FORCE_CLOSED + Putaway CLOSED.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "TIIU6674463",
+   "RN-5008749",
+   "CERRADO — Receive + Putaway CLOSED.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "TIIU5491025",
+   "RN-5008703",
+   "CERRADO — Receive + Putaway CLOSED.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "CHAPIN0615UNIS-8",
+   "RN-188956",
+   "CERRADO — Receive FORCE_CLOSED + Putaway CLOSED.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "MATU2751536",
+   "RN-5008814",
+   "CERRADO — Receive CLOSED + Putaway CLOSED.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "CSNU8614108",
+   "RN-5008803",
+   "CERRADO — Receive CLOSED + Putaway CLOSED.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "CSNU8614106",
+   "—",
+   "⚠️ Reportado vacío 07/15 — sin registro WMS.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "TGBU5468303",
+   "RN-5008665",
+   "FORCE_CLOSED qty not match 07/15. Ambos cerrados: TASK-5316430 FORCE_CLOSED + TASK-5316964 PUTAWAY CLOSED.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "TGSU5157415",
+   "RN-5008667",
+   "CLOSED — WMS CLOSED 07/13.",
+   "R1 07/20 00:00 PT"
+  ],
+  [
+   "CMAU8611150",
+   "RN-5008676",
+   "CLOSED — WMS ambos tasks 07/09.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "TIIU6671567",
+   "RN-5008661",
+   "CLOSED — WMS ambos tasks.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "TGSU5157375",
+   "RN-5008681",
+   "CLOSED — WMS ambos tasks.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "BEAU6183170",
+   "RN-5008702",
+   "CLOSED — WMS ambos tasks.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "OOCU7830058-OLD",
+   "RN-5008815→RN-5008876",
+   "CANCELLED RN-5008815 → RENACIDO RN-5008876. AHORA CERRADO ✅.",
+   "R2 07/19 04:32 PT"
+  ],
+  [
+   "MATU2754330-OLD",
+   "RN-5008825→RN-5008890→RN-5008904",
+   "CANCELLED → CANCELLED → NUEVO RN-5008904. ACTIVO 🟡 P3.",
+   "R2 07/19 22:26 PT"
+  ],
+  [
+   "OOCU6818063-OLD",
+   "ET-1123754→ET-1124930",
+   "🔄 CORRECCIÓN — Viejo ET TRAILER KARAKA → 🆕 ET CONTAINER GURUNANDA. RN-5008804 AHORA EN ACTIVOS 🟡 P8.",
+   "R3 07/20 02:24 PT"
+  ],
+  [
+   "OOCU7830058-1",
+   "RN-5008676",
+   "⚠️ CORREO RUFINO 07/17: OOCU7830058-1 con RN-5008676 42 pallets. RN-5008676 ya CLOSED (CMAU8611150).",
+   "R2 07/19 04:32 PT"
+  ],
+  [
+   "CORR007272026UNIS-CANCELLED",
+   "RN-5008887→RN-5008890",
+   "CANCELLED — RN cancelados para MATU2754330. ACTIVO 🟡 P3.",
+   "R2 07/19 22:26 PT"
+  ],
+  [
+   "GN07172026UNIS-1155-OLD",
+   "RN-189052",
+   "🔄 CORRECCIÓN — ET-1124081 OUTBOUND confirmado, NO inbound. P10 🟡.",
+   "R2 07/19 22:26 PT"
+  ],
+  [
+   "FFAU2716677-PRE-ARRIVAL",
+   "RN-5008860",
+   "🔄 R4 09:17 — LLEGÓ HOY 07:02 AM. ET-1125306 GATE_CHECKED_IN. Movido a ACTIVOS 🟡 P2.",
+   "R4 07/20 09:17 PT"
+  ],
+  [
+   "EITU9363654",
+   "RN-5008569",
+   "✅ WMS CLOSED — Ambos tasks. GURUNANDA ✅.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "TEMU8901490",
+   "RN-5008566",
+   "✅ WMS CLOSED — Ambos tasks. GURUNANDA ✅.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "FFAU2426030",
+   "RN-5008480",
+   "✅ WMS CLOSED — Ambos tasks. GURUNANDA ✅.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "MRKU9388930",
+   "RN-188088",
+   "✅ WMS FORCE_CLOSED — SHORT ITEM. GURUNANDA ✅.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "CSNU6323633",
+   "RN-5008483",
+   "✅ WMS CLOSED — Ambos tasks. GURUNANDA ✅.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "CBHU7024789",
+   "RN-5008507",
+   "✅ WMS CLOSED — Ambos tasks. GURUNANDA ✅.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "TGBU8815453",
+   "RN-5008570",
+   "✅ WMS CLOSED — Ambos tasks. GURUNANDA ✅.",
+   "R3 07/19 04:21 PT"
+  ],
+  [
+   "CAAU7998380",
+   "RN-5008646",
+   "✅ CLOSED 07/10 — WMS ambos tasks CLOSED. GURUNANDA ✅.",
+   "R1 07/19 12:20 PT"
+  ],
+  [
+   "GN07062026UNIS-1134",
+   "RN-188263",
+   "✅ CLOSED 10-Jul — WMS ambos tasks CLOSED. GURUNANDA ✅.",
+   "R1 07/19 14:11 PT"
+  ],
+  [
+   "FUS07152026UNIS-63",
+   "RN-189038",
+   "🟠 EXCLUIDO R4 07/19 18:01 PT — CUSTOMER NO GURUNANDA.",
+   "R4 07/19 18:01 PT"
+  ],
+  [
+   "CORR007242026UNIS",
+   "RN-5008858",
+   "🟠 EXCLUIDO R4 07/19 18:01 PT — CUSTOMER NO GURUNANDA.",
+   "R4 07/19 18:01 PT"
+  ],
+  [
+   "CORR007272026UNIS",
+   "RN-5008869",
+   "🟠 EXCLUIDO R4 07/19 18:01 PT — CUSTOMER NO GURUNANDA.",
+   "R4 07/19 18:01 PT"
+  ],
+  [
+   "CORR007272026UNIS-PO8557",
+   "RN-5008873",
+   "🟠 EXCLUIDO R4 07/19 18:01 PT — CUSTOMER NO GURUNANDA.",
+   "R4 07/19 18:01 PT"
+  ],
+  [
+   "CORR007272026UNIS-PO8551",
+   "RN-5008874",
+   "🟠 EXCLUIDO R4 07/19 18:01 PT — CUSTOMER NO GURUNANDA.",
+   "R4 07/19 18:01 PT"
+  ],
+  [
+   "CORR007282026UNIS",
+   "RN-5008866",
+   "🟠 EXCLUIDO R4 07/19 18:01 PT — CUSTOMER NO GURUNANDA.",
+   "R4 07/19 18:01 PT"
+  ],
+  [
+   "FTAU2755048-ET-CORREGIDO",
+   "ET-1124913→ET-1122943",
+   "🔄 R3 07/19 21:30 PT — CORRECCIÓN DE IDENTIDAD.",
+   "R3 07/19 21:30 PT"
+  ],
+  [
+   "FTAU2755048-YMS-WARNING",
+   "RN-5008772",
+   "⚠️ R2 07/19 23:54 PT — YMS encontró ET-1122423 con KARAKA LLC + RN-183352. WMS confirma GURUNANDA. Prevalece WMS.",
+   "R2 07/19 23:54 PT"
+  ],
+  [
+   "ONEU0796867-ETs-EXPIRADOS",
+   "ET-1125296/5295/5220",
+   "⚠️ R2 07/20 02:29 PT — ETs cámara 07/19 ya no existen en YMS.",
+   "R2.1 07/20 03:31 PT"
+  ],
+  [
+   "ONEU0796867-YARD-ALERT",
+   "ET-1125294 TCNU6396419",
+   "⚠️ R2 07/20 03:52 PT — ET-1125294 WINDOW_CHECKED_IN Loc 581 con equipo TCNU6396419 ≠ ONEU0796867. Posible confusión identidad.",
+   "R2 07/20 03:52 PT"
+  ],
+  [
+   "CAAU8776319",
+   "RN-5008895",
+   "🔄 R5 LLEGADAS 08/03 03:32 PT — OUT_OF_YARD. DROP_OFF Jul 21 SPOT613→DOCK69. RECEIVE CLOSED. PICK_UP_EMPTY Jul 23 01:52. Ciclo completo.",
+   "Agente Priti — RUTINA LIGERA LLEGADAS YMS 08/03 03:32 PT"
+  ],
+  [
+   "YMMU6638670",
+   "—",
+   "🔄 R5 LLEGADAS 08/03 03:32 PT — OUT_OF_YARD. DROP_OFF EMPTY Jul 27 23:11 → PICK_UP_EMPTY Jul 27 23:47 (mismo día). CHASSIS vs CONTAINER inconsistencia. Ciclo completo.",
+   "Agente Priti — RUTINA LIGERA LLEGADAS YMS 08/03 03:32 PT"
+  ]
+ ],
+ "updatedAt": "2026-08-03T14:24:43.000Z",
+ "updatedBy": "Agente Priti — RUTINA LIGERA LLEGADAS YMS 08/03 07:25 PT",
+ "summary": {
+  "total": 19,
+  "rojos": 0,
+  "amarillos": 15,
+  "azules": 4,
+  "cerrados": 71,
+  "novedades": "R7 LLEGADAS 08/03 07:25 PT: 7 revisados uno por uno (Container → Trailer) — 0 llegadas nuevas. CORRECCIÓN FFAU2716677: ET-1125306 GATE_CHECK_IN fue 07/20 07:02, visit EV-132259 OUT_OF_YARD (salió 07/21 03:39) — no es llegada de hoy; se corrige \"LLEGÓ HOY\". ONEU0796867/FFAU5735726: llegadas históricas ya fuera de yarda (mantener azul). YMLU8790190/CMAU9726339/GN07172026UNIS-1155/297-67545730: sin evidencia física (mantener En yarda=No)."
+ }
 }
