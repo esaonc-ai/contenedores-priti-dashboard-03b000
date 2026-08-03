@@ -6,10 +6,10 @@
       "loc": "PRE_ENTRY — equipo en YMS (EQP-276288) pero sin visitas — sin evidencia de llegada",
       "cita": "— (cámara 07/19 ~04:18)",
       "dash": "🔵 P1 ⚠️ SIN LLEGADA — Equipo existe en YMS (EQP-276288) sin visitas. ET-1125294 anterior ya no existe.",
-      "real": "🔵 R5 LLEGADAS 08/03 03:32 PT: EQP-276288 CONTAINER 40H creado Jul 23. Sin visitas. Shuttle TASK-42599 FORCE_CLOSED (EQUIPMENT_NOT_FOUND). SIN RN en WMS.",
+      "real": "🔵 R6 LLEGADAS 08/02 23:55 PT: YMS confirma llegada HISTÓRICA (no nueva): ET-1127737 GATE_CHECK_IN 07/23 19:19 → DROP_OFF_DELIVERY FULL (SPOT520, seal CN34375BD) → RECEIVE TASK-5326351 → DOCK67 (07/24). EMPTY_AFTER_OFFLOADED. inYard=FALSE — ya NO está en yarda. RN-5008976. Visit EV-135625 mal indexada bajo MLAZ009/EQP-276289.",
       "color": "blue",
       "recibe": "—",
-      "notas": "🔵 P1 SIN LLEGADA. Equipo existe sin visitas. ET anterior era fantasma. SIN RN. Pendiente verificar identidad."
+      "notas": "🔵 P1 LLEGADA HISTÓRICA (07/23) pero ya FUERA de yarda (EMPTY_AFTER_OFFLOADED, inYard FALSE). RN-5008976. No es llegada nueva. Verificar cierre con Rutina STATUS REAL."
     },
     {
       "ref": "FFAU2716677",
@@ -116,10 +116,10 @@
       "loc": "PRE_ENTRY — sin YMS — sin evidencia de llegada",
       "cita": "07/20 10:00 PM Drop — Jasmine + Art Ismael CONFIRMADO ⚠️ HOY",
       "dash": "🔵 P12 🚨 CITA HOY 10PM — IMPORTED — 2p 1,004 CS",
-      "real": "🔵 R4 09:17: Sin YMS (Container + Trailer: No Data). WMS: RN-5008893 IMPORTED GURUNANDA ✅. 2 líneas, 1,004 CS. Cita HOY 10PM.",
+      "real": "🔵 R6 LLEGADAS 08/02 23:55 PT: YMS confirma llegada HISTÓRICA (no nueva): ET-1125785 GATE_CHECK_IN 07/20 21:37 → DROP_OFF_DELIVERY FULL (SPOT616, seal NJ937646, RN-5008893, APPT-6034173) → RECEIVE DOCK61 (07/21). Gate-out 07/20 21:54 fue con OOCU6818063 EMPTY (equipo distinto). EMPTY_AFTER_OFFLOADED. inYard=FALSE — ya NO está en yarda. No es llegada nueva.",
       "color": "blue",
       "recibe": "—",
-      "notas": "🔵 P12 Cita HOY 10PM Drop. 2p 1,004 CS. Verificar en próxima rutina."
+      "notas": "🔵 P12 LLEGADA HISTÓRICA (07/20) pero ya FUERA de yarda (EMPTY_AFTER_OFFLOADED, inYard FALSE). RN-5008893 recibido 07/21. No es llegada nueva. Verificar cierre con Rutina STATUS REAL."
     },
     {
       "ref": "FFAU3376606",
@@ -182,7 +182,7 @@
       "loc": "PRE_ENTRY — sin YMS — sin WMS RN",
       "cita": "— (delivery pendiente)",
       "dash": "🔵 P19 🚨 SIN RN — Advance ASN (Jasmine 07/17) — Delivery TBD",
-      "real": "🔵 R4 09:17: Sin YMS. Sin RN WMS. Email Gurunanda confirma ASN (Jasmine 07/17).",
+      "real": "🔵 R6 LLEGADAS 08/02 23:55 PT: Sin registro en YMS/WISE — búsqueda por Container y Trailer sin resultados. Mantener azul/PRE_ENTRY, En yarda=No.",
       "color": "blue",
       "recibe": "—",
       "notas": "🚨 P19 SIN RN. Advance ASN Gurunanda."
@@ -190,13 +190,13 @@
     {
       "ref": "CAIU7049534",
       "rn": "—",
-      "loc": "PRE_ENTRY — sin YMS — sin WMS RN",
+      "loc": "SPOT346 — ET-1131764 — DROP_OFF_DELIVERY FULL (08/01 00:10, seal 7572) — movido SPOT704→SPOT346 (08/02 17:05)",
       "cita": "— (delivery pendiente)",
-      "dash": "🔵 P20 🚨 SIN RN — Advance ASN (Jasmine 07/17) — Delivery TBD",
-      "real": "🔵 R4 09:17: Sin YMS. Sin RN WMS. Email Gurunanda confirma ASN (Jasmine 07/17).",
-      "color": "blue",
+      "dash": "🟡 P20 🚨 LLEGÓ A YARDA — SPOT346 — FULL seal 7572 — inYard TRUE — SIN RN",
+      "real": "🟡 R6 LLEGADAS 08/02 23:55 PT: ET-1131764 GATE_CHECK_IN 08/01 00:10 (Adrienne Bell, tractor 9G00188, rtl). DROP_OFF_DELIVERY FULL seal 7572. inYard=TRUE. SPOT346 (movido desde SPOT704 el 08/02 17:05). Gate Check-out 08/01 00:50 fue del CHASIS GCXU5097405 (EQP-280869) — el contenedor NO salió. Visit EV-141305 mal indexada bajo LUU2633.",
+      "color": "yellow",
       "recibe": "—",
-      "notas": "🚨 P20 SIN RN. Advance ASN Gurunanda."
+      "notas": "🟡 LLEGÓ 08/01. SPOT346. FULL seal 7572. inYard TRUE. SIN RN. Gate-out fue del chasis, NO del contenedor."
     },
     {
       "ref": "FBLU0243220",
@@ -638,14 +638,14 @@
       "Agente Priti — RUTINA LIGERA LLEGADAS YMS 08/03 03:32 PT"
     ]
   ],
-  "updatedAt": "2026-08-03T03:32:01.000Z",
-  "updatedBy": "Agente Priti — RUTINA LIGERA LLEGADAS YMS 08/03 03:32 PT",
+  "updatedAt": "2026-08-03T06:58:00.000Z",
+  "updatedBy": "Agente Priti — RUTINA LIGERA LLEGADAS YMS 08/02 23:55 PT",
   "summary": {
     "total": 19,
     "rojos": 0,
-    "amarillos": 14,
-    "azules": 5,
+    "amarillos": 15,
+    "azules": 4,
     "cerrados": 71,
-    "novedades": "🆕 R5 LLEGADAS: 5 llegadas confirmadas — FFAU3376606 (SPOT606), ONEU1569240 (IN_YARD atípico), SEKU4045310 (SPOT560), CMAU7264078 (SPOT596), FBLU0243220 (SPOT605). CAAU8776319 y YMMU6638670 → cerrados (OUT_OF_YARD). ONEU0796867 → azul (sin evidencia)."
+    "novedades": "🆕 R6 LLEGADAS: CAIU7049534 → amarillo (SPOT346, llegó 08/01 00:10, FULL seal 7572, inYard TRUE; gate-out 08/01 fue del chasis GCXU5097405, no del contenedor). ONEU0796867/FFAU5735726: llegadas históricas ya fuera de yarda (mantener azul). YMLU8790190 sin rastro YMS (mantener azul)."
   }
 }
