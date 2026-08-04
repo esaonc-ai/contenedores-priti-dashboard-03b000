@@ -849,20 +849,27 @@
   {
    "container": "TCNU7769559",
    "rn": null,
-   "status": "PRE_ENTRY",
-   "color": "azul",
-   "inYard": false,
+   "status": "EN_YARDA",
+   "color": "amarillo",
+   "inYard": true,
    "source": "outlook_email",
-   "note": "🔵 Advance ASN Gurunanda. SIN RN. 📧 CITA CONFIRMADA: 08/03 @ 9:00PM–11:00PM (ImportExport Jul 31 9:58AM).",
-   "notes": "🔵 Advance ASN Gurunanda. SIN RN. Cita 08/03 9PM-11PM.",
+   "note": "🔵 Advance ASN Gurunanda. SIN RN. 📧 CITA CONFIRMADA: 08/03 @ 9:00PM–11:00PM (ImportExport Jul 31 9:58AM). 🟡 R9 LLEGADAS 08/04 00:51 PT: YMS confirma LLEGADA — ET-1132460 GATE_CHECK_IN 08/03 20:08:36 → DROP_OFF_DELIVERY FULL SPOT732 (EQP-284223, seal A4260168090), inYard=TRUE, visit EV-142252 IN_PROGRESS. Offload DOCK65 (TASK-5333715 CLOSED 08/03 23:11). RN-5009106 IN_PROGRESS (recepción iniciada; putaway pendiente).",
+   "notes": "🔵 Advance ASN Gurunanda. SIN RN. Cita 08/03 9PM-11PM. 🟡 R9 LLEGADAS 08/04 00:51 PT: YMS confirma LLEGADA — ET-1132460 GATE_CHECK_IN 08/03 20:08:36 → DROP_OFF_DELIVERY FULL SPOT732 (EQP-284223, seal A4260168090), inYard=TRUE, visit EV-142252 IN_PROGRESS. Offload DOCK65 (TASK-5333715 CLOSED 08/03 23:11). RN-5009106 IN_PROGRESS (recepción iniciada; putaway pendiente).",
    "customer": "GURUNANDA, LLC",
    "operationType": "Drop",
    "appointmentTime": "2026-08-03T21:00:00-07:00",
    "announcedAt": "2026-07-31T09:58:00-07:00",
-   "lastVerifiedAt": "2026-08-02T05:27:00-07:00",
-   "verificationSource": "Rutina 1 CORREOS — 2026-08-02T05:27:00-07:00: Cita confirmada 08/03 9PM-11PM (ImportExport Jul 31 9:58AM PDT, advance ASN 07/22). Sin RN aún.",
+   "lastVerifiedAt": "2026-08-04T00:51:00-07:00",
+   "verificationSource": "Rutina 1 CORREOS — 2026-08-02T05:27:00-07:00: Cita confirmada 08/03 9PM-11PM (ImportExport Jul 31 9:58AM PDT, advance ASN 07/22). Sin RN aún. | R9 LLEGADAS YMS 2026-08-04T00:51:00-07:00: ET-1132460 GATE_CHECK_IN 08/03 20:08:36 -> DROP_OFF_DELIVERY FULL SPOT732 (EQP-284223), inYard=TRUE, visit EV-142252 IN_PROGRESS; offload DOCK65 TASK-5333715 CLOSED 08/03 23:11; RN-5009106 IN_PROGRESS",
    "staleStateGuard": true,
-   "plannedEmailInclusionRule": true
+   "plannedEmailInclusionRule": true,
+   "enYarda": true,
+   "entry": "ET-1132460",
+   "entryTicket": "ET-1132460",
+   "dock": "SPOT732/DOCK65",
+   "arrivalTime": "2026-08-03T20:08:36-07:00",
+   "arrivalMethod": "Container",
+   "equipmentId": "EQP-284223"
   },
   {
    "container": "CSNU7908411",
@@ -934,6 +941,7 @@
   }
  ],
  "alerts": [
+  "🟡 R9 LLEGADAS YMS — 2026-08-04T00:51:00-07:00: TCNU7769559 llegó (ET-1132460 GATE_CHECK_IN 08/03 20:08:36 → DROP_OFF FULL SPOT732, inYard=TRUE; offload DOCK65 08/03 23:11, RN-5009106 IN_PROGRESS) → amarillo/EN_YARDA/En yarda=Sí. 33 sin evidencia física; 5 llegadas históricas ya fuera de yarda.",
   "🟡 R8 LLEGADAS YMS — 2026-08-03T17:15:00-07:00: 8 llegadas confirmadas (FSCU8781357, CSNU7540021, FFAU2884048, CMAU2159212, GCXU5468126, CAIU7049534, FFAU5421350, DFSU7385016) → amarillo/EN_YARDA/En yarda=Sí. 5 salieron. 34 sin evidencia.",
   "📧 RUTINA 1 CORREOS — 2026-08-02T05:27:00-07:00: +35 contenedores nuevos (19 Advance ASN Ago 1 + 12 Advance ASN Jul 30 + 4 con cita). Total activos: 48.",
   "🟡 FBLU0243220: RN-5008978 RECEIVING IN_PROGRESS. Único activo en yarda. Putaway NO CREADO.",
@@ -947,12 +955,12 @@
   "📎 Attachments ANS/ASN en correos A1 y A2 NO accesibles vía API Outlook. RN, PO y cantidades pendientes de extracción manual."
  ],
  "tenant": "LT",
- "message": "R8 LLEGADAS YMS — 2026-08-03T17:15:00-07:00. 47 revisados uno por uno (Container → Trailer). 8 LLEGARON físicamente (FSCU8781357, CSNU7540021, FFAU2884048, CMAU2159212, GCXU5468126, CAIU7049534, FFAU5421350, DFSU7385016) → amarillo/EN_YARDA. 5 llegaron y salieron (inYard=false). 34 sin evidencia física (azul).",
+ "message": "R9 LLEGADAS YMS — 2026-08-04T00:51:00-07:00. 39 revisados uno por uno (Container → Trailer, ET apoyo). 1 LLEGÓ físicamente: TCNU7769559 → amarillo/EN_YARDA/En yarda=Sí (ET-1132460 GATE_CHECK_IN 08/03 20:08:36 → DROP_OFF FULL SPOT732, inYard=TRUE; offload DOCK65 08/03 23:11, RN-5009106 IN_PROGRESS). 5 con llegada histórica ya fuera de yarda (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670). 33 sin evidencia física (azul).",
  "summary": {
   "red": 0,
   "green": 0,
-  "blue": 39,
-  "yellow": 9,
+  "blue": 38,
+  "yellow": 10,
   "normal": 0,
   "totalActive": 48,
   "totalExcluded": 11,
@@ -1085,8 +1093,8 @@
    "frequency": "every 30 min — Rutinas 1 (Correos), 2 (STATUS REAL), 3 (Orden)"
   },
   "orderCheck": {
-   "appliedBy": "R8 - LLEGADAS YMS (Agente Priti)",
-   "appliedAt": "2026-08-03T17:15:00-07:00",
+   "appliedBy": "R9 - LLEGADAS YMS (Agente Priti)",
+   "appliedAt": "2026-08-04T00:51:00-07:00",
    "snapshotMatch": true,
    "orderChanged": false,
    "preservedFields": [
@@ -1118,7 +1126,7 @@
   },
   "ymsReadingRule": {
    "status": "ACTIVE",
-   "note": "Rutina 1 2026-08-02: SIN cambios en evidencia YMS. Rutina 1 no modifica estado YMS."
+   "note": "R9 LLEGADAS YMS 2026-08-04T00:51:00-07:00: 39 revisados (Container→Trailer), 1 llegada nueva (TCNU7769559), 5 históricos fuera de yarda, 33 sin evidencia."
   },
   "wmsReadingRule": {
    "status": "ACTIVE",
@@ -1167,9 +1175,9 @@
   },
   "lastYmsArrivalScan": "2026-07-28T18:38:00+00:00"
  },
- "lastUpdated": "2026-08-03T17:15:00-07:00",
- "updatedBy": "RUTINA LIGERA LLEGADAS YMS — 08/03 17:15 PT (Agente Priti)",
+ "lastUpdated": "2026-08-04T00:51:00-07:00",
+ "updatedBy": "RUTINA LIGERA LLEGADAS YMS — 08/04 00:51 PT (Agente Priti)",
  "totalActive": 48,
  "totalExcluded": 11,
- "verificationSource": "R8 LLEGADAS YMS 08/03 17:15 PT — 47 contenedores revisados en YMS/Window (Container→Trailer, ET como apoyo). 8 llegadas confirmadas (inYard=true, SPOT/DOCK). 5 salieron (CSNU7382630, TCNU4365281, TEMU9327290, GCXU5097405, YMMU6638670). 34 sin rastro físico (solo cita expirada)."
+ "verificationSource": "R9 LLEGADAS YMS 08/04 00:51 PT — 39 contenedores revisados en YMS/Window (Container→Trailer, ET como apoyo). 1 llegada nueva confirmada: TCNU7769559 (ET-1132460 GATE_CHECK_IN 08/03 20:08:36 → DROP_OFF FULL SPOT732, EQP-284223, inYard=TRUE, visit EV-142252 IN_PROGRESS; offload DOCK65 TASK-5333715 CLOSED 08/03 23:11; RN-5009106 IN_PROGRESS). 5 con llegada histórica ya fuera de yarda (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670). 33 sin rastro físico."
 }
