@@ -954,10 +954,14 @@
     "📊 Total activos: 48 (47 azul PRE_ENTRY + 1 amarillo RECEIVING). 11 excluidos.",
     "📎 Attachments ANS/ASN en correos A1 y A2 NO accesibles vía API Outlook. RN, PO y cantidades pendientes de extracción manual.",
     "🟦 R10 LLEGADAS YMS — 2026-08-04T02:31:00-07:00: 0 llegadas nuevas detectadas. 5 fuera de yarda confirmados (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670). 33 sin evidencia física (azul conservado). Sin cambios de fila.",
-    "\ud83d\udea8 ALERTA ROLAS \u2014 2026-08-04T04:44:00-07:00: Coolify NO est\u00e1 desplegando (problema recurrente desde Jul 2-4, requiere Force Redeploy manual en Coolify). Live feed en contenedores-priti-dashboard-03b000.coolify.item.pub sigue en 08/02 05:27 PT (47 azul/1 amarillo); faltan 9 llegadas confirmadas R8/R9 (FSCU8781357, CSNU7540021, FFAU2884048, CMAU2159212, GCXU5468126, CAIU7049534, FFAU5421350, DFSU7385016, TCNU7769559) y metadatos R10/R11/R12. ADICIONAL: cert TLS *.coolify.item.pub VENCIDO (notAfter 2026-08-04 01:18 GMT) \u2014 HTTPS bloqueado."
+    "🚨 ALERTA ROLAS — 2026-08-04T04:44:00-07:00: Coolify NO está desplegando (problema recurrente desde Jul 2-4, requiere Force Redeploy manual en Coolify). Live feed en contenedores-priti-dashboard-03b000.coolify.item.pub sigue en 08/02 05:27 PT (47 azul/1 amarillo); faltan 9 llegadas confirmadas R8/R9 (FSCU8781357, CSNU7540021, FFAU2884048, CMAU2159212, GCXU5468126, CAIU7049534, FFAU5421350, DFSU7385016, TCNU7769559) y metadatos R10/R11/R12. ADICIONAL: cert TLS *.coolify.item.pub VENCIDO (notAfter 2026-08-04 01:18 GMT) — HTTPS bloqueado.",
+    "🟦 R13 LLEGADAS YMS — 2026-08-04T05:20:00-07:00: 0 llegadas nuevas detectadas. 5 fuera de yarda confirmados (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670 — sin reingreso). 33 sin evidencia física (azul conservado). Sin cambios de fila.",
+    "🚨 ALERTA ROLAS — 2026-08-04T05:20:00-07:00: Coolify sigue SIN desplegar (recurrente desde Jul 2-4, requiere Force Redeploy manual). Live feed en contenedores-priti-dashboard-03b000.coolify.item.pub permanece en 08/02 05:27 PT (47 azul/1 amarillo); faltan 9 llegadas confirmadas R8/R9 + metadatos R10-R13. Cert TLS *.coolify.item.pub VENCIDO (notAfter 2026-08-04 01:18 GMT) — HTTPS bloqueado, HTTP 302→HTTPS. Verificado por HTTP 08/04 05:16 PT.",
+    "🟦 R14 LLEGADAS YMS — 2026-08-04T06:30:00-07:00: 0 llegadas nuevas detectadas. 38 revisados uno por uno (Container→Trailer→scan yarda, ET apoyo). 5 fuera de yarda confirmados sin reingreso (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670 — inYard=false, OUT_OF_YARD/COMPLETED). 33 sin evidencia física (azul conservado). CSNU7908411 (cita hoy 3PM PT) aún sin check-in. Sin cambios de fila.",
+    "🚨 ALERTA ROLAS — 2026-08-04T06:30:00-07:00: Coolify sigue SIN desplegar (recurrente desde Jul 2-4; requiere Force Redeploy manual). Live feed en contenedores-priti-dashboard-03b000.coolify.item.pub sigue en 08/02 05:27 PT (47 azul/1 amarillo) — faltan 9 llegadas confirmadas R8/R9 (FSCU8781357, CSNU7540021, FFAU2884048, CMAU2159212, GCXU5468126, CAIU7049534, FFAU5421350, DFSU7385016, TCNU7769559) + metadatos R10-R14. Cert TLS *.coolify.item.pub VENCIDO (HTTPS bloqueado, acceso verificado con -k). Repo HEAD sí actualizado (R13/R14). Verificado 08/04 06:28 PT."
   ],
   "tenant": "LT",
-  "message": "R12 LLEGADAS YMS \u2014 2026-08-04T04:44:00-07:00. 38 revisados uno por uno (Container \u2192 Trailer, ET apoyo). 0 LLEGADAS nuevas. 5 con llegada hist\u00f3rica ya fuera (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670 \u2014 inYard=false, OUT_OF_YARD/COMPLETED). 33 sin evidencia f\u00edsica (azul). 48 activos (38 azul/10 amarillo).",
+  "message": "R14 LLEGADAS YMS — 2026-08-04T06:30:00-07:00. 38 revisados uno por uno (Container → Trailer, scan yarda, ET apoyo). 0 LLEGADAS nuevas. 5 con llegada histórica ya fuera (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670 — inYard=false, OUT_OF_YARD/COMPLETED, sin reingreso). 33 sin evidencia física (azul). 48 activos (38 azul/10 amarillo).",
   "summary": {
     "red": 0,
     "green": 0,
@@ -1095,8 +1099,8 @@
       "frequency": "every 30 min — Rutinas 1 (Correos), 2 (STATUS REAL), 3 (Orden)"
     },
     "orderCheck": {
-      "appliedBy": "R12 - LLEGADAS YMS (Agente Priti)",
-      "appliedAt": "2026-08-04T04:44:00-07:00",
+      "appliedBy": "R14 - LLEGADAS YMS (Agente Priti)",
+      "appliedAt": "2026-08-04T06:30:00-07:00",
       "snapshotMatch": true,
       "orderChanged": false,
       "preservedFields": [
@@ -1177,9 +1181,9 @@
     },
     "lastYmsArrivalScan": "2026-07-28T18:38:00+00:00"
   },
-  "lastUpdated": "2026-08-04T04:44:00-07:00",
-  "updatedBy": "RUTINA LIGERA LLEGADAS YMS \u2014 08/04 04:44 PT (Agente Priti)",
+  "lastUpdated": "2026-08-04T06:30:00-07:00",
+  "updatedBy": "RUTINA LIGERA LLEGADAS YMS — 08/04 06:30 PT (Agente Priti)",
   "totalActive": 48,
   "totalExcluded": 11,
-  "verificationSource": "R12 LLEGADAS YMS 08/04 04:44 PT \u2014 38 contenedores revisados en YMS/Window (Container\u2192Trailer, ET como apoyo): 0 llegadas nuevas. 5 con llegada hist\u00f3rica ya fuera de yarda (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670 \u2014 equipment OUT_OF_YARD/COMPLETED, gate-out del contenedor/chasis, inYard=false). 33 sin rastro f\u00edsico en YMS (ni Container ni Trailer): se conserva En yarda=No / azul / PRE_ENTRY. Sin cambios de fila en este ciclo."
+  "verificationSource": "R14 LLEGADAS YMS 08/04 06:30 PT — 38 contenedores revisados en YMS/Window (Container→Trailer→scan yarda, ET como apoyo): 0 llegadas nuevas. 5 con llegada histórica ya fuera de yarda (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670 — equipment OUT_OF_YARD/COMPLETED, gate-out del contenedor/chasis, inYard=false, sin reingreso; verificado via equipment-status y escaneo de 3,637 equipos inYard=true sin coincidencia). 33 sin rastro físico en YMS (ni Container ni Trailer): se conserva En yarda=No / azul / PRE_ENTRY. CSNU7908411 (cita 08/04 3PM PT) aún sin check-in. Sin cambios de fila en este ciclo."
 }
