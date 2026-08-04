@@ -956,7 +956,7 @@
     "🟦 R10 LLEGADAS YMS — 2026-08-04T02:31:00-07:00: 0 llegadas nuevas detectadas. 5 fuera de yarda confirmados (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670). 33 sin evidencia física (azul conservado). Sin cambios de fila."
   ],
   "tenant": "LT",
-  "message": "R11 LLEGADAS YMS \u2014 2026-08-04T03:40:00-07:00. 38 revisados uno por uno (Container \u2192 Trailer, ET apoyo). 0 LLEGADAS nuevas. 5 con llegada hist\u00f3rica ya fuera (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670 \u2014 inYard=false, OUT_OF_YARD/COMPLETED). 33 sin evidencia f\u00edsica (azul). 48 activos (38 azul/10 amarillo).",
+  "message": "R12 LLEGADAS YMS \u2014 2026-08-04T04:44:00-07:00. 38 revisados uno por uno (Container \u2192 Trailer, ET apoyo). 0 LLEGADAS nuevas. 5 con llegada hist\u00f3rica ya fuera (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670 \u2014 inYard=false, OUT_OF_YARD/COMPLETED). 33 sin evidencia f\u00edsica (azul). 48 activos (38 azul/10 amarillo).",
   "summary": {
     "red": 0,
     "green": 0,
@@ -1094,8 +1094,8 @@
       "frequency": "every 30 min — Rutinas 1 (Correos), 2 (STATUS REAL), 3 (Orden)"
     },
     "orderCheck": {
-      "appliedBy": "R11 - LLEGADAS YMS (Agente Priti)",
-      "appliedAt": "2026-08-04T03:40:00-07:00",
+      "appliedBy": "R12 - LLEGADAS YMS (Agente Priti)",
+      "appliedAt": "2026-08-04T04:44:00-07:00",
       "snapshotMatch": true,
       "orderChanged": false,
       "preservedFields": [
@@ -1176,9 +1176,9 @@
     },
     "lastYmsArrivalScan": "2026-07-28T18:38:00+00:00"
   },
-  "lastUpdated": "2026-08-04T03:40:00-07:00",
-  "updatedBy": "RUTINA LIGERA LLEGADAS YMS \u2014 08/04 03:40 PT (Agente Priti)",
+  "lastUpdated": "2026-08-04T04:44:00-07:00",
+  "updatedBy": "RUTINA LIGERA LLEGADAS YMS \u2014 08/04 04:44 PT (Agente Priti)",
   "totalActive": 48,
   "totalExcluded": 11,
-  "verificationSource": "R11 LLEGADAS YMS 08/04 03:40 PT \u2014 38 contenedores revisados en YMS/Window (Container\u2192Trailer, ET como apoyo): 0 llegadas nuevas. 5 con llegada hist\u00f3rica ya fuera de yarda (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670 \u2014 equipment OUT_OF_YARD/COMPLETED, gate-out del contenedor/chasis, inYard=false). 33 sin rastro f\u00edsico en YMS (ni Container ni Trailer): se conserva En yarda=No / azul / PRE_ENTRY. Sin cambios de fila en este ciclo."
+  "verificationSource": "R12 LLEGADAS YMS 08/04 04:44 PT \u2014 38 contenedores revisados en YMS/Window (Container\u2192Trailer, ET como apoyo): 0 llegadas nuevas. 5 con llegada hist\u00f3rica ya fuera de yarda (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670 \u2014 equipment OUT_OF_YARD/COMPLETED, gate-out del contenedor/chasis, inYard=false). 33 sin rastro f\u00edsico en YMS (ni Container ni Trailer): se conserva En yarda=No / azul / PRE_ENTRY. Sin cambios de fila en este ciclo."
 }
