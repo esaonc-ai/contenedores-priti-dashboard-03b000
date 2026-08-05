@@ -948,6 +948,8 @@
     }
   ],
   "alerts": [
+    "🟦 R18 LLEGADAS YMS — 2026-08-04T22:31:00-07:00: 0 llegadas nuevas. 37 revisados uno por uno (Container → Trailer/equipmentNo, equipment-entry/activity + status, ET apoyo). 5 con llegada histórica ya fuera (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670 — inYard=false, sin reingreso). 32 sin evidencia física (azul). Sin cambios de fila.",
+    "🚨 ALERTA ROLAS — Feed live STALE (verificado 08/04 22:31 PT): https://contenedores-priti-dashboard-03b000.coolify.item.pub/container-feed.json sirve lastUpdated 2026-08-02T05:27:00-07:00 (repo main @ R17/R18). Coolify sin auto-deploy (recurrente desde Jul; requiere Force Redeploy manual). Dashboard live con build viejo (index-D-jYeARN.js, título 3:30 PM PT) vs repo index-BXHpwlod.js. Requiere Force Redeploy manual en Coolify.",
     "🟦 R17 LLEGADAS YMS — 2026-08-04T20:05:00-07:00: 0 llegadas nuevas. 37 revisados uno por uno (Container → Trailer, equipment-entry/activity, ET apoyo). 5 con llegada histórica ya fuera (CSNU7382630, TCNU4365281, TEMU9327290, GCXU5097405, YMMU6638670 — inYard=false, sin reingreso). 32 sin evidencia física (azul). 48 activos (37 azul/11 amarillo). Sin cambios de fila.",
     "🚨 ALERTA ROLAS — Feed live STALE: https://contenedores-priti-dashboard-03b000.coolify.item.pub/container-feed.json sirve lastUpdated 2026-08-02T05:27:00-07:00 (repo main @ R17 08/04 20:05 PT). Coolify sin auto-deploy (recurrente desde Jul; requiere Force Redeploy manual). CERT TLS *.coolify.item.pub RENOVADO (válido 05/08/2026–03/11/2026) — ya no bloquea HTTPS. Faltan en live: 9 llegadas R8/R9, metadatos R10-R16 y llegada R16 CSNU7908411. Dashboard live muestra 47 azul/1 amarillo vs repo 37 azul/11 amarillo. Requiere Force Redeploy manual en Coolify. Verificado 08/04 20:05 PT.",
     "🟡 R16 LLEGADAS YMS — 2026-08-04T18:40:00-07:00: CSNU7908411 LLEGÓ (ET-1133028 GATE_CHECK_IN 08/04 15:42:42 PT → SPOT621 locId 207669, EQP-285184 FULL_TO_OFFLOAD, inYard=TRUE, visit EV-143063 IN_PROGRESS; tractor/chasis gate-out 16:47:35, contenedor sigue en yarda; SIN RN; cita 3-5PM cumplida) → amarillo/EN_YARDA/En yarda=Sí.",
@@ -973,7 +975,7 @@
     "🚨 ALERTA ROLAS — 2026-08-04T10:45:00-07:00: Coolify sigue SIN desplegar (recurrente desde Jul 2-4; requiere Force Redeploy manual). Live feed en contenedores-priti-dashboard-03b000.coolify.item.pub sigue en 08/02 05:27 PT (47 azul/1 amarillo) — faltan 9 llegadas confirmadas R8/R9 (FSCU8781357, CSNU7540021, FFAU2884048, CMAU2159212, GCXU5468126, CAIU7049534, FFAU5421350, DFSU7385016, TCNU7769559) + metadatos R10-R15. Cert TLS *.coolify.item.pub VENCIDO (HTTPS bloqueado, acceso verificado con -k). Repo HEAD sí actualizado (R15). Verificado 08/04 10:46 PT."
   ],
   "tenant": "LT",
-  "message": "R17 LLEGADAS YMS — 2026-08-04T20:05:00-07:00. 37 revisados uno por uno (Container → Trailer, equipment-entry/activity completos, ET apoyo). 0 LLEGADAS nuevas. 5 con llegada histórica ya fuera (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670 — inYard=false, OUT_OF_YARD/COMPLETED, sin reingreso). 32 sin evidencia física (azul). 48 activos (37 azul/11 amarillo).",
+  "message": "R18 LLEGADAS YMS — 2026-08-04T22:31:00-07:00. 37 revisados uno por uno (Container → Trailer/equipmentNo, equipment visits + status, ET apoyo). 0 LLEGADAS nuevas. 5 con llegada histórica ya fuera (CSNU7382630, GCXU5097405, TCNU4365281, TEMU9327290, YMMU6638670 — inYard=false, OUT_OF_YARD/COMPLETED, sin reingreso). 32 sin evidencia física (azul). Sin cambios de fila.",
   "summary": {
     "red": 0,
     "green": 0,
@@ -1111,8 +1113,8 @@
       "frequency": "every 30 min — Rutinas 1 (Correos), 2 (STATUS REAL), 3 (Orden)"
     },
     "orderCheck": {
-      "appliedBy": "R17 - LLEGADAS YMS (Agente Priti)",
-      "appliedAt": "2026-08-04T20:05:00-07:00",
+      "appliedBy": "R18 - LLEGADAS YMS (Agente Priti)",
+      "appliedAt": "2026-08-04T22:31:00-07:00",
       "snapshotMatch": true,
       "orderChanged": false,
       "preservedFields": [
@@ -1144,7 +1146,7 @@
     },
     "ymsReadingRule": {
       "status": "ACTIVE",
-      "note": "R9 LLEGADAS YMS 2026-08-04T00:51:00-07:00: 39 revisados (Container→Trailer), 1 llegada nueva (TCNU7769559), 5 históricos fuera de yarda, 33 sin evidencia."
+      "note": "R18 LLEGADAS YMS 2026-08-04T22:31:00-07:00: 37 revisados (Container→Trailer/equipmentNo), 0 llegadas nuevas, 5 históricos fuera de yarda sin reingreso, 32 sin evidencia física."
     },
     "wmsReadingRule": {
       "status": "ACTIVE",
@@ -1191,10 +1193,10 @@
       "attachmentsMissed": 3,
       "attachmentsNote": "3 correos con attachments ANS/ASN no accesibles vía API (A1, A2, A7). RN/PO/cantidades en attachments pendientes."
     },
-    "lastYmsArrivalScan": "2026-08-05T03:05:00+00:00"
+    "lastYmsArrivalScan": "2026-08-05T05:31:00+00:00"
   },
-  "lastUpdated": "2026-08-04T20:05:00-07:00",
-  "updatedBy": "RUTINA LIGERA LLEGADAS YMS — 08/04 20:05 PT (Agente Priti)",
+  "lastUpdated": "2026-08-04T22:31:00-07:00",
+  "updatedBy": "RUTINA LIGERA LLEGADAS YMS — 08/04 22:31 PT (Agente Priti)",
   "totalActive": 48,
   "totalExcluded": 11,
   "verificationSource": "R17 LLEGADAS YMS 08/04 20:05 PT — 37 contenedores revisados en YMS/Window (Container → Trailer, equipment-entry/history + equipment-activity, ET como apoyo): 0 llegadas nuevas. 5 con llegada histórica ya fuera (CSNU7382630, TCNU4365281, TEMU9327290, GCXU5097405, YMMU6638670 — inYard=false, OUT_OF_YARD/COMPLETED, gate-out del contenedor, sin reingreso). 32 sin rastro físico (ni Container ni Trailer; cero equipment-entry/activity): se conserva En yarda=No / azul / PRE_ENTRY. Sin cambios de fila en este ciclo."
