@@ -14,13 +14,19 @@
    "operationType": "Drop",
    "appointmentTime": "2026-07-29T00:00:00-07:00",
    "announcedAt": "2026-07-27T09:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009267",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['FORCE_CLOSED', 'CANCELLED', 'FORCE_CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5009209",
+    "RN-5009285"
+   ]
   },
   {
    "container": "FBLU0243220",
@@ -35,8 +41,8 @@
    "operationType": "Drop",
    "appointmentTime": "2026-07-27T21:00:00-07:00",
    "announcedAt": "2026-07-17T18:04:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5008978",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
    "entryTicket": "ET-1129308",
@@ -50,9 +56,14 @@
    "previousRNs": [
     "RN-176487 (DUPRAY USA Dic 2025 — descartado)"
    ],
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['CLOSED', 'CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-176487"
+   ]
   },
   {
    "container": "CSNU7382630",
@@ -67,13 +78,16 @@
    "operationType": "Drop",
    "appointmentTime": "2026-07-27T15:00:00-07:00",
    "announcedAt": "2026-07-27T16:55:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009013",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": []
   },
   {
    "container": "TCNU4365281",
@@ -88,13 +102,16 @@
    "operationType": "Drop",
    "appointmentTime": "2026-07-27T23:00:00-07:00",
    "announcedAt": "2026-07-24T13:18:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009066",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": []
   },
   {
    "container": "TEMU9327290",
@@ -109,13 +126,16 @@
    "operationType": "Drop",
    "appointmentTime": "2026-07-27T23:30:00-07:00",
    "announcedAt": "2026-07-27T09:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009018",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['FORCE_CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": []
   },
   {
    "container": "CSNU7540021",
@@ -130,13 +150,18 @@
    "operationType": "Drop",
    "appointmentTime": "2026-07-28T15:00:00-07:00",
    "announcedAt": "2026-07-28T13:37:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5009014"
+   ]
   },
   {
    "container": "FFAU2884048",
@@ -151,13 +176,18 @@
    "operationType": "Drop",
    "appointmentTime": "2026-07-28T15:00:00-07:00",
    "announcedAt": "2026-07-28T13:37:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5009017"
+   ]
   },
   {
    "container": "CMAU2159212",
@@ -172,11 +202,11 @@
    "operationType": "Drop",
    "appointmentTime": "2026-07-28T23:00:00-07:00",
    "announcedAt": "2026-07-28T09:29:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009006",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009006",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -186,7 +216,7 @@
    "arrivalTime": "2026-07-29T00:24:40 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1130122 (Container), checkIn 2026-07-29T00:24:40, ubicación SPOT440, checkOut sin checkout, receipts Window ['RN-5009006'] ['Closed']",
    "receiveTask": [
     {
      "id": "TASK-5330140",
@@ -201,7 +231,24 @@
      "state": "CLOSED",
      "assignee": "1948070158297014342"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1130122",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-07-29T00:24:40",
+   "windowGateCheckinTime": "2026-07-29T00:23:20",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT440",
+   "windowEquipmentStatus": "Empty after Offload",
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009006"
+   ],
+   "windowReceiptsStatus": [
+    "Closed"
+   ],
+   "windowHoursInYard": 1310.28,
+   "wmsRn": []
   },
   {
    "container": "GCXU5468126",
@@ -216,11 +263,11 @@
    "operationType": "Drop",
    "appointmentTime": "2026-07-29T11:30:00-07:00",
    "announcedAt": "2026-07-27T09:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009012",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009012",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -230,7 +277,7 @@
    "arrivalTime": "2026-07-29T00:49:41 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1130127 (Container), checkIn 2026-07-29T00:49:41, ubicación SPOT414, checkOut sin checkout, receipts Window ['RN-5009012'] ['Closed']",
    "receiveTask": [
     {
      "id": "TASK-5330166",
@@ -245,7 +292,24 @@
      "state": "CLOSED",
      "assignee": "1948070158297014342"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1130127",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-07-29T00:49:41",
+   "windowGateCheckinTime": "2026-07-29T00:48:59",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT414",
+   "windowEquipmentStatus": "Empty after Offload",
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009012"
+   ],
+   "windowReceiptsStatus": [
+    "Closed"
+   ],
+   "windowHoursInYard": 1309.88,
+   "wmsRn": []
   },
   {
    "container": "GCXU5097405",
@@ -260,13 +324,18 @@
    "operationType": "Drop",
    "appointmentTime": "2026-07-29T14:00:00-07:00",
    "announcedAt": "2026-07-27T09:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['FORCE_CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5009011"
+   ]
   },
   {
    "container": "CAIU7049534",
@@ -281,13 +350,18 @@
    "operationType": "Drop",
    "appointmentTime": "2026-08-01T01:00:00-07:00",
    "announcedAt": "2026-07-17T18:04:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5008981"
+   ]
   },
   {
    "container": "YMLU8790190",
@@ -302,11 +376,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-17T18:04:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5008980",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5008980",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -316,7 +390,7 @@
    "arrivalTime": "2026-08-06T00:54:21 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1133964 (Container), checkIn 2026-08-06T00:54:21, ubicación SPOT426, checkOut sin checkout, receipts Window ['RN-5008980'] ['Closed']",
    "receiveTask": [
     {
      "id": "TASK-5337371",
@@ -331,7 +405,24 @@
      "state": "CLOSED",
      "assignee": "1996313227690033154"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1133964",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-08-06T00:54:21",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT426",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5008980"
+   ],
+   "windowReceiptsStatus": [
+    "Closed"
+   ],
+   "windowHoursInYard": 1117.8,
+   "wmsRn": []
   },
   {
    "container": "YMMU6638670",
@@ -346,13 +437,18 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-17T18:04:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5008977"
+   ]
   },
   {
    "container": "GCXU5298478",
@@ -367,13 +463,19 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['CANCELLED', 'CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5009422",
+    "RN-5009871"
+   ]
   },
   {
    "container": "FFAU6267770",
@@ -388,13 +490,19 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['CANCELLED', 'CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5009863",
+    "RN-5009872"
+   ]
   },
   {
    "container": "SJCU4576641",
@@ -409,11 +517,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009823",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009823",
    "receiptStatus": "CLOSED",
    "previousRNs": [
@@ -425,7 +533,7 @@
    "arrivalTime": "2026-08-19T10:52:28 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1140472 (Container), checkIn 2026-08-19T10:52:28, ubicación SPOT801, checkOut sin checkout, receipts Window ['RN-5009423'] ['Cancelled']",
    "receiveTask": [
     {
      "id": "TASK-5349152",
@@ -440,6 +548,25 @@
      "state": "CLOSED",
      "assignee": "1948070158297014394"
     }
+   ],
+   "windowFound": true,
+   "windowET": "ET-1140472",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-08-19T10:52:28",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT801",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009423"
+   ],
+   "windowReceiptsStatus": [
+    "Cancelled"
+   ],
+   "windowHoursInYard": 795.83,
+   "wmsRn": [
+    "RN-5009423"
    ]
   },
   {
@@ -455,11 +582,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009424",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009424",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -469,7 +596,7 @@
    "arrivalTime": "2026-08-20T11:54:11 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1141095 (Container), checkIn 2026-08-20T11:54:11, ubicación SPOT824, checkOut sin checkout, receipts Window ['RN-5009424'] ['Closed']",
    "receiveTask": [
     {
      "id": "TASK-5353433",
@@ -484,7 +611,24 @@
      "state": "CLOSED",
      "assignee": "1996313003210883074"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1141095",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-08-20T11:54:11",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT824",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009424"
+   ],
+   "windowReceiptsStatus": [
+    "Closed"
+   ],
+   "windowHoursInYard": 770.87,
+   "wmsRn": []
   },
   {
    "container": "FFAU2584288",
@@ -499,11 +643,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009425",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009425",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -513,7 +657,7 @@
    "arrivalTime": "2026-08-20T22:29:45 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1141420 (Container), checkIn 2026-08-20T22:29:45, ubicación SPOT355, checkOut sin checkout, receipts Window ['RN-5009425'] ['Closed']",
    "receiveTask": [
     {
      "id": "TASK-5349714",
@@ -528,7 +672,24 @@
      "state": "CLOSED",
      "assignee": "1948070158297014342"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1141420",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-08-20T22:29:45",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT355",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009425"
+   ],
+   "windowReceiptsStatus": [
+    "Closed"
+   ],
+   "windowHoursInYard": 760.28,
+   "wmsRn": []
   },
   {
    "container": "FFAU2448255",
@@ -543,13 +704,19 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['CLOSED', 'CANCELLED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5009426",
+    "RN-5009899"
+   ]
   },
   {
    "container": "SJCU4576277",
@@ -564,11 +731,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009430",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009430",
    "receiptStatus": "FORCE_CLOSED",
    "previousRNs": [],
@@ -578,7 +745,7 @@
    "arrivalTime": "2026-08-20T23:01:24 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1141428 (Container), checkIn 2026-08-20T23:01:24, ubicación SPOT536, checkOut sin checkout, receipts Window ['RN-5009430'] ['Force Closed']",
    "receiveTask": [
     {
      "id": "TASK-5349676",
@@ -593,7 +760,24 @@
      "state": "CLOSED",
      "assignee": "1996313227690033154"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1141428",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-08-20T23:01:24",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT536",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009430"
+   ],
+   "windowReceiptsStatus": [
+    "Force Closed"
+   ],
+   "windowHoursInYard": 759.75,
+   "wmsRn": []
   },
   {
    "container": "TCNU1097837",
@@ -608,13 +792,18 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5009638"
+   ]
   },
   {
    "container": "TCKU6738456",
@@ -629,13 +818,19 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['CLOSED', 'CANCELLED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5009431",
+    "RN-5009874"
+   ]
   },
   {
    "container": "TCNU2014565",
@@ -650,11 +845,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009432",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009432",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -664,7 +859,7 @@
    "arrivalTime": "2026-08-20T13:15:37 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1141146 (Container), checkIn 2026-08-20T13:15:37, ubicación SPOT555, checkOut sin checkout, receipts Window ['RN-5009432'] ['Closed']",
    "receiveTask": [
     {
      "id": "TASK-5349734",
@@ -679,7 +874,24 @@
      "state": "CLOSED",
      "assignee": "1996313227690033154"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1141146",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-08-20T13:15:37",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT555",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009432"
+   ],
+   "windowReceiptsStatus": [
+    "Closed"
+   ],
+   "windowHoursInYard": 769.52,
+   "wmsRn": []
   },
   {
    "container": "CSNU7806997",
@@ -694,13 +906,18 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5009462"
+   ]
   },
   {
    "container": "OOCU1111550",
@@ -715,11 +932,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009433",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009433",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -729,7 +946,7 @@
    "arrivalTime": "2026-08-26T00:43:12 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1143485 (Container), checkIn 2026-08-26T00:43:12, ubicación SPOT450, checkOut sin checkout, receipts Window ['RN-5009433'] ['Closed']",
    "receiveTask": [
     {
      "id": "TASK-5353513",
@@ -744,7 +961,24 @@
      "state": "CLOSED",
      "assignee": "2000827634009450022"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1143485",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-08-26T00:43:12",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT450",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009433"
+   ],
+   "windowReceiptsStatus": [
+    "Closed"
+   ],
+   "windowHoursInYard": 638.08,
+   "wmsRn": []
   },
   {
    "container": "FBIU5595506",
@@ -759,11 +993,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009855",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009855",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -773,7 +1007,7 @@
    "arrivalTime": "2026-08-20T22:33:00 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1141424 (Container), checkIn 2026-08-20T22:33:00, ubicación SPOT826, checkOut sin checkout, receipts Window ['RN-5009855'] ['Closed']",
    "receiveTask": [
     {
      "id": "TASK-5349750",
@@ -788,7 +1022,24 @@
      "state": "CLOSED",
      "assignee": "1996313227690033154"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1141424",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-08-20T22:33:00",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT826",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009855"
+   ],
+   "windowReceiptsStatus": [
+    "Closed"
+   ],
+   "windowHoursInYard": 760.27,
+   "wmsRn": []
   },
   {
    "container": "SEKU6438847",
@@ -803,11 +1054,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009434",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009434",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -817,7 +1068,7 @@
    "arrivalTime": "2026-08-19T10:56:19 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1140478 (Container), checkIn 2026-08-19T10:56:19, ubicación SPOT863, checkOut sin checkout, receipts Window ['RN-5009434'] ['Closed']",
    "receiveTask": [
     {
      "id": "TASK-5348674",
@@ -832,7 +1083,24 @@
      "state": "CLOSED",
      "assignee": "1948070158297014342"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1140478",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-08-19T10:56:19",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT863",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009434"
+   ],
+   "windowReceiptsStatus": [
+    "Closed"
+   ],
+   "windowHoursInYard": 795.87,
+   "wmsRn": []
   },
   {
    "container": "OOCU0852672",
@@ -847,13 +1115,18 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | AMBIGUO: WMS tiene trabajo activo [('IN_PROGRESS', 'TASK-5354450')]",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5009435"
+   ]
   },
   {
    "container": "MATU2738730",
@@ -868,13 +1141,18 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['FORCE_CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5009436"
+   ]
   },
   {
    "container": "SEGU6910809",
@@ -889,11 +1167,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5010094",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5010094",
    "receiptStatus": "CLOSED",
    "previousRNs": [
@@ -905,7 +1183,7 @@
    "arrivalTime": "2026-09-02T23:58:15 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1150538 (Trailer), checkIn 2026-09-08T23:42:09, ubicación SPOT817, checkOut sin checkout, receipts Window [] []",
    "receiveTask": [
     {
      "id": "TASK-5360958",
@@ -920,6 +1198,21 @@
      "state": "CLOSED",
      "assignee": "5146"
     }
+   ],
+   "windowFound": true,
+   "windowET": "ET-1150538",
+   "windowEquipmentType": "Trailer",
+   "windowCheckInTime": "2026-09-08T23:42:09",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT817",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": null,
+   "windowReceiptIds": [],
+   "windowReceiptsStatus": [],
+   "windowHoursInYard": 303.12,
+   "wmsRn": [
+    "RN-5009437"
    ]
   },
   {
@@ -935,11 +1228,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009459",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009459",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -949,7 +1242,7 @@
    "arrivalTime": "2026-09-02T22:19:48 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1147970 (Container), checkIn 2026-09-02T22:19:48, ubicación None, checkOut sin checkout, receipts Window ['RN-5009459'] ['Closed']",
    "receiveTask": [
     {
      "id": "TASK-5360230",
@@ -964,7 +1257,24 @@
      "state": "CLOSED",
      "assignee": "5146"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1147970",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-09-02T22:19:48",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": null,
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009459"
+   ],
+   "windowReceiptsStatus": [
+    "Closed"
+   ],
+   "windowHoursInYard": 448.48,
+   "wmsRn": []
   },
   {
    "container": "CCLU7791570",
@@ -979,11 +1289,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-31T17:46:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009438",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009438",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -993,7 +1303,7 @@
    "arrivalTime": "2026-09-03T16:06:05 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1150551 (Trailer), checkIn 2026-09-08T23:49:36, ubicación SPOT819, checkOut sin checkout, receipts Window [] []",
    "receiveTask": [
     {
      "id": "TASK-5360223",
@@ -1008,7 +1318,20 @@
      "state": "CLOSED",
      "assignee": "1948070158297014498"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1150551",
+   "windowEquipmentType": "Trailer",
+   "windowCheckInTime": "2026-09-08T23:49:36",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT819",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": null,
+   "windowReceiptIds": [],
+   "windowReceiptsStatus": [],
+   "windowHoursInYard": 302.98,
+   "wmsRn": []
   },
   {
    "container": "GAOU6686579",
@@ -1023,11 +1346,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-30T17:57:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009326",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009326",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -1037,7 +1360,7 @@
    "arrivalTime": "2026-09-03T10:46:07 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1148257 (Container), checkIn 2026-09-03T10:46:07, ubicación SPOT690, checkOut sin checkout, receipts Window ['RN-5009326'] ['Closed']",
    "receiveTask": [
     {
      "id": "TASK-5361281",
@@ -1052,7 +1375,24 @@
      "state": "CLOSED",
      "assignee": "1996313227690033154"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1148257",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-09-03T10:46:07",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT690",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009326"
+   ],
+   "windowReceiptsStatus": [
+    "Closed"
+   ],
+   "windowHoursInYard": 436.05,
+   "wmsRn": []
   },
   {
    "container": "FFAU1591852",
@@ -1067,11 +1407,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-30T17:57:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009327",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009327",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -1081,7 +1421,7 @@
    "arrivalTime": "2026-09-03T20:47:41 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1150566 (Trailer), checkIn 2026-09-08T23:55:42, ubicación SPOT815, checkOut sin checkout, receipts Window [] []",
    "receiveTask": [
     {
      "id": "TASK-5361282",
@@ -1096,7 +1436,20 @@
      "state": "CLOSED",
      "assignee": "1948070158297014342"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1150566",
+   "windowEquipmentType": "Trailer",
+   "windowCheckInTime": "2026-09-08T23:55:42",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT815",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": null,
+   "windowReceiptIds": [],
+   "windowReceiptsStatus": [],
+   "windowHoursInYard": 302.88,
+   "wmsRn": []
   },
   {
    "container": "MRSU7091694",
@@ -1111,11 +1464,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-30T17:57:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009328",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009328",
    "receiptStatus": "FORCE_CLOSED",
    "previousRNs": [],
@@ -1125,7 +1478,7 @@
    "arrivalTime": "2026-09-03T12:40:12 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1148347 (Container), checkIn 2026-09-03T12:40:12, ubicación SPOT467, checkOut sin checkout, receipts Window ['RN-5009328'] ['Force Closed']",
    "receiveTask": [
     {
      "id": "TASK-5361283",
@@ -1140,7 +1493,24 @@
      "state": "CLOSED",
      "assignee": "1948070158297014342"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1148347",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-09-03T12:40:12",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT467",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009328"
+   ],
+   "windowReceiptsStatus": [
+    "Force Closed"
+   ],
+   "windowHoursInYard": 434.15,
+   "wmsRn": []
   },
   {
    "container": "MRSU8376325",
@@ -1155,11 +1525,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-30T17:57:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009329",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009329",
    "receiptStatus": "FORCE_CLOSED",
    "previousRNs": [],
@@ -1169,7 +1539,7 @@
    "arrivalTime": "2026-09-03T15:02:55 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1148441 (Container), checkIn 2026-09-03T15:02:55, ubicación SPOT479, checkOut sin checkout, receipts Window ['RN-5009329'] ['Force Closed']",
    "receiveTask": [
     {
      "id": "TASK-5361256",
@@ -1184,7 +1554,24 @@
      "state": "CLOSED",
      "assignee": "1996313227690033154"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1148441",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-09-03T15:02:55",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT479",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009329"
+   ],
+   "windowReceiptsStatus": [
+    "Force Closed"
+   ],
+   "windowHoursInYard": 431.77,
+   "wmsRn": []
   },
   {
    "container": "TCKU1053372",
@@ -1199,11 +1586,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-30T17:57:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009330",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009330",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -1213,7 +1600,7 @@
    "arrivalTime": "2026-09-03T00:17:05 (UTC literal en Window Entry List)",
    "arrivalMethod": "Trailer",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1147995 (Trailer), checkIn 2026-09-03T00:17:05, ubicación SPOT455, checkOut sin checkout, receipts Window [] []",
    "receiveTask": [
     {
      "id": "TASK-5356808",
@@ -1228,7 +1615,20 @@
      "state": "CLOSED",
      "assignee": "1996313003210883074"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1147995",
+   "windowEquipmentType": "Trailer",
+   "windowCheckInTime": "2026-09-03T00:17:05",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT455",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": null,
+   "windowReceiptIds": [],
+   "windowReceiptsStatus": [],
+   "windowHoursInYard": 446.53,
+   "wmsRn": []
   },
   {
    "container": "SEGU6552264",
@@ -1243,11 +1643,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-30T17:57:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009858",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009858",
    "receiptStatus": "CLOSED",
    "previousRNs": [
@@ -1259,7 +1659,7 @@
    "arrivalTime": "2026-08-20T20:59:28 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1141396 (Container), checkIn 2026-08-20T20:59:28, ubicación None, checkOut sin checkout, receipts Window ['RN-5009331'] ['Cancelled']",
    "receiveTask": [
     {
      "id": "TASK-5350300",
@@ -1274,6 +1674,25 @@
      "state": "CLOSED",
      "assignee": "5146"
     }
+   ],
+   "windowFound": true,
+   "windowET": "ET-1141396",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-08-20T20:59:28",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": null,
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009331"
+   ],
+   "windowReceiptsStatus": [
+    "Cancelled"
+   ],
+   "windowHoursInYard": 761.82,
+   "wmsRn": [
+    "RN-5009331"
    ]
   },
   {
@@ -1289,11 +1708,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-30T17:57:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009332",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009332",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -1303,7 +1722,7 @@
    "arrivalTime": "2026-08-21T19:28:01 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1141941 (Container), checkIn 2026-08-21T19:28:01, ubicación SPOT436, checkOut sin checkout, receipts Window ['RN-5009332'] ['Closed']",
    "receiveTask": [
     {
      "id": "TASK-5351178",
@@ -1318,7 +1737,24 @@
      "state": "CLOSED",
      "assignee": "1948070158297014342"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1141941",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-08-21T19:28:01",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT436",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009332"
+   ],
+   "windowReceiptsStatus": [
+    "Closed"
+   ],
+   "windowHoursInYard": 739.35,
+   "wmsRn": []
   },
   {
    "container": "FBIU5605116",
@@ -1333,11 +1769,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-30T17:57:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009570",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009570",
    "receiptStatus": "FORCE_CLOSED",
    "previousRNs": [
@@ -1351,7 +1787,7 @@
    "arrivalTime": "2026-08-12T10:46:52 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1138237 (Container), checkIn 2026-08-14T09:41:20, ubicación DOCK65, checkOut sin checkout, receipts Window ['RN-5009570'] ['Force Closed']",
    "receiveTask": [
     {
      "id": "TASK-5343460",
@@ -1366,6 +1802,27 @@
      "state": "CLOSED",
      "assignee": "5146"
     }
+   ],
+   "windowFound": true,
+   "windowET": "ET-1138237",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-08-14T09:41:20",
+   "windowGateCheckinTime": "2026-08-14T09:39:49",
+   "windowCheckOutTime": null,
+   "windowLocation": "DOCK65",
+   "windowEquipmentStatus": "Empty after Offload",
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009570"
+   ],
+   "windowReceiptsStatus": [
+    "Force Closed"
+   ],
+   "windowHoursInYard": 917.13,
+   "wmsRn": [
+    "RN-5009333",
+    "RN-5009556",
+    "RN-5009621"
    ]
   },
   {
@@ -1381,11 +1838,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-30T17:57:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009900",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009900",
    "receiptStatus": "CLOSED",
    "previousRNs": [
@@ -1397,7 +1854,7 @@
    "arrivalTime": "2026-08-25T06:59:41 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1142868 (Container), checkIn 2026-08-25T06:59:41, ubicación SPOT804, checkOut sin checkout, receipts Window ['RN-5009334'] ['Cancelled']",
    "receiveTask": [
     {
      "id": "TASK-5353202",
@@ -1412,6 +1869,25 @@
      "state": "CLOSED",
      "assignee": "5146"
     }
+   ],
+   "windowFound": true,
+   "windowET": "ET-1142868",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-08-25T06:59:41",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT804",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009334"
+   ],
+   "windowReceiptsStatus": [
+    "Cancelled"
+   ],
+   "windowHoursInYard": 655.82,
+   "wmsRn": [
+    "RN-5009334"
    ]
   },
   {
@@ -1427,13 +1903,18 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-30T17:57:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | SIN EVIDENCIA en WMS ni Window",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5009335"
+   ]
   },
   {
    "container": "OOCU9109420",
@@ -1448,11 +1929,11 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-30T17:57:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009860",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009860",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -1462,7 +1943,7 @@
    "arrivalTime": "2026-08-20T19:37:28 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1142203 (Container), checkIn 2026-08-23T12:57:39, ubicación SPOT834, checkOut sin checkout, receipts Window ['RN-5009860'] ['Closed']",
    "receiveTask": [
     {
      "id": "TASK-5352350",
@@ -1477,7 +1958,24 @@
      "state": "CLOSED",
      "assignee": "2000827634009450022"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1142203",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-08-23T12:57:39",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT834",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009860"
+   ],
+   "windowReceiptsStatus": [
+    "Closed"
+   ],
+   "windowHoursInYard": 697.87,
+   "wmsRn": []
   },
   {
    "container": "TRHU4817338",
@@ -1492,13 +1990,18 @@
    "operationType": "Drop",
    "appointmentTime": null,
    "announcedAt": "2026-07-30T17:57:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5009861"
+   ]
   },
   {
    "container": "TCNU7769559",
@@ -1513,11 +2016,11 @@
    "operationType": "Drop",
    "appointmentTime": "2026-08-03T21:00:00-07:00",
    "announcedAt": "2026-07-31T09:58:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009106",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009106",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -1527,7 +2030,7 @@
    "arrivalTime": "2026-08-03T20:08:36 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1132460 (Container), checkIn 2026-08-03T20:08:36, ubicación SPOT575, checkOut sin checkout, receipts Window ['RN-5009106'] ['Closed']",
    "receiveTask": [
     {
      "id": "TASK-5333715",
@@ -1542,7 +2045,24 @@
      "state": "CLOSED",
      "assignee": "1996313227690033154"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1132460",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-08-03T20:08:36",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": "SPOT575",
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009106"
+   ],
+   "windowReceiptsStatus": [
+    "Closed"
+   ],
+   "windowHoursInYard": 1170.68,
+   "wmsRn": []
   },
   {
    "container": "CSNU7908411",
@@ -1557,11 +2077,11 @@
    "operationType": "Drop",
    "appointmentTime": "2026-08-04T15:00:00-07:00",
    "announcedAt": "2026-07-31T09:58:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: equipment/search exacto + ET detail + WMS receipt/tasks",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: RN-5009076",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "receipt": "RN-5009076",
    "receiptStatus": "CLOSED",
    "previousRNs": [],
@@ -1571,7 +2091,7 @@
    "arrivalTime": "2026-08-04T15:42:42 (UTC literal en Window Entry List)",
    "arrivalMethod": "Container",
    "enYarda": true,
-   "windowResult": "LLEGÓ — WINDOW CONFIRMADO (histórico) + RN cerrado",
+   "windowResult": "CONFIRMADO — CERRADO: ET ET-1133028 (Container), checkIn 2026-08-04T15:42:42, ubicación None, checkOut sin checkout, receipts Window ['RN-5009076'] ['Closed']",
    "receiveTask": [
     {
      "id": "TASK-5335080",
@@ -1586,7 +2106,24 @@
      "state": "CLOSED",
      "assignee": "1948070158297014342"
     }
-   ]
+   ],
+   "windowFound": true,
+   "windowET": "ET-1133028",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-08-04T15:42:42",
+   "windowGateCheckinTime": "",
+   "windowCheckOutTime": null,
+   "windowLocation": null,
+   "windowEquipmentStatus": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5009076"
+   ],
+   "windowReceiptsStatus": [
+    "Closed"
+   ],
+   "windowHoursInYard": 1151.12,
+   "wmsRn": []
   },
   {
    "container": "FFAU5421350",
@@ -1601,13 +2138,18 @@
    "operationType": "Drop",
    "appointmentTime": "2026-08-03T10:00:00-07:00",
    "announcedAt": "2026-07-30T12:50:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['FORCE_CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5009010"
+   ]
   },
   {
    "container": "DFSU7385016",
@@ -1622,13 +2164,18 @@
    "operationType": "Drop",
    "appointmentTime": "2026-07-31T11:00:00-07:00",
    "announcedAt": "2026-07-30T10:11:00-07:00",
-   "lastVerifiedAt": "2026-09-17T14:40:44.235681-07:00",
-   "verificationSource": "RUFINO WINDOW 2026-09-17T14:40:44.235681-07:00: búsqueda exacta sin resultados",
+   "lastVerifiedAt": "2026-09-21T15:08:33.401147-07:00",
+   "verificationSource": "WINDOW ENTRY LIST 2026-09-21T15:08:33.401147-07:00 (equipment/search exacto Container→Trailer) + WMS receipt/tasks | RN preservado del feed: None",
    "staleStateGuard": true,
    "plannedEmailInclusionRule": true,
-   "windowCheckedAt": "2026-09-17T14:40:44.235681-07:00",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
    "enYarda": false,
-   "windowResult": "SIN EVIDENCIA EN WINDOW (sin fila exacta Container/Trailer)"
+   "windowResult": "SIN FILA — búsqueda exacta por Container y por Trailer/equipmentNo sin resultados | CONTRADICCIÓN: receipt WMS ['CLOSED'] con tareas terminales (llegada histórica sí ocurrió)",
+   "windowFound": false,
+   "windowET": null,
+   "wmsRn": [
+    "RN-5009094"
+   ]
   }
  ],
  "alerts": [
@@ -1864,5 +2411,424 @@
  "updatedBy": "RUFINO — PLAN WINDOW ENTRY LIST 2026-09-17T14:40:44.235681-07:00 (America/Los_Angeles)",
  "totalActive": 48,
  "totalExcluded": 11,
- "verificationSource": "RUFINO PLAN OBLIGATORIO WINDOW ENTRY LIST 2026-09-17T14:40:44.235681-07:00 — tenant LT / facility LT_F1"
+ "verificationSource": "RUFINO PLAN OBLIGATORIO WINDOW ENTRY LIST 2026-09-17T14:40:44.235681-07:00 — tenant LT / facility LT_F1",
+ "newArrivalsProposals": [
+  {
+   "container": "CCLU7883064",
+   "rn": "RN-5010361",
+   "color": "orange",
+   "classification": "LLEGÓ / PENDIENTE RECEIVING",
+   "proposedAction": "ADD_ROW",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
+   "windowET": "ET-1157525",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-09-21T14:04:12",
+   "windowGateCheckinTime": "",
+   "windowLocation": "SPOT576",
+   "windowEntryTicketStatus": null,
+   "windowReceiptIds": [
+    "RN-5010361"
+   ],
+   "windowReceiptsStatus": [
+    "Imported"
+   ],
+   "receiptStatus": "IMPORTED",
+   "inYardTime": null,
+   "appointmentTime": "2026-09-21T12:00:00",
+   "receiveTasks": [],
+   "putawayTasks": [],
+   "evidence": "Window ET ET-1157525 | WMS receipt IMPORTED | inYardTime None",
+   "source": "window_entry_list_scan_2026-09-21"
+  },
+  {
+   "container": "FFAU2457724",
+   "rn": "RN-5010360",
+   "color": "orange",
+   "classification": "LLEGÓ / PENDIENTE RECEIVING",
+   "proposedAction": "ADD_ROW",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
+   "windowET": "ET-1157427",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-09-21T12:25:24",
+   "windowGateCheckinTime": "",
+   "windowLocation": "SPOT586",
+   "windowEntryTicketStatus": null,
+   "windowReceiptIds": [
+    "RN-5010360"
+   ],
+   "windowReceiptsStatus": [
+    "Imported"
+   ],
+   "receiptStatus": "IMPORTED",
+   "inYardTime": null,
+   "appointmentTime": "2026-09-21T13:00:00",
+   "receiveTasks": [],
+   "putawayTasks": [],
+   "evidence": "Window ET ET-1157427 | WMS receipt IMPORTED | inYardTime None",
+   "source": "window_entry_list_scan_2026-09-21"
+  },
+  {
+   "container": "TCLU8279836",
+   "rn": "RN-5010322",
+   "color": "orange",
+   "classification": "LLEGÓ / PENDIENTE RECEIVING",
+   "proposedAction": "ADD_ROW",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
+   "windowET": "ET-1157321",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-09-21T10:44:10",
+   "windowGateCheckinTime": "",
+   "windowLocation": "SPOT596",
+   "windowEntryTicketStatus": null,
+   "windowReceiptIds": [
+    "RN-5010322"
+   ],
+   "windowReceiptsStatus": [
+    "Open"
+   ],
+   "receiptStatus": "OPEN",
+   "inYardTime": null,
+   "appointmentTime": "2026-09-21T10:00:00",
+   "receiveTasks": [
+    [
+     "TASK-5369901",
+     "NEW"
+    ]
+   ],
+   "putawayTasks": [],
+   "evidence": "Window ET ET-1157321 | WMS receipt OPEN | inYardTime None",
+   "source": "window_entry_list_scan_2026-09-21"
+  },
+  {
+   "container": "OOCU9355851",
+   "rn": "RN-5010325",
+   "color": "orange",
+   "classification": "LLEGÓ / PENDIENTE RECEIVING",
+   "proposedAction": "ADD_ROW",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
+   "windowET": "ET-1157024",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-09-19T00:06:26",
+   "windowGateCheckinTime": "",
+   "windowLocation": "SPOT382",
+   "windowEntryTicketStatus": null,
+   "windowReceiptIds": [
+    "RN-5010325"
+   ],
+   "windowReceiptsStatus": [
+    "Imported"
+   ],
+   "receiptStatus": "IMPORTED",
+   "inYardTime": null,
+   "appointmentTime": "2026-09-18T23:00:00",
+   "receiveTasks": [
+    [
+     "TASK-5369898",
+     "NEW"
+    ]
+   ],
+   "putawayTasks": [],
+   "evidence": "Window ET ET-1157024 | WMS receipt IMPORTED | inYardTime None",
+   "source": "window_entry_list_scan_2026-09-21"
+  },
+  {
+   "container": "GCXU5482910",
+   "rn": "RN-5010323",
+   "color": "orange",
+   "classification": "LLEGÓ / PENDIENTE RECEIVING",
+   "proposedAction": "ADD_ROW",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
+   "windowET": "ET-1157005",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-09-18T21:35:56",
+   "windowGateCheckinTime": "",
+   "windowLocation": "SPOT355",
+   "windowEntryTicketStatus": null,
+   "windowReceiptIds": [
+    "RN-5010323"
+   ],
+   "windowReceiptsStatus": [
+    "Open"
+   ],
+   "receiptStatus": "OPEN",
+   "inYardTime": "2026-09-18T21:35:53",
+   "appointmentTime": "2026-09-18T21:00:00",
+   "receiveTasks": [
+    [
+     "TASK-5369900",
+     "NEW"
+    ]
+   ],
+   "putawayTasks": [],
+   "evidence": "Window ET ET-1157005 | WMS receipt OPEN | inYardTime 2026-09-18T21:35:53",
+   "source": "window_entry_list_scan_2026-09-21"
+  },
+  {
+   "container": "CSNU6348610",
+   "rn": "RN-5010356",
+   "color": "orange",
+   "classification": "LLEGÓ / PENDIENTE RECEIVING",
+   "proposedAction": "ADD_ROW",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
+   "windowET": "ET-1157030",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-09-19T00:33:14",
+   "windowGateCheckinTime": "",
+   "windowLocation": "SPOT374",
+   "windowEntryTicketStatus": null,
+   "windowReceiptIds": [
+    "RN-5010356"
+   ],
+   "windowReceiptsStatus": [
+    "Imported"
+   ],
+   "receiptStatus": "IMPORTED",
+   "inYardTime": null,
+   "appointmentTime": "2026-09-18T23:30:00",
+   "receiveTasks": [],
+   "putawayTasks": [],
+   "evidence": "Window ET ET-1157030 | WMS receipt IMPORTED | inYardTime None",
+   "source": "window_entry_list_scan_2026-09-21"
+  },
+  {
+   "container": "OERU4116723",
+   "rn": "RN-5010358",
+   "color": "orange",
+   "classification": "LLEGÓ / PENDIENTE RECEIVING",
+   "proposedAction": "ADD_ROW",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
+   "windowET": "ET-1157034",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-09-19T00:45:28",
+   "windowGateCheckinTime": "",
+   "windowLocation": "SPOT406",
+   "windowEntryTicketStatus": null,
+   "windowReceiptIds": [
+    "RN-5010358"
+   ],
+   "windowReceiptsStatus": [
+    "Imported"
+   ],
+   "receiptStatus": "IMPORTED",
+   "inYardTime": null,
+   "appointmentTime": "2026-09-19T01:30:00",
+   "receiveTasks": [],
+   "putawayTasks": [],
+   "evidence": "Window ET ET-1157034 | WMS receipt IMPORTED | inYardTime None",
+   "source": "window_entry_list_scan_2026-09-21"
+  },
+  {
+   "container": "FBIU5288270",
+   "rn": "RN-5010359",
+   "color": "orange",
+   "classification": "LLEGÓ / PENDIENTE RECEIVING",
+   "proposedAction": "ADD_ROW",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
+   "windowET": "ET-1157057",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-09-19T02:51:54",
+   "windowGateCheckinTime": "",
+   "windowLocation": "SPOT373",
+   "windowEntryTicketStatus": null,
+   "windowReceiptIds": [
+    "RN-5010359"
+   ],
+   "windowReceiptsStatus": [
+    "Imported"
+   ],
+   "receiptStatus": "IMPORTED",
+   "inYardTime": null,
+   "appointmentTime": "2026-09-19T02:30:00",
+   "receiveTasks": [],
+   "putawayTasks": [],
+   "evidence": "Window ET ET-1157057 | WMS receipt IMPORTED | inYardTime None",
+   "source": "window_entry_list_scan_2026-09-21"
+  },
+  {
+   "container": "CSNU8131630",
+   "rn": "RN-5010285",
+   "color": "orange",
+   "classification": "LLEGÓ / PENDIENTE RECEIVING",
+   "proposedAction": "ADD_ROW",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
+   "windowET": "ET-1157013",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-09-18T22:27:59",
+   "windowGateCheckinTime": "",
+   "windowLocation": "DOCK72",
+   "windowEntryTicketStatus": null,
+   "windowReceiptIds": [
+    "RN-5010285"
+   ],
+   "windowReceiptsStatus": [
+    "Imported"
+   ],
+   "receiptStatus": "IMPORTED",
+   "inYardTime": "2026-09-18T22:27:57",
+   "appointmentTime": "2026-09-18T10:00:00",
+   "receiveTasks": [],
+   "putawayTasks": [],
+   "evidence": "Window ET ET-1157013 | WMS receipt IMPORTED | inYardTime 2026-09-18T22:27:57",
+   "source": "window_entry_list_scan_2026-09-21"
+  },
+  {
+   "container": "CSNU8665194",
+   "rn": "RN-5010286",
+   "color": "orange",
+   "classification": "LLEGÓ / PENDIENTE RECEIVING",
+   "proposedAction": "ADD_ROW",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
+   "windowET": "ET-1156996",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-09-18T21:18:53",
+   "windowGateCheckinTime": "",
+   "windowLocation": "DOCK59",
+   "windowEntryTicketStatus": null,
+   "windowReceiptIds": [
+    "RN-5010286"
+   ],
+   "windowReceiptsStatus": [
+    "Imported"
+   ],
+   "receiptStatus": "IMPORTED",
+   "inYardTime": "2026-09-18T21:18:51",
+   "appointmentTime": "2026-09-18T21:00:00",
+   "receiveTasks": [],
+   "putawayTasks": [],
+   "evidence": "Window ET ET-1156996 | WMS receipt IMPORTED | inYardTime 2026-09-18T21:18:51",
+   "source": "window_entry_list_scan_2026-09-21"
+  },
+  {
+   "container": "MRSU4948612",
+   "rn": "RN-5010148",
+   "color": "verde",
+   "classification": "CERRADO",
+   "proposedAction": "REVIEW",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
+   "windowET": "ET-1152622",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": "2026-09-11T11:40:20",
+   "windowGateCheckinTime": "",
+   "windowLocation": "SPOT842",
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5010148"
+   ],
+   "windowReceiptsStatus": [
+    "Force Closed"
+   ],
+   "receiptStatus": "FORCE_CLOSED",
+   "inYardTime": "2026-09-14T22:44:13",
+   "appointmentTime": "2026-09-10T12:00:00",
+   "receiveTasks": [
+    [
+     "TASK-5367591",
+     "FORCE_CLOSED"
+    ]
+   ],
+   "putawayTasks": [
+    [
+     "TASK-5368432",
+     "CLOSED"
+    ]
+   ],
+   "evidence": "Window ET ET-1152622 | WMS receipt FORCE_CLOSED | inYardTime 2026-09-14T22:44:13",
+   "source": "window_entry_list_scan_2026-09-21"
+  },
+  {
+   "container": "GCXU6528282",
+   "rn": "RN-5010282",
+   "color": "azul",
+   "classification": "AMBIGUO — RN cancelada / otra RN In Progress",
+   "proposedAction": "REVIEW",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
+   "windowET": "ET-1156117",
+   "windowEquipmentType": "Container",
+   "windowCheckInTime": null,
+   "windowGateCheckinTime": "2026-09-17T12:04:35",
+   "windowLocation": null,
+   "windowEntryTicketStatus": "Window Checked In",
+   "windowReceiptIds": [
+    "RN-5010396",
+    "RN-5010282"
+   ],
+   "windowReceiptsStatus": [
+    "In Progress",
+    "Cancelled"
+   ],
+   "receiptStatus": "CANCELLED",
+   "inYardTime": "2026-09-17T15:53:50",
+   "appointmentTime": null,
+   "receiveTasks": [],
+   "putawayTasks": [],
+   "evidence": "Window ET ET-1156117 | WMS receipt CANCELLED | inYardTime 2026-09-17T15:53:50",
+   "source": "window_entry_list_scan_2026-09-21"
+  },
+  {
+   "container": "WHLU0560177",
+   "rn": "RN-5010326",
+   "color": "azul",
+   "classification": "AMBIGUO — WMS llegada activa, Window sin fila",
+   "proposedAction": "REVIEW",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
+   "windowET": null,
+   "windowEquipmentType": null,
+   "windowCheckInTime": null,
+   "windowGateCheckinTime": null,
+   "windowLocation": null,
+   "windowEntryTicketStatus": null,
+   "windowReceiptIds": null,
+   "windowReceiptsStatus": null,
+   "receiptStatus": "IN_PROGRESS",
+   "inYardTime": "2026-09-18T17:18:40",
+   "appointmentTime": "2026-09-17T15:00:00",
+   "receiveTasks": [
+    [
+     "TASK-5369897",
+     "CLOSED"
+    ]
+   ],
+   "putawayTasks": [
+    [
+     "TASK-5372916",
+     "NEW"
+    ]
+   ],
+   "evidence": "Window sin fila | WMS receipt IN_PROGRESS | inYardTime 2026-09-18T17:18:40",
+   "source": "window_entry_list_scan_2026-09-21"
+  },
+  {
+   "container": "CSNU5555383",
+   "rn": "RN-5010080",
+   "color": "azul",
+   "classification": "AMBIGUO — WMS llegada activa, Window sin fila",
+   "proposedAction": "REVIEW",
+   "windowCheckedAt": "2026-09-21T15:08:33.401147-07:00",
+   "windowET": null,
+   "windowEquipmentType": null,
+   "windowCheckInTime": null,
+   "windowGateCheckinTime": null,
+   "windowLocation": null,
+   "windowEntryTicketStatus": null,
+   "windowReceiptIds": null,
+   "windowReceiptsStatus": null,
+   "receiptStatus": "CLOSED",
+   "inYardTime": "2026-09-03T08:03:45",
+   "appointmentTime": "2026-09-03T08:00:00",
+   "receiveTasks": [
+    [
+     "TASK-5359347",
+     "CLOSED"
+    ]
+   ],
+   "putawayTasks": [
+    [
+     "TASK-5359749",
+     "IN_PROGRESS"
+    ]
+   ],
+   "evidence": "Window sin fila | WMS receipt CLOSED | inYardTime 2026-09-03T08:03:45",
+   "source": "window_entry_list_scan_2026-09-21"
+  }
+ ]
 }
